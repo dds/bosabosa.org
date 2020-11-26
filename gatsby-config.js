@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `bosabosa.org`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `David D. Smith `,
+      summary: `coder, creator, in California.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `My personal website demonstrating some of my thoughts and my work`,
+    siteUrl: `https://bosabosa.org/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `omgthedds`,
     },
   },
   plugins: [
@@ -60,7 +60,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `bosabosa.org`,
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
