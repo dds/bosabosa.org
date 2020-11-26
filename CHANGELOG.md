@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.4...v1.0.5) (2020-11-26)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([7ba89fb](https://github.com/gatsbyjs/gatsby-starter-blog/commit/7ba89fb3b4b341d69c2f76a54ff6992da4c4d13c))
+
+
+
 ## [1.0.4](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.3...v1.0.4) (2020-11-26)
 
 
