@@ -1,3 +1,12 @@
+## [1.0.4](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.3...v1.0.4) (2020-11-26)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([e6df08d](https://github.com/gatsbyjs/gatsby-starter-blog/commit/e6df08d156830aca0da77ef6844a8e5602855069))
+
+
+
 ## [1.0.3](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.2...v1.0.3) (2020-11-26)
 
 
