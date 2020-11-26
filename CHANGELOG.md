@@ -1,3 +1,12 @@
+## [1.0.7](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.6...v1.0.7) (2020-11-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby to v2.27.4 ([54ea7cf](https://github.com/gatsbyjs/gatsby-starter-blog/commit/54ea7cf742f5faa118da049793f8e37079486d17))
+
+
+
 ## [1.0.6](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.5...v1.0.6) (2020-11-26)
 
 
@@ -26,10 +35,6 @@
 
 
 ## [1.0.3](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.2...v1.0.3) (2020-11-26)
-
-
-
-## [1.0.2](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.1...v1.0.2) (2020-11-26)
 
 
 
