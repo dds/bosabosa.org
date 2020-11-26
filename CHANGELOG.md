@@ -1,3 +1,7 @@
+## [1.0.3](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.2...v1.0.3) (2020-11-26)
+
+
+
 ## [1.0.2](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.1...v1.0.2) (2020-11-26)
 
 
