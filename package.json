@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "bosabosa",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Personal blog of David Smith",
+  "version": "1.0.0",
+  "author": "David Smith <dds@acm.org>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/dds/bosabosa.org/issues"
   },
   "dependencies": {
     "gatsby": "^2.26.1",
