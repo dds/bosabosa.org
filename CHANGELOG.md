@@ -1,3 +1,12 @@
+## [1.0.8](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.7...v1.0.8) (2020-11-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-plugin-sharp to v2.9.1 ([ad508b6](https://github.com/gatsbyjs/gatsby-starter-blog/commit/ad508b6841d56cd3fd488f72ebe6468a2fcb36b3))
+
+
+
 ## [1.0.7](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.6...v1.0.7) (2020-11-26)
 
 
@@ -31,10 +40,6 @@
 ### Bug Fixes
 
 * **deps:** pin dependencies ([e6df08d](https://github.com/gatsbyjs/gatsby-starter-blog/commit/e6df08d156830aca0da77ef6844a8e5602855069))
-
-
-
-## [1.0.3](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.2...v1.0.3) (2020-11-26)
 
 
 
