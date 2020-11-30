@@ -1,3 +1,12 @@
+## [1.0.11](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.10...v1.0.11) (2020-11-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby to v2.27.5 ([564f2e4](https://github.com/gatsbyjs/gatsby-starter-blog/commit/564f2e43f5a3670184c9a7f272be8fa7f4539134))
+
+
+
 ## [1.0.10](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.9...v1.0.10) (2020-11-30)
 
 
@@ -26,15 +35,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency gatsby to v2.27.4 ([54ea7cf](https://github.com/gatsbyjs/gatsby-starter-blog/commit/54ea7cf742f5faa118da049793f8e37079486d17))
-
-
-
-## [1.0.6](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.5...v1.0.6) (2020-11-26)
-
-
-### Bug Fixes
-
-* **deps:** update react monorepo to v16.14.0 ([5317621](https://github.com/gatsbyjs/gatsby-starter-blog/commit/5317621ce0ed0664b361004eb976456d131e8cff))
 
 
 
