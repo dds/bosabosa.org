@@ -1,3 +1,12 @@
+## [1.0.13](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.12...v1.0.13) (2020-12-02)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([6aee277](https://github.com/gatsbyjs/gatsby-starter-blog/commit/6aee27732436de8ecd5b249e2911d65f0c70ef9f))
+
+
+
 ## [1.0.12](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.11...v1.0.12) (2020-12-01)
 
 
@@ -26,15 +35,6 @@
 
 
 ## [1.0.9](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.8...v1.0.9) (2020-11-28)
-
-
-
-## [1.0.8](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.7...v1.0.8) (2020-11-27)
-
-
-### Bug Fixes
-
-* **deps:** update dependency gatsby-plugin-sharp to v2.9.1 ([ad508b6](https://github.com/gatsbyjs/gatsby-starter-blog/commit/ad508b6841d56cd3fd488f72ebe6468a2fcb36b3))
 
 
 
