@@ -1,3 +1,7 @@
+## [1.0.16](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.15...v1.0.16) (2020-12-04)
+
+
+
 ## [1.0.15](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.14...v1.0.15) (2020-12-04)
 
 
@@ -27,15 +31,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency semver to v7.3.4 ([ada8faa](https://github.com/gatsbyjs/gatsby-starter-blog/commit/ada8faa25f5a998d27203ac68f9ed83c6a8efccc))
-
-
-
-## [1.0.11](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v1.0.10...v1.0.11) (2020-11-30)
-
-
-### Bug Fixes
-
-* **deps:** update dependency gatsby to v2.27.5 ([564f2e4](https://github.com/gatsbyjs/gatsby-starter-blog/commit/564f2e43f5a3670184c9a7f272be8fa7f4539134))
 
 
 
