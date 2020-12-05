@@ -14,7 +14,7 @@ const BlogIndex = ({ data, location }) => {
       <Layout location={location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
-        <p></p>
+        <p>Started off as a game programmer and now I'm here.</p>
       </Layout>
     )
   }

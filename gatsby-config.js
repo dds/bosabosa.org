@@ -8,7 +8,7 @@ module.exports = {
     description: `My personal website demonstrating some of my thoughts and my work`,
     siteUrl: `https://bosabosa.org/`,
     social: {
-      twitter: `omgthedds`,
+      twitter: `exponent`,
     },
   },
   plugins: [
