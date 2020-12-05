@@ -35,15 +35,14 @@
   "devDependencies": {
     "prettier": "2.2.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://www.bosabosa.org/",
   "keywords": [
-    "gatsby"
   ],
-  "license": "0BSD",
+  "license": "GPLv3",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/dds/bosabosa.org.git"
   },
   "scripts": {
     "build": "gatsby build",
