@@ -14,6 +14,7 @@
     "gatsby-plugin-google-analytics": "2.7.0",
     "gatsby-plugin-manifest": "2.8.0",
     "gatsby-plugin-offline": "3.6.0",
+    "gatsby-plugin-preload-link-crossorigin": "^1.0.2",
     "gatsby-plugin-react-helmet": "3.6.0",
     "gatsby-plugin-sharp": "2.10.1",
     "gatsby-remark-copy-linked-files": "2.6.0",
@@ -25,12 +26,13 @@
     "gatsby-transformer-remark": "2.12.0",
     "gatsby-transformer-sharp": "2.8.0",
     "prismjs": "1.22.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-helmet": "6.1.0",
     "semver": "7.3.4",
     "typeface-merriweather": "1.1.13",
-    "typeface-montserrat": "1.1.13"
+    "typeface-montserrat": "1.1.13",
+    "typescript": "^4.1.2"
   },
   "devDependencies": {
     "prettier": "2.2.1"
