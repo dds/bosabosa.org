@@ -1,3 +1,12 @@
+## [1.0.27](https://github.com/dds/bosabosa.org/compare/v1.0.26...v1.0.27) (2020-12-08)
+
+
+### Reverts
+
+* back to last stable release ([53e544c](https://github.com/dds/bosabosa.org/commit/53e544cd9bf30a9c96bec180ae46a6a63ccd5c83))
+
+
+
 ## [1.0.26](https://github.com/dds/bosabosa.org/compare/v1.0.25...v1.0.26) (2020-12-07)
 
 
@@ -16,10 +25,6 @@
 
 
 ## [1.0.23](https://github.com/dds/bosabosa.org/compare/v1.0.22...v1.0.23) (2020-12-05)
-
-
-
-## [1.0.22](https://github.com/dds/bosabosa.org/compare/v1.0.21...v1.0.22) (2020-12-05)
 
 
 
