@@ -1,113 +1,83 @@
-import React, { useContext } from "react"
-import { graphql } from "gatsby"
-import ThemeContext from "../utils/theme"
-import { PageLayout } from "../components"
-import { SEO } from "../utils"
-import { Container, Image } from "react-bootstrap"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React from "react"
+import { Link, graphql } from "gatsby"
 
-export default ({ data }) => {
-  const { author } = data.site.siteMetadata
-  const { dark } = useContext(ThemeContext)
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+
+const BlogIndex = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const posts = data.allMarkdownRemark.nodes
+
+  if (posts.length === 0) {
+    return (
+      <Layout location={location} title={siteTitle}>
+        <SEO title="All posts" />
+        <Bio />
+        <p>Started off as a game programmer and now I'm here.</p>
+      </Layout>
+    )
+  }
+
   return (
-    <PageLayout>
-      <SEO title="Home" />
-      <Container className="text-center pt-5 mt-5" fluid>
-        <Image
-          width="150"
-          height="150"
-          fluid
-          src={dark ? `../../icons/darth-vader.png` : `../../icons/r2-d2.png`}
-          alt={dark ? "Darth Vader" : "R2-D2"}
-        />
-        <Container className="py-0 my-0">
-          <h1
-            style={{
-              fontSize: "5rem",
-              color: "black",
-            }}
-          >
-            <span className="first-name">{author.firstName}</span>&nbsp;
-            <span className="last-name">{author.lastName}</span>
-          </h1>
-        </Container>
-        <hr className="my-3 w-25" />
-        <div className="d-md-inline-flex icons-container">
-          <a
-            href="https://www.github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "github"]}
-              className="icons github"
-              title="Github"
-            />
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "linkedin"]}
-              className="icons linkedin"
-              title="LinkedIn"
-            />
-          </a>
-          <a
-            href="https://www.freecodecamp.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "free-code-camp"]}
-              className="icons fcc"
-              title="FreeCodeCamp"
-            />
-          </a>
-          <a
-            href="https://www.hackerrank.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "hackerrank"]}
-              className="icons hr"
-              title="Hackerrank"
-            />
-          </a>
-          <a
-            href="mailto:johndoe@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fas", "envelope"]}
-              className="icons mail"
-              title="e-mail"
-            />
-          </a>
-          <a href="../../resume.pdf" target="_blank" download>
-            <FontAwesomeIcon
-              icon={["fas", "file-alt"]}
-              className="icons file"
-              title="Resume"
-            />
-          </a>
-        </div>
-      </Container>
-    </PageLayout>
+    <Layout location={location} title={siteTitle}>
+      <SEO title="All posts" />
+      <Bio />
+      <ol style={{ listStyle: `none` }}>
+        {posts.map(post => {
+          const title = post.frontmatter.title || post.fields.slug
+
+          return (
+            <li key={post.fields.slug}>
+              <article
+                className="post-list-item"
+                itemScope
+                itemType="http://schema.org/Article"
+              >
+                <header>
+                  <h2>
+                    <Link to={post.fields.slug} itemProp="url">
+                      <span itemProp="headline">{title}</span>
+                    </Link>
+                  </h2>
+                  <small>{post.frontmatter.date}</small>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: post.frontmatter.description || post.excerpt,
+                    }}
+                    itemProp="description"
+                  />
+                </section>
+              </article>
+            </li>
+          )
+        })}
+      </ol>
+    </Layout>
   )
 }
 
-export const query = graphql`
+export default BlogIndex
+
+export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
-        author {
-          firstName
-          lastName
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
         }
       }
     }

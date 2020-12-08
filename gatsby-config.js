@@ -1,77 +1,65 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
   siteMetadata: {
     title: `bosabosa.org`,
     author: {
-      name: `David D Smith`,
-      firstName: `David D`,
-      lastName: `Smith`,
-      summary: `Hacker. Staff software engineer at NerdWallet. Opinions expressed are my own and not endorsed by my employer.`,
+      name: `David D. Smith `,
+      summary: `coder, creator, in California.`,
     },
-    description: `David Smith's personal site`,
-    occupation: `Staff Software Engineer at NerdWallet`,
-    keywords: [`Personal`, `Blog`, `Projects`, `Work`],
-    siteUrl:
-      process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
-    unemployed: false,
-    designations: [
-      `Reformed BOFH`,
-      `Git Jedi`,
-      `UNIX hater lover`,
-      `Relentless Automater`,
-    ],
+    description: `My personal website demonstrating some of my thoughts and my work`,
+    siteUrl: `https://bosabosa.org/`,
     social: {
-      twitter: `https://twitter.com/exponent`,
+      twitter: `exponent`,
     },
   },
   plugins: [
-    `gatsby-plugin-preload-link-crossorigin`,
-    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: "src",
-        path: `${__dirname}/src/`,
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
       },
     },
-    `gatsby-plugin-sass`,
-    `gatsby-transformer-remark`,
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/content/assets`,
+    //     name: `assets`,
+    //   },
+    // },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 630,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        name: `David D Smith's personal site`,
-        short_name: `dds`,
-        description: `My site.`,
-        start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#fff`,
-        display: `standalone`,
-        icon: `${__dirname}/static/favicon.ico`, // This path is relative to the root of the site.
+        //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    `gatsby-plugin-offline`,
+    `gatsby-plugin-feed`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: "gatsby-plugin-google-fonts",
-      options: {
-        fonts: ["Raleway:300,400"],
-        display: "swap",
-      },
-    },
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        color: `tomato`,
-        showSpinner: true,
-      },
-    },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
   ],
 }
