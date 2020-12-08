@@ -1,7 +1,7 @@
 {
   "name": "bosabosa",
   "private": true,
-  "description": "Personal blog of David Smith",
+  "description": "Personal site of David D Smith",
   "version": "1.0.26",
   "author": "David Smith <dds@bosabosa.org>",
   "bugs": {
@@ -37,7 +37,7 @@
   },
   "homepage": "https://www.bosabosa.org/",
   "keywords": [],
-  "license": "GPLv3",
+  "license": "UNLICENSED",
   "main": "n/a",
   "repository": {
     "type": "git",
