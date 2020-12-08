@@ -1,4 +1,5 @@
 const path = require(`path`)
+const _ = require(`lodash`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 const requiresTemplate = [`blog`, `projects`]
@@ -23,25 +24,44 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions, reporter }) => {
   // graphql function call returns a promise
   const { createPage } = actions
+  const blogPostTemplate = path.resolve("src/templates/blog.js")
+  const tagTemplate = path.resolve("src/templates/tags.js")
   const result = await graphql(`
-    query {
-      allMarkdownRemark {
+    {
+      posts: allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 2000
+      ) {
         edges {
           node {
             fields {
               slug
-              templatePath
+            }
+            frontmatter {
+              tags
             }
           }
+        }
+      }
+      tagsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
         }
       }
     }
   `)
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  // handle errors
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  // Create post detail pages
+  result.data.posts.edges.forEach(({ node }) => {
     const contentType = node.fields.slug.split(`/`)[1]
     if (requiresTemplate.includes(contentType)) {
       createPage({
@@ -54,5 +74,16 @@ exports.createPages = async ({ graphql, actions }) => {
         },
       })
     }
+  })
+
+  // Make tag pages
+  result.data.tagsGroup.group.forEach(tag => {
+    createPage({
+      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+      component: tagTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
   })
 }
