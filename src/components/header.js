@@ -1,7 +1,8 @@
 import { Link } from "gatsby"
 import React from "react"
 import { Container } from "react-bootstrap"
-import Navbar from "./navbar.js"
+import Navbar from "./navbar"
+import SEO from "./seo"
 
 const Header = () => {
   return (

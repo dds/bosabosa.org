@@ -1,10 +1,11 @@
 import React from "react"
-import { PageProps, Link, graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
+import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Index = ({ data, location }) => {
+const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
@@ -47,7 +48,7 @@ const Index = ({ data, location }) => {
   )
 }
 
-export default Index
+export default BlogIndex
 
 export const pageQuery = graphql`
   query {
