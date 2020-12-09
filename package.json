@@ -26,6 +26,7 @@
     "gatsby-transformer-sharp": "2.8.0",
     "prismjs": "1.22.0",
     "react": "17.0.1",
+    "react-bootstrap": "^1.4.0",
     "react-dom": "17.0.1",
     "react-helmet": "6.1.0",
     "semver": "7.3.4",
@@ -36,7 +37,12 @@
     "prettier": "2.2.1"
   },
   "homepage": "https://www.bosabosa.org/",
-  "keywords": ["personal", "blog", "portfolio", "homepage"],
+  "keywords": [
+    "personal",
+    "blog",
+    "portfolio",
+    "homepage"
+  ],
   "license": "UNLICENSED",
   "main": "n/a",
   "repository": {
