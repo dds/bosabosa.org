@@ -21,6 +21,7 @@ const Header = () => {
   return (
     <Container css={style} fluid className="px-0">
       <header>
+        <h1>dds's website</h1>
         <Navbar />
         <Search searchIndex={data.siteSearchIndex.index} />
       </header>
