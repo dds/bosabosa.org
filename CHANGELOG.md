@@ -1,3 +1,7 @@
+## [1.0.33](https://github.com/dds/bosabosa.org/compare/v1.0.32...v1.0.33) (2020-12-10)
+
+
+
 ## [1.0.32](https://github.com/dds/bosabosa.org/compare/v1.0.31...v1.0.32) (2020-12-10)
 
 
@@ -21,10 +25,6 @@
 
 
 ## [1.0.29](https://github.com/dds/bosabosa.org/compare/v1.0.28...v1.0.29) (2020-12-08)
-
-
-
-## [1.0.28](https://github.com/dds/bosabosa.org/compare/v1.0.27...v1.0.28) (2020-12-08)
 
 
 
