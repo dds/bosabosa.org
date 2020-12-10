@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/dds/bosabosa.org/compare/v1.1.0...v1.1.1) (2020-12-10)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([91ff17b](https://github.com/dds/bosabosa.org/commit/91ff17ba50a420c28e38f8ec25fd43a110a422c3))
+
+
+
 # [1.1.0](https://github.com/dds/bosabosa.org/compare/v1.0.34...v1.1.0) (2020-12-10)
 
 
@@ -26,15 +35,6 @@
 ### Bug Fixes
 
 * **deps:** update gatsby monorepo ([5b9e763](https://github.com/dds/bosabosa.org/commit/5b9e763ec752061592072dc59e188cc78c909fce))
-
-
-
-## [1.0.31](https://github.com/dds/bosabosa.org/compare/v1.0.30...v1.0.31) (2020-12-09)
-
-
-### Bug Fixes
-
-* **deps:** pin dependency react-bootstrap to 1.4.0 ([65c4ba6](https://github.com/dds/bosabosa.org/commit/65c4ba61824fcff5de24fc940535199b1c9f81a8))
 
 
 
