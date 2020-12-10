@@ -1,3 +1,12 @@
+## [1.0.34](https://github.com/dds/bosabosa.org/compare/v1.0.33...v1.0.34) (2020-12-10)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency yarn to 1.22.10 ([a0f1781](https://github.com/dds/bosabosa.org/commit/a0f17812703e72561d7859376b13562387938d39))
+
+
+
 ## [1.0.33](https://github.com/dds/bosabosa.org/compare/v1.0.32...v1.0.33) (2020-12-10)
 
 
@@ -21,10 +30,6 @@
 
 
 ## [1.0.30](https://github.com/dds/bosabosa.org/compare/v1.0.29...v1.0.30) (2020-12-09)
-
-
-
-## [1.0.29](https://github.com/dds/bosabosa.org/compare/v1.0.28...v1.0.29) (2020-12-08)
 
 
 
