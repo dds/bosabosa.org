@@ -32,7 +32,7 @@
     "semver": "7.3.4",
     "typeface-merriweather": "1.1.13",
     "typeface-montserrat": "1.1.13",
-    "yarn": "^1.22.10"
+    "yarn": "1.22.10"
   },
   "devDependencies": {
     "prettier": "2.2.1"
