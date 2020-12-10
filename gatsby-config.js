@@ -7,6 +7,7 @@ module.exports = {
     },
     description: `My personal website demonstrating some of my thoughts and my work`,
     siteUrl: `https://dds.bosabosa.org/`,
+    sourceUrl: `https://github.com/dds/bosabosa.org/`,
     social: {
       twitter: `exponent`,
     },
@@ -49,6 +50,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-emotion`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -73,7 +75,7 @@ module.exports = {
           MarkdownRemark: {
             title: node => node.frontmatter.title,
             tags: node => node.frontmatter.tags,
-            path: node => node.frontmatter.path,
+            slug: node => node.fields.slug,
           },
         },
         // Optional filter to limit indexed nodes
