@@ -2,7 +2,7 @@
   "name": "bosabosa",
   "private": true,
   "description": "dds site",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "author": "David Smith <dds@bosabosa.org>",
   "bugs": {
     "url": "https://github.com/dds/bosabosa.org/issues"
