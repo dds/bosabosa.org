@@ -1,8 +1,30 @@
 import React from "react"
 import { Container } from "react-bootstrap"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import { css } from "@emotion/react"
 
-const BlogRoll = ({ data }) => {
+const BlogRoll = ({ n }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        nodes {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+  `)
+
+  const postTitle = css`
+    color: #005b99;
+  `
   const posts = data.allMarkdownRemark.nodes
   return (
     <Container fluid className="px-1">
@@ -19,7 +41,7 @@ const BlogRoll = ({ data }) => {
                 itemType="http://schema.org/Article"
               >
                 <header>
-                  <h3>
+                  <h3 css={postTitle}>
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
