@@ -4,24 +4,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import { jsx } from "theme-ui"
 
 const BlogRoll = ({ n }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-        nodes {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-          }
-        }
-      }
-    }
-  `)
-
+  const data = useStaticQuery(query)
   const posts = data.allMarkdownRemark.nodes
   return (
     <Container fluid className="px-1">
@@ -39,8 +22,8 @@ const BlogRoll = ({ n }) => {
               >
                 <header>
                   <h3
-                    css={{
-                      color: "#005b99",
+                    sx={{
+                      color: `primary`,
                     }}
                   >
                     <Link to={post.fields.slug} itemProp="url">
@@ -67,3 +50,21 @@ const BlogRoll = ({ n }) => {
 }
 
 export default BlogRoll
+
+const query = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+        }
+      }
+    }
+  }
+`
