@@ -1952,7 +1952,7 @@
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-tosh/-/preset-tosh-0.3.4.tgz#7140671d9fc1e15208f39573decbfafd611c0f12"
   integrity sha512-WYL9evbp6ym0xFN/C6sWiq/WWKz7DYZesHGHfK/6VqXI1y853kHiQ65KfwIj8iPjnu4BzUxOGQNW4oS+JriTZA==
 
-"@theme-ui/presets@^0.3.4":
+"@theme-ui/presets@0.3.4":
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/@theme-ui/presets/-/presets-0.3.4.tgz#1d3f352127af06ce75bb7dc209d3b85e9d0c147d"
   integrity sha512-hpjF7yxXF/nFu9cs0c1SETimhaSmq2Jv8AScvX2SfgBbBxs0I3i51AG0odEECsa8EwpXzLIXEE3tfYuchJlFOg==
@@ -6714,7 +6714,7 @@ gatsby-plugin-sitemap@2.8.0:
     pify "^3.0.0"
     sitemap "^1.13.0"
 
-gatsby-plugin-theme-ui@^0.3.4:
+gatsby-plugin-theme-ui@0.3.4:
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.3.4.tgz#b3ed23b847c9667a7b54f2f3549a02582e34b633"
   integrity sha512-Jz3Z+LHkYJvKTotuibfKy5JgN74VuDYMphMk/dWe4P4AY/4MmJh9YN7Uvkr3J0hZc32x8E9m8YgbSDb3M53HsA==
@@ -13816,7 +13816,7 @@ text-table@0.2.0, text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-theme-ui@^0.3.4:
+theme-ui@0.3.4:
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/theme-ui/-/theme-ui-0.3.4.tgz#349f8d34ee3299c9a84fc0619377fc9f484951f2"
   integrity sha512-0poOudYi97CdPaVU4bALWgLWALSqGlAAE/xy0D4765JIbHbpGpLdZwuuZ8ZJZtZVFhS1Saw6GBFH1/Vv4TLgWw==
