@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `dds.bosabosa.org`,
+    title: `bosabosa`,
     author: {
       name: `David D Smith`,
       summary: `coder, creator, in California.`,

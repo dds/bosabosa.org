@@ -1,27 +1,16 @@
 import React, { useContext } from "react"
-import ThemeContext from "./theme"
+
 import { Navbar, Nav, Form } from "react-bootstrap"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 // import "./fontawesome.js"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
+import ThemeContext from "./theme"
+
+import { useSiteMetadata } from "../hooks/use-site-metadata"
+
 export default () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          author {
-            name
-            summary
-          }
-          social {
-            twitter
-          }
-          sourceUrl
-        }
-      }
-    }
-  `)
+  const { sourceUrl } = useSiteMetadata()
 
   const { dark, toggledark, tostring } = useContext(ThemeContext)
   return (
@@ -43,7 +32,7 @@ export default () => {
           <a
             classname="ml-2"
             target="_blank"
-            href={data.site.siteMetadata.sourceUrl}
+            href={sourceUrl}
             title="Source on github"
           >
             Source

@@ -1,19 +1,9 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 const Footer = () => {
-  const query = graphql`
-    query Author {
-      site {
-        siteMetadata {
-          author {
-            name
-          }
-        }
-      }
-    }
-  `
-  const { author } = useStaticQuery(query).site.siteMetadata
+  const { author } = useSiteMetadata()
   return (
     <footer className="footer text-muted text-center">
       <span className="m-auto">
