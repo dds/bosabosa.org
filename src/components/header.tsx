@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import React from "react"
 import { Container } from "react-bootstrap"
 import Navbar from "./navbar"
