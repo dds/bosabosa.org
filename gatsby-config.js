@@ -50,7 +50,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-emotion`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -80,6 +79,13 @@ module.exports = {
         },
         // Optional filter to limit indexed nodes
         filter: (node, getNode) => node.frontmatter.tags !== "exempt",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-theme-ui`,
+      options: {
+        prismPreset: "night-owl",
+        preset: "@theme-ui/preset-funk",
       },
     },
   ],
