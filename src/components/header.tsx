@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import React from "react"
 import { Container } from "react-bootstrap"
 import Navbar from "./navbar"
@@ -21,7 +21,9 @@ const Header = () => {
   return (
     <Container css={style} fluid className="px-0">
       <header>
-        <h1>dds's website</h1>
+        <h1>
+          <Link to="/">dds's website</Link>
+        </h1>
         <Navbar />
         <Search searchIndex={data.siteSearchIndex.index} />
       </header>
