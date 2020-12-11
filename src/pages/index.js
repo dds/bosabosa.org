@@ -1,23 +1,15 @@
 import React from "react"
-import { useStaticQuery, Link, graphql } from "gatsby"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 import BlogRoll from "../components/blogroll"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Index = ({ location }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  const { title } = useSiteMetadata()
 
   return (
-    <Layout location={location} title={data.site.siteMetadata.title}>
+    <Layout location={location} title={title}>
       <SEO title="Latest Blog Posts..." />
       <BlogRoll />
     </Layout>
