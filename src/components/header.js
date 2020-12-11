@@ -1,27 +1,27 @@
-import { Link, useStaticQuery, graphql } from "gatsby"
 import React from "react"
+
 import { Container } from "react-bootstrap"
+import { Link } from "gatsby"
+import { jsx } from "theme-ui"
+
 import Navbar from "./navbar"
 import SEO from "./seo"
 import Search from "./search"
-import { jsx } from "theme-ui"
+
+import { useSiteMetadata } from "../hooks/use-site-metadata"
+import { useSiteSearchIndex } from "../hooks/use-site-searchindex"
 
 const Header = () => {
-  const data = useStaticQuery(graphql`
-    query SearchIndexQuery {
-      siteSearchIndex {
-        index
-      }
-    }
-  `)
+  const { title } = useSiteMetadata()
+  const index = useSiteSearchIndex()
   return (
     <Container fluid className="px-0">
       <header>
         <h1>
-          <Link to="/">dds's website</Link>
+          <Link to="/">{title}</Link>
         </h1>
         <Navbar />
-        <Search searchIndex={data.siteSearchIndex.index} />
+        <Search searchIndex={index} />
       </header>
     </Container>
   )
