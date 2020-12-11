@@ -1,3 +1,7 @@
+## [1.1.9](https://github.com/dds/bosabosa.org/compare/v1.1.8...v1.1.9) (2020-12-11)
+
+
+
 ## [1.1.8](https://github.com/dds/bosabosa.org/compare/v1.1.7...v1.1.8) (2020-12-11)
 
 
@@ -16,10 +20,6 @@
 
 
 ## [1.1.5](https://github.com/dds/bosabosa.org/compare/v1.1.4...v1.1.5) (2020-12-11)
-
-
-
-## [1.1.4](https://github.com/dds/bosabosa.org/compare/v1.1.3...v1.1.4) (2020-12-10)
 
 
 
