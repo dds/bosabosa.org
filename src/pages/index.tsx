@@ -18,7 +18,7 @@ const Index = ({ location }) => {
 
   return (
     <Layout location={location} title={data.site.siteMetadata.title}>
-      <SEO title="Home" />
+      <SEO title="Latest Blog Posts..." />
       <BlogRoll />
     </Layout>
   )
