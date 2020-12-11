@@ -4,11 +4,7 @@ import { Container } from "react-bootstrap"
 import Navbar from "./navbar"
 import SEO from "./seo"
 import Search from "./search"
-import { css } from "@emotion/react"
-
-const style = css`
-  // border: 1px solid red;
-`
+import { jsx } from "theme-ui"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -19,7 +15,7 @@ const Header = () => {
     }
   `)
   return (
-    <Container css={style} fluid className="px-0">
+    <Container fluid className="px-0">
       <header>
         <h1>
           <Link to="/">dds's website</Link>

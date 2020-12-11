@@ -1,7 +1,7 @@
 import React from "react"
 import { Container } from "react-bootstrap"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { css } from "@emotion/react"
+import { jsx } from "theme-ui"
 
 const BlogRoll = ({ n }) => {
   const data = useStaticQuery(graphql`
@@ -22,9 +22,6 @@ const BlogRoll = ({ n }) => {
     }
   `)
 
-  const postTitle = css`
-    color: #005b99;
-  `
   const posts = data.allMarkdownRemark.nodes
   return (
     <Container fluid className="px-1">
@@ -41,7 +38,11 @@ const BlogRoll = ({ n }) => {
                 itemType="http://schema.org/Article"
               >
                 <header>
-                  <h3 css={postTitle}>
+                  <h3
+                    css={{
+                      color: "#005b99",
+                    }}
+                  >
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
