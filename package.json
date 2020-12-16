@@ -43,6 +43,6 @@
   },
   "license": "UNLICENSED",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build"
   }
 }
