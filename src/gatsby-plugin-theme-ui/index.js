@@ -4,6 +4,7 @@ export default {
   bulma,
   colors: {
     text: "#000",
+    primary: "lightblue",
     background: "#fff",
   },
 }
