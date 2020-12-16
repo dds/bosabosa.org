@@ -1,5 +1,6 @@
 import React from "react"
 
+import Contact from "./contact"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 const Footer = () => {
@@ -9,6 +10,7 @@ const Footer = () => {
       <span className="m-auto">
         <b>{author.name}</b> &copy; {new Date().getFullYear()}
       </span>
+      <Contact />
     </footer>
   )
 }
