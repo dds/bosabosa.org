@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import React from "react"
 import { Container } from "react-bootstrap"
 import { useStaticQuery, graphql, Link } from "gatsby"
@@ -6,6 +7,10 @@ import { jsx } from "theme-ui"
 const BlogRoll = ({ n }) => {
   const data = useStaticQuery(query)
   const posts = data.allMarkdownRemark.nodes
+  /*
+   * - Year
+   *   - Month{3}, Day, Title, Tags
+   * */
   return (
     <Container fluid className="px-1">
       <h2>posts</h2>

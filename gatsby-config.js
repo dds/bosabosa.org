@@ -9,6 +9,12 @@ module.exports = {
     siteUrl: `https://dds.bosabosa.org/`,
     sourceUrl: `https://github.com/dds/bosabosa.org/`,
     social: {
+      disqus: ``,
+      email: `root@bosabosa.org`,
+      facebook: `omgthedds`,
+      keybase: `omgthedds`,
+      linkedin: `bosabosa`,
+      reddit: `kuma`,
       twitter: `exponent`,
     },
   },
@@ -85,7 +91,7 @@ module.exports = {
       resolve: `gatsby-plugin-theme-ui`,
       options: {
         prismPreset: "night-owl",
-        preset: "@theme-ui/preset-funk",
+        preset: "@theme-ui/preset-bulma",
       },
     },
   ],

@@ -2,7 +2,6 @@ import React from "react"
 
 import { Container } from "react-bootstrap"
 import { Link } from "gatsby"
-import { jsx } from "theme-ui"
 
 import Navbar from "./navbar"
 import SEO from "./seo"

@@ -32,6 +32,7 @@ export default () => {
           <a
             classname="ml-2"
             target="_blank"
+            rel="noreferrer"
             href={sourceUrl}
             title="Source on github"
           >
