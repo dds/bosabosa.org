@@ -1,3 +1,12 @@
+# [0.1.0](https://github.com/dds/bosabosa.org/compare/v1.1.11...v0.1.0) (2020-12-18)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency @theme-ui/preset-bulma to 0.3.4 ([2e91699](https://github.com/dds/bosabosa.org/commit/2e91699bdf074fe62e94c4ad1eb932da94da694d))
+
+
+
 ## [1.1.11](https://github.com/dds/bosabosa.org/compare/v1.1.10...v1.1.11) (2020-12-16)
 
 
@@ -26,10 +35,6 @@
 ### Bug Fixes
 
 * **deps:** pin dependencies ([247c220](https://github.com/dds/bosabosa.org/commit/247c22002083a5849fe0d265237321e62f459126))
-
-
-
-## [1.1.7](https://github.com/dds/bosabosa.org/compare/v1.1.6...v1.1.7) (2020-12-11)
 
 
 
