@@ -32,6 +32,7 @@ jobs:
         github-token: ${{ secrets.github_token }}
         skip-on-empty: "false"
         skip-version-file: "true"
+        fallback-version: "1.0.0"
 
     - name: Create Release
       uses: actions/create-release@v1
