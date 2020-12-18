@@ -13,17 +13,18 @@ segment. David wrote that he and Mark have been doing that segment for 19 years
 and I have watched it all. In the wake of the Clinton presidency in the waning
 years of the 1990s, I started college and became politically minded by watching
 the 2000 presidential campaign unfold. At only 18 years old and with my limited
-background, growing up the son of a small business owner, I knew my dad was on
-the side of the bosses, not the majority of people who work for them. When
-George Bush was made president in 2000, I thought it was a travesty that Al
-Gore, clearly the better informed, more capable candidate, lost by a court
-decision that amounted to an end-run around the democratic process. But Mark
-Shields, David Brooks, Judy Woodruff, Gwenn Ifill, Jim Lehrer, Miles O'Brien,
-Ray Suarez, and many others at the PBS NewsHour helped me understand that people
-can have differences of opinion but still like each other. That real exchange of
-ideas, appreciation for opposing priorities, and rational processes can see us,
-one people, through shared our trials and tribulations. These people taught and
-continue to teach me the values to live my life by.
+background, growing up the son of a small business owner in northern Virginia,
+all I knew was my dad was on the side of the bosses, not the majority of people
+who work for them. When George Bush was made president in 2000, I thought it was
+a travesty that Al Gore, clearly the better informed, more capable candidate,
+lost by a court decision that amounted to an end-run around the democratic
+process. But Mark Shields, David Brooks, Judy Woodruff, Gwenn Ifill, Jim Lehrer,
+Miles O'Brien, Ray Suarez, Jeffery Brown, and many others who work and
+contribute to the PBS NewsHour helped me understand that people can have
+differences of opinion but still like each other. That real exchange of ideas,
+appreciation for opposing priorities, and rational processes can see us, one
+people, through our shared trials. These people taught and continue to teach me
+the values to live my life by.
 
 Mark, you are irreplaceable. Your wit and charm are legendary. Mark, your
 appreciation for what David has had to say all these years, how you've been able
