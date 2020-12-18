@@ -1,3 +1,7 @@
+## [0.1.2](https://github.com/dds/bosabosa.org/compare/v0.1.1...v0.1.2) (2020-12-18)
+
+
+
 ## [0.1.1](https://github.com/dds/bosabosa.org/compare/v0.1.0...v0.1.1) (2020-12-18)
 
 
@@ -26,10 +30,6 @@
 ### Bug Fixes
 
 * **deps:** update gatsby monorepo ([47b7b27](https://github.com/dds/bosabosa.org/commit/47b7b274d1b5e60d0462069df8b90c4f48b26b1a))
-
-
-
-## [1.1.9](https://github.com/dds/bosabosa.org/compare/v1.1.8...v1.1.9) (2020-12-11)
 
 
 
