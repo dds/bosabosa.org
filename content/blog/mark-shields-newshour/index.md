@@ -19,11 +19,11 @@ George Bush was made president in 2000, I thought it was a travesty that Al
 Gore, clearly the better informed, more capable candidate, lost by a court
 decision that amounted to an end-run around the democratic process. But Mark
 Shields, David Brooks, Judy Woodruff, Gwenn Ifill, Jim Lehrer, Miles O'Brien,
-Ray Suarez, and many others at the PBS NewsHour helped me understand, helped me
-appreciate that people can have differences of opinion but still appreciate and
-understand each other. That real exchange of ideas, appreciation for opposing
-priorities, and rational processes can see us, one people, through shared our
-trials and tribulations.
+Ray Suarez, and many others at the PBS NewsHour helped me understand that people
+can have differences of opinion but still like each other. That real exchange of
+ideas, appreciation for opposing priorities, and rational processes can see us,
+one people, through shared our trials and tribulations. These people taught and
+continue to teach me the values to live my life by.
 
 Mark, you are irreplaceable. Your wit and charm are legendary. Mark, your
 appreciation for what David has had to say all these years, how you've been able
