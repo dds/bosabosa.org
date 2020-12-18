@@ -43,5 +43,5 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "gatsby build"
-  },
+  }
 }
