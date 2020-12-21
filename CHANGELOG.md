@@ -1,3 +1,7 @@
+## [1.1.17](https://github.com/dds/bosabosa.org/compare/v1.1.16...v1.1.17) (2020-12-21)
+
+
+
 ## [1.1.16](https://github.com/dds/bosabosa.org/compare/v1.1.15...v1.1.16) (2020-12-21)
 
 
@@ -31,10 +35,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency @theme-ui/preset-bulma to v0.3.5 ([50babdd](https://github.com/dds/bosabosa.org/commit/50babdd3c482e8ef690d1641adfdfa9943fc3946))
-
-
-
-## [1.1.12](https://github.com/dds/bosabosa.org/compare/v0.1.3...v1.1.12) (2020-12-20)
 
 
 
