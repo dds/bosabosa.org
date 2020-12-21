@@ -1,3 +1,12 @@
+## [1.1.14](https://github.com/dds/bosabosa.org/compare/v1.1.13...v1.1.14) (2020-12-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @theme-ui/presets to v0.3.5 ([cca79e4](https://github.com/dds/bosabosa.org/commit/cca79e49149551bef31f1438b1e17db7f166f9b1))
+
+
+
 ## [1.1.13](https://github.com/dds/bosabosa.org/compare/v1.1.12...v1.1.13) (2020-12-21)
 
 
@@ -16,10 +25,6 @@
 
 
 ## [0.1.2](https://github.com/dds/bosabosa.org/compare/v0.1.1...v0.1.2) (2020-12-18)
-
-
-
-## [0.1.1](https://github.com/dds/bosabosa.org/compare/v0.1.0...v0.1.1) (2020-12-18)
 
 
 
