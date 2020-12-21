@@ -37,14 +37,14 @@ I wanted to list some of the ways I have seen code-review go wrong:
 1. **Don't call us, we'll call you** code review. Poor turnaround time can cause
    you to miss your deliverable deadline. Imagine you're working with an
    open-source GitHub project (not to name names, but it's HashiCorp Terraform)
-   and you send a [PR to add a feature]. That PR has been waiting on code review for a year
-   and there have been no comments from HashiCorp on why that PR has not been
-   reviewed yet. It's small. The author rebases his PR every few weeks and pings
-   the PR for review to deafening silence. The problem here isn't code-review
-   per-se, but even on a smaller scale, without _measuring the amount of time
-   code waits in review_ and making that metric an SLI of your _software
-   development life-cycle_, code-review can destroy engineering's ability to
-   deliver (or put out a dumpster fire).
+   and you send a [PR to add a feature]. That PR has been waiting on code review
+   for a year and there have been no comments from HashiCorp on why that PR has
+   not been reviewed yet. It's small. The author rebases his PR every few weeks
+   and pings the PR for review to deafening silence. The problem here isn't
+   code-review per-se, but even on a smaller scale, without _measuring the
+   amount of time code waits in review_ and making that metric an SLI of your
+   _software development life-cycle_, code-review purgatory can hamstring one's
+   ability to deliver (or put out a dumpster fire).
 
 1. **Poor or irrelevant** code review. Human reviewers can use code-review as a
    soap-box for irrelevant pet concerns like premature optimization. Or in the
