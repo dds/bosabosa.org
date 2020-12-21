@@ -1,3 +1,12 @@
+## [1.1.15](https://github.com/dds/bosabosa.org/compare/v1.1.14...v1.1.15) (2020-12-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-plugin-theme-ui to v0.3.5 ([21358cd](https://github.com/dds/bosabosa.org/commit/21358cd1ecd45a7794b3e5185805cfd050f16bef))
+
+
+
 ## [1.1.14](https://github.com/dds/bosabosa.org/compare/v1.1.13...v1.1.14) (2020-12-21)
 
 
@@ -21,10 +30,6 @@
 
 
 ## [0.1.3](https://github.com/dds/bosabosa.org/compare/v0.1.2...v0.1.3) (2020-12-18)
-
-
-
-## [0.1.2](https://github.com/dds/bosabosa.org/compare/v0.1.1...v0.1.2) (2020-12-18)
 
 
 
