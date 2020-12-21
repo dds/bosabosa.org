@@ -55,6 +55,15 @@ I wanted to list some of the ways I have seen code-review go wrong:
    code style guides, common code review feedback, and measuring code review
    performance throughout the organization. Golang makes a good example of doing
    this all-in on the GitHub platform:
+
    - [Go Code Review Basics](https://github.com/golang/go/wiki/CodeReview)
    - [Common Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
    - [Go Project Commit Messages](https://github.com/golang/go/wiki/CommitMessage)
+
+1. **Disallowing machine review.** Encourage automation to elevate human time
+   and consciousness. If the engineering team doesn't value the time and
+   creative output of its people, if instead the people are expected to
+   repetitive tasks and toil, that's a signal to those engineers that they could
+   just as well sleep walk through this work. Snooze, who cares. If your team
+   isn't constantly harvesting the low-hanging fruit of automation, team members
+   end up emulating the automatons leadership claims they don't want to pay for.
