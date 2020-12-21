@@ -1872,6 +1872,11 @@
     "@emotion/styled" "^10.0.0"
     "@mdx-js/react" "^1.0.0"
 
+"@theme-ui/preset-base@0.3.5":
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/@theme-ui/preset-base/-/preset-base-0.3.5.tgz#965676cfae45a373d460949503e381ef810ffbda"
+  integrity sha512-PlLrKohCIv0NCFpXswX/JSrx6mselFmftA5hXv6uhL/l4O29obzyL8g2oFmztYWyyO+HpXbZfbWmla4nbZYCzw==
+
 "@theme-ui/preset-base@^0.2.44":
   version "0.2.44"
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-base/-/preset-base-0.2.44.tgz#ae8e938288a534f129111a56b1971e1cc12ddc9d"
@@ -1887,7 +1892,14 @@
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-bootstrap/-/preset-bootstrap-0.3.4.tgz#4a9408d7717dea32c8712fd0932e7da142ba32c3"
   integrity sha512-AwrdFZ0VHZxNtLw3EaWu7xYfCXKQsuFbxOr75261VVu+xETz9Zg7jBAcDxwWRlwKZlxhgY5VUZjIGs1XOMDdLQ==
 
-"@theme-ui/preset-bulma@0.3.4", "@theme-ui/preset-bulma@^0.3.4":
+"@theme-ui/preset-bulma@0.3.5":
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/@theme-ui/preset-bulma/-/preset-bulma-0.3.5.tgz#bce5bbc4510024fe424c85a8e406e0192e0f660b"
+  integrity sha512-95aqBFb3klHCVFsyugJaGTpIBYQTEzyys2aSQdkMD2QwSZ7+mWbL1h4+3uj0xXtMNDdjJdVx6+4Q8sbuY8l4Lg==
+  dependencies:
+    "@theme-ui/preset-base" "0.3.5"
+
+"@theme-ui/preset-bulma@^0.3.4":
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-bulma/-/preset-bulma-0.3.4.tgz#e9b7ac948890c0f6606c921bb1aa80811f6e3bfa"
   integrity sha512-s6WcgrqF5iZLrWX2S8J5TyD4nT16mHfGrAk05N+dfjV/1qDaZtMBZp69TgNq1vJbeyv/5QTb1lVn4zRg02/C/g==
