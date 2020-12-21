@@ -1,3 +1,12 @@
+## [1.1.16](https://github.com/dds/bosabosa.org/compare/v1.1.15...v1.1.16) (2020-12-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency theme-ui to v0.3.5 ([667c660](https://github.com/dds/bosabosa.org/commit/667c6601488d879567be095af618de91cb31dedf))
+
+
+
 ## [1.1.15](https://github.com/dds/bosabosa.org/compare/v1.1.14...v1.1.15) (2020-12-21)
 
 
@@ -26,10 +35,6 @@
 
 
 ## [1.1.12](https://github.com/dds/bosabosa.org/compare/v0.1.3...v1.1.12) (2020-12-20)
-
-
-
-## [0.1.3](https://github.com/dds/bosabosa.org/compare/v0.1.2...v0.1.3) (2020-12-18)
 
 
 
