@@ -23,7 +23,7 @@ not suffer lack of trust or hurt feelings because of them.
 
 I wanted to list some of the ways I have seen code-review go wrong:
 
-1. **Massive dump** code review. I regularly see senior developers dump huge
+1. **Massive code dump review.** I regularly see senior developers dump huge
    code reviews with several thousand lines of delta and pages of description on
    their juniors. The juniors spend days reviewing, maybe add a few comments
    here or there, approve, and then the code goes to production and all hell
@@ -34,8 +34,8 @@ I wanted to list some of the ways I have seen code-review go wrong:
    burden of making developers seek review earlier forces them to **optimize for
    the reviewer**, it could be worth it to switch tools.
 
-1. **Don't call us, we'll call you** code review. Poor turnaround time can cause
-   you to miss your deliverable deadline. Imagine you're working with an
+1. **"Don't call us, we'll call you," code review.** Poor turnaround time can
+   cause you to miss your deliverable deadline. Imagine you're working with an
    open-source GitHub project (not to name names, but it's HashiCorp Terraform)
    and you send a [PR to add a feature]. That PR has been waiting on code review
    for a year and there have been no comments from HashiCorp on why that PR has
@@ -46,7 +46,7 @@ I wanted to list some of the ways I have seen code-review go wrong:
    _software development life-cycle_, code-review purgatory can hamstring one's
    ability to deliver (or put out a dumpster fire).
 
-1. **Poor or irrelevant** code review. Human reviewers can use code-review as a
+1. **Soap-box derby review.** Human reviewers can use code-review as a
    soap-box for irrelevant pet concerns like premature optimization. Or in the
    reverse, without style guides, code authors refusing to make changes for
    readability or other legitimate concerns. To prevent these situations,
