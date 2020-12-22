@@ -3,7 +3,6 @@ import { Navbar, Nav } from "react-bootstrap"
 import { Link } from "gatsby"
 import { jsx } from "theme-ui"
 import "./fontawesome.js"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
