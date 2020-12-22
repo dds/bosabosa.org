@@ -1,18 +1,14 @@
-import React, { useContext } from "react"
-
-import { Navbar, Nav, Form } from "react-bootstrap"
+/** @jsx jsx */
+import { Navbar, Nav } from "react-bootstrap"
 import { Link } from "gatsby"
-// import "./fontawesome.js"
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
-import ThemeContext from "./theme"
+import { jsx } from "theme-ui"
+import "./fontawesome.js"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 export default () => {
   const { sourceUrl } = useSiteMetadata()
 
-  const { dark, toggledark, tostring } = useContext(ThemeContext)
   return (
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Collapse

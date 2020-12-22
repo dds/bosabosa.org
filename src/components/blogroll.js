@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import React from "react"
 import { Container } from "react-bootstrap"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { jsx } from "theme-ui"

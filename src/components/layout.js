@@ -1,5 +1,7 @@
 import React from "react"
 import { Container } from "react-bootstrap"
+import "fontsource-montserrat"
+import "fontsource-merriweather"
 
 import Header from "./header"
 import Footer from "./footer"
