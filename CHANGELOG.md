@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/dds/bosabosa.org/compare/v1.1.18...v1.2.0) (2020-12-22)
+
+
+### Features
+
+* import MDX, use it for the /o page ([c968ac5](https://github.com/dds/bosabosa.org/commit/c968ac5ad37f0357f0026d4b2f42fd9b827f6495))
+
+
+
 ## [1.1.18](https://github.com/dds/bosabosa.org/compare/v1.1.17...v1.1.18) (2020-12-21)
 
 
@@ -21,15 +30,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency gatsby-plugin-theme-ui to v0.3.5 ([21358cd](https://github.com/dds/bosabosa.org/commit/21358cd1ecd45a7794b3e5185805cfd050f16bef))
-
-
-
-## [1.1.14](https://github.com/dds/bosabosa.org/compare/v1.1.13...v1.1.14) (2020-12-21)
-
-
-### Bug Fixes
-
-* **deps:** update dependency @theme-ui/presets to v0.3.5 ([cca79e4](https://github.com/dds/bosabosa.org/commit/cca79e49149551bef31f1438b1e17db7f166f9b1))
 
 
 
