@@ -6568,10 +6568,10 @@ fontsource-montserrat@3.1.5:
   resolved "https://registry.yarnpkg.com/fontsource-montserrat/-/fontsource-montserrat-3.1.5.tgz#766d71f9255a4abe9abb628e47e95a8912b45897"
   integrity sha512-wLmozvb4j/yDbPEBrzHmkAM2PDHp+GV7l6T/GzrmiM8rHeLDIQuUfWJ3b05pAu7q5xRhuG2cDqr+bCagaKws0w==
 
-fontsource-noto-sans@3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/fontsource-noto-sans/-/fontsource-noto-sans-3.1.5.tgz#a408002e1bc8fd21b18fa8d7fa942dcd3255d2c5"
-  integrity sha512-HtnF1LBkz1kW/7KYSbV4UB9+0Ogyik0qoyki6nWqb6ob319WCurxjZQlZn3e/szosPaWmF4L9UASACXQ1U6ZJQ==
+fontsource-noto-sans@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/fontsource-noto-sans/-/fontsource-noto-sans-4.0.0.tgz#c1d416195f68dff30eef49d7ccb11557168a5f99"
+  integrity sha512-yHi8DfoObWFS2H9KMlzFN3Ab4BNEgv2jfps33Tx7cQcoNSsDP3CI/PsuzvpFELH1voBSWfWLfG2XsCwH6QQD5Q==
 
 fontsource-roboto@3.1.5:
   version "3.1.5"
