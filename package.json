@@ -16,7 +16,7 @@
     "@theme-ui/preset-bulma": "0.3.5",
     "@theme-ui/presets": "0.3.5",
     "fontsource-merriweather": "3.1.5",
-    "fontsource-montserrat": "3.1.5",
+    "fontsource-montserrat": "4.0.0",
     "fontsource-noto-sans": "4.0.0",
     "fontsource-roboto": "4.0.0",
     "gatsby": "2.29.2",
