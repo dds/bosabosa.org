@@ -11,7 +11,7 @@ const Header = () => {
   const { title } = useSiteMetadata()
   const index = useSiteSearchIndex()
   return (
-    <Container fluid className="px-0">
+    <Container fluid>
       <header>
         <h1>
           <Link to="/">{title}</Link>
