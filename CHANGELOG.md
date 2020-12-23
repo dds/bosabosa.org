@@ -1,3 +1,12 @@
+## [1.2.7](https://github.com/dds/bosabosa.org/compare/v1.2.6...v1.2.7) (2020-12-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fontsource-montserrat to v4 ([f8ead6c](https://github.com/dds/bosabosa.org/commit/f8ead6c09ad300b70670c3458d58e379331397d1))
+
+
+
 ## [1.2.6](https://github.com/dds/bosabosa.org/compare/v1.2.5...v1.2.6) (2020-12-23)
 
 
@@ -31,10 +40,6 @@
 ### Bug Fixes
 
 * **deps:** pin dependencies ([b036d52](https://github.com/dds/bosabosa.org/commit/b036d52072fa28a461c72e71176b2bf3d463dd59))
-
-
-
-## [1.2.2](https://github.com/dds/bosabosa.org/compare/v1.2.1...v1.2.2) (2020-12-23)
 
 
 
