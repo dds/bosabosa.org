@@ -1,3 +1,12 @@
+## [1.2.5](https://github.com/dds/bosabosa.org/compare/v1.2.4...v1.2.5) (2020-12-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fontsource-noto-sans to v4 ([9d5eb6f](https://github.com/dds/bosabosa.org/commit/9d5eb6fba4995ab3b254ebe2a2207c47f358a64d))
+
+
+
 ## [1.2.4](https://github.com/dds/bosabosa.org/compare/v1.2.3...v1.2.4) (2020-12-23)
 
 
@@ -26,15 +35,6 @@
 ### Bug Fixes
 
 * **deps:** pin dependencies ([20b7149](https://github.com/dds/bosabosa.org/commit/20b71491a32dbb6b3a805b8b5dd1558fc638f83a))
-
-
-
-# [1.2.0](https://github.com/dds/bosabosa.org/compare/v1.1.18...v1.2.0) (2020-12-22)
-
-
-### Features
-
-* import MDX, use it for the /o page ([c968ac5](https://github.com/dds/bosabosa.org/commit/c968ac5ad37f0357f0026d4b2f42fd9b827f6495))
 
 
 
