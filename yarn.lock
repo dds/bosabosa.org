@@ -6558,10 +6558,10 @@ follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
-fontsource-merriweather@3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/fontsource-merriweather/-/fontsource-merriweather-3.1.5.tgz#41489b21ebbf334b5de9800c62147c8701dd3d95"
-  integrity sha512-fpdKa7MYR5UfbJWZLOJtAj5Pl8qyESPirBO5NptfqZCBv0uDkL5v8gAaO1CGiSvsAGtTiW6kJSmpbGbA4vkDIQ==
+fontsource-merriweather@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/fontsource-merriweather/-/fontsource-merriweather-4.0.0.tgz#1d38d6c94ea4d152d49948127ddf7db6d05fbab1"
+  integrity sha512-1LnYjXYHZm0GNAMSqRJ84O8MHMT6wNywjt8JY0j0lyuvjPLSMRr7mrt4uqWbOnpPF8GnsKS0bYGY6LAidTfH9w==
 
 fontsource-montserrat@4.0.0:
   version "4.0.0"
