@@ -1,3 +1,12 @@
+## [1.2.4](https://github.com/dds/bosabosa.org/compare/v1.2.3...v1.2.4) (2020-12-23)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([1074b27](https://github.com/dds/bosabosa.org/commit/1074b279a753a0d49d6cfda01678984905754519))
+
+
+
 ## [1.2.3](https://github.com/dds/bosabosa.org/compare/v1.2.2...v1.2.3) (2020-12-23)
 
 
@@ -26,10 +35,6 @@
 ### Features
 
 * import MDX, use it for the /o page ([c968ac5](https://github.com/dds/bosabosa.org/commit/c968ac5ad37f0357f0026d4b2f42fd9b827f6495))
-
-
-
-## [1.1.18](https://github.com/dds/bosabosa.org/compare/v1.1.17...v1.1.18) (2020-12-21)
 
 
 
