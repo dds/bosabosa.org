@@ -4,7 +4,7 @@
   "bugs": {
     "url": "https://github.com/dds/bosabosa.org/issues"
   },
-  "version": "1.2.2",
+  "version": "1.2.3",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.32",
     "@fortawesome/free-brands-svg-icons": "5.15.1",
