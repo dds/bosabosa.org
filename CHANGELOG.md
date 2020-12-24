@@ -1,3 +1,12 @@
+## [1.2.8](https://github.com/dds/bosabosa.org/compare/v1.2.7...v1.2.8) (2020-12-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fontsource-merriweather to v4 ([0e117f8](https://github.com/dds/bosabosa.org/commit/0e117f8f5e0b9571a2251a4ef67f757c69b6d8a3))
+
+
+
 ## [1.2.7](https://github.com/dds/bosabosa.org/compare/v1.2.6...v1.2.7) (2020-12-23)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update gatsby monorepo ([1074b27](https://github.com/dds/bosabosa.org/commit/1074b279a753a0d49d6cfda01678984905754519))
-
-
-
-## [1.2.3](https://github.com/dds/bosabosa.org/compare/v1.2.2...v1.2.3) (2020-12-23)
-
-
-### Bug Fixes
-
-* **deps:** pin dependencies ([b036d52](https://github.com/dds/bosabosa.org/commit/b036d52072fa28a461c72e71176b2bf3d463dd59))
 
 
 
