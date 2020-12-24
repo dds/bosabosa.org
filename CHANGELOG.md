@@ -1,3 +1,12 @@
+## [1.2.9](https://github.com/dds/bosabosa.org/compare/v1.2.8...v1.2.9) (2020-12-24)
+
+
+### Bug Fixes
+
+* remove unused & undefined CSS classes ([a1d553c](https://github.com/dds/bosabosa.org/commit/a1d553c931968a033f45ae0822a64a086c62cd1a))
+
+
+
 ## [1.2.8](https://github.com/dds/bosabosa.org/compare/v1.2.7...v1.2.8) (2020-12-24)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency fontsource-noto-sans to v4 ([9d5eb6f](https://github.com/dds/bosabosa.org/commit/9d5eb6fba4995ab3b254ebe2a2207c47f358a64d))
-
-
-
-## [1.2.4](https://github.com/dds/bosabosa.org/compare/v1.2.3...v1.2.4) (2020-12-23)
-
-
-### Bug Fixes
-
-* **deps:** update gatsby monorepo ([1074b27](https://github.com/dds/bosabosa.org/commit/1074b279a753a0d49d6cfda01678984905754519))
 
 
 
