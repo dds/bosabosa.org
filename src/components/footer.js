@@ -7,7 +7,7 @@ const Footer = () => {
   const { author } = useSiteMetadata()
   return (
     <footer className="footer text-muted text-center">
-      <span className="m-auto">
+      <span>
         <b>{author.name}</b> &copy; {new Date().getFullYear()}
       </span>
       <Contact />

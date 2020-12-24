@@ -11,7 +11,7 @@ const BlogRoll = ({ n }) => {
    *   - Month{3}, Day, Title, Tags
    * */
   return (
-    <Container fluid className="px-1">
+    <Container fluid>
       <h2>posts</h2>
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
