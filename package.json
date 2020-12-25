@@ -6,10 +6,6 @@
   },
   "version": "1.2.9",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.32",
-    "@fortawesome/free-brands-svg-icons": "5.15.1",
-    "@fortawesome/free-solid-svg-icons": "5.15.1",
-    "@fortawesome/react-fontawesome": "0.1.14",
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "2.4.2",
     "@mdx-js/mdx": "1.6.22",
     "@mdx-js/react": "1.6.22",
@@ -43,6 +39,7 @@
     "react-bootstrap": "1.4.0",
     "react-dom": "17.0.1",
     "react-helmet": "6.1.0",
+    "react-icons": "^4.1.0",
     "semver": "7.3.4",
     "theme-ui": "0.3.5",
     "typeface-merriweather": "1.1.13",
