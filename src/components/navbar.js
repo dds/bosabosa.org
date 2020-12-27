@@ -2,7 +2,6 @@
 import { Navbar, Nav } from "react-bootstrap"
 import { Link } from "gatsby"
 import { jsx } from "theme-ui"
-import "./fontawesome.js"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
