@@ -8,7 +8,7 @@ const Search = () => {
   const [query, setQuery] = useState(``)
   const [results, setResults] = useState([])
 
-  function search(q) {
+  const search = q => {
     const r = index.search(q, { expand: true }).map(({ ref }) => {
       return index.documentStore.getDoc(ref)
     })
