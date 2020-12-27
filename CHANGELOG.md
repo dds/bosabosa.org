@@ -1,3 +1,7 @@
+## [1.2.12](https://github.com/dds/bosabosa.org/compare/v1.2.11...v1.2.12) (2020-12-27)
+
+
+
 ## [1.2.11](https://github.com/dds/bosabosa.org/compare/v1.2.10...v1.2.11) (2020-12-27)
 
 
@@ -26,15 +30,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency fontsource-merriweather to v4 ([0e117f8](https://github.com/dds/bosabosa.org/commit/0e117f8f5e0b9571a2251a4ef67f757c69b6d8a3))
-
-
-
-## [1.2.7](https://github.com/dds/bosabosa.org/compare/v1.2.6...v1.2.7) (2020-12-23)
-
-
-### Bug Fixes
-
-* **deps:** update dependency fontsource-montserrat to v4 ([f8ead6c](https://github.com/dds/bosabosa.org/commit/f8ead6c09ad300b70670c3458d58e379331397d1))
 
 
 
