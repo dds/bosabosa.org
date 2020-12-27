@@ -1,5 +1,6 @@
 import React from "react"
 import { Container } from "react-bootstrap"
+import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 
 import Navbar from "./navbar"
@@ -10,6 +11,10 @@ const Header = () => {
   const { title } = useSiteMetadata()
   return (
     <Container fluid>
+      <Helmet>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
+      </Helmet>
       <header>
         <h1>
           <Link to="/">{title}</Link>
