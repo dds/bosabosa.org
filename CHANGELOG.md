@@ -1,3 +1,7 @@
+## [1.2.13](https://github.com/dds/bosabosa.org/compare/v1.2.12...v1.2.13) (2020-12-27)
+
+
+
 ## [1.2.12](https://github.com/dds/bosabosa.org/compare/v1.2.11...v1.2.12) (2020-12-27)
 
 
@@ -21,15 +25,6 @@
 ### Bug Fixes
 
 * remove unused & undefined CSS classes ([a1d553c](https://github.com/dds/bosabosa.org/commit/a1d553c931968a033f45ae0822a64a086c62cd1a))
-
-
-
-## [1.2.8](https://github.com/dds/bosabosa.org/compare/v1.2.7...v1.2.8) (2020-12-24)
-
-
-### Bug Fixes
-
-* **deps:** update dependency fontsource-merriweather to v4 ([0e117f8](https://github.com/dds/bosabosa.org/commit/0e117f8f5e0b9571a2251a4ef67f757c69b6d8a3))
 
 
 
