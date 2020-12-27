@@ -1,3 +1,7 @@
+## [1.2.10](https://github.com/dds/bosabosa.org/compare/v1.2.9...v1.2.10) (2020-12-27)
+
+
+
 ## [1.2.9](https://github.com/dds/bosabosa.org/compare/v1.2.8...v1.2.9) (2020-12-24)
 
 
@@ -31,15 +35,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency fontsource-roboto to v4 ([fa40010](https://github.com/dds/bosabosa.org/commit/fa40010c0800568fb813f885d08f52224dac7a22))
-
-
-
-## [1.2.5](https://github.com/dds/bosabosa.org/compare/v1.2.4...v1.2.5) (2020-12-23)
-
-
-### Bug Fixes
-
-* **deps:** update dependency fontsource-noto-sans to v4 ([9d5eb6f](https://github.com/dds/bosabosa.org/commit/9d5eb6fba4995ab3b254ebe2a2207c47f358a64d))
 
 
 
