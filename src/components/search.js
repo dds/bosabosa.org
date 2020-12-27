@@ -1,48 +1,42 @@
-import React, { Component } from "react"
+import React, { useState } from "react"
 import { Index } from "elasticlunr"
 import { Link } from "gatsby"
+import { useSiteSearchIndex } from "../hooks/use-site-searchindex"
 
-// Search component
-export default class Search extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      query: ``,
-      results: [],
-    }
-  }
+const Search = () => {
+  const index = Index.load(useSiteSearchIndex())
+  const [query, setQuery] = useState(``)
+  const [results, setResults] = useState([])
 
-  render() {
-    return (
-      <div>
-        <input type="text" value={this.state.query} onChange={this.search} />
-        <ul>
-          {this.state.results.map(page => (
-            <li key={page.id}>
-              <Link to={page.slug}>{page.title}</Link>
-              {": " + page.tags.join(`,`)}
-            </li>
-          ))}
-        </ul>
-      </div>
-    )
-  }
-  getOrCreateIndex = () =>
-    this.index
-      ? this.index
-      : // Create an elastic lunr index and hydrate with graphql query results
-        Index.load(this.props.searchIndex)
-
-  search = evt => {
-    const query = evt.target.value
-    this.index = this.getOrCreateIndex()
-    this.setState({
-      query,
-      // Query the index with search string to get an [] of IDs
-      results: this.index
-        .search(query, {})
-        // Map over each ID and return the full document
-        .map(({ ref }) => this.index.documentStore.getDoc(ref)),
+  function search(q) {
+    const r = index.search(q, { expand: true }).map(({ ref }) => {
+      return index.documentStore.getDoc(ref)
     })
+    setResults(r)
   }
+
+  return (
+    <div>
+      <input
+        type="text"
+        value={query}
+        placeholder="Search"
+        onChange={e => {
+          const q = e.target.value
+          setQuery(q)
+          search(q)
+        }}
+      />
+      <ul>
+        {results.map(page => (
+          <li key={page.id}>
+            <Link to={page.slug}>{page.title}</Link>
+            {": " + page.tags.join(`,`)}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
 }
+
+export default Search
