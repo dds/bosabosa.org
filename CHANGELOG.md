@@ -1,3 +1,12 @@
+## [1.2.11](https://github.com/dds/bosabosa.org/compare/v1.2.10...v1.2.11) (2020-12-27)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency react-icons to 4.1.0 ([25af935](https://github.com/dds/bosabosa.org/commit/25af935481d823c017bd3c3793a353e88c3a9241))
+
+
+
 ## [1.2.10](https://github.com/dds/bosabosa.org/compare/v1.2.9...v1.2.10) (2020-12-27)
 
 
@@ -26,15 +35,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency fontsource-montserrat to v4 ([f8ead6c](https://github.com/dds/bosabosa.org/commit/f8ead6c09ad300b70670c3458d58e379331397d1))
-
-
-
-## [1.2.6](https://github.com/dds/bosabosa.org/compare/v1.2.5...v1.2.6) (2020-12-23)
-
-
-### Bug Fixes
-
-* **deps:** update dependency fontsource-roboto to v4 ([fa40010](https://github.com/dds/bosabosa.org/commit/fa40010c0800568fb813f885d08f52224dac7a22))
 
 
 
