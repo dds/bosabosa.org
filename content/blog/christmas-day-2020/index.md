@@ -2,7 +2,7 @@
 title: Christmas Day 2020
 date: 2020-12-25T23:44:00-0800
 description: Merry Christmas and happy holidays, 2020.
-tags: Christmas, gratitude
+tags: ["gratitude"]
 ---
 
 Oh my God, what a terrible year 2020 has been for everyone. I'm incredibly
