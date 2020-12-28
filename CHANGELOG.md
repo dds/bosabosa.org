@@ -1,3 +1,7 @@
+## [1.2.14](https://github.com/dds/bosabosa.org/compare/v1.2.13...v1.2.14) (2020-12-28)
+
+
+
 ## [1.2.13](https://github.com/dds/bosabosa.org/compare/v1.2.12...v1.2.13) (2020-12-27)
 
 
@@ -16,15 +20,6 @@
 
 
 ## [1.2.10](https://github.com/dds/bosabosa.org/compare/v1.2.9...v1.2.10) (2020-12-27)
-
-
-
-## [1.2.9](https://github.com/dds/bosabosa.org/compare/v1.2.8...v1.2.9) (2020-12-24)
-
-
-### Bug Fixes
-
-* remove unused & undefined CSS classes ([a1d553c](https://github.com/dds/bosabosa.org/commit/a1d553c931968a033f45ae0822a64a086c62cd1a))
 
 
 
