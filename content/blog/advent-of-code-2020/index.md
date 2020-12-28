@@ -1,5 +1,5 @@
 ---
-title: Advent of Code
+title: Advent of Code 2020
 date: 2020-12-04T23:44:00-0800
 description: Crafting with Code for the Holidays.
 tags: ["craft", "advent of code", "aoc2020", "programming", "go"]
