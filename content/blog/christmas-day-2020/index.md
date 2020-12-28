@@ -1,13 +1,13 @@
 ---
 title: Christmas Day 2020
 date: 2020-12-25T23:44:00-0800
-description: Praise for small joys ☃️
+description: Merry Christmas and happy holidays, 2020.
 tags: Christmas, gratitude
 ---
 
-Merry Christmas and happy holidays to everyone. What a terrible year 2020 has
-been for everyone. I'm incredibly thankful for the people in my life and all of
-the relative comfort and stability I've been able to have this year.
+Oh my God, what a terrible year 2020 has been for everyone. I'm incredibly
+thankful for the people in my life and all of the relative comfort and stability
+I've been able to have this year.
 
 I want to say to everyone with an empty space in their family where a loved one
 should be, I'm sorry. Chances are, you feel lonely but are not alone. I hope you
