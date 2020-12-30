@@ -1,11 +1,10 @@
-import Layout from "./layout"
-import SEO from "./seo.js"
-import React from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import { MDXProvider } from "@mdx-js/react"
+import Layout from "./layout"
 
 const MDXLayout = ({ children, pageContext }) => (
-  <Layout>
-    <SEO title={pageContext.frontmatter.title} />
+  <Layout title={pageContext.frontmatter.title}>
     <MDXProvider>{children}</MDXProvider>
   </Layout>
 )

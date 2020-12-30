@@ -12,6 +12,7 @@ export const useSiteMetadata = () => {
               name
               summary
             }
+            sourceUrl
             social {
               twitter
               facebook
@@ -20,7 +21,14 @@ export const useSiteMetadata = () => {
               keybase
               email
             }
-            sourceUrl
+            paths {
+              blog
+              posts
+              tags
+            }
+            showLineNumbers
+            showCopyButton
+            dateFormat
           }
         }
       }

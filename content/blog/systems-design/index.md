@@ -2,7 +2,7 @@
 title: Systems Design
 date: 2020-12-28T10:10:00-0800
 description: Systems design and going from Senior to Staff+ Engineer.
-tags: ["systems design", "tech industry", "self-improvement", "career"]
+tags: ["systems design", "tech industry", "career"]
 ---
 
 [apenwarr's systems design post]: https://apenwarr.ca/log/20201227

@@ -17,6 +17,15 @@ module.exports = {
       reddit: `kuma`,
       twitter: `exponent`,
     },
+    paths: {
+      blog: `/b`,
+      posts: `/`,
+      tags: `/tags`,
+    },
+    externalLinks: [{}],
+    showLineNumbers: true,
+    showCopyButton: true,
+    dateFormat: `YYYY.MM.DD`,
   },
   plugins: [
     {
@@ -58,18 +67,9 @@ module.exports = {
       },
     },
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
     `gatsby-plugin-feed`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
     {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {
@@ -88,12 +88,7 @@ module.exports = {
         filter: (node, getNode) => node.frontmatter.tags !== "exempt",
       },
     },
-    {
-      resolve: `gatsby-plugin-theme-ui`,
-      options: {
-        prismPreset: "night-owl",
-        preset: "@theme-ui/preset-bulma",
-      },
-    },
+    `gatsby-plugin-theme-ui`,
+    `gatsby-plugin-remove-fingerprints`,
   ],
 }
