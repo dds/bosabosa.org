@@ -5,7 +5,7 @@ module.exports = {
       name: `David D Smith`,
       summary: `coder, creator, in California.`,
     },
-    description: `My personal website demonstrating some of my thoughts and my work`,
+    description: `blog of unmanageable tech and hair`,
     siteUrl: `https://dds.bosabosa.org/`,
     sourceUrl: `https://github.com/dds/bosabosa.org/`,
     social: {
@@ -68,6 +68,20 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-plugin-feed`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        short_name: `bosabosa`,
+        name: `dds's blog of unmanageable tech and hair`,
+        start_url: `/?source=pwa`,
+        scope: `/`,
+        display: `standalone`,
+        background_color: `#ffffff`,
+        theme_color: `tomato`,
+        icon: `static/icon-512.png`,
+      },
+    },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     {
