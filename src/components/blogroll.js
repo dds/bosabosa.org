@@ -1,7 +1,7 @@
 /** @jsx jsx */
+import { jsx } from "theme-ui"
 import { Container } from "react-bootstrap"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { jsx } from "theme-ui"
 
 const BlogRoll = ({ n }) => {
   const data = useStaticQuery(query)

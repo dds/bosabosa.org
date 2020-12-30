@@ -1,17 +1,15 @@
-import React from "react"
-import { Container } from "react-bootstrap"
-import "fontsource-montserrat"
-import "fontsource-merriweather"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 
 import Header from "./header"
 import Footer from "./footer"
 
 const Layout = ({ children }) => (
-  <Container fluid className="global-wrapper">
+  <div sx={{ mb: [5, 6, 7], p: { fontSize: [1, 2, 3], mt: 2 } }}>
     <Header />
     <main>{children}</main>
     <Footer />
-  </Container>
+  </div>
 )
 
 export default Layout

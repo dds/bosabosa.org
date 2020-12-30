@@ -1,4 +1,5 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import { Container } from "react-bootstrap"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
