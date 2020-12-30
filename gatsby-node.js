@@ -5,11 +5,9 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
-  // Define a template for blog post
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  const tagTemplate = path.resolve(`src/templates/tags.js`)
+  const blogTemplate = path.resolve(`./src/templates/blog-post.js`)
+  const tagsTemplate = path.resolve(`./src/templates/tags.js`)
 
-  // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
       {
@@ -52,35 +50,36 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
 
-  if (posts.length > 0) {
-    posts.forEach((post, index) => {
-      const previousPostId = index === 0 ? null : posts[index - 1].node.id
-      const nextPostId =
-        index === posts.length - 1 ? null : posts[index + 1].node.id
-
-      createPage({
-        path: post.node.fields.slug,
-        component: blogPost,
-        context: {
-          id: post.node.id,
-          previousPostId,
-          nextPostId,
-        },
-      })
-    })
-    // Extract tag data from query
-    const tags = result.data.tagsGroup.group
-    // Make tag pages
-    tags.forEach(tag => {
-      createPage({
-        path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
-        component: tagTemplate,
-        context: {
-          tag: tag.fieldValue,
-        },
-      })
-    })
+  if (posts.length === 0) {
+    return
   }
+  posts.forEach((post, index) => {
+    const previousPostId = index === 0 ? null : posts[index - 1].node.id
+    const nextPostId =
+      index === posts.length - 1 ? null : posts[index + 1].node.id
+
+    createPage({
+      path: post.node.fields.slug,
+      component: blogTemplate,
+      context: {
+        id: post.node.id,
+        previousPostId,
+        nextPostId,
+      },
+    })
+  })
+  // Extract tag data from query
+  const tags = result.data.tagsGroup.group
+  // Make tag pages
+  tags.forEach(tag => {
+    createPage({
+      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+      component: tagsTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
+  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

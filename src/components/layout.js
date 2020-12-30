@@ -35,7 +35,7 @@ const Layout = ({ children, className = ``, title = `` }) => (
         },
         a: {
           transition: `all 0.3s ease-in-out`,
-          color: `text`,
+          color: theme.colors.secondary,
         },
       })}
     />

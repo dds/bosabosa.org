@@ -7,7 +7,7 @@ const theme = {
     background: `white`,
     primary: `#663399`,
     text: `#393939`,
-    secondary: `green`,
+    secondary: `tomato`,
   },
   fonts: {
     body: `Merriweather, sans-serif`,

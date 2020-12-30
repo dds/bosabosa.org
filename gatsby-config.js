@@ -17,6 +17,15 @@ module.exports = {
       reddit: `kuma`,
       twitter: `exponent`,
     },
+    paths: {
+      blog: `/b`,
+      posts: `/`,
+      tags: `/tags`,
+    },
+    externalLinks: [{}],
+    showLineNumbers: true,
+    showCopyButton: true,
+    dateFormat: `YYYY.MM.DD`,
   },
   plugins: [
     {
@@ -80,5 +89,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-theme-ui`,
+    `gatsby-plugin-remove-fingerprints`,
   ],
 }
