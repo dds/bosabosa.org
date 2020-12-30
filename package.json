@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "bosabosa",
+  "name": "@dds/bosabosa",
   "bugs": {
     "url": "https://github.com/dds/bosabosa.org/issues"
   },
@@ -9,6 +9,7 @@
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "2.4.2",
     "@mdx-js/mdx": "1.6.22",
     "@mdx-js/react": "1.6.22",
+    "@theme-ui/color": "^0.3.5",
     "@theme-ui/preset-bulma": "0.3.5",
     "@theme-ui/presets": "0.3.5",
     "fontsource-merriweather": "4.0.0",

@@ -1,30 +1,25 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx, Text } from "theme-ui"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
+    <Layout location={location} title={post.frontmatter.title}>
       <article
         className="blog-post"
         itemScope
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <Text sx={{ variant: `text.heading` }}>{post.frontmatter.date}</Text>
         </header>
-        <section
+        <Text
+          as="section"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
@@ -32,12 +27,13 @@ const BlogPostTemplate = ({ data, location }) => {
       </article>
       <nav className="blog-post-nav">
         <ul
-          style={{
+          css={{
             display: `flex`,
             flexWrap: `wrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
             padding: 0,
+            margin: 0,
           }}
         >
           <li>

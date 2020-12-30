@@ -1,16 +1,5 @@
-import React from "react"
+import Index from "./index"
 
-import BlogRoll from "../components/blogroll"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
-const BlogIndex = ({ location }) => {
-  return (
-    <Layout location={location}>
-      <SEO title="Blog" />
-      <BlogRoll />
-    </Layout>
-  )
-}
+const BlogIndex = Index
 
 export default BlogIndex

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Heading, Text } from "theme-ui"
 import { Container } from "react-bootstrap"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
@@ -12,32 +12,37 @@ const BlogRoll = ({ n }) => {
    * */
   return (
     <Container fluid>
-      <h2>posts</h2>
+      <Heading>posts</Heading>
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <li key={post.fields.slug}>
+            <li key={post.fields.slug} css={{ "margin-bottom": 0 }}>
               <article
                 className="post-list-item"
                 itemScope
                 itemType="http://schema.org/Article"
               >
-                <header>
-                  <h3
+                <header css={{ "margin-bottom": `1rem` }}>
+                  <Heading
+                    as="h2"
                     sx={{
                       color: `primary`,
+                    }}
+                    css={{
+                      "margin-bottom": `0.75rem`,
+                      "margin-top": `2rem`,
                     }}
                   >
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
-                  </h3>
+                  </Heading>
                   <small>{post.frontmatter.date}</small>
                 </header>
                 <section>
-                  <p
+                  <Text
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description || post.excerpt,
                     }}

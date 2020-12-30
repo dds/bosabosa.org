@@ -1,25 +1,23 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Heading } from "theme-ui"
 import { Container } from "react-bootstrap"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 
 import Navbar from "./navbar"
 import Search from "./search"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
 
-const Header = () => {
-  const { title } = useSiteMetadata()
+const Header = ({ title }) => {
   return (
     <Container fluid>
       <Helmet>
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
       </Helmet>
-      <header>
-        <h1>
+      <header css={{ "margin-bottom": `5rem` }}>
+        <Heading as="h1" variant="styles.h1">
           <Link to="/">{title}</Link>
-        </h1>
+        </Heading>
         <Navbar />
         <Search />
       </header>
