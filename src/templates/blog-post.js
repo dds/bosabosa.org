@@ -27,13 +27,13 @@ const BlogPostTemplate = ({ data, location }) => {
       </article>
       <nav className="blog-post-nav">
         <ul
-          css={{
+          sx={{
             display: `flex`,
             flexWrap: `wrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
-            padding: 0,
-            margin: 0,
+            p: 0,
+            m: 0,
           }}
         >
           <li>
