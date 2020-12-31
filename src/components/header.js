@@ -11,8 +11,8 @@ const Header = ({ title }) => {
   return (
     <Container fluid>
       <Helmet>
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Helmet>
       <header sx={{ mb: `5rem` }}>
         <Heading as="h1" variant="styles.h1">
