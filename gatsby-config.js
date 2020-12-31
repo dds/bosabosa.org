@@ -28,6 +28,7 @@ module.exports = {
     dateFormat: `YYYY.MM.DD`,
   },
   plugins: [
+    `gatsby-plugin-remove-generator`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
