@@ -1,3 +1,7 @@
+## [1.2.23](https://github.com/dds/bosabosa.org/compare/v1.2.22...v1.2.23) (2020-12-31)
+
+
+
 ## [1.2.22](https://github.com/dds/bosabosa.org/compare/v1.2.21...v1.2.22) (2020-12-31)
 
 
@@ -21,15 +25,6 @@
 
 
 ## [1.2.19](https://github.com/dds/bosabosa.org/compare/v1.2.18...v1.2.19) (2020-12-31)
-
-
-
-## [1.2.18](https://github.com/dds/bosabosa.org/compare/v1.2.17...v1.2.18) (2020-12-30)
-
-
-### Bug Fixes
-
-* **deps:** pin dependencies ([#56](https://github.com/dds/bosabosa.org/issues/56)) ([11285a9](https://github.com/dds/bosabosa.org/commit/11285a9933eb02539893358a0eccb9aa703d303c))
 
 
 
