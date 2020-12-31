@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/omgthedds
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://bosabosa.org
+  * I am omgthedds (https://keybase.io/omgthedds) on keybase.
+  * I have a public key ASD4kbnsDKxtl7HvNidR-_EtlvFtYD1ELt34sdcXtATI0Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012033e1399cdeb49e9add27076ebe31803ecde5e0678e76fb244fc8b382cda1da3c0a",
+      "host": "keybase.io",
+      "kid": "0120f891b9ec0cac6d97b1ef362751fbf12d96f16d603d442eddf8b1d717b404c8d10a",
+      "uid": "8eb866d5052cec125a8d94843ac45019",
+      "username": "omgthedds"
+    },
+    "merkle_root": {
+      "ctime": 1609457169,
+      "hash": "86d77bb09f09b6a93f5d95cf06ccaa0446dbaab3be677ba9a9f75110b85d34acedbf300e2145e610f5db02dcd445284f23ab5c2eb8bd1e40d2de2978920e5496",
+      "hash_meta": "b3f7ed5f6b8ba364f73cd8209ab34da40ee0b3a75b3cde84a6815c5dafa9191e",
+      "seqno": 18554803
+    },
+    "service": {
+      "entropy": "/vh0kDqG0HbB+qjEAb2S4nmT",
+      "hostname": "bosabosa.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1609457195,
+  "expire_in": 504576000,
+  "prev": "fa226e5063b6472c55855f21143408816698e84733b3cf4aed4c55b8e96ed6c7",
+  "seqno": 81,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg+JG57AysbZex7zYnUfvxLZbxbWA9RC7d+LHXF7QEyNEKp3BheWxvYWTESpcCUcQg+iJuUGO2RyxVhV8hFDQIgWaY6Eczs89K7UxVuOlu1sfEIJQmZVotsHOD5BIlHA1ll1MOkaBkAPb+ogaMFN3Z64pLAgHCo3NpZ8RAtgLl/gTDxDrGXNU5muWN3mbqZcI6v9UEs8DATkPX5HmqObmL0JrsyR+L5WjKHLdTyTf3bCpIFogDQUNTpIZACqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEY9mTkew2xvsTUZjSNIX9liPZaf57GEA8RAlLKicV+lo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/omgthedds
+
+==================================================================
