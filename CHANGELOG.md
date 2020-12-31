@@ -1,3 +1,12 @@
+## [1.2.22](https://github.com/dds/bosabosa.org/compare/v1.2.21...v1.2.22) (2020-12-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency prismjs to v1.23.0 ([#59](https://github.com/dds/bosabosa.org/issues/59)) ([cad97f0](https://github.com/dds/bosabosa.org/commit/cad97f02ed07e02417f6ac71e57afbe068e59208))
+
+
+
 ## [1.2.21](https://github.com/dds/bosabosa.org/compare/v1.2.20...v1.2.21) (2020-12-31)
 
 
@@ -21,10 +30,6 @@
 ### Bug Fixes
 
 * **deps:** pin dependencies ([#56](https://github.com/dds/bosabosa.org/issues/56)) ([11285a9](https://github.com/dds/bosabosa.org/commit/11285a9933eb02539893358a0eccb9aa703d303c))
-
-
-
-## [1.2.17](https://github.com/dds/bosabosa.org/compare/v1.2.16...v1.2.17) (2020-12-30)
 
 
 
