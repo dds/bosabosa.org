@@ -18,21 +18,19 @@ const BlogRoll = ({ n }) => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <li key={post.fields.slug} css={{ marginBottom: 0 }}>
+            <li key={post.fields.slug} sx={{ mb: 0 }}>
               <article
                 className="post-list-item"
                 itemScope
                 itemType="http://schema.org/Article"
               >
-                <header css={{ marginBottom: `1rem` }}>
+                <header sx={{ mb: `1rem` }}>
                   <Heading
                     as="h2"
                     sx={{
+                      mt: `2rem`,
+                      mb: `0.75rem`,
                       color: `primary`,
-                    }}
-                    css={{
-                      marginBottom: `0.75rem`,
-                      marginTop: `2rem`,
                     }}
                   >
                     <Link to={post.fields.slug} itemProp="url">
