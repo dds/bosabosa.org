@@ -14,7 +14,7 @@ const Header = ({ title }) => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
       </Helmet>
-      <header css={{ "margin-bottom": `5rem` }}>
+      <header css={{ marginBottom: `5rem` }}>
         <Heading as="h1" variant="styles.h1">
           <Link to="/">{title}</Link>
         </Heading>

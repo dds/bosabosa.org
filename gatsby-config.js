@@ -76,9 +76,18 @@ module.exports = {
         start_url: `/?source=pwa`,
         scope: `/`,
         display: `standalone`,
-        background_color: `#ffffff`,
-        theme_color: `tomato`,
-        icon: `static/icon-512.png`,
+        icons: [
+          {
+            src: `/icon-192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/icon-512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ],
       },
     },
     `gatsby-plugin-offline`,

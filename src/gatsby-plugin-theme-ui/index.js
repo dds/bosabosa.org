@@ -56,7 +56,6 @@ const theme = {
       backgroundColor: `background`,
       margin: 0,
       padding: 0,
-      boxSizing: `border-box`,
       textRendering: `optimizeLegibility`,
       WebkitFontSmoothing: `antialiased`,
       MozOsxFontSmoothing: `grayscale`,
