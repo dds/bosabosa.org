@@ -1,3 +1,7 @@
+## [1.2.20](https://github.com/dds/bosabosa.org/compare/v1.2.19...v1.2.20) (2020-12-31)
+
+
+
 ## [1.2.19](https://github.com/dds/bosabosa.org/compare/v1.2.18...v1.2.19) (2020-12-31)
 
 
@@ -21,10 +25,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency gatsby to v2.29.3 ([#54](https://github.com/dds/bosabosa.org/issues/54)) ([d25dccd](https://github.com/dds/bosabosa.org/commit/d25dccd0c004e9b7ff233fd96f1f7fab1f4cbecc))
-
-
-
-## [1.2.15](https://github.com/dds/bosabosa.org/compare/v1.2.14...v1.2.15) (2020-12-28)
 
 
 
