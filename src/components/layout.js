@@ -44,7 +44,7 @@ const Layout = ({ children, className = ``, title = `` }) => (
     <Container
       css={{
         margin: `0 auto`,
-        "max-width": `42rem`,
+        maxWidth: `42rem`,
         padding: `2.5rem 1.25rem`,
       }}
     >
