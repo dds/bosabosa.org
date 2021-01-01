@@ -8,15 +8,9 @@ const Search = () => {
   const [query, setQuery] = useState(``)
   const [results, setResults] = useState([])
 
-<<<<<<< Updated upstream
   const search = q => {
     const r = index.search(q, { expand: true }).map(({ ref }) => {
       return index.documentStore.getDoc(ref)
-=======
-  function search(q) {
-    const r = index.search(q).map(({ doc }) => {
-      return index.documentStore.getDoc(doc)
->>>>>>> Stashed changes
     })
     setResults(r)
   }
