@@ -32,6 +32,7 @@
     "gatsby-remark-responsive-iframe": "2.8.0",
     "gatsby-remark-smartypants": "2.7.0",
     "gatsby-source-filesystem": "2.8.1",
+    "gatsby-transformer-orga": "^2.3.13",
     "gatsby-transformer-remark": "2.13.1",
     "gatsby-transformer-sharp": "2.9.0",
     "highlight.js": "^10.5.0",
