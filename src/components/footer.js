@@ -1,4 +1,5 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 
 import Contact from "./contact"
 import { useSiteMetadata } from "../hooks/use-site-metadata"

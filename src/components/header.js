@@ -1,6 +1,5 @@
 /** @jsx jsx */
-import { jsx, Heading } from "theme-ui"
-import { Container } from "react-bootstrap"
+import { jsx, Container, Heading } from "theme-ui"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 

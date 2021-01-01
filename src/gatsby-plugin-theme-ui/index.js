@@ -38,6 +38,9 @@ const theme = {
     },
   },
   links: {
+    nav: {
+      color: `secondary`,
+    },
     secondary: {
       color: `secondary`,
       textDecoration: `none`,
