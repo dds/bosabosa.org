@@ -2,10 +2,7 @@
 title: So long, 2020
 date: 2020-12-31T21:34:00-0800
 description: What do you say about the worst year in living memory? You say to the next year, ...
-tags:
-  - 2020
-  - history
-  - grace
+tags: ["2020", "history", "grace"]
 ---
 
 This post is one in most in need of an editor.
