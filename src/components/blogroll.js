@@ -18,7 +18,7 @@ const BlogRoll = ({ n }) => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <li key={post.fields.slug} sx={{ mb: 0 }}>
+            <li key={post.fields.slug} sx={{ mb: 4 }}>
               <article
                 className="post-list-item"
                 itemScope
@@ -33,7 +33,13 @@ const BlogRoll = ({ n }) => {
                       color: `primary`,
                     }}
                   >
-                    <Link to={post.fields.slug} itemProp="url">
+                    <Link
+                      to={post.fields.slug}
+                      itemProp="url"
+                      sx={{
+                        textDecoration: `none`,
+                      }}
+                    >
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </Heading>
