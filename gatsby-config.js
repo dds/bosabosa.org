@@ -28,6 +28,13 @@ module.exports = {
     dateFormat: `YYYY.MM.DD`,
   },
   plugins: [
+    {
+      resolve: `gatsby-transformer-orga`,
+      options: {
+        // if you don't want to have server side prism code highlight
+        // noHighlight: true,
+      },
+    },
     `gatsby-plugin-remove-generator`,
     {
       resolve: `gatsby-source-filesystem`,
