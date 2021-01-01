@@ -1,3 +1,7 @@
+## [1.2.25](https://github.com/dds/bosabosa.org/compare/v1.2.24...v1.2.25) (2021-01-01)
+
+
+
 ## [1.2.24](https://github.com/dds/bosabosa.org/compare/v1.2.23...v1.2.24) (2020-12-31)
 
 
@@ -21,10 +25,6 @@
 ### Bug Fixes
 
 * **deps:** pin dependency gatsby-plugin-remove-generator to 1.0.7 ([#60](https://github.com/dds/bosabosa.org/issues/60)) ([515a93f](https://github.com/dds/bosabosa.org/commit/515a93f73770b292945a360111b88fb8ede2d5bc))
-
-
-
-## [1.2.20](https://github.com/dds/bosabosa.org/compare/v1.2.19...v1.2.20) (2020-12-31)
 
 
 
