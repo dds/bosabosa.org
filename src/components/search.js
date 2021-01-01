@@ -1,4 +1,6 @@
-import React, { useState } from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
+import { useState } from "react"
 import { Index } from "elasticlunr"
 import { Link } from "gatsby"
 import { useSiteSearchIndex } from "../hooks/use-site-searchindex"
