@@ -6654,7 +6654,7 @@ gatsby-page-utils@^0.6.1:
     lodash "^4.17.20"
     micromatch "^4.0.2"
 
-gatsby-plugin-feed-mdx@^1.0.1:
+gatsby-plugin-feed-mdx@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-feed-mdx/-/gatsby-plugin-feed-mdx-1.0.1.tgz#5305b9a8c787a221d180c88542df0506db3ad7b2"
   integrity sha512-8a9J2korubej5OAr3MQJl3u9Js0x9ShCXTuceHpGfsBjAsHq/ykyN7xknDobKVd6HNGOORRM/GmhVM64oMx3Jw==
