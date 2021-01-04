@@ -43,9 +43,14 @@ module.exports = {
         name: `blog`,
       },
     },
+    `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
+        defaultLayouts: {
+          default: require.resolve("./src/components/mdx-layout.js"),
+        },
+        extensions: [".md", ".mdx"],
         plugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -65,17 +70,8 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        defaultLayouts: {
-          default: require.resolve("./src/components/mdx-layout.js"),
-        },
-      },
-    },
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-feed`,
+    `gatsby-plugin-feed-mdx`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -108,8 +104,8 @@ module.exports = {
         fields: [`title`, `tags`],
         // How to resolve each field`s value for a supported node type
         resolvers: {
-          // For any node of type MarkdownRemark, list how to resolve the fields` values
-          MarkdownRemark: {
+          // For any node of type Mdx, list how to resolve the fields` values
+          Mdx: {
             title: node => node.frontmatter.title,
             tags: node => node.frontmatter.tags,
             slug: node => node.fields.slug,

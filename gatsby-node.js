@@ -11,7 +11,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result = await graphql(
     `
       {
-        postsRemark: allMarkdownRemark(
+        postsRemark: allMdx(
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
         ) {
@@ -27,7 +27,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             }
           }
         }
-        tagsGroup: allMarkdownRemark(limit: 2000) {
+        tagsGroup: allMdx(limit: 2000) {
           group(field: frontmatter___tags) {
             fieldValue
           }
@@ -85,7 +85,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === `Mdx`) {
     const value = "/b" + createFilePath({ node, getNode })
 
     createNodeField({
@@ -103,7 +103,7 @@ exports.createSchemaCustomization = ({ actions }) => {
   // This way those will always be defined even if removed from gatsby-config.js
 
   // Also explicitly define the Markdown frontmatter
-  // This way the "MarkdownRemark" queries will return `null` even when no
+  // This way the "Mdx" queries will return `null` even when no
   // blog posts are stored inside "content/blog" instead of returning an error
   createTypes(`
     type SiteSiteMetadata {
@@ -121,7 +121,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       twitter: String
     }
 
-    type MarkdownRemark implements Node {
+    type Mdx implements Node {
       frontmatter: Frontmatter
       fields: Fields
     }
