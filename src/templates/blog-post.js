@@ -1,11 +1,12 @@
 /** @jsx jsx */
 import { jsx, Text } from "theme-ui"
 import { Link, graphql } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../components/layout"
 
 const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
+  const post = data.mdx
   const { previous, next } = data
 
   return (
@@ -18,11 +19,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <header>
           <Text sx={{ variant: `text.heading` }}>{post.frontmatter.date}</Text>
         </header>
-        <Text
-          as="section"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
+        <MDXRenderer>{post.body}</MDXRenderer>
         <hr />
       </article>
       <nav className="blog-post-nav">
@@ -69,17 +66,17 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(id: { eq: $id }) {
+    mdx(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
-      html
+      body
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
       }
     }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
+    previous: mdx(id: { eq: $previousPostId }) {
       fields {
         slug
       }
@@ -87,7 +84,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    next: markdownRemark(id: { eq: $nextPostId }) {
+    next: mdx(id: { eq: $nextPostId }) {
       fields {
         slug
       }
