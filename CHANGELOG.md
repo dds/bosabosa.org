@@ -1,3 +1,12 @@
+## [1.2.38](https://github.com/dds/bosabosa.org/compare/v1.2.37...v1.2.38) (2021-01-05)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([#68](https://github.com/dds/bosabosa.org/issues/68)) ([a60afbe](https://github.com/dds/bosabosa.org/commit/a60afbe84b9951a1d1f63811b06cb6183bdbdd54))
+
+
+
 ## [1.2.37](https://github.com/dds/bosabosa.org/compare/v1.2.36...v1.2.37) (2021-01-05)
 
 
@@ -16,10 +25,6 @@
 
 
 ## [1.2.34](https://github.com/dds/bosabosa.org/compare/v1.2.33...v1.2.34) (2021-01-04)
-
-
-
-## [1.2.33](https://github.com/dds/bosabosa.org/compare/v1.2.32...v1.2.33) (2021-01-04)
 
 
 
