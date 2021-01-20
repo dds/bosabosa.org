@@ -1,3 +1,12 @@
+## [1.2.44](https://github.com/dds/bosabosa.org/compare/v1.2.43...v1.2.44) (2021-01-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-plugin-sharp to v2.13.1 ([#74](https://github.com/dds/bosabosa.org/issues/74)) ([5286492](https://github.com/dds/bosabosa.org/commit/5286492592dd7068107d1e3a565bede8b297d8df))
+
+
+
 ## [1.2.43](https://github.com/dds/bosabosa.org/compare/v1.2.42...v1.2.43) (2021-01-19)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update gatsby monorepo ([#70](https://github.com/dds/bosabosa.org/issues/70)) ([4f52352](https://github.com/dds/bosabosa.org/commit/4f5235238cadd6bebc92a5b176e7980f32e5d967))
-
-
-
-## [1.2.39](https://github.com/dds/bosabosa.org/compare/v1.2.38...v1.2.39) (2021-01-06)
-
-
-### Bug Fixes
-
-* **deps:** update dependency gatsby to v2.30.1 ([#69](https://github.com/dds/bosabosa.org/issues/69)) ([e81f95c](https://github.com/dds/bosabosa.org/commit/e81f95c8fce82176b29e4cf6955cbce0096e303c))
 
 
 
