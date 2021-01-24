@@ -1,3 +1,12 @@
+## [1.2.46](https://github.com/dds/bosabosa.org/compare/v1.2.45...v1.2.46) (2021-01-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency polished to v4.1.0 ([#77](https://github.com/dds/bosabosa.org/issues/77)) ([f9a0ca9](https://github.com/dds/bosabosa.org/commit/f9a0ca9bd7e44b121d7d917301e44b91bf69acc1))
+
+
+
 ## [1.2.45](https://github.com/dds/bosabosa.org/compare/v1.2.44...v1.2.45) (2021-01-21)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency gatsby-plugin-remove-generator to v1.0.8 ([#72](https://github.com/dds/bosabosa.org/issues/72)) ([78027f5](https://github.com/dds/bosabosa.org/commit/78027f5fa37d7544ac118726685dc83a211c2fd0))
-
-
-
-## [1.2.41](https://github.com/dds/bosabosa.org/compare/v1.2.40...v1.2.41) (2021-01-16)
-
-
-### Bug Fixes
-
-* **deps:** update gatsby monorepo ([#71](https://github.com/dds/bosabosa.org/issues/71)) ([6d0728f](https://github.com/dds/bosabosa.org/commit/6d0728f5b588d403a455ce01cb2965594c82bfcd))
 
 
 
