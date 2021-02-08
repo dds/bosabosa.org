@@ -1,3 +1,12 @@
+## [1.2.56](https://github.com/dds/bosabosa.org/compare/v1.2.55...v1.2.56) (2021-02-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency highlight.js to v10.6.0 ([#87](https://github.com/dds/bosabosa.org/issues/87)) ([a352606](https://github.com/dds/bosabosa.org/commit/a35260694106adebc8688ba14454b227c8677bdc))
+
+
+
 ## [1.2.55](https://github.com/dds/bosabosa.org/compare/v1.2.54...v1.2.55) (2021-02-07)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency gatsby to v2.32.1 ([#83](https://github.com/dds/bosabosa.org/issues/83)) ([4ae0ec6](https://github.com/dds/bosabosa.org/commit/4ae0ec69a4a5f716527d73b0b4ec337034458fb9))
-
-
-
-## [1.2.51](https://github.com/dds/bosabosa.org/compare/v1.2.50...v1.2.51) (2021-02-02)
-
-
-### Bug Fixes
-
-* **deps:** update gatsby monorepo ([#82](https://github.com/dds/bosabosa.org/issues/82)) ([e1816fd](https://github.com/dds/bosabosa.org/commit/e1816fda258a6614c72832458267ab668061ff71))
 
 
 
