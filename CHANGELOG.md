@@ -1,3 +1,12 @@
+## [1.2.59](https://github.com/dds/bosabosa.org/compare/v1.2.58...v1.2.59) (2021-02-18)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([#90](https://github.com/dds/bosabosa.org/issues/90)) ([0ec0ded](https://github.com/dds/bosabosa.org/commit/0ec0dedffb9fe5d734b90dc8f1e6506c39f9b667))
+
+
+
 ## [1.2.58](https://github.com/dds/bosabosa.org/compare/v1.2.57...v1.2.58) (2021-02-17)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency react-icons to v4.2.0 ([#86](https://github.com/dds/bosabosa.org/issues/86)) ([9b763f0](https://github.com/dds/bosabosa.org/commit/9b763f023b4af349e7dd239042722c6aa814cfaf))
-
-
-
-## [1.2.54](https://github.com/dds/bosabosa.org/compare/v1.2.53...v1.2.54) (2021-02-05)
-
-
-### Bug Fixes
-
-* **deps:** update gatsby monorepo ([#85](https://github.com/dds/bosabosa.org/issues/85)) ([8ce9119](https://github.com/dds/bosabosa.org/commit/8ce9119825367526610c59bf639b2cda472341e0))
 
 
 
