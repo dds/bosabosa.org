@@ -1,3 +1,12 @@
+## [1.2.64](https://github.com/dds/bosabosa.org/compare/v1.2.63...v1.2.64) (2021-03-08)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([#96](https://github.com/dds/bosabosa.org/issues/96)) ([24291e0](https://github.com/dds/bosabosa.org/commit/24291e096acde78ff8df25be50d0bf3ace6c3fec))
+
+
+
 ## [1.2.63](https://github.com/dds/bosabosa.org/compare/v1.2.62...v1.2.63) (2021-03-01)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update gatsby monorepo ([#91](https://github.com/dds/bosabosa.org/issues/91)) ([ad3c9ce](https://github.com/dds/bosabosa.org/commit/ad3c9cea9d89fae16e88643f36f315107ec01a5a))
-
-
-
-## [1.2.59](https://github.com/dds/bosabosa.org/compare/v1.2.58...v1.2.59) (2021-02-18)
-
-
-### Bug Fixes
-
-* **deps:** update gatsby monorepo ([#90](https://github.com/dds/bosabosa.org/issues/90)) ([0ec0ded](https://github.com/dds/bosabosa.org/commit/0ec0dedffb9fe5d734b90dc8f1e6506c39f9b667))
 
 
 
