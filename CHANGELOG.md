@@ -1,3 +1,12 @@
+## [1.2.67](https://github.com/dds/bosabosa.org/compare/v1.2.66...v1.2.67) (2021-03-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gatsby-contrib/gatsby-plugin-elasticlunr-search to v3 ([#98](https://github.com/dds/bosabosa.org/issues/98)) ([12cac12](https://github.com/dds/bosabosa.org/commit/12cac122453694d618b7eecdd3353a0ab8936307))
+
+
+
 ## [1.2.66](https://github.com/dds/bosabosa.org/compare/v1.2.65...v1.2.66) (2021-03-15)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency gatsby to v2.32.9 ([#94](https://github.com/dds/bosabosa.org/issues/94)) ([c558502](https://github.com/dds/bosabosa.org/commit/c558502715ef8c6b06f2ad2f4cf0f14cf6cc0bef))
-
-
-
-## [1.2.62](https://github.com/dds/bosabosa.org/compare/v1.2.61...v1.2.62) (2021-02-25)
-
-
-### Bug Fixes
-
-* **deps:** update gatsby monorepo ([#93](https://github.com/dds/bosabosa.org/issues/93)) ([212bcb8](https://github.com/dds/bosabosa.org/commit/212bcb8f52d4c3ee416a3811daf075141125f7d9))
 
 
 
