@@ -1150,10 +1150,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@gatsby-contrib/gatsby-plugin-elasticlunr-search@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@gatsby-contrib/gatsby-plugin-elasticlunr-search/-/gatsby-plugin-elasticlunr-search-3.0.1.tgz#cec860459cc26c90bb8f4e55f155e403a33cf8a5"
-  integrity sha512-eBLCaz0PIAcyjpUFj+4xKjiN5uAGu4s8XOt5lHQKdCyjtbpjxAWdAfwycptY1tbnqlySeOx9QPrWKBeiU50BAg==
+"@gatsby-contrib/gatsby-plugin-elasticlunr-search@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@gatsby-contrib/gatsby-plugin-elasticlunr-search/-/gatsby-plugin-elasticlunr-search-3.0.2.tgz#f60462f5f6283af170a22b28e2f159dd936f6a7b"
+  integrity sha512-GQUwjZ6/Q6jFl5Kk1zDtquQewbjX4dsLE8g0/V/aA7s5Mvtc7plCYtvSdarqkJdfC41VC31NubHseDqUkoKeRA==
   dependencies:
     elasticlunr "^0.9.5"
 
