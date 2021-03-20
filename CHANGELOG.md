@@ -1,3 +1,12 @@
+## [1.2.71](https://github.com/dds/bosabosa.org/compare/v1.2.70...v1.2.71) (2021-03-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency highlight.js to v10.7.0 ([#102](https://github.com/dds/bosabosa.org/issues/102)) ([4e25a74](https://github.com/dds/bosabosa.org/commit/4e25a74e4a37a18f85f051432d5870abe850fb3f))
+
+
+
 ## [1.2.70](https://github.com/dds/bosabosa.org/compare/v1.2.69...v1.2.70) (2021-03-18)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency @gatsby-contrib/gatsby-plugin-elasticlunr-search to v3 ([#98](https://github.com/dds/bosabosa.org/issues/98)) ([12cac12](https://github.com/dds/bosabosa.org/commit/12cac122453694d618b7eecdd3353a0ab8936307))
-
-
-
-## [1.2.66](https://github.com/dds/bosabosa.org/compare/v1.2.65...v1.2.66) (2021-03-15)
-
-
-### Bug Fixes
-
-* **deps:** update gatsby monorepo (major) ([#95](https://github.com/dds/bosabosa.org/issues/95)) ([c5e1e96](https://github.com/dds/bosabosa.org/commit/c5e1e960c8b6a20082321a85337b7a8cdd8a62bb))
 
 
 
