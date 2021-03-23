@@ -1,3 +1,12 @@
+## [1.2.74](https://github.com/dds/bosabosa.org/compare/v1.2.73...v1.2.74) (2021-03-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency semver to v7.3.5 ([#108](https://github.com/dds/bosabosa.org/issues/108)) ([db10521](https://github.com/dds/bosabosa.org/commit/db1052115767043e4f1957a069a92f6cabb0dd8f))
+
+
+
 ## [1.2.73](https://github.com/dds/bosabosa.org/compare/v1.2.72...v1.2.73) (2021-03-23)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update gatsby monorepo to v3.1.1 ([#101](https://github.com/dds/bosabosa.org/issues/101)) ([5e50a1b](https://github.com/dds/bosabosa.org/commit/5e50a1becc3541ce45d091e009f102e77aae0b50))
-
-
-
-## [1.2.69](https://github.com/dds/bosabosa.org/compare/v1.2.68...v1.2.69) (2021-03-16)
-
-
-### Bug Fixes
-
-* **deps:** update gatsby monorepo ([#100](https://github.com/dds/bosabosa.org/issues/100)) ([6b3862c](https://github.com/dds/bosabosa.org/commit/6b3862c81535a73e64e34126eb82517abbad220b))
 
 
 
