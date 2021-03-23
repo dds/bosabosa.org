@@ -4,7 +4,7 @@
   "bugs": {
     "url": "https://github.com/dds/bosabosa.org/issues"
   },
-  "version": "1.2.72",
+  "version": "1.2.73",
   "dependencies": {
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "3.0.2",
     "@mdx-js/mdx": "1.6.22",

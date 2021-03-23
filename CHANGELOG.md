@@ -1,3 +1,12 @@
+## [1.2.73](https://github.com/dds/bosabosa.org/compare/v1.2.72...v1.2.73) (2021-03-23)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo to v17.0.2 ([#107](https://github.com/dds/bosabosa.org/issues/107)) ([3922467](https://github.com/dds/bosabosa.org/commit/39224678fd19e64b12358efea5bb53b1e891461f))
+
+
+
 ## [1.2.72](https://github.com/dds/bosabosa.org/compare/v1.2.71...v1.2.72) (2021-03-21)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update gatsby monorepo ([#100](https://github.com/dds/bosabosa.org/issues/100)) ([6b3862c](https://github.com/dds/bosabosa.org/commit/6b3862c81535a73e64e34126eb82517abbad220b))
-
-
-
-## [1.2.68](https://github.com/dds/bosabosa.org/compare/v1.2.67...v1.2.68) (2021-03-16)
-
-
-### Bug Fixes
-
-* **deps:** update dependency @gatsby-contrib/gatsby-plugin-elasticlunr-search to v3.0.2 ([#99](https://github.com/dds/bosabosa.org/issues/99)) ([7d93a25](https://github.com/dds/bosabosa.org/commit/7d93a25748e463f177234cb186adc9482921c283))
 
 
 
