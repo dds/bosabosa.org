@@ -1,3 +1,12 @@
+## [1.2.76](https://github.com/dds/bosabosa.org/compare/v1.2.75...v1.2.76) (2021-03-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-plugin-remove-generator to v1.1.0 ([#110](https://github.com/dds/bosabosa.org/issues/110)) ([9042332](https://github.com/dds/bosabosa.org/commit/9042332d5a29af3d0660a49e2daf7b40b3f30f46))
+
+
+
 ## [1.2.75](https://github.com/dds/bosabosa.org/compare/v1.2.74...v1.2.75) (2021-03-23)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency highlight.js to v10.7.1 ([#103](https://github.com/dds/bosabosa.org/issues/103)) ([a5f7a12](https://github.com/dds/bosabosa.org/commit/a5f7a12a9c61b4e82b00408d93dc0a71db77b103))
-
-
-
-## [1.2.71](https://github.com/dds/bosabosa.org/compare/v1.2.70...v1.2.71) (2021-03-20)
-
-
-### Bug Fixes
-
-* **deps:** update dependency highlight.js to v10.7.0 ([#102](https://github.com/dds/bosabosa.org/issues/102)) ([4e25a74](https://github.com/dds/bosabosa.org/commit/4e25a74e4a37a18f85f051432d5870abe850fb3f))
 
 
 
