@@ -9,7 +9,7 @@
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "3.0.2",
     "@mdx-js/mdx": "1.6.22",
     "@mdx-js/react": "1.6.22",
-    "@theme-ui/color": "0.3.5",
+    "@theme-ui/color": "0.6.1",
     "fontsource-merriweather": "4.0.0",
     "fontsource-montserrat": "4.0.0",
     "fontsource-noto-sans": "4.0.0",
