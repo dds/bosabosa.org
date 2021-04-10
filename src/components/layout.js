@@ -3,7 +3,6 @@ import React from "react"
 import { Box, Container, jsx } from "theme-ui"
 import { Global } from "@emotion/core"
 
-import CodeStyles from "../styles/code"
 import Footer from "./footer"
 import Header from "./header"
 import SEO from "./seo"
@@ -51,7 +50,7 @@ const Layout = ({ children, className = ``, title = `` }) => (
       }}
     >
       <Header title={title} />
-      <Box id="skip-nav" sx={{ ...CodeStyles }} className={className}>
+      <Box id="skip-nav" className={className}>
         {children}
       </Box>
       <Footer />
