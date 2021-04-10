@@ -1,3 +1,14 @@
+## [1.2.78](https://github.com/dds/bosabosa.org/compare/v1.2.77...v1.2.78) (2021-04-10)
+
+
+### Bug Fixes
+
+* remove unused code styles causing build failure ([fca9db2](https://github.com/dds/bosabosa.org/commit/fca9db24a71eaca5e6e9c65f8489afb380eb8143))
+* **deps:** update dependency @theme-ui/color to v0.6.1 ([#104](https://github.com/dds/bosabosa.org/issues/104)) ([03767d6](https://github.com/dds/bosabosa.org/commit/03767d63e667a9dd5fa439dcca48cf990e9e3021))
+* **deps:** update dependency gatsby to v3.2.1 ([#112](https://github.com/dds/bosabosa.org/issues/112)) ([adb687c](https://github.com/dds/bosabosa.org/commit/adb687cc53b760510a6b81e8cac73478f09099a7))
+
+
+
 ## [1.2.77](https://github.com/dds/bosabosa.org/compare/v1.2.76...v1.2.77) (2021-03-30)
 
 
@@ -31,15 +42,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency semver to v7.3.5 ([#108](https://github.com/dds/bosabosa.org/issues/108)) ([db10521](https://github.com/dds/bosabosa.org/commit/db1052115767043e4f1957a069a92f6cabb0dd8f))
-
-
-
-## [1.2.73](https://github.com/dds/bosabosa.org/compare/v1.2.72...v1.2.73) (2021-03-23)
-
-
-### Bug Fixes
-
-* **deps:** update react monorepo to v17.0.2 ([#107](https://github.com/dds/bosabosa.org/issues/107)) ([3922467](https://github.com/dds/bosabosa.org/commit/39224678fd19e64b12358efea5bb53b1e891461f))
 
 
 
