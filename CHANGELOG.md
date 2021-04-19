@@ -1,3 +1,12 @@
+## [1.2.85](https://github.com/dds/bosabosa.org/compare/v1.2.84...v1.2.85) (2021-04-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @theme-ui/color to v0.7.2 ([#120](https://github.com/dds/bosabosa.org/issues/120)) ([f0eb4f1](https://github.com/dds/bosabosa.org/commit/f0eb4f1a989f10cbc626dfbe8048cb1f3d30129f))
+
+
+
 ## [1.2.84](https://github.com/dds/bosabosa.org/compare/v1.2.83...v1.2.84) (2021-04-16)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency gatsby-plugin-sharp to v3.2.1 ([#115](https://github.com/dds/bosabosa.org/issues/115)) ([7c0bc43](https://github.com/dds/bosabosa.org/commit/7c0bc439ec4902820d05e989cb16875820476249))
-
-
-
-## [1.2.80](https://github.com/dds/bosabosa.org/compare/v1.2.79...v1.2.80) (2021-04-11)
-
-
-### Bug Fixes
-
-* **deps:** update dependency @theme-ui/color to v0.6.2 ([#114](https://github.com/dds/bosabosa.org/issues/114)) ([9d00ccf](https://github.com/dds/bosabosa.org/commit/9d00ccf6c49b79787cd9c0ff1f6fd5a902b81f0d))
 
 
 
