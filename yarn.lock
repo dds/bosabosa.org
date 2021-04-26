@@ -1783,12 +1783,12 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@orgajs/reorg-rehype@^2.4.6":
-  version "2.4.6"
-  resolved "https://registry.yarnpkg.com/@orgajs/reorg-rehype/-/reorg-rehype-2.4.6.tgz#17b7f25ccb2e33c96b3988c40dfb36c2e23b7c5c"
-  integrity sha512-NSkMDpjvR8+jrHnQgWP+gTcTZpWAF1gH+9C1VtyOdU/U3Z7jL39KQJuHtUm0Vbv0oQMzD6yl/7giQlDCT5LqpQ==
+"@orgajs/reorg-rehype@^2.4.8":
+  version "2.4.8"
+  resolved "https://registry.yarnpkg.com/@orgajs/reorg-rehype/-/reorg-rehype-2.4.8.tgz#4f200d1157fe47163ef185eeb21daf1a17434456"
+  integrity sha512-TaHR1IvXT8FwQQw8Qndb2+SbLSwN6zaMw1m1CmNwlK9cVfc/X5iqj9fD7z651bQ+lDqq5G56L0B/8eLdjaRmRQ==
   dependencies:
-    oast-to-hast "^2.4.6"
+    oast-to-hast "^2.4.8"
 
 "@pmmmwh/react-refresh-webpack-plugin@^0.4.3":
   version "0.4.3"
@@ -6867,10 +6867,10 @@ gatsby-telemetry@^2.3.0:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-transformer-orga@2.4.6:
-  version "2.4.6"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-orga/-/gatsby-transformer-orga-2.4.6.tgz#1396f3bd0a7e6d83fdba45e98c8915303a8c99ce"
-  integrity sha512-lLHOjjjuhvd+AcoFcR40z6OjcOTAg7gZVoBD6ciGP0pp24TIaeya/rBmwAwijD1ZYjHftk2JL9fi/p/R683FbA==
+gatsby-transformer-orga@2.4.8:
+  version "2.4.8"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-orga/-/gatsby-transformer-orga-2.4.8.tgz#f1461c6134d721544ba6916541ec3769574910c5"
+  integrity sha512-VhGfnlxZ+ARNqIbnKDa362Tzn6Whfjz2aWwW+pNVXY+vdEMesqVaAylvtgJ8JHNI3npcdSBGTVRPbbe+bzZH+A==
   dependencies:
     bluebird "^3.7.0"
     gatsby-core-utils "^2.2.0"
@@ -6878,9 +6878,9 @@ gatsby-transformer-orga@2.4.6:
     is-relative-url "^3.0.0"
     mime "^2.4.4"
     moment "^2.24.0"
-    oast-to-hast "^2.4.6"
-    orga "^2.4.6"
-    orga-posts "^2.4.6"
+    oast-to-hast "^2.4.8"
+    orga "^2.4.8"
+    orga-posts "^2.4.8"
     rehype-stringify "^8.0.0"
     unified "^9.1.0"
     unist-builder "^2.0.3"
@@ -10146,13 +10146,13 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-oast-to-hast@^2.4.6:
-  version "2.4.6"
-  resolved "https://registry.yarnpkg.com/oast-to-hast/-/oast-to-hast-2.4.6.tgz#2bc91c222adb49c3733452c3e297f653c11cf376"
-  integrity sha512-RNFTH22rwRCRp6bN8zki6l724+aDm1lJuUkfEuprdR0PZW8hk8x7ZsNkHK50NtTTIueae+zAb6NfWWsI6/85xA==
+oast-to-hast@^2.4.8:
+  version "2.4.8"
+  resolved "https://registry.yarnpkg.com/oast-to-hast/-/oast-to-hast-2.4.8.tgz#d051c81c16d0566e6f57e80908a4a67242d8f434"
+  integrity sha512-FMefw4r6C2HVOYs0l/ixAWb5v0QImrw1t8puWp6ODJFdH3D2A9xs+LaECtqrHNNGDIXrvw0kOMCra8woU9HLsA==
   dependencies:
     mime "^2.4.4"
-    orga "^2.4.6"
+    orga "^2.4.8"
     prismjs "^1.17.1"
     unist-builder "^2.0.3"
 
@@ -10347,27 +10347,27 @@ optionator@^0.9.1:
     type-check "^0.4.0"
     word-wrap "^1.2.3"
 
-orga-posts@^2.4.6:
-  version "2.4.6"
-  resolved "https://registry.yarnpkg.com/orga-posts/-/orga-posts-2.4.6.tgz#c2b440b8e585f8154ecc436c7b8e64338b2b9c38"
-  integrity sha512-9gkWseUq2INfGA2jHBZw9jGM6vV+7KAc4bt3ArYxKGnE64/SveoE5J7K4not7GA5WdiRBqpVxPQUykykvc4Q4w==
+orga-posts@^2.4.8:
+  version "2.4.8"
+  resolved "https://registry.yarnpkg.com/orga-posts/-/orga-posts-2.4.8.tgz#d1732adcffb784ac509e9eedfdc2db847dc1661f"
+  integrity sha512-bGEx38e57OPiKjj9yd7U31hjFZ1ZdboXF/qhQeomaokDDOQ+45FpC6OO2HAZc6Ul2+6OZzJSDULblCBdzMQVNA==
   dependencies:
-    "@orgajs/reorg-rehype" "^2.4.6"
+    "@orgajs/reorg-rehype" "^2.4.8"
     lodash "^4.17.20"
-    orga "^2.4.6"
+    orga "^2.4.8"
     rehype-highlight "^4.0.0"
     rehype-stringify "^8.0.0"
     unified "^9.2.0"
     unist-util-select "^3.0.2"
     unist-util-visit-parents "^3.1.1"
 
-orga@^2.4.6:
-  version "2.4.6"
-  resolved "https://registry.yarnpkg.com/orga/-/orga-2.4.6.tgz#7fbdfcd8222935af190fa2b412aedd45acddecf8"
-  integrity sha512-vtyicpQ/AKTrnl5AqlPY9V3+vXJezvgBrJSNt+uTXp1eQPQuP3atRZHGE39VTJW0rnJ2yh7oIilu82KVdT2HOQ==
+orga@^2.4.8:
+  version "2.4.8"
+  resolved "https://registry.yarnpkg.com/orga/-/orga-2.4.8.tgz#9a5005ec36cd488c58ab0f77a731444736b5c871"
+  integrity sha512-oiIqw2IrYl9jrK0ok7oGWrEvL1ghtfLkqqiP5lrx8pizt0UOAWK+Pom80Eaqzni/qWoq3TZPKKC/Vv6ts+UKtw==
   dependencies:
     date-fns-tz "^1.1.4"
-    text-kit "^2.4.4"
+    text-kit "^2.4.8"
 
 original@^1.0.0:
   version "1.0.2"
@@ -13554,10 +13554,10 @@ terser@^5.5.1:
     source-map "~0.7.2"
     source-map-support "~0.5.19"
 
-text-kit@^2.4.4:
-  version "2.4.4"
-  resolved "https://registry.yarnpkg.com/text-kit/-/text-kit-2.4.4.tgz#7d74d7c5b9bb9c7051bf1630b3b35c4b8f5d10b7"
-  integrity sha512-Lb0IUVkvmfuhzYkZRX6r0ZFoJ7uVAQHjUzVqxOfbmOlgbxYhTF8GtxAEP8alPVzHHbTr7SH9Oyz8LjGQOpvssA==
+text-kit@^2.4.8:
+  version "2.4.8"
+  resolved "https://registry.yarnpkg.com/text-kit/-/text-kit-2.4.8.tgz#c5250244f6bc8db9cc9162f5fe27404ce74ccd7d"
+  integrity sha512-QE4xEoi898LgBcvWdHX4jdldQgVWSfNhOI7xOP9Mhj5j5G9iBZWhAuWO+YRA06vq49FpkQs9U1aFP6Dl3aht3w==
 
 text-table@0.2.0, text-table@^0.2.0:
   version "0.2.0"

@@ -32,7 +32,7 @@
     "gatsby-remark-responsive-iframe": "3.2.0",
     "gatsby-remark-smartypants": "3.2.0",
     "gatsby-source-filesystem": "3.3.0",
-    "gatsby-transformer-orga": "2.4.6",
+    "gatsby-transformer-orga": "2.4.8",
     "gatsby-transformer-sharp": "3.3.0",
     "highlight.js": "10.7.2",
     "polished": "4.1.2",
