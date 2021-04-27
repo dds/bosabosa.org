@@ -1,3 +1,12 @@
+## [1.2.93](https://github.com/dds/bosabosa.org/compare/v1.2.92...v1.2.93) (2021-04-27)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([#129](https://github.com/dds/bosabosa.org/issues/129)) ([1ca8e3b](https://github.com/dds/bosabosa.org/commit/1ca8e3bdc636d5d2d6eef94a52d7933a47fe61ec))
+
+
+
 ## [1.2.92](https://github.com/dds/bosabosa.org/compare/v1.2.91...v1.2.92) (2021-04-27)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency gatsby-transformer-orga to v2.4.6 ([#124](https://github.com/dds/bosabosa.org/issues/124)) ([66d451c](https://github.com/dds/bosabosa.org/commit/66d451c7febf2fd9d2fa2394f0b250a359912895))
-
-
-
-## [1.2.88](https://github.com/dds/bosabosa.org/compare/v1.2.87...v1.2.88) (2021-04-25)
-
-
-### Bug Fixes
-
-* **deps:** update dependency gatsby-transformer-orga to v2.4.2 ([#123](https://github.com/dds/bosabosa.org/issues/123)) ([aeb9995](https://github.com/dds/bosabosa.org/commit/aeb9995a00dda4964aaca675201a48e3dfdd5733))
 
 
 
