@@ -1,3 +1,12 @@
+## [1.2.94](https://github.com/dds/bosabosa.org/compare/v1.2.93...v1.2.94) (2021-04-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @theme-ui/color to v0.7.4 ([#127](https://github.com/dds/bosabosa.org/issues/127)) ([c12f05a](https://github.com/dds/bosabosa.org/commit/c12f05ada11364cd011c6cf93519f38b8ebe863d))
+
+
+
 ## [1.2.93](https://github.com/dds/bosabosa.org/compare/v1.2.92...v1.2.93) (2021-04-27)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency polished to v4.1.2 ([#125](https://github.com/dds/bosabosa.org/issues/125)) ([e3e399e](https://github.com/dds/bosabosa.org/commit/e3e399e074a59f10fdfdf845ace3df4629f4fddf))
-
-
-
-## [1.2.89](https://github.com/dds/bosabosa.org/compare/v1.2.88...v1.2.89) (2021-04-25)
-
-
-### Bug Fixes
-
-* **deps:** update dependency gatsby-transformer-orga to v2.4.6 ([#124](https://github.com/dds/bosabosa.org/issues/124)) ([66d451c](https://github.com/dds/bosabosa.org/commit/66d451c7febf2fd9d2fa2394f0b250a359912895))
 
 
 
