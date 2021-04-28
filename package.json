@@ -12,8 +12,6 @@
     "@theme-ui/color": "0.7.4",
     "fontsource-merriweather": "4.0.0",
     "fontsource-montserrat": "4.0.0",
-    "fontsource-noto-sans": "4.0.0",
-    "fontsource-roboto": "4.0.0",
     "gatsby": "3.4.0",
     "gatsby-image": "3.4.0",
     "gatsby-plugin-feed-mdx": "1.1.0",
