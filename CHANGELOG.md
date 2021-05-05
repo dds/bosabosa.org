@@ -1,3 +1,12 @@
+## [1.2.100](https://github.com/dds/bosabosa.org/compare/v1.2.99...v1.2.100) (2021-05-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @theme-ui/color to v0.8.0 ([#132](https://github.com/dds/bosabosa.org/issues/132)) ([315aa33](https://github.com/dds/bosabosa.org/commit/315aa33221be1cb6eb10e7c3574244d648a895ad))
+
+
+
 ## [1.2.99](https://github.com/dds/bosabosa.org/compare/v1.2.98...v1.2.99) (2021-05-04)
 
 
@@ -26,10 +35,6 @@
 
 
 ## [1.2.96](https://github.com/dds/bosabosa.org/compare/v1.2.95...v1.2.96) (2021-04-28)
-
-
-
-## [1.2.95](https://github.com/dds/bosabosa.org/compare/v1.2.94...v1.2.95) (2021-04-28)
 
 
 
