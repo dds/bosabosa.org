@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/dds/bosabosa.org/compare/v1.2.105...v1.3.0) (2021-05-06)
+
+
+### Features
+
+* system fonts and standard colors ([9c98612](https://github.com/dds/bosabosa.org/commit/9c986127d1211b7211645ceaf33a305e66bd76ad))
+
+
+
 ## [1.2.105](https://github.com/dds/bosabosa.org/compare/v1.2.104...v1.2.105) (2021-05-06)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency @theme-ui/color to v0.8.2 ([#134](https://github.com/dds/bosabosa.org/issues/134)) ([c9ef7dc](https://github.com/dds/bosabosa.org/commit/c9ef7dcee6e9c040a52dffee04cd673a28200454))
-
-
-
-## [1.2.101](https://github.com/dds/bosabosa.org/compare/v1.2.100...v1.2.101) (2021-05-05)
-
-
-### Bug Fixes
-
-* **deps:** update dependency @theme-ui/color to v0.8.1 ([#133](https://github.com/dds/bosabosa.org/issues/133)) ([6789b7d](https://github.com/dds/bosabosa.org/commit/6789b7d2aae6642fd36e4a2af6fdae0393b04bb0))
 
 
 
