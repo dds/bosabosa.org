@@ -117,5 +117,6 @@ module.exports = {
     },
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-remove-fingerprints`,
+    `gatsby-plugin-catch-links`,
   ],
 }
