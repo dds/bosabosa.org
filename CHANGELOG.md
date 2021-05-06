@@ -1,3 +1,12 @@
+## [1.3.2](https://github.com/dds/bosabosa.org/compare/v1.3.1...v1.3.2) (2021-05-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-plugin-theme-ui to v0.8.4 ([#105](https://github.com/dds/bosabosa.org/issues/105)) ([44e3d03](https://github.com/dds/bosabosa.org/commit/44e3d03419d728e0f167cd8de8e9d05c560e9f9f))
+
+
+
 ## [1.3.1](https://github.com/dds/bosabosa.org/compare/v1.3.0...v1.3.1) (2021-05-06)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** remove mdx and update theme-ui to v0.8.3 ([#106](https://github.com/dds/bosabosa.org/issues/106)) ([ce640a7](https://github.com/dds/bosabosa.org/commit/ce640a7e94d91a82b6e817ba5e4aab3f738b1728))
-
-
-
-## [1.2.103](https://github.com/dds/bosabosa.org/compare/v1.2.102...v1.2.103) (2021-05-05)
-
-
-### Bug Fixes
-
-* **deps:** update dependency @theme-ui/color to v0.8.3 ([#135](https://github.com/dds/bosabosa.org/issues/135)) ([bb84842](https://github.com/dds/bosabosa.org/commit/bb848421d41af305a974bd8d826f19b49be06a2a))
 
 
 
