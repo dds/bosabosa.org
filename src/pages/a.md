@@ -17,7 +17,7 @@ and stopped working for my dad. I went to boarding school for high school. I
 dabbled in graphics and network programming there. Then, I went to college
 keen to explore math and programming.
 
-College was great. My favorite project was third year, I wrote a boot loader and
+Later while still a student, I wrote a boot loader and toy operating system
 kernel that could fork/exec, paged virtual memory, and had display and keyboard
 drivers and simple shell. I got very much into the Debian project then.
 
