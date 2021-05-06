@@ -35,7 +35,6 @@ module.exports = {
         // noHighlight: true,
       },
     },
-    `gatsby-plugin-remove-generator`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -43,14 +42,16 @@ module.exports = {
         name: `blog`,
       },
     },
-    `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-plugin-mdx`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        defaultLayouts: {
-          default: require.resolve("./src/components/mdx-layout.js"),
-        },
-        extensions: [".md", ".mdx"],
+        path: `${__dirname}/src/pages`,
+        name: `pages`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
         plugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -70,8 +71,7 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-feed-mdx`,
+    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -104,8 +104,8 @@ module.exports = {
         fields: [`title`, `tags`],
         // How to resolve each field`s value for a supported node type
         resolvers: {
-          // For any node of type Mdx, list how to resolve the fields` values
-          Mdx: {
+          // For any node of type MarkdownRemark, list how to resolve the fields` values
+          MarkdownRemark: {
             title: node => node.frontmatter.title,
             tags: node => node.frontmatter.tags,
             slug: node => node.fields.slug,
@@ -116,7 +116,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-theme-ui`,
-    `gatsby-plugin-remove-fingerprints`,
     `gatsby-plugin-catch-links`,
   ],
 }
