@@ -6493,10 +6493,10 @@ gatsby-plugin-sitemap@4.0.0:
     minimatch "^3.0.4"
     sitemap "^6.3.0"
 
-gatsby-plugin-theme-ui@0.8.3:
-  version "0.8.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.8.3.tgz#b6fffbf7d8e97518f38c5a982f3d6a0450866ba0"
-  integrity sha512-wr5qRi5eLn3YR2lJ7JoLrhqLYe/duWISvMl3SDqpENXRPf+vIa/NSXrIMvD3sj3SyZ0t7ulDt23eZJSAdzG3Bw==
+gatsby-plugin-theme-ui@0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.8.4.tgz#5763a2fbf4340b8f7cb06cc2591f6fe9a2fb8d13"
+  integrity sha512-rvCpanIlr8R18QhhNtyrv2SYgi7fo0gvXlzGIK6Hwa9QeADxoV0BZC1cz+ei7rJOpSE1/E2fZKHKU98WLmub5w==
 
 gatsby-plugin-typescript@^3.4.0:
   version "3.4.0"
