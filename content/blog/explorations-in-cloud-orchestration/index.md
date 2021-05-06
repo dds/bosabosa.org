@@ -14,8 +14,6 @@ tags:
   ]
 ---
 
-import { Link } from "gatsby"
-
 [github workflows]: https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions
 [react]: https://reactjs.org/
 [dave anderson's new kubernetes idea]: https://blog.dave.tf/post/new-kubernetes/
@@ -54,15 +52,14 @@ import { Link } from "gatsby"
 Last month, I was able to play with lots of tech that we don't use at work. It
 started with setting up automation with [github workflows] to replicate some of
 what I've gotten accustomed to at work: configuring GitHub actions for automated
-versioning and dependency updates, all controlled through the repo. doing <Link
-to="/b/advent-of-code-2020/">Advent of Code</Link>.
+versioning and dependency updates, all controlled through the repo. doing
+[Advent of Code](/b/advent-of-code-2020/).
 
-I launched this blog to share the experience so I began <Link
-to="/b/learning-gatsby">learning gatsby</Link>. That's been extremely
-educational and rewarding. This site is written in a mix of markdown and orgmode
-files with embedded React components. I'll never go back. The power in the [MDX]
-and [Orga] libraries is bay far the best way I've found to author and manage
-content.
+I launched this blog to share the experience so I began [learning
+gatsby](/b/learning-gatsby). That's been extremely educational and rewarding.
+This site is written in a mix of markdown and orgmode files with embedded React
+components. I'll never go back. The power in the [MDX] and [Orga] libraries is
+bay far the best way I've found to author and manage content.
 
 When I brought this up to a friend, who normally works on more front-end things,
 he gave me some advice and also had a question for me: what do I think of using

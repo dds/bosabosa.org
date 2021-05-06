@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from "react"
 import { Box, Container, jsx } from "theme-ui"
-import { Global } from "@emotion/core"
+import { Global } from "@emotion/react"
 
 import Footer from "./footer"
 import Header from "./header"
