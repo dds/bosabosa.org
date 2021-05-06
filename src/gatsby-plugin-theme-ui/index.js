@@ -1,18 +1,10 @@
-import "fontsource-montserrat"
-import "fontsource-merriweather"
-
 const theme = {
   useCustomProperties: true,
-  colors: {
-    background: `white`,
-    primary: `#663399`,
-    text: `#393939`,
-    secondary: `tomato`,
-  },
+  colors: {},
   fonts: {
-    body: `Merriweather, sans-serif`,
-    heading: `Montserrat, serif`,
-    monospace: `Menlo, monospace`,
+    sans: `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Noto Sans", "Droid Sans", sans-serif`,
+    serif: `Georgia, Cambria, "Times New Roman", Times, serif`,
+    mono: `ui-monospace, "Cascadia Mono", "Ubuntu Mono", "Roboto Mono", Menlo, monospace`,
   },
   fontWeights: {
     body: 400,
@@ -25,16 +17,16 @@ const theme = {
   },
   text: {
     default: {
-      fontFamily: `body`,
+      fontFamily: `sans`,
       fontWeight: `body`,
       lineHeight: `body`,
-      color: `body`,
+      color: `primary`,
     },
     heading: {
-      fontFamily: `heading`,
+      fontFamily: `sans`,
       fontWeight: `heading`,
       lineHeight: `heading`,
-      color: `heading`,
+      color: `primary`,
     },
   },
   links: {
@@ -45,18 +37,18 @@ const theme = {
       color: `secondary`,
       textDecoration: `none`,
       ":hover": {
-        color: `heading`,
+        color: `primary`,
         textDecoration: `underline`,
       },
       ":focus": {
-        color: `heading`,
+        color: `primary`,
       },
     },
   },
   styles: {
     root: {
       color: `text`,
-      backgroundColor: `background`,
+      backgroundColor: `secondary`,
       margin: 0,
       padding: 0,
       textRendering: `optimizeLegibility`,
@@ -64,7 +56,7 @@ const theme = {
       MozOsxFontSmoothing: `grayscale`,
     },
     body: {
-      fontFamily: `text.body`,
+      fontFamily: `serif`,
     },
     p: {
       fontSize: [1, 1, 2],
@@ -73,15 +65,13 @@ const theme = {
       "--baseline-multiplier": 0.179,
       "--x-height-multiplier": 0.35,
       wordBreak: `break-word`,
-      fontFamily: `body`,
+      fontFamily: `serif`,
     },
     h1: {
       variant: `text.heading`,
-      fontFamily: `heading`,
     },
     h2: {
       variant: `text.heading`,
-      fontFamily: `heading`,
     },
     h3: {
       variant: `text.heading`,

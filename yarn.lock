@@ -6105,16 +6105,6 @@ follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.1.tgz#5f69b813376cee4fd0474a3aba835df04ab763b7"
   integrity sha512-SSG5xmZh1mkPGyKzjZP8zLjltIfpW32Y5QpdNJyjcfGxK3qo3NDDkZOZSFiGn1A6SclQxY9GzEwAHQ3dmYRWpg==
 
-fontsource-merriweather@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/fontsource-merriweather/-/fontsource-merriweather-4.0.0.tgz#1d38d6c94ea4d152d49948127ddf7db6d05fbab1"
-  integrity sha512-1LnYjXYHZm0GNAMSqRJ84O8MHMT6wNywjt8JY0j0lyuvjPLSMRr7mrt4uqWbOnpPF8GnsKS0bYGY6LAidTfH9w==
-
-fontsource-montserrat@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/fontsource-montserrat/-/fontsource-montserrat-4.0.0.tgz#3af39e31e2f77d3b131288ad4fdc4968c4b34975"
-  integrity sha512-0mpa23YJBLxE5fEVVBgcHbuhjiH98EA4XjRVocP/sCJAGoODvXCRqLTSVLmoVFBas4X8WnHU4rv5QOxB1e4TZw==
-
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
