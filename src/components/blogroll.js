@@ -58,7 +58,10 @@ export default BlogRoll
 
 const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: { fields: { sourceName: { eq: "blog" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       nodes {
         excerpt
         fields {
