@@ -5,9 +5,8 @@ import BlogRoll from "../components/blogroll"
 import Layout from "../components/layout"
 
 const Index = ({ location }) => {
-  const title = "bosabosa"
   return (
-    <Layout location={location} title={title}>
+    <Layout location={location}>
       <BlogRoll />
     </Layout>
   )
