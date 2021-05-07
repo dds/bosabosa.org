@@ -1,3 +1,12 @@
+## [1.4.4](https://github.com/dds/bosabosa.org/compare/v1.4.3...v1.4.4) (2021-05-07)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo to v3.4.2 ([#139](https://github.com/dds/bosabosa.org/issues/139)) ([637ef6f](https://github.com/dds/bosabosa.org/commit/637ef6f37d9ce377db74cf937ad073ccaf3889c5))
+
+
+
 ## [1.4.3](https://github.com/dds/bosabosa.org/compare/v1.4.2...v1.4.3) (2021-05-07)
 
 
@@ -28,15 +37,6 @@
 ### Features
 
 * better navbar ([a17cfc1](https://github.com/dds/bosabosa.org/commit/a17cfc1e863a712b1c032cce68a6186819ed4201))
-
-
-
-## [1.3.5](https://github.com/dds/bosabosa.org/compare/v1.3.4...v1.3.5) (2021-05-07)
-
-
-### Bug Fixes
-
-* dates in blogroll ([bdcda58](https://github.com/dds/bosabosa.org/commit/bdcda58ad079f0963b13c7e24733cb0a2e3e0aac))
 
 
 
