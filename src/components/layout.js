@@ -18,7 +18,7 @@ const Layout = ({ children, className = ``, title = `` }) => (
         body: {
           padding: 0,
           margin: 0,
-        }
+        },
         "*": {
           boxSizing: `inherit`,
         },
