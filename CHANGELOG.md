@@ -1,3 +1,12 @@
+# [1.4.0](https://github.com/dds/bosabosa.org/compare/v1.3.5...v1.4.0) (2021-05-07)
+
+
+### Features
+
+* better navbar ([a17cfc1](https://github.com/dds/bosabosa.org/commit/a17cfc1e863a712b1c032cce68a6186819ed4201))
+
+
+
 ## [1.3.5](https://github.com/dds/bosabosa.org/compare/v1.3.4...v1.3.5) (2021-05-07)
 
 
@@ -33,15 +42,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency gatsby-plugin-theme-ui to v0.8.4 ([#105](https://github.com/dds/bosabosa.org/issues/105)) ([44e3d03](https://github.com/dds/bosabosa.org/commit/44e3d03419d728e0f167cd8de8e9d05c560e9f9f))
-
-
-
-## [1.3.1](https://github.com/dds/bosabosa.org/compare/v1.3.0...v1.3.1) (2021-05-06)
-
-
-### Bug Fixes
-
-* **deps:** update dependency @theme-ui/color to v0.8.4 ([#137](https://github.com/dds/bosabosa.org/issues/137)) ([c2bf60e](https://github.com/dds/bosabosa.org/commit/c2bf60eae0a304b52dd8d1394ed68685b216e19c))
 
 
 
