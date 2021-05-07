@@ -1,3 +1,12 @@
+## [1.4.1](https://github.com/dds/bosabosa.org/compare/v1.4.0...v1.4.1) (2021-05-07)
+
+
+### Bug Fixes
+
+* better title on blogroll ([640a6dd](https://github.com/dds/bosabosa.org/commit/640a6ddfb31cc1c6a238d13a29192af43fc82aff))
+
+
+
 # [1.4.0](https://github.com/dds/bosabosa.org/compare/v1.3.5...v1.4.0) (2021-05-07)
 
 
@@ -33,15 +42,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency theme-ui to v0.8.4 ([#138](https://github.com/dds/bosabosa.org/issues/138)) ([abb11aa](https://github.com/dds/bosabosa.org/commit/abb11aa425c7bc71bf9ae09d3fbbbeba0e54d0cc))
-
-
-
-## [1.3.2](https://github.com/dds/bosabosa.org/compare/v1.3.1...v1.3.2) (2021-05-06)
-
-
-### Bug Fixes
-
-* **deps:** update dependency gatsby-plugin-theme-ui to v0.8.4 ([#105](https://github.com/dds/bosabosa.org/issues/105)) ([44e3d03](https://github.com/dds/bosabosa.org/commit/44e3d03419d728e0f167cd8de8e9d05c560e9f9f))
 
 
 
