@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `bosabosa`,
     author: {
-      name: `David D Smith`,
-      summary: `coder, creator, in California.`,
+      name: `David D. Smith`,
+      summary: `Look, Ma, I made a website.`,
     },
-    description: `blog of unmanageable tech and hair`,
+    description: `Just a blog.`,
     siteUrl: `https://dds.bosabosa.org/`,
     sourceUrl: `https://github.com/dds/bosabosa.org/`,
     social: {
@@ -14,8 +14,6 @@ module.exports = {
       facebook: `omgthedds`,
       keybase: `omgthedds`,
       linkedin: `bosabosa`,
-      reddit: `kuma`,
-      twitter: `exponent`,
     },
     paths: {
       blog: `/b`,
