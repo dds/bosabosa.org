@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { Box, jsx } from "theme-ui"
 import { useState } from "react"
 import { Index } from "elasticlunr"
 import { Link } from "gatsby"
@@ -18,7 +18,7 @@ const Search = () => {
   }
 
   return (
-    <div>
+    <Box>
       <input
         type="text"
         value={query}
@@ -37,7 +37,7 @@ const Search = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </Box>
   )
 }
 

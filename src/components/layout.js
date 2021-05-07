@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from "react"
-import { Box, Container, jsx } from "theme-ui"
+import { Box, Container, Heading, jsx } from "theme-ui"
 import { Global } from "@emotion/react"
 
 import Footer from "./footer"
@@ -40,6 +40,7 @@ const Layout = ({ children, className = ``, title = `` }) => (
     />
     <SEO title={title} />
     <SkipNavLink>Skip to content</SkipNavLink>
+    <Header />
     <Container
       sx={{
         my: 0,
@@ -49,12 +50,12 @@ const Layout = ({ children, className = ``, title = `` }) => (
         maxWidth: `42rem`,
       }}
     >
-      <Header title={title} />
       <Box id="skip-nav" className={className}>
+        <Heading as="h1">{title}</Heading>
         {children}
       </Box>
-      <Footer />
     </Container>
+    <Footer />
   </React.Fragment>
 )
 

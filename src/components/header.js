@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Heading } from "theme-ui"
+import { jsx, Flex, Container, Heading } from "theme-ui"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 
@@ -8,18 +8,15 @@ import Search from "./search"
 
 const Header = ({ title }) => {
   return (
-    <Container fluid>
+    <Container fluid sx={{ borderBottom: `1px solid`, p: `0 4rem` }}>
       <Helmet>
         <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Helmet>
-      <header sx={{ mb: `5rem` }}>
-        <Heading as="h1" variant="styles.h1">
-          <Link to="/">{title}</Link>
-        </Heading>
+      <Flex as="div" fixed="top">
         <Navbar />
         <Search />
-      </header>
+      </Flex>
     </Container>
   )
 }

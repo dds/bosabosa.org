@@ -1,31 +1,22 @@
 /** @jsx jsx */
-import { jsx, Flex, NavLink } from "theme-ui"
+import { jsx, Box, NavLink } from "theme-ui"
 import { Link } from "gatsby"
 
 export default () => {
   return (
-    <Flex
-      as="nav"
-      variant={toString()}
-      fixed="top"
-      collapseOnSelect
-      expand="md"
-    >
-      <NavLink as={Link} to="/" title="Home">
-        /
+    <Box sx={{ flex: `1 1 auto` }} as="nav">
+      <NavLink sx={{ p: 2 }} as={Link} to="/" title="Home">
+        Home
       </NavLink>
-      <NavLink as={Link} to="/b" title="Blog">
+      <NavLink sx={{ p: 2 }} as={Link} to="/b" title="Blog">
         Blog
       </NavLink>
-      <NavLink as={Link} to="/o" title="Other">
-        Other
-      </NavLink>
-      <NavLink as={Link} to="/tags" title="Tags">
+      <NavLink sx={{ p: 2 }} as={Link} to="/tags" title="Tags">
         Tags
       </NavLink>
-      <NavLink as={Link} to="/a" title="About">
+      <NavLink sx={{ p: 2 }} as={Link} to="/a" title="About">
         About
       </NavLink>
-    </Flex>
+    </Box>
   )
 }
