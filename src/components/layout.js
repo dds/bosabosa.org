@@ -12,11 +12,13 @@ const Layout = ({ children, className = ``, title = `` }) => (
   <React.Fragment>
     <Global
       styles={theme => ({
+        html: {
+          padding: 0,
+          margin: 0,
+          WebkitTextSizeAdjust: `100%`,
+        },
         "*": {
           boxSizing: `inherit`,
-        },
-        html: {
-          WebkitTextSizeAdjust: `100%`,
         },
         img: {
           borderStyle: `none`,
