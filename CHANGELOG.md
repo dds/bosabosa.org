@@ -1,3 +1,12 @@
+## [1.3.5](https://github.com/dds/bosabosa.org/compare/v1.3.4...v1.3.5) (2021-05-07)
+
+
+### Bug Fixes
+
+* dates in blogroll ([bdcda58](https://github.com/dds/bosabosa.org/commit/bdcda58ad079f0963b13c7e24733cb0a2e3e0aac))
+
+
+
 ## [1.3.4](https://github.com/dds/bosabosa.org/compare/v1.3.3...v1.3.4) (2021-05-07)
 
 
@@ -33,15 +42,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency @theme-ui/color to v0.8.4 ([#137](https://github.com/dds/bosabosa.org/issues/137)) ([c2bf60e](https://github.com/dds/bosabosa.org/commit/c2bf60eae0a304b52dd8d1394ed68685b216e19c))
-
-
-
-# [1.3.0](https://github.com/dds/bosabosa.org/compare/v1.2.105...v1.3.0) (2021-05-06)
-
-
-### Features
-
-* system fonts and standard colors ([9c98612](https://github.com/dds/bosabosa.org/commit/9c986127d1211b7211645ceaf33a305e66bd76ad))
 
 
 
