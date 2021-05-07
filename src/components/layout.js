@@ -13,10 +13,12 @@ const Layout = ({ children, className = ``, title = `` }) => (
     <Global
       styles={theme => ({
         html: {
-          padding: 0,
-          margin: 0,
           WebkitTextSizeAdjust: `100%`,
         },
+        body: {
+          padding: 0,
+          margin: 0,
+        }
         "*": {
           boxSizing: `inherit`,
         },
