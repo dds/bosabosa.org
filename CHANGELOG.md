@@ -1,3 +1,14 @@
+## [1.3.4](https://github.com/dds/bosabosa.org/compare/v1.3.3...v1.3.4) (2021-05-07)
+
+
+### Bug Fixes
+
+* only show blog posts on blogroll ([fcac8dc](https://github.com/dds/bosabosa.org/commit/fcac8dc75b477657257ea6947add9887ac0e75e8))
+* remove remaining social stuff ([086b764](https://github.com/dds/bosabosa.org/commit/086b7643125dbcff587222b95c7c1b6eeb74d7b8))
+* tidy up gatsby-config ([d964682](https://github.com/dds/bosabosa.org/commit/d9646828436437e753d345405c9757c9f1fd5ada))
+
+
+
 ## [1.3.3](https://github.com/dds/bosabosa.org/compare/v1.3.2...v1.3.3) (2021-05-07)
 
 
@@ -31,15 +42,6 @@
 ### Features
 
 * system fonts and standard colors ([9c98612](https://github.com/dds/bosabosa.org/commit/9c986127d1211b7211645ceaf33a305e66bd76ad))
-
-
-
-## [1.2.105](https://github.com/dds/bosabosa.org/compare/v1.2.104...v1.2.105) (2021-05-06)
-
-
-### Bug Fixes
-
-* **deps:** pin dependencies ([#136](https://github.com/dds/bosabosa.org/issues/136)) ([b283a43](https://github.com/dds/bosabosa.org/commit/b283a436b163a29bc3600feece4d5a0f0b212eda))
 
 
 
