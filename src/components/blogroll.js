@@ -39,7 +39,7 @@ const BlogRoll = ({ n }) => {
                   <span itemProp="headline">{title}</span>
                 </Link>
               </Heading>
-              <small sx={{ fontWeight: `bold` }}>{post.frontmatter.date}</small>
+              <p>{post.frontmatter.date}</p>
               <Text
                 sx={{ pt: 3 }}
                 dangerouslySetInnerHTML={{
