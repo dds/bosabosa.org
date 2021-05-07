@@ -14,10 +14,7 @@ export const useSiteMetadata = () => {
             }
             sourceUrl
             social {
-              twitter
-              facebook
               linkedin
-              reddit
               keybase
               email
             }
