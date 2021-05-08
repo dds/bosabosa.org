@@ -1,3 +1,12 @@
+# [1.5.0](https://github.com/dds/bosabosa.org/compare/v1.4.4...v1.5.0) (2021-05-08)
+
+
+### Features
+
+* major cleanup, relicense to MIT ([0cc2a8e](https://github.com/dds/bosabosa.org/commit/0cc2a8e42e3dfb5a0b61ee82ac6cb5f5e864da73))
+
+
+
 ## [1.4.4](https://github.com/dds/bosabosa.org/compare/v1.4.3...v1.4.4) (2021-05-07)
 
 
@@ -28,15 +37,6 @@
 ### Bug Fixes
 
 * better title on blogroll ([640a6dd](https://github.com/dds/bosabosa.org/commit/640a6ddfb31cc1c6a238d13a29192af43fc82aff))
-
-
-
-# [1.4.0](https://github.com/dds/bosabosa.org/compare/v1.3.5...v1.4.0) (2021-05-07)
-
-
-### Features
-
-* better navbar ([a17cfc1](https://github.com/dds/bosabosa.org/commit/a17cfc1e863a712b1c032cce68a6186819ed4201))
 
 
 
