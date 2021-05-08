@@ -1,3 +1,12 @@
+## [1.5.9](https://github.com/dds/bosabosa.org/compare/v1.5.8...v1.5.9) (2021-05-08)
+
+
+### Bug Fixes
+
+* smaller padding on top and bottom and remove search ([3731879](https://github.com/dds/bosabosa.org/commit/3731879e8c38e1ede25171926e76136e9b34ed02))
+
+
+
 ## [1.5.8](https://github.com/dds/bosabosa.org/compare/v1.5.7...v1.5.8) (2021-05-08)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * update contact page ([5f6d11c](https://github.com/dds/bosabosa.org/commit/5f6d11c5ccb6b75962f1c36af3ad1b83bfaa1083))
-
-
-
-## [1.5.4](https://github.com/dds/bosabosa.org/compare/v1.5.3...v1.5.4) (2021-05-08)
-
-
-### Bug Fixes
-
-* restore RSS feed ([e6acff6](https://github.com/dds/bosabosa.org/commit/e6acff689e913b7ed8743adebc4c2bb878454478))
 
 
 
