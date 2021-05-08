@@ -1,3 +1,12 @@
+## [1.5.6](https://github.com/dds/bosabosa.org/compare/v1.5.5...v1.5.6) (2021-05-08)
+
+
+### Bug Fixes
+
+* better contact page ([bf694d2](https://github.com/dds/bosabosa.org/commit/bf694d273fbdfd40da236ed4aad04c46376ddd35))
+
+
+
 ## [1.5.5](https://github.com/dds/bosabosa.org/compare/v1.5.4...v1.5.5) (2021-05-08)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * nits ([89bda0d](https://github.com/dds/bosabosa.org/commit/89bda0d05ef675d6b1c9825e7b593da8b2fd84fe))
-
-
-
-## [1.5.1](https://github.com/dds/bosabosa.org/compare/v1.5.0...v1.5.1) (2021-05-08)
-
-
-### Bug Fixes
-
-* errant style on header ([ae538e1](https://github.com/dds/bosabosa.org/commit/ae538e155cdd0aed19a42e488c8c415aed4fa6a3))
 
 
 
