@@ -3,9 +3,8 @@ module.exports = {
     title: `bosabosa`,
     author: {
       name: `David D. Smith`,
-      summary: `Look, Ma, I made a website.`,
     },
-    description: `Just a blog.`,
+    description: `David D. Smith's Writing`,
     siteUrl: `https://dds.bosabosa.org/`,
     sourceUrl: `https://github.com/dds/bosabosa.org/`,
     social: {
@@ -118,7 +117,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "RSS Feed",
+            title: "David D. Smith's Writing",
           },
         ],
       },
@@ -127,7 +126,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         short_name: `bosabosa`,
-        name: `dds's blog of unmanageable tech and hair`,
+        name: `David D. Smith's Writing`,
         start_url: `/?source=pwa`,
         scope: `/`,
         display: `standalone`,
