@@ -1,3 +1,12 @@
+## [1.5.14](https://github.com/dds/bosabosa.org/compare/v1.5.13...v1.5.14) (2021-05-08)
+
+
+### Bug Fixes
+
+* remove errant link to AoC in blog post ([2a73989](https://github.com/dds/bosabosa.org/commit/2a73989045747083cf51b984beb4ffe1f38f6a7c))
+
+
+
 ## [1.5.13](https://github.com/dds/bosabosa.org/compare/v1.5.12...v1.5.13) (2021-05-08)
 
 
@@ -26,15 +35,6 @@
 ### Bug Fixes
 
 * trailing period after copyright ([8152019](https://github.com/dds/bosabosa.org/commit/8152019f573b1535c091a34a80c1da39c5c5a882))
-
-
-
-## [1.5.9](https://github.com/dds/bosabosa.org/compare/v1.5.8...v1.5.9) (2021-05-08)
-
-
-### Bug Fixes
-
-* smaller padding on top and bottom and remove search ([3731879](https://github.com/dds/bosabosa.org/commit/3731879e8c38e1ede25171926e76136e9b34ed02))
 
 
 
