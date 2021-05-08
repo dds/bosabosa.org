@@ -1,3 +1,12 @@
+## [1.5.13](https://github.com/dds/bosabosa.org/compare/v1.5.12...v1.5.13) (2021-05-08)
+
+
+### Bug Fixes
+
+* slightly wider main content and code highlighting ([bc027bf](https://github.com/dds/bosabosa.org/commit/bc027bfb6610828ef128a821ad06fd398b90f36c))
+
+
+
 ## [1.5.12](https://github.com/dds/bosabosa.org/compare/v1.5.11...v1.5.12) (2021-05-08)
 
 
@@ -26,15 +35,6 @@
 ### Bug Fixes
 
 * smaller padding on top and bottom and remove search ([3731879](https://github.com/dds/bosabosa.org/commit/3731879e8c38e1ede25171926e76136e9b34ed02))
-
-
-
-## [1.5.8](https://github.com/dds/bosabosa.org/compare/v1.5.7...v1.5.8) (2021-05-08)
-
-
-### Bug Fixes
-
-* less bad header ([4a8be4a](https://github.com/dds/bosabosa.org/commit/4a8be4ae6faa4a28470275f30d5a85d293133ee2))
 
 
 
