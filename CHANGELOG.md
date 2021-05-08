@@ -1,3 +1,12 @@
+## [1.5.5](https://github.com/dds/bosabosa.org/compare/v1.5.4...v1.5.5) (2021-05-08)
+
+
+### Bug Fixes
+
+* update contact page ([5f6d11c](https://github.com/dds/bosabosa.org/commit/5f6d11c5ccb6b75962f1c36af3ad1b83bfaa1083))
+
+
+
 ## [1.5.4](https://github.com/dds/bosabosa.org/compare/v1.5.3...v1.5.4) (2021-05-08)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * errant style on header ([ae538e1](https://github.com/dds/bosabosa.org/commit/ae538e155cdd0aed19a42e488c8c415aed4fa6a3))
-
-
-
-# [1.5.0](https://github.com/dds/bosabosa.org/compare/v1.4.4...v1.5.0) (2021-05-08)
-
-
-### Features
-
-* major cleanup, relicense to MIT ([0cc2a8e](https://github.com/dds/bosabosa.org/commit/0cc2a8e42e3dfb5a0b61ee82ac6cb5f5e864da73))
 
 
 
