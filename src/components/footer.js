@@ -13,7 +13,7 @@ const Footer = () => {
         width: `100%`,
         borderTop: `1px solid`,
         bottom: 0,
-        position: `fixed`,
+        position: `absolute`,
       }}
     >
       <Flex sx={{ p: `0 4rem` }}>

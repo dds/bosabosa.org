@@ -44,22 +44,24 @@ const Layout = ({ children, className = ``, title = `` }) => (
     />
     <SEO title={title} />
     <SkipNavLink>Skip to content</SkipNavLink>
-    <Header />
-    <Container
-      sx={{
-        my: 0,
-        mx: `auto`,
-        py: `2.5rem`,
-        px: `1.25rem`,
-        maxWidth: `42rem`,
-      }}
-    >
-      <Box id="skip-nav" className={className}>
-        <Heading as="h1">{title}</Heading>
-        {children}
-      </Box>
+    <Container sx={{ position: `relative`, minHeight: `100vh` }}>
+      <Header />
+      <Container
+        sx={{
+          my: 0,
+          mx: `auto`,
+          py: `2.5rem`,
+          px: `1.25rem`,
+          maxWidth: `42rem`,
+        }}
+      >
+        <Box id="skip-nav" className={className}>
+          <Heading as="h1">{title}</Heading>
+          {children}
+        </Box>
+      </Container>
+      <Footer />
     </Container>
-    <Footer />
   </React.Fragment>
 )
 
