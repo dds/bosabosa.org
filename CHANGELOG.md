@@ -1,3 +1,12 @@
+## [1.5.8](https://github.com/dds/bosabosa.org/compare/v1.5.7...v1.5.8) (2021-05-08)
+
+
+### Bug Fixes
+
+* less bad header ([4a8be4a](https://github.com/dds/bosabosa.org/commit/4a8be4ae6faa4a28470275f30d5a85d293133ee2))
+
+
+
 ## [1.5.7](https://github.com/dds/bosabosa.org/compare/v1.5.6...v1.5.7) (2021-05-08)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * restore RSS feed ([e6acff6](https://github.com/dds/bosabosa.org/commit/e6acff689e913b7ed8743adebc4c2bb878454478))
-
-
-
-## [1.5.3](https://github.com/dds/bosabosa.org/compare/v1.5.2...v1.5.3) (2021-05-08)
-
-
-### Bug Fixes
-
-* footer on the bottom properly ([6993aee](https://github.com/dds/bosabosa.org/commit/6993aee9772d7f570054ebb0a09f34cccae21c93))
 
 
 
