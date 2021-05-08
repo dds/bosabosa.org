@@ -1,3 +1,12 @@
+## [1.5.1](https://github.com/dds/bosabosa.org/compare/v1.5.0...v1.5.1) (2021-05-08)
+
+
+### Bug Fixes
+
+* errant style on header ([ae538e1](https://github.com/dds/bosabosa.org/commit/ae538e155cdd0aed19a42e488c8c415aed4fa6a3))
+
+
+
 # [1.5.0](https://github.com/dds/bosabosa.org/compare/v1.4.4...v1.5.0) (2021-05-08)
 
 
@@ -28,15 +37,6 @@
 * body padding and margin to zero (again) ([8954bf8](https://github.com/dds/bosabosa.org/commit/8954bf8e976070ea42f5eb953c2320072239d167))
 * missing comma ([b994ec4](https://github.com/dds/bosabosa.org/commit/b994ec4679bb446af351f0f2c20fd563d3887b58))
 * root padding and margin to 0 ([1a6a522](https://github.com/dds/bosabosa.org/commit/1a6a5223569eac0da471e72b172ea924a63f5bc9))
-
-
-
-## [1.4.1](https://github.com/dds/bosabosa.org/compare/v1.4.0...v1.4.1) (2021-05-07)
-
-
-### Bug Fixes
-
-* better title on blogroll ([640a6dd](https://github.com/dds/bosabosa.org/commit/640a6ddfb31cc1c6a238d13a29192af43fc82aff))
 
 
 
