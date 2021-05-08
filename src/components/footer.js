@@ -21,7 +21,7 @@ const Footer = () => {
           Contact
         </NavLink>
         <span sx={{ p: 2, ml: `auto` }}>
-          &copy; {new Date().getFullYear()} {author.name}.
+          &copy; {new Date().getFullYear()} {author.name}
         </span>
       </Flex>
     </footer>
