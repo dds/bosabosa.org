@@ -1,3 +1,12 @@
+## [1.5.4](https://github.com/dds/bosabosa.org/compare/v1.5.3...v1.5.4) (2021-05-08)
+
+
+### Bug Fixes
+
+* restore RSS feed ([e6acff6](https://github.com/dds/bosabosa.org/commit/e6acff689e913b7ed8743adebc4c2bb878454478))
+
+
+
 ## [1.5.3](https://github.com/dds/bosabosa.org/compare/v1.5.2...v1.5.3) (2021-05-08)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * major cleanup, relicense to MIT ([0cc2a8e](https://github.com/dds/bosabosa.org/commit/0cc2a8e42e3dfb5a0b61ee82ac6cb5f5e864da73))
-
-
-
-## [1.4.4](https://github.com/dds/bosabosa.org/compare/v1.4.3...v1.4.4) (2021-05-07)
-
-
-### Bug Fixes
-
-* **deps:** update gatsby monorepo to v3.4.2 ([#139](https://github.com/dds/bosabosa.org/issues/139)) ([637ef6f](https://github.com/dds/bosabosa.org/commit/637ef6f37d9ce377db74cf937ad073ccaf3889c5))
 
 
 
