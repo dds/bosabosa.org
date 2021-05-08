@@ -18,20 +18,12 @@ const BlogRoll = ({ n }) => {
 
           return (
             <li key={post.fields.slug} sx={{ mb: 4 }}>
-              <Heading
-                as="h2"
-                sx={{
-                  m: 0,
-                  color: `primary`,
-                }}
-              >
+              <Heading as="h2">
                 <Link
                   to={post.fields.slug}
                   sx={{
-                    color: `secondary`,
                     textDecoration: `none`,
                     ":hover,:focus": {
-                      color: `primary`,
                       textDecoration: `underline`,
                     },
                   }}

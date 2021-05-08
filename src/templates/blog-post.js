@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Text } from "theme-ui"
+import { jsx, Flex, Text } from "theme-ui"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -14,18 +14,18 @@ const BlogPostTemplate = ({ data, location }) => {
         className="blog-post"
         itemScope
         itemType="http://schema.org/Article"
+        sx={{ borderBottom: `1px solid` }}
       >
-        <header>
+        <Flex as="header" sx={{ mr: 0, ml: `auto` }}>
           <Text sx={{ variant: `text.heading` }}>{post.frontmatter.date}</Text>
-        </header>
+        </Flex>
         <Text
           as="section"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
       </article>
-      <nav className="blog-post-nav">
+      <nav sx={{ pt: 2 }} className="blog-post-nav">
         <ul
           sx={{
             display: `flex`,

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Box, jsx } from "theme-ui"
+import { Container, jsx } from "theme-ui"
 import { useState } from "react"
 import { Index } from "elasticlunr"
 import { Link } from "gatsby"
@@ -18,8 +18,9 @@ const Search = () => {
   }
 
   return (
-    <Box>
+    <Container>
       <input
+        sx={{ m: 0, p: 2 }}
         type="text"
         value={query}
         placeholder="Search"
@@ -29,7 +30,7 @@ const Search = () => {
           search(q)
         }}
       />
-      <ul>
+      <ul sx={{ m: 0, p: 0 }}>
         {results.map(page => (
           <li key={page.id}>
             <Link to={page.slug}>{page.title}</Link>
@@ -37,7 +38,7 @@ const Search = () => {
           </li>
         ))}
       </ul>
-    </Box>
+    </Container>
   )
 }
 
