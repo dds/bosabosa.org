@@ -16,7 +16,7 @@ const Footer = () => {
         position: `absolute`,
       }}
     >
-      <Flex sx={{ p: `0 4rem` }}>
+      <Flex sx={{ p: `0 2rem` }}>
         <NavLink sx={{ p: 2 }} as={Link} to="/contact" title="Contact">
           Contact
         </NavLink>
