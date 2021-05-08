@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Container, jsx } from "theme-ui"
+import { Flex, jsx } from "theme-ui"
 import { useState } from "react"
 import { Index } from "elasticlunr"
 import { Link } from "gatsby"
@@ -18,10 +18,10 @@ const Search = () => {
   }
 
   return (
-    <Container>
+    <Flex sx={{ flexWrap: `wrap` }}>
       <input
-        sx={{ m: 0, p: 2 }}
-        type="text"
+        sx={{ m: 0, p: 2, pl: `20px`, boxSizing: `border-box` }}
+        type="search"
         value={query}
         placeholder="Search"
         onChange={e => {
@@ -30,7 +30,7 @@ const Search = () => {
           search(q)
         }}
       />
-      <ul sx={{ m: 0, p: 0 }}>
+      <ul sx={{ m: 0, p: 2, pl: `20px` }}>
         {results.map(page => (
           <li key={page.id}>
             <Link to={page.slug}>{page.title}</Link>
@@ -38,7 +38,7 @@ const Search = () => {
           </li>
         ))}
       </ul>
-    </Container>
+    </Flex>
   )
 }
 
