@@ -1,3 +1,12 @@
+## [1.5.3](https://github.com/dds/bosabosa.org/compare/v1.5.2...v1.5.3) (2021-05-08)
+
+
+### Bug Fixes
+
+* footer on the bottom properly ([6993aee](https://github.com/dds/bosabosa.org/commit/6993aee9772d7f570054ebb0a09f34cccae21c93))
+
+
+
 ## [1.5.2](https://github.com/dds/bosabosa.org/compare/v1.5.1...v1.5.2) (2021-05-08)
 
 
@@ -31,10 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update gatsby monorepo to v3.4.2 ([#139](https://github.com/dds/bosabosa.org/issues/139)) ([637ef6f](https://github.com/dds/bosabosa.org/commit/637ef6f37d9ce377db74cf937ad073ccaf3889c5))
-
-
-
-## [1.4.3](https://github.com/dds/bosabosa.org/compare/v1.4.2...v1.4.3) (2021-05-07)
 
 
 
