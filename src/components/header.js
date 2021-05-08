@@ -15,7 +15,7 @@ const Header = ({ title }) => {
         <NavLink sx={{ p: 2, mr: 2 }} href="/" title="Home">
           Home
         </NavLink>
-        <NavLink sx={{ p: 2, mr: 2 }} href="/subscribe" title="Subscribe">
+        <NavLink sx={{ p: 2, mr: 2 }} href="/rss.xml" title="Subscribe">
           Subscribe
         </NavLink>
         <NavLink sx={{ p: 2, mr: 3 }} href="/contact" title="Contact">
