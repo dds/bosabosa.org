@@ -1,3 +1,12 @@
+## [1.5.15](https://github.com/dds/bosabosa.org/compare/v1.5.14...v1.5.15) (2021-05-08)
+
+
+### Bug Fixes
+
+* title of contact page ([18648e9](https://github.com/dds/bosabosa.org/commit/18648e933a01046803d9a4d421bd4d09147648f7))
+
+
+
 ## [1.5.14](https://github.com/dds/bosabosa.org/compare/v1.5.13...v1.5.14) (2021-05-08)
 
 
@@ -26,15 +35,6 @@
 
 
 ## [1.5.11](https://github.com/dds/bosabosa.org/compare/v1.5.10...v1.5.11) (2021-05-08)
-
-
-
-## [1.5.10](https://github.com/dds/bosabosa.org/compare/v1.5.9...v1.5.10) (2021-05-08)
-
-
-### Bug Fixes
-
-* trailing period after copyright ([8152019](https://github.com/dds/bosabosa.org/commit/8152019f573b1535c091a34a80c1da39c5c5a882))
 
 
 
