@@ -1,3 +1,12 @@
+## [1.5.2](https://github.com/dds/bosabosa.org/compare/v1.5.1...v1.5.2) (2021-05-08)
+
+
+### Bug Fixes
+
+* nits ([89bda0d](https://github.com/dds/bosabosa.org/commit/89bda0d05ef675d6b1c9825e7b593da8b2fd84fe))
+
+
+
 ## [1.5.1](https://github.com/dds/bosabosa.org/compare/v1.5.0...v1.5.1) (2021-05-08)
 
 
@@ -26,17 +35,6 @@
 
 
 ## [1.4.3](https://github.com/dds/bosabosa.org/compare/v1.4.2...v1.4.3) (2021-05-07)
-
-
-
-## [1.4.2](https://github.com/dds/bosabosa.org/compare/v1.4.1...v1.4.2) (2021-05-07)
-
-
-### Bug Fixes
-
-* body padding and margin to zero (again) ([8954bf8](https://github.com/dds/bosabosa.org/commit/8954bf8e976070ea42f5eb953c2320072239d167))
-* missing comma ([b994ec4](https://github.com/dds/bosabosa.org/commit/b994ec4679bb446af351f0f2c20fd563d3887b58))
-* root padding and margin to 0 ([1a6a522](https://github.com/dds/bosabosa.org/commit/1a6a5223569eac0da471e72b172ea924a63f5bc9))
 
 
 
