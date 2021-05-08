@@ -1,3 +1,4 @@
+// Themes for PrismJS.
 export const light = `
 /*
  Solarized Color Schemes originally by Ethan Schoonover

@@ -52,7 +52,7 @@ const Layout = ({ children, className = ``, title = `` }) => (
           mx: `auto`,
           py: `2.5rem`,
           px: `1.25rem`,
-          maxWidth: `42rem`,
+          maxWidth: `48rem`,
         }}
       >
         <Box id="skip-nav" className={className}>
