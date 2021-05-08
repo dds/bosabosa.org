@@ -2,7 +2,7 @@
 
 I appreciate your feedback.
 
-[Email](mailto:dave@bosabosa.org?subject=Website%20Feedback): Drop me a line.
+[Email](mailto:feedback@bosabosa.org): Drop me a line.
 
 [LinkedIn](https://www.linkedin.com/in/bosabosa/) for professional requests.
 
