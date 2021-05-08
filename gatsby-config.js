@@ -113,7 +113,12 @@ module.exports = {
         filter: (node, getNode) => node.frontmatter.tags !== "exempt",
       },
     },
-    `gatsby-plugin-theme-ui`,
+    {
+      resolve: `gatsby-plugin-theme-ui`,
+      options: {
+        preset: require("./src/components/theme"),
+      },
+    },
     `gatsby-plugin-catch-links`,
   ],
 }

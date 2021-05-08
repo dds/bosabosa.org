@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx, NavLink, Flex, Container, Heading } from "theme-ui"
 import { Helmet } from "react-helmet"
-import { Link } from "gatsby"
 
 import Search from "./search"
 
@@ -13,20 +12,19 @@ const Header = ({ title }) => {
           <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         </Helmet>
-        <NavLink sx={{ p: 2 }} as={Link} to="/" title="Home">
+        <NavLink sx={{ p: 2, mr: 2 }} href="/" title="Home">
           Home
         </NavLink>
-        <NavLink sx={{ p: 2 }} as={Link} to="/subscribe" title="Subscribe">
+        <NavLink sx={{ p: 2, mr: 2 }} href="/subscribe" title="Subscribe">
           Subscribe
         </NavLink>
-        <NavLink sx={{ p: 2 }} as={Link} to="/contact" title="Contact">
+        <NavLink sx={{ p: 2, mr: 3 }} href="/contact" title="Contact">
           Contact
         </NavLink>
         <Search sx={{ p: 2 }} />
         <NavLink
           sx={{ p: 2, ml: `auto` }}
-          as={Link}
-          to="https://github.com/dds/bosabosa.org"
+          href="https://github.com/dds/bosabosa.org"
           title="Source"
         >
           Source

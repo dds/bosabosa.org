@@ -1,4 +1,4 @@
-const theme = {
+module.exports = {
   useCustomProperties: true,
   config: {
     useColorSchemeMediaQuery: true,
@@ -58,45 +58,4 @@ const theme = {
       },
     },
   },
-  styles: {
-    root: {
-      margin: 0,
-      padding: 0,
-      textRendering: `optimizeLegibility`,
-      WebkitFontSmoothing: `antialiased`,
-      MozOsxFontSmoothing: `grayscale`,
-    },
-    body: {
-      fontFamily: `serif`,
-    },
-    p: {
-      fontSize: [1, 1, 2],
-      letterSpacing: `-0.003em`,
-      lineHeight: `body`,
-      "--baseline-multiplier": 0.179,
-      "--x-height-multiplier": 0.35,
-      wordBreak: `break-word`,
-      fontFamily: `serif`,
-    },
-    h1: {
-      variant: `text.heading`,
-    },
-    h2: {
-      variant: `text.heading`,
-    },
-    h3: {
-      variant: `text.heading`,
-    },
-    h4: {
-      variant: `text.heading`,
-    },
-    h5: {
-      variant: `text.heading`,
-    },
-    h6: {
-      variant: `text.heading`,
-    },
-  },
 }
-
-export default theme
