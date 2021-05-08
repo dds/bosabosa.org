@@ -11,7 +11,7 @@ const BlogPostTemplate = ({ data, location }) => {
   return (
     <Layout location={location} title={post.frontmatter.title}>
       <article
-        className="blog-post"
+        className="post"
         itemScope
         itemType="http://schema.org/Article"
         sx={{ borderBottom: `1px solid` }}

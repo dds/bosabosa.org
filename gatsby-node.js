@@ -6,12 +6,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   const blogTemplate = path.resolve(`./src/templates/blog-post.js`)
-  const tagsTemplate = path.resolve(`./src/templates/tags.js`)
 
-  const result = await graphql(
+  const blogQuery = await graphql(
     `
       {
         postsRemark: allMarkdownRemark(
+          filter: { fields: { sourceName: { eq: "blog" } } }
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
         ) {
@@ -36,27 +36,19 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
   )
 
-  if (result.errors) {
+  if (blogQuery.errors) {
     reporter.panicOnBuild(
       `There was an error loading your blog posts`,
-      result.errors
+      blogQuery.errors
     )
     return
   }
 
-  const posts = result.data.postsRemark.edges
-
-  // Create blog posts pages
-  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
-  // `context` is available in the template as a prop and as a variable in GraphQL
-
-  if (posts.length === 0) {
-    return
-  }
-  posts.forEach((post, index) => {
-    const previousPostId = index === 0 ? null : posts[index - 1].node.id
+  const blogPosts = blogQuery.data.postsRemark.edges
+  blogPosts.forEach((post, index) => {
+    const previousPostId = index === 0 ? null : blogPosts[index - 1].node.id
     const nextPostId =
-      index === posts.length - 1 ? null : posts[index + 1].node.id
+      index === blogPosts.length - 1 ? null : blogPosts[index + 1].node.id
 
     createPage({
       path: post.node.fields.slug,
@@ -68,8 +60,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       },
     })
   })
+
   // Extract tag data from query
-  const tags = result.data.tagsGroup.group
+  const tags = blogQuery.data.tagsGroup.group
+  const tagsTemplate = path.resolve(`./src/templates/tags.js`)
   // Make tag pages
   tags.forEach(tag => {
     createPage({
@@ -80,8 +74,56 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       },
     })
   })
+
   // Static pages in markdown.
-  //
+  const pageTemplate = path.resolve(`./src/templates/page.js`)
+  const pageQuery = await graphql(
+    `
+      {
+        postsRemark: allMarkdownRemark(
+          filter: { fields: { sourceName: { eq: "pages" } } }
+          sort: { fields: [frontmatter___date], order: DESC }
+          limit: 1000
+        ) {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                tags
+              }
+            }
+          }
+        }
+        tagsGroup: allMarkdownRemark(limit: 2000) {
+          group(field: frontmatter___tags) {
+            fieldValue
+          }
+        }
+      }
+    `
+  )
+
+  if (pageQuery.errors) {
+    reporter.panicOnBuild(
+      `There was an error loading your pages`,
+      pageQuery.errors
+    )
+    return
+  }
+
+  const pages = pageQuery.data.postsRemark.edges
+  pages.forEach((post, index) => {
+    createPage({
+      path: post.node.fields.slug,
+      component: pageTemplate,
+      context: {
+        id: post.node.id,
+      },
+    })
+  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
