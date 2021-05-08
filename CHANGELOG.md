@@ -1,3 +1,7 @@
+## [1.5.11](https://github.com/dds/bosabosa.org/compare/v1.5.10...v1.5.11) (2021-05-08)
+
+
+
 ## [1.5.10](https://github.com/dds/bosabosa.org/compare/v1.5.9...v1.5.10) (2021-05-08)
 
 
@@ -31,15 +35,6 @@
 ### Bug Fixes
 
 * feed description ([3a91be9](https://github.com/dds/bosabosa.org/commit/3a91be9743adf329ef85f84697d52cace9fae6a7))
-
-
-
-## [1.5.6](https://github.com/dds/bosabosa.org/compare/v1.5.5...v1.5.6) (2021-05-08)
-
-
-### Bug Fixes
-
-* better contact page ([bf694d2](https://github.com/dds/bosabosa.org/commit/bf694d273fbdfd40da236ed4aad04c46376ddd35))
 
 
 
