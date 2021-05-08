@@ -52,8 +52,7 @@ tags:
 Last month, I was able to play with lots of tech that we don't use at work. It
 started with setting up automation with [github workflows] to replicate some of
 what I've gotten accustomed to at work: configuring GitHub actions for automated
-versioning and dependency updates, all controlled through the repo. doing
-[Advent of Code](/b/advent-of-code-2020/).
+versioning and dependency updates, all controlled through the repo.
 
 I launched this blog to share the experience so I began [learning
 gatsby](/b/learning-gatsby). That's been extremely educational and rewarding.
