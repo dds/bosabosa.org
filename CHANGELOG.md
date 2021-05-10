@@ -1,3 +1,7 @@
+## [1.5.16](https://github.com/dds/bosabosa.org/compare/v1.5.15...v1.5.16) (2021-05-10)
+
+
+
 ## [1.5.15](https://github.com/dds/bosabosa.org/compare/v1.5.14...v1.5.15) (2021-05-08)
 
 
@@ -31,10 +35,6 @@
 ### Bug Fixes
 
 * separate template for blog posts and pages ([5d8b254](https://github.com/dds/bosabosa.org/commit/5d8b254748c8c9cd32598c7e1e5ae3f2c943f5df))
-
-
-
-## [1.5.11](https://github.com/dds/bosabosa.org/compare/v1.5.10...v1.5.11) (2021-05-08)
 
 
 
