@@ -39,7 +39,7 @@
     "yarn": "1.22.10"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "prettier": "2.3.0"
   },
   "license": "UNLICENSED",
   "scripts": {
