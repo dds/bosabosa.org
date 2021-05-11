@@ -1,3 +1,12 @@
+## [1.5.17](https://github.com/dds/bosabosa.org/compare/v1.5.16...v1.5.17) (2021-05-11)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([#141](https://github.com/dds/bosabosa.org/issues/141)) ([0bd7a28](https://github.com/dds/bosabosa.org/commit/0bd7a285b926d597bbe16e2d0db298a9d3861e2b))
+
+
+
 ## [1.5.16](https://github.com/dds/bosabosa.org/compare/v1.5.15...v1.5.16) (2021-05-10)
 
 
@@ -26,15 +35,6 @@
 ### Bug Fixes
 
 * slightly wider main content and code highlighting ([bc027bf](https://github.com/dds/bosabosa.org/commit/bc027bfb6610828ef128a821ad06fd398b90f36c))
-
-
-
-## [1.5.12](https://github.com/dds/bosabosa.org/compare/v1.5.11...v1.5.12) (2021-05-08)
-
-
-### Bug Fixes
-
-* separate template for blog posts and pages ([5d8b254](https://github.com/dds/bosabosa.org/commit/5d8b254748c8c9cd32598c7e1e5ae3f2c943f5df))
 
 
 
