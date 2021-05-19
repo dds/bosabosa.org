@@ -1,3 +1,12 @@
+## [1.5.18](https://github.com/dds/bosabosa.org/compare/v1.5.17...v1.5.18) (2021-05-19)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([#142](https://github.com/dds/bosabosa.org/issues/142)) ([fb62f7e](https://github.com/dds/bosabosa.org/commit/fb62f7eb7df5d524c905603b6ba40f21973607c0))
+
+
+
 ## [1.5.17](https://github.com/dds/bosabosa.org/compare/v1.5.16...v1.5.17) (2021-05-11)
 
 
@@ -26,15 +35,6 @@
 ### Bug Fixes
 
 * remove errant link to AoC in blog post ([2a73989](https://github.com/dds/bosabosa.org/commit/2a73989045747083cf51b984beb4ffe1f38f6a7c))
-
-
-
-## [1.5.13](https://github.com/dds/bosabosa.org/compare/v1.5.12...v1.5.13) (2021-05-08)
-
-
-### Bug Fixes
-
-* slightly wider main content and code highlighting ([bc027bf](https://github.com/dds/bosabosa.org/commit/bc027bfb6610828ef128a821ad06fd398b90f36c))
 
 
 
