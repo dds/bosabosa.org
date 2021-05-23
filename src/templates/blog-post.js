@@ -11,7 +11,6 @@ const BlogPostTemplate = ({ data, location }) => {
   return (
     <Layout location={location} title={post.frontmatter.title}>
       <article
-        className="post"
         itemScope
         itemType="http://schema.org/Article"
         sx={{ borderBottom: `1px solid` }}
@@ -25,7 +24,7 @@ const BlogPostTemplate = ({ data, location }) => {
           itemProp="articleBody"
         />
       </article>
-      <nav sx={{ pt: 2 }} className="blog-post-nav">
+      <nav sx={{ pt: 2 }}>
         <ul
           sx={{
             display: `flex`,

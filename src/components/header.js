@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 
 const Header = ({ title }) => {
   return (
-    <header sx={{ width: `100%`, borderBottom: `1px solid` }}>
+    <nav sx={{ gridArea: `header`, borderBottom: `1px solid` }}>
       <Flex sx={{ p: `0 2rem`, flexFlow: `row wrap` }}>
         <Helmet>
           <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />
@@ -28,7 +28,7 @@ const Header = ({ title }) => {
           Source
         </NavLink>
       </Flex>
-    </header>
+    </nav>
   )
 }
 

@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from "react"
-import { Box, Container, Heading, jsx } from "theme-ui"
+import { Grid, Heading, jsx } from "theme-ui"
 import { Global } from "@emotion/react"
 
 import Footer from "./footer"
@@ -8,7 +8,18 @@ import Header from "./header"
 import SeO from "./seo"
 import SkipNavLink from "./skip-nav"
 
-const Layout = ({ children, className = ``, title = `` }) => (
+const phoneLayout = `'header' 'main' 'aside' 'footer'`
+const tabletLayout = `
+      'header   header  header'
+      'aside    aside   aside'
+      'main     main    main'
+      'footer   footer  footer'`
+const desktopLayout = `
+      'header   header   header  header'
+      '.        main     main    aside'
+      'footer   footer   footer  footer'`
+
+const Layout = ({ children, title = `` }) => (
   <React.Fragment>
     <Global
       styles={theme => ({
@@ -44,24 +55,31 @@ const Layout = ({ children, className = ``, title = `` }) => (
     />
     <SeO title={title} />
     <SkipNavLink>Skip to content</SkipNavLink>
-    <Container sx={{ position: `relative`, minHeight: `100vh` }}>
+    <Grid
+      sx={{
+        height: `100vh`,
+        gridTemplateAreas: [phoneLayout, tabletLayout, desktopLayout],
+        gridTemplateColumns: ["1fr", "1fr 2fr 1fr", "1fr 2fr 1fr 1fr"],
+        gridTemplateRows: [
+          "min-content 1fr min-content min-content",
+          "min-content 1fr min-content min-content",
+          "min-content 1fr min-content",
+        ],
+      }}
+    >
       <Header />
-      <Container
+      <main
+        id="skip-nav"
         sx={{
-          my: 0,
-          mx: `auto`,
-          py: `2.5rem`,
-          px: `1.25rem`,
-          maxWidth: `48rem`,
+          gridArea: `main`,
         }}
       >
-        <Box id="skip-nav" className={className}>
-          <Heading as="h1">{title}</Heading>
-          {children}
-        </Box>
-      </Container>
+        <Heading as="h1">{title}</Heading>
+        {children}
+      </main>
+      <aside sx={{ gridArea: `aside` }}></aside>
       <Footer />
-    </Container>
+    </Grid>
   </React.Fragment>
 )
 

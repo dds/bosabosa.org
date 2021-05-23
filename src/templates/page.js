@@ -9,7 +9,7 @@ const PageTemplate = ({ data, location }) => {
 
   return (
     <Layout location={location} title={post.frontmatter.title}>
-      <article className="post" itemScope itemType="http://schema.org/Article">
+      <article itemScope itemType="http://schema.org/Article">
         <Flex as="header" sx={{ mr: 0, ml: `auto` }}>
           <Text sx={{ variant: `text.heading` }}>{post.frontmatter.date}</Text>
         </Flex>

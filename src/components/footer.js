@@ -7,14 +7,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 const Footer = () => {
   const { author } = useSiteMetadata()
   return (
-    <footer
-      sx={{
-        width: `100%`,
-        borderTop: `1px solid`,
-        bottom: 0,
-        position: `absolute`,
-      }}
-    >
+    <footer sx={{ gridArea: `footer`, borderTop: `1px solid` }}>
       <Flex sx={{ p: `0 2rem` }}>
         <NavLink sx={{ p: 2 }} as={Link} to="/contact" title="Contact">
           Contact
