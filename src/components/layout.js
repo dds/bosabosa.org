@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import React from "react"
+import { Helmet } from "react-helmet"
 import { Grid, Heading, jsx } from "theme-ui"
 import { Global } from "@emotion/react"
 
@@ -54,6 +55,10 @@ const Layout = ({ children, title = `` }) => (
       })}
     />
     <SeO title={title} />
+    <Helmet>
+      <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    </Helmet>
     <SkipNavLink>Skip to content</SkipNavLink>
     <Grid
       sx={{

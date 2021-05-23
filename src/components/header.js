@@ -1,22 +1,17 @@
 /** @jsx jsx */
 import { jsx, NavLink, Flex } from "theme-ui"
-import { Helmet } from "react-helmet"
 
 const Header = ({ title }) => {
   return (
     <nav sx={{ gridArea: `header`, borderBottom: `1px solid` }}>
-      <Flex sx={{ p: `0 2rem`, flexFlow: `row wrap` }}>
-        <Helmet>
-          <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />
-          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        </Helmet>
-        <NavLink sx={{ p: 2, mr: 2 }} href="/" title="Home">
+      <Flex sx={{ p: `0 2rem`, flexFlow: `row wrap`, alignItems: `center` }}>
+        <NavLink sx={{ p: 2 }} href="/" title="Home">
           Home
         </NavLink>
-        <NavLink sx={{ p: 2, mr: 2 }} href="/rss.xml" title="Subscribe">
+        <NavLink sx={{ p: 2 }} href="/rss.xml" title="Subscribe">
           Subscribe
         </NavLink>
-        <NavLink sx={{ p: 2, mr: 3 }} href="/contact" title="Contact">
+        <NavLink sx={{ p: 2 }} href="/contact" title="Contact">
           Contact
         </NavLink>
         {/* <Search sx={{ p: 2 }} /> */}
