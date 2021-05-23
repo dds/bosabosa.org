@@ -1,3 +1,12 @@
+# [1.6.0](https://github.com/dds/bosabosa.org/compare/v1.5.19...v1.6.0) (2021-05-23)
+
+
+### Features
+
+* css grid layout with hidden sidebar ([614900f](https://github.com/dds/bosabosa.org/commit/614900f458afabfe937cf62f78e26fc8ca29c672))
+
+
+
 ## [1.5.19](https://github.com/dds/bosabosa.org/compare/v1.5.18...v1.5.19) (2021-05-23)
 
 
@@ -26,15 +35,6 @@
 
 
 ## [1.5.16](https://github.com/dds/bosabosa.org/compare/v1.5.15...v1.5.16) (2021-05-10)
-
-
-
-## [1.5.15](https://github.com/dds/bosabosa.org/compare/v1.5.14...v1.5.15) (2021-05-08)
-
-
-### Bug Fixes
-
-* title of contact page ([18648e9](https://github.com/dds/bosabosa.org/commit/18648e933a01046803d9a4d421bd4d09147648f7))
 
 
 
