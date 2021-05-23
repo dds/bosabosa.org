@@ -5,7 +5,7 @@ import { Global } from "@emotion/react"
 
 import Footer from "./footer"
 import Header from "./header"
-import SEO from "./seo"
+import SeO from "./seo"
 import SkipNavLink from "./skip-nav"
 
 const Layout = ({ children, className = ``, title = `` }) => (
@@ -42,7 +42,7 @@ const Layout = ({ children, className = ``, title = `` }) => (
         },
       })}
     />
-    <SEO title={title} />
+    <SeO title={title} />
     <SkipNavLink>Skip to content</SkipNavLink>
     <Container sx={{ position: `relative`, minHeight: `100vh` }}>
       <Header />

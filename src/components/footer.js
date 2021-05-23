@@ -2,7 +2,6 @@
 import { jsx, NavLink, Flex } from "theme-ui"
 import { Link } from "gatsby"
 
-import Contact from "./contact"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 const Footer = () => {

@@ -1,8 +1,6 @@
 /** @jsx jsx */
-import { jsx, NavLink, Flex, Container, Heading } from "theme-ui"
+import { jsx, NavLink, Flex } from "theme-ui"
 import { Helmet } from "react-helmet"
-
-import Search from "./search"
 
 const Header = ({ title }) => {
   return (
