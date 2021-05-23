@@ -1,3 +1,12 @@
+## [1.5.19](https://github.com/dds/bosabosa.org/compare/v1.5.18...v1.5.19) (2021-05-23)
+
+
+### Bug Fixes
+
+* clean up warnings ([0d1ffb9](https://github.com/dds/bosabosa.org/commit/0d1ffb9270bf8b1f211ed67e1d709970ee075c1b))
+
+
+
 ## [1.5.18](https://github.com/dds/bosabosa.org/compare/v1.5.17...v1.5.18) (2021-05-19)
 
 
@@ -26,15 +35,6 @@
 ### Bug Fixes
 
 * title of contact page ([18648e9](https://github.com/dds/bosabosa.org/commit/18648e933a01046803d9a4d421bd4d09147648f7))
-
-
-
-## [1.5.14](https://github.com/dds/bosabosa.org/compare/v1.5.13...v1.5.14) (2021-05-08)
-
-
-### Bug Fixes
-
-* remove errant link to AoC in blog post ([2a73989](https://github.com/dds/bosabosa.org/commit/2a73989045747083cf51b984beb4ffe1f38f6a7c))
 
 
 
