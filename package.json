@@ -8,6 +8,7 @@
   "dependencies": {
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "3.0.2",
     "@theme-ui/color": "0.8.4",
+    "@theme-ui/presets": "0.8.4",
     "gatsby": "3.5.1",
     "gatsby-image": "3.5.0",
     "gatsby-plugin-catch-links": "3.5.0",

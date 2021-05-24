@@ -167,9 +167,7 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-theme-ui`,
-      options: {
-        preset: require("./src/components/theme"),
-      },
+      options: {},
     },
     `gatsby-plugin-catch-links`,
   ],

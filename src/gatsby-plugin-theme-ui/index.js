@@ -1,4 +1,5 @@
-module.exports = {
+import { system, dark } from "@theme-ui/presets"
+const theme = {
   useCustomProperties: true,
   config: {
     useColorSchemeMediaQuery: true,
@@ -9,12 +10,10 @@ module.exports = {
   colors: {
     modes: {
       dark: {
-        text: "#000",
-        background: "#fff",
+        ...dark.colors,
       },
       light: {
-        text: "#fff",
-        background: "#000",
+        ...system.colors,
       },
     },
   },
@@ -59,3 +58,5 @@ module.exports = {
     },
   },
 }
+
+export default theme
