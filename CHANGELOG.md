@@ -1,3 +1,12 @@
+## [1.6.3](https://github.com/dds/bosabosa.org/compare/v1.6.2...v1.6.3) (2021-05-24)
+
+
+### Bug Fixes
+
+* stable content width of 50em ([6e57126](https://github.com/dds/bosabosa.org/commit/6e57126d48ed734d1c8953d93e55dafdf9f9cfcb))
+
+
+
 ## [1.6.2](https://github.com/dds/bosabosa.org/compare/v1.6.1...v1.6.2) (2021-05-24)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * clean up warnings ([0d1ffb9](https://github.com/dds/bosabosa.org/commit/0d1ffb9270bf8b1f211ed67e1d709970ee075c1b))
-
-
-
-## [1.5.18](https://github.com/dds/bosabosa.org/compare/v1.5.17...v1.5.18) (2021-05-19)
-
-
-### Bug Fixes
-
-* **deps:** update gatsby monorepo ([#142](https://github.com/dds/bosabosa.org/issues/142)) ([fb62f7e](https://github.com/dds/bosabosa.org/commit/fb62f7eb7df5d524c905603b6ba40f21973607c0))
 
 
 
