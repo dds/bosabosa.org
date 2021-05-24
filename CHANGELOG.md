@@ -1,3 +1,12 @@
+## [1.6.2](https://github.com/dds/bosabosa.org/compare/v1.6.1...v1.6.2) (2021-05-24)
+
+
+### Bug Fixes
+
+* refine responsive breakpoints ([7b8566c](https://github.com/dds/bosabosa.org/commit/7b8566c2158cd52d17c9fde348c9e70da58b5b4b))
+
+
+
 ## [1.6.1](https://github.com/dds/bosabosa.org/compare/v1.6.0...v1.6.1) (2021-05-24)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update gatsby monorepo ([#142](https://github.com/dds/bosabosa.org/issues/142)) ([fb62f7e](https://github.com/dds/bosabosa.org/commit/fb62f7eb7df5d524c905603b6ba40f21973607c0))
-
-
-
-## [1.5.17](https://github.com/dds/bosabosa.org/compare/v1.5.16...v1.5.17) (2021-05-11)
-
-
-### Bug Fixes
-
-* **deps:** update gatsby monorepo ([#141](https://github.com/dds/bosabosa.org/issues/141)) ([0bd7a28](https://github.com/dds/bosabosa.org/commit/0bd7a285b926d597bbe16e2d0db298a9d3861e2b))
 
 
 
