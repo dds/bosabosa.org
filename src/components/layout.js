@@ -9,13 +9,14 @@ import Header from "./header"
 import SeO from "./seo"
 import SkipNavLink from "./skip-nav"
 
-const phoneLayout = `'header' 'main' 'aside' 'footer'`
-const tabletLayout = `
+const layoutXS = `'header' 'aside' 'main' 'footer'`
+const layoutS = layoutXS
+const layoutM = `
       'header   header  header'
       'aside    aside   aside'
       'main     main    main'
       'footer   footer  footer'`
-const desktopLayout = `
+const layoutL = `
       'header   header   header  header'
       '.        main     main    aside'
       'footer   footer   footer  footer'`
@@ -63,11 +64,12 @@ const Layout = ({ children, title = `` }) => (
     <Grid
       sx={{
         height: `100vh`,
-        gridTemplateAreas: [phoneLayout, tabletLayout, desktopLayout],
-        gridTemplateColumns: ["1fr", "1fr 2fr 1fr", "1fr 2fr 1fr 1fr"],
+        gridTemplateAreas: [layoutXS, layoutS, layoutM, layoutL],
+        gridTemplateColumns: ["1fr", "1fr", "1fr 2fr 1fr", "1fr 2fr 1fr 1fr"],
         gridTemplateRows: [
-          "min-content 1fr min-content min-content",
-          "min-content 1fr min-content min-content",
+          "min-content min-content 1fr min-content",
+          "min-content min-content 1fr min-content",
+          "min-content min-content 1fr min-content",
           "min-content 1fr min-content",
         ],
       }}
@@ -77,6 +79,7 @@ const Layout = ({ children, title = `` }) => (
         id="skip-nav"
         sx={{
           gridArea: `main`,
+          px: 3,
         }}
       >
         <Heading as="h1">{title}</Heading>
