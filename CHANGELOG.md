@@ -1,3 +1,12 @@
+## [1.6.1](https://github.com/dds/bosabosa.org/compare/v1.6.0...v1.6.1) (2021-05-24)
+
+
+### Bug Fixes
+
+* unnecessary right margins on nav links ([aa0ea73](https://github.com/dds/bosabosa.org/commit/aa0ea7375427489921efc62ef0b6e9d4012f9198))
+
+
+
 # [1.6.0](https://github.com/dds/bosabosa.org/compare/v1.5.19...v1.6.0) (2021-05-23)
 
 
@@ -31,10 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update gatsby monorepo ([#141](https://github.com/dds/bosabosa.org/issues/141)) ([0bd7a28](https://github.com/dds/bosabosa.org/commit/0bd7a285b926d597bbe16e2d0db298a9d3861e2b))
-
-
-
-## [1.5.16](https://github.com/dds/bosabosa.org/compare/v1.5.15...v1.5.16) (2021-05-10)
 
 
 
