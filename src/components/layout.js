@@ -11,11 +11,7 @@ import SkipNavLink from "./skip-nav"
 
 const layoutXS = `'header' 'aside' 'main' 'footer'`
 const layoutS = layoutXS
-const layoutM = `
-      'header   header  header'
-      'aside    aside   aside'
-      'main     main    main'
-      'footer   footer  footer'`
+const layoutM = layoutS
 const layoutL = `
       'header   header   header  header'
       '.        main     main    aside'
@@ -65,7 +61,7 @@ const Layout = ({ children, title = `` }) => (
       sx={{
         height: `100vh`,
         gridTemplateAreas: [layoutXS, layoutS, layoutM, layoutL],
-        gridTemplateColumns: ["1fr", "1fr", "1fr 2fr 1fr", "1fr 2fr 1fr 1fr"],
+        gridTemplateColumns: ["1fr", "1fr", "1fr", "1fr 50em 0 1fr"],
         gridTemplateRows: [
           "min-content min-content 1fr min-content",
           "min-content min-content 1fr min-content",
@@ -79,6 +75,7 @@ const Layout = ({ children, title = `` }) => (
         id="skip-nav"
         sx={{
           gridArea: `main`,
+          maxWidth: `50em`,
           px: 3,
         }}
       >
