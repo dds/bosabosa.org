@@ -9,11 +9,11 @@ const theme = {
   initialColorModeName: `light`,
   colors: {
     modes: {
-      dark: {
-        ...dark.colors,
-      },
       light: {
         ...system.colors,
+      },
+      dark: {
+        ...dark.colors,
       },
     },
   },
