@@ -1,3 +1,12 @@
+## [1.6.6](https://github.com/dds/bosabosa.org/compare/v1.6.5...v1.6.6) (2021-05-24)
+
+
+### Bug Fixes
+
+* light before dark ([b1e2c50](https://github.com/dds/bosabosa.org/commit/b1e2c50086aca12e10097db32029b53bb720b707))
+
+
+
 ## [1.6.5](https://github.com/dds/bosabosa.org/compare/v1.6.4...v1.6.5) (2021-05-24)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * refine responsive breakpoints ([7b8566c](https://github.com/dds/bosabosa.org/commit/7b8566c2158cd52d17c9fde348c9e70da58b5b4b))
-
-
-
-## [1.6.1](https://github.com/dds/bosabosa.org/compare/v1.6.0...v1.6.1) (2021-05-24)
-
-
-### Bug Fixes
-
-* unnecessary right margins on nav links ([aa0ea73](https://github.com/dds/bosabosa.org/commit/aa0ea7375427489921efc62ef0b6e9d4012f9198))
 
 
 
