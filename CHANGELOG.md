@@ -1,3 +1,12 @@
+## [1.6.7](https://github.com/dds/bosabosa.org/compare/v1.6.6...v1.6.7) (2021-05-25)
+
+
+### Bug Fixes
+
+* use normalize.css ([90d6fe8](https://github.com/dds/bosabosa.org/commit/90d6fe87781f8a2cbd73484b558193f6e10ca797))
+
+
+
 ## [1.6.6](https://github.com/dds/bosabosa.org/compare/v1.6.5...v1.6.6) (2021-05-24)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * stable content width of 50em ([6e57126](https://github.com/dds/bosabosa.org/commit/6e57126d48ed734d1c8953d93e55dafdf9f9cfcb))
-
-
-
-## [1.6.2](https://github.com/dds/bosabosa.org/compare/v1.6.1...v1.6.2) (2021-05-24)
-
-
-### Bug Fixes
-
-* refine responsive breakpoints ([7b8566c](https://github.com/dds/bosabosa.org/commit/7b8566c2158cd52d17c9fde348c9e70da58b5b4b))
 
 
 
