@@ -1,3 +1,13 @@
+## [1.6.8](https://github.com/dds/bosabosa.org/compare/v1.6.7...v1.6.8) (2021-05-25)
+
+
+### Bug Fixes
+
+* remove disabling theme-ui local storage ([1557b78](https://github.com/dds/bosabosa.org/commit/1557b7817aefd6a43f3baa3de0781d311905ad19))
+* remove unused Global import ([c3e8eda](https://github.com/dds/bosabosa.org/commit/c3e8eda66ec4c5e3a3ba8b5d6b1a5d310bc9bc2e))
+
+
+
 ## [1.6.7](https://github.com/dds/bosabosa.org/compare/v1.6.6...v1.6.7) (2021-05-25)
 
 
@@ -31,15 +41,6 @@
 ### Bug Fixes
 
 * improve medium size ([77470e2](https://github.com/dds/bosabosa.org/commit/77470e2d70643297e90933e34b065bea32248d78))
-
-
-
-## [1.6.3](https://github.com/dds/bosabosa.org/compare/v1.6.2...v1.6.3) (2021-05-24)
-
-
-### Bug Fixes
-
-* stable content width of 50em ([6e57126](https://github.com/dds/bosabosa.org/commit/6e57126d48ed734d1c8953d93e55dafdf9f9cfcb))
 
 
 
