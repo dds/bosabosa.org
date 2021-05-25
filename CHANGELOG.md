@@ -1,3 +1,12 @@
+## [1.6.11](https://github.com/dds/bosabosa.org/compare/v1.6.10...v1.6.11) (2021-05-25)
+
+
+### Bug Fixes
+
+* button to toggle light/dark ([205c584](https://github.com/dds/bosabosa.org/commit/205c5843582e4e08148881d41de1f9526ad4bfd5))
+
+
+
 ## [1.6.10](https://github.com/dds/bosabosa.org/compare/v1.6.9...v1.6.10) (2021-05-25)
 
 
@@ -27,15 +36,6 @@
 ### Bug Fixes
 
 * use normalize.css ([90d6fe8](https://github.com/dds/bosabosa.org/commit/90d6fe87781f8a2cbd73484b558193f6e10ca797))
-
-
-
-## [1.6.6](https://github.com/dds/bosabosa.org/compare/v1.6.5...v1.6.6) (2021-05-24)
-
-
-### Bug Fixes
-
-* light before dark ([b1e2c50](https://github.com/dds/bosabosa.org/commit/b1e2c50086aca12e10097db32029b53bb720b707))
 
 
 
