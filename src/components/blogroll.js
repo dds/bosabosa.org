@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import { jsx, Container, Heading, Text } from "theme-ui"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { jsx, Container, Heading, Link, Text } from "theme-ui"
+import { useStaticQuery, graphql } from "gatsby"
 
 const BlogRoll = ({ n }) => {
   const data = useStaticQuery(query)
@@ -20,7 +20,7 @@ const BlogRoll = ({ n }) => {
             <li key={post.fields.slug} sx={{ mb: 4 }}>
               <Heading as="h2">
                 <Link
-                  to={post.fields.slug}
+                  href={post.fields.slug}
                   sx={{
                     textDecoration: `none`,
                     ":hover,:focus": {

@@ -23,7 +23,7 @@ const theme = {
         muted: "#191919",
         highlight: "#29112c",
         gray: "#999",
-        purple: "#c0f",
+        accent: "#c0f",
       },
     },
   },
@@ -54,18 +54,43 @@ const theme = {
     },
   },
   links: {
+    color: `primary`,
     textDecoration: `none`,
     ":hover": {
       textDecoration: `underline`,
     },
     nav: {
+      color: `text`,
       textDecoration: `none`,
+      "&:hover": {
+        bg: `highlight`,
+        textDecoration: `underline`,
+      },
+      "&:active": {
+        color: `primary`,
+      },
+    },
+  },
+  styles: {
+    a: {
+      color: `primary`,
+      ":visited": {
+        color: `secondary`,
+      },
       ":hover": {
         textDecoration: `underline`,
       },
     },
+    // navlink: {
+    //   display: "inline-block",
+    //   fontWeight: "bold",
+    //   color: "inherit",
+    //   textDecoration: "none",
+    //   ":hover,:focus": {
+    //     color: "primary",
+    //   },
+    // },
   },
-  styles: {},
 }
 
 export default theme
