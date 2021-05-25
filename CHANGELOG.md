@@ -1,3 +1,7 @@
+## [1.6.9](https://github.com/dds/bosabosa.org/compare/v1.6.8...v1.6.9) (2021-05-25)
+
+
+
 ## [1.6.8](https://github.com/dds/bosabosa.org/compare/v1.6.7...v1.6.8) (2021-05-25)
 
 
@@ -32,15 +36,6 @@
 ### Bug Fixes
 
 * import dark and base theme-ui presets ([1f91ca8](https://github.com/dds/bosabosa.org/commit/1f91ca87ff78cf4339dc92d487a8f4f8671add59))
-
-
-
-## [1.6.4](https://github.com/dds/bosabosa.org/compare/v1.6.3...v1.6.4) (2021-05-24)
-
-
-### Bug Fixes
-
-* improve medium size ([77470e2](https://github.com/dds/bosabosa.org/commit/77470e2d70643297e90933e34b065bea32248d78))
 
 
 
