@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { Helmet } from "react-helmet"
-import { Grid, Heading, Styled, jsx } from "theme-ui"
+import { Grid, Heading, Themed, jsx } from "theme-ui"
 import "normalize.css"
 
 import Footer from "./footer"
@@ -20,7 +20,7 @@ const layoutL = `
       'footer   footer   footer  footer'`
 
 const Layout = ({ children, title = `` }) => (
-  <Styled.root>
+  <Themed.root>
     <SeO title={title} />
     <Helmet>
       <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />
@@ -55,7 +55,7 @@ const Layout = ({ children, title = `` }) => (
       <aside sx={{ gridArea: `aside` }}></aside>
       <Footer />
     </Grid>
-  </Styled.root>
+  </Themed.root>
 )
 
 export default Layout
