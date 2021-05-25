@@ -1,3 +1,12 @@
+## [1.6.10](https://github.com/dds/bosabosa.org/compare/v1.6.9...v1.6.10) (2021-05-25)
+
+
+### Bug Fixes
+
+* rename Styled to Themed ([ab7a7ed](https://github.com/dds/bosabosa.org/commit/ab7a7ed59429dfce2f12bfb5cc9c2e0f0bce9eb0))
+
+
+
 ## [1.6.9](https://github.com/dds/bosabosa.org/compare/v1.6.8...v1.6.9) (2021-05-25)
 
 
@@ -27,15 +36,6 @@
 ### Bug Fixes
 
 * light before dark ([b1e2c50](https://github.com/dds/bosabosa.org/commit/b1e2c50086aca12e10097db32029b53bb720b707))
-
-
-
-## [1.6.5](https://github.com/dds/bosabosa.org/compare/v1.6.4...v1.6.5) (2021-05-24)
-
-
-### Bug Fixes
-
-* import dark and base theme-ui presets ([1f91ca8](https://github.com/dds/bosabosa.org/commit/1f91ca87ff78cf4339dc92d487a8f4f8671add59))
 
 
 
