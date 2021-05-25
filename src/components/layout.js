@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import React from "react"
 import { Helmet } from "react-helmet"
-import { Grid, Heading, jsx } from "theme-ui"
+import { Grid, Heading, Styled, jsx } from "theme-ui"
 import { Global } from "@emotion/react"
+import "normalize.css"
 
 import Footer from "./footer"
 import Header from "./header"
@@ -21,39 +21,7 @@ const layoutL = `
       'footer   footer   footer  footer'`
 
 const Layout = ({ children, title = `` }) => (
-  <React.Fragment>
-    <Global
-      styles={theme => ({
-        html: {
-          WebkitTextSizeAdjust: `100%`,
-        },
-        body: {
-          padding: 0,
-          margin: 0,
-        },
-        "*": {
-          boxSizing: `inherit`,
-        },
-        img: {
-          borderStyle: `none`,
-        },
-        pre: {
-          fontFamily: `monospace`,
-          fontSize: `1em`,
-        },
-        "[hidden]": {
-          display: `none`,
-        },
-        "::selection": {
-          backgroundColor: theme.colors.text,
-          color: theme.colors.background,
-        },
-        a: {
-          transition: `all 0.3s ease-in-out`,
-          color: theme.colors.secondary,
-        },
-      })}
-    />
+  <Styled.root>
     <SeO title={title} />
     <Helmet>
       <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />
@@ -88,7 +56,7 @@ const Layout = ({ children, title = `` }) => (
       <aside sx={{ gridArea: `aside` }}></aside>
       <Footer />
     </Grid>
-  </React.Fragment>
+  </Styled.root>
 )
 
 export default Layout

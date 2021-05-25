@@ -2057,7 +2057,7 @@
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-tosh/-/preset-tosh-0.8.4.tgz#2ff2c10d45b90aa23978d400beedc1cc5faeccb2"
   integrity sha512-EHor2g+mvS6Li2bSp98Rju2obFKr4JFCz0zci2v8nTneXmrJi4cw78X6ovc57NzS9LP03z6/+ln5h+A8sCtXgQ==
 
-"@theme-ui/presets@^0.8.4":
+"@theme-ui/presets@0.8.4":
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/@theme-ui/presets/-/presets-0.8.4.tgz#1f3366eea8cc2d76b8177dfb44d048b41811ad15"
   integrity sha512-5tZmL+aCOaZUVbOKftANPQLp1fAMdmJYtbPflhAY3C0yT0U3ouUBd02OnMfhDTC7W7wN6iY1HhoJ1oM4BDpDIA==
@@ -10024,6 +10024,11 @@ normalize-url@^4.1.0, normalize-url@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-4.5.0.tgz#453354087e6ca96957bd8f5baf753f5982142129"
   integrity sha512-2s47yzUxdexf1OhyRi4Em83iQk0aPvwTddtFz4hnSSw9dCEsLEGf6SwIO8ss/19S9iBb5sJaOuTvTGDeZI00BQ==
+
+normalize.css@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
+  integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
 
 not@^0.1.0:
   version "0.1.0"
