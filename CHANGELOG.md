@@ -1,3 +1,12 @@
+## [1.6.15](https://github.com/dds/bosabosa.org/compare/v1.6.14...v1.6.15) (2021-05-25)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency normalize.css to 8.0.1 ([#143](https://github.com/dds/bosabosa.org/issues/143)) ([88bc117](https://github.com/dds/bosabosa.org/commit/88bc1173b50029c5f3732c2799c94f32841fc853))
+
+
+
 ## [1.6.14](https://github.com/dds/bosabosa.org/compare/v1.6.13...v1.6.14) (2021-05-25)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * button to toggle light/dark ([205c584](https://github.com/dds/bosabosa.org/commit/205c5843582e4e08148881d41de1f9526ad4bfd5))
-
-
-
-## [1.6.10](https://github.com/dds/bosabosa.org/compare/v1.6.9...v1.6.10) (2021-05-25)
-
-
-### Bug Fixes
-
-* rename Styled to Themed ([ab7a7ed](https://github.com/dds/bosabosa.org/commit/ab7a7ed59429dfce2f12bfb5cc9c2e0f0bce9eb0))
 
 
 
