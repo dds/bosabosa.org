@@ -8,9 +8,7 @@ const theme = {
   initialColorModeName: `light`,
   colors: {
     modes: {
-      light: {
-        ...system.colors,
-      },
+      ...system.colors,
       dark: {
         ...dark.colors,
       },
