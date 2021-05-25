@@ -36,14 +36,14 @@ const Header = ({ title }) => {
         </NavLink>
         {/* <Search sx={{ p: 2 }} /> */}
         <NavLink
-          sx={{ p: 2, ml: `auto` }}
+          sx={{ p: 2, ml: [`auto`] }}
           href="https://github.com/dds/bosabosa.org"
           title="Source"
         >
           Source
         </NavLink>
         <Button
-          sx={{ whiteSpace: `pre` }}
+          sx={{ p: [1, 2], whiteSpace: `pre` }}
           name="colorMode"
           type="button"
           onClick={e => {
