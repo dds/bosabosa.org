@@ -24,6 +24,8 @@ const Header = ({ title }) => {
           Source
         </NavLink>
         <button
+          name="colorMode"
+          type="button"
           onClick={e => {
             const next = mode === "dark" ? "light" : "dark"
             setMode(next)
