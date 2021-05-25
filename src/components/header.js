@@ -1,5 +1,24 @@
 /** @jsx jsx */
 import { jsx, useColorMode, NavLink, Flex } from "theme-ui"
+import Button from "./button"
+
+const getModeName = mode => {
+  switch (mode) {
+    case "dark":
+      return "Dark"
+    case "deep":
+      return "Deep"
+    case "swiss":
+      return "Swiss"
+    case "light":
+    case "default":
+      return "Light"
+    case undefined:
+      return "         "
+    default:
+      return mode
+  }
+}
 
 const Header = ({ title }) => {
   const [mode, setMode] = useColorMode()
@@ -23,7 +42,8 @@ const Header = ({ title }) => {
         >
           Source
         </NavLink>
-        <button
+        <Button
+          sx={{ whiteSpace: `pre` }}
           name="colorMode"
           type="button"
           onClick={e => {
@@ -31,8 +51,8 @@ const Header = ({ title }) => {
             setMode(next)
           }}
         >
-          {mode}
-        </button>
+          {getModeName(mode)}
+        </Button>
       </Flex>
     </nav>
   )
