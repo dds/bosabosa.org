@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const BlogRoll = ({ n }) => {
   const data = useStaticQuery(query)
-  const posts = data.allMarkdownRemark.nodes
+  const posts = data.allMdx.nodes
   /*
    * - Year
    *   - Month{3}, Day, Title, Tags
@@ -50,7 +50,7 @@ export default BlogRoll
 
 const query = graphql`
   query {
-    allMarkdownRemark(
+    allMdx(
       filter: { fields: { sourceName: { eq: "blog" } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {

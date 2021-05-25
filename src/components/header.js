@@ -58,7 +58,7 @@ const Header = ({ title }) => {
               r="14"
               fill="none"
               stroke="currentcolor"
-              stroke-width="4"
+              strokeWidth="4"
             ></circle>
             <path
               d="

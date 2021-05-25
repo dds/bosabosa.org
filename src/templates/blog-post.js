@@ -1,11 +1,12 @@
 /** @jsx jsx */
 import { jsx, Flex, Text } from "theme-ui"
 import { Link, graphql } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../components/layout"
 
 const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
+  const post = data.mdx
   const { previous, next } = data
 
   return (
@@ -18,11 +19,9 @@ const BlogPostTemplate = ({ data, location }) => {
         <Flex as="header" sx={{ mr: 0, ml: `auto` }}>
           <Text sx={{ variant: `text.heading` }}>{post.frontmatter.date}</Text>
         </Flex>
-        <Text
-          as="section"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
+        <Text as="section" itemProp="articleBody">
+          <MDXRenderer>{post.body}</MDXRenderer>
+        </Text>
       </article>
       <nav sx={{ pt: 2 }}>
         <ul
@@ -58,7 +57,7 @@ const BlogPostTemplate = ({ data, location }) => {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug(
+  query BlogPostById(
     $id: String!
     $previousPostId: String
     $nextPostId: String
@@ -68,17 +67,17 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(id: { eq: $id }) {
+    mdx(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
-      html
+      body
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
       }
     }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
+    previous: mdx(id: { eq: $previousPostId }) {
       fields {
         slug
       }
@@ -86,7 +85,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    next: markdownRemark(id: { eq: $nextPostId }) {
+    next: mdx(id: { eq: $nextPostId }) {
       fields {
         slug
       }
