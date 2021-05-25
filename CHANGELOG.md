@@ -1,3 +1,12 @@
+## [1.6.13](https://github.com/dds/bosabosa.org/compare/v1.6.12...v1.6.13) (2021-05-25)
+
+
+### Bug Fixes
+
+* make the colorMode button not show "submit" ([e655089](https://github.com/dds/bosabosa.org/commit/e655089112faddf52ea20138b1393f5d62c6a680))
+
+
+
 ## [1.6.12](https://github.com/dds/bosabosa.org/compare/v1.6.11...v1.6.12) (2021-05-25)
 
 
@@ -26,16 +35,6 @@
 
 
 ## [1.6.9](https://github.com/dds/bosabosa.org/compare/v1.6.8...v1.6.9) (2021-05-25)
-
-
-
-## [1.6.8](https://github.com/dds/bosabosa.org/compare/v1.6.7...v1.6.8) (2021-05-25)
-
-
-### Bug Fixes
-
-* remove disabling theme-ui local storage ([1557b78](https://github.com/dds/bosabosa.org/commit/1557b7817aefd6a43f3baa3de0781d311905ad19))
-* remove unused Global import ([c3e8eda](https://github.com/dds/bosabosa.org/commit/c3e8eda66ec4c5e3a3ba8b5d6b1a5d310bc9bc2e))
 
 
 
