@@ -3,7 +3,6 @@ const theme = {
   useCustomProperties: true,
   config: {
     useColorSchemeMediaQuery: true,
-    useLocalStorage: false,
     printColorModeName: `light`,
   },
   initialColorModeName: `light`,
