@@ -13,7 +13,7 @@ export default props => (
       px: 2,
       py: 2,
       color: "text",
-      bg: "muted",
+      bg: "background",
       border: 0,
       borderRadius: 2,
     }}
