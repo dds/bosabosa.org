@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { Helmet } from "react-helmet"
 import { Grid, Heading, Styled, jsx } from "theme-ui"
-import { Global } from "@emotion/react"
 import "normalize.css"
 
 import Footer from "./footer"
