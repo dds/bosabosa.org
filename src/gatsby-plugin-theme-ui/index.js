@@ -1,4 +1,3 @@
-import { system, dark } from "@theme-ui/presets"
 const theme = {
   useCustomProperties: true,
   config: {
@@ -7,10 +6,24 @@ const theme = {
   },
   initialColorModeName: `light`,
   colors: {
+    text: "#000",
+    background: "#fff",
+    primary: "#33e",
+    secondary: "#119",
+    muted: "#f6f6f6",
+    highlight: "#efeffe",
+    gray: "#777",
+    accent: "#609",
     modes: {
-      ...system.colors,
       dark: {
-        ...dark.colors,
+        text: "#fff",
+        background: "#060606",
+        primary: "#3cf",
+        secondary: "#e0f",
+        muted: "#191919",
+        highlight: "#29112c",
+        gray: "#999",
+        purple: "#c0f",
       },
     },
   },
@@ -41,19 +54,18 @@ const theme = {
     },
   },
   links: {
+    textDecoration: `none`,
+    ":hover": {
+      textDecoration: `underline`,
+    },
     nav: {
       textDecoration: `none`,
       ":hover": {
         textDecoration: `underline`,
       },
     },
-    secondary: {
-      textDecoration: `none`,
-      ":hover": {
-        textDecoration: `underline`,
-      },
-    },
   },
+  styles: {},
 }
 
 export default theme

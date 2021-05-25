@@ -28,10 +28,10 @@ const BlogRoll = ({ n }) => {
                     },
                   }}
                 >
-                  <span itemProp="headline">{title}</span>
+                  {title}
                 </Link>
               </Heading>
-              <p>{post.frontmatter.date}</p>
+              <Text>{post.frontmatter.date}</Text>
               <Text
                 sx={{ pt: 3 }}
                 dangerouslySetInnerHTML={{
