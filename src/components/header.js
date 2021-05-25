@@ -1,7 +1,8 @@
 /** @jsx jsx */
-import { jsx, NavLink, Flex } from "theme-ui"
+import { jsx, useColorMode, NavLink, Flex } from "theme-ui"
 
 const Header = ({ title }) => {
+  const [mode, setMode] = useColorMode()
   return (
     <nav sx={{ gridArea: `header`, borderBottom: `1px solid` }}>
       <Flex sx={{ p: `0 2rem`, flexFlow: `row wrap`, alignItems: `center` }}>
@@ -22,6 +23,14 @@ const Header = ({ title }) => {
         >
           Source
         </NavLink>
+        <button
+          onClick={e => {
+            const next = mode === "dark" ? "light" : "dark"
+            setMode(next)
+          }}
+        >
+          {mode}
+        </button>
       </Flex>
     </nav>
   )
