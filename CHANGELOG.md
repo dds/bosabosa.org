@@ -1,3 +1,12 @@
+## [1.6.16](https://github.com/dds/bosabosa.org/compare/v1.6.15...v1.6.16) (2021-05-25)
+
+
+### Bug Fixes
+
+* better looking color mode button ([6fdc2fa](https://github.com/dds/bosabosa.org/commit/6fdc2fad74eaf7e9db656ad95590cbe76f847975))
+
+
+
 ## [1.6.15](https://github.com/dds/bosabosa.org/compare/v1.6.14...v1.6.15) (2021-05-25)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * make system colors the default colors ([496dfd8](https://github.com/dds/bosabosa.org/commit/496dfd8395f1f873ea567de3b21ef187e8021cb6))
-
-
-
-## [1.6.11](https://github.com/dds/bosabosa.org/compare/v1.6.10...v1.6.11) (2021-05-25)
-
-
-### Bug Fixes
-
-* button to toggle light/dark ([205c584](https://github.com/dds/bosabosa.org/commit/205c5843582e4e08148881d41de1f9526ad4bfd5))
 
 
 
