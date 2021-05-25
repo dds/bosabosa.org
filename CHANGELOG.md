@@ -1,3 +1,12 @@
+## [1.6.14](https://github.com/dds/bosabosa.org/compare/v1.6.13...v1.6.14) (2021-05-25)
+
+
+### Bug Fixes
+
+* remove theme-ui presets ([5fff1b5](https://github.com/dds/bosabosa.org/commit/5fff1b5c6a7a52d11e73a6706e9df880ce25af51))
+
+
+
 ## [1.6.13](https://github.com/dds/bosabosa.org/compare/v1.6.12...v1.6.13) (2021-05-25)
 
 
@@ -31,10 +40,6 @@
 ### Bug Fixes
 
 * rename Styled to Themed ([ab7a7ed](https://github.com/dds/bosabosa.org/commit/ab7a7ed59429dfce2f12bfb5cc9c2e0f0bce9eb0))
-
-
-
-## [1.6.9](https://github.com/dds/bosabosa.org/compare/v1.6.8...v1.6.9) (2021-05-25)
 
 
 
