@@ -1,3 +1,12 @@
+## [1.6.18](https://github.com/dds/bosabosa.org/compare/v1.6.17...v1.6.18) (2021-05-25)
+
+
+### Bug Fixes
+
+* tighter packing of nav bar ([e0b06c2](https://github.com/dds/bosabosa.org/commit/e0b06c2668c2ff5c779b36fabbe8165428135723))
+
+
+
 ## [1.6.17](https://github.com/dds/bosabosa.org/compare/v1.6.16...v1.6.17) (2021-05-25)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * remove theme-ui presets ([5fff1b5](https://github.com/dds/bosabosa.org/commit/5fff1b5c6a7a52d11e73a6706e9df880ce25af51))
-
-
-
-## [1.6.13](https://github.com/dds/bosabosa.org/compare/v1.6.12...v1.6.13) (2021-05-25)
-
-
-### Bug Fixes
-
-* make the colorMode button not show "submit" ([e655089](https://github.com/dds/bosabosa.org/commit/e655089112faddf52ea20138b1393f5d62c6a680))
 
 
 
