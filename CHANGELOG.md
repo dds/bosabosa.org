@@ -1,3 +1,12 @@
+## [1.6.17](https://github.com/dds/bosabosa.org/compare/v1.6.16...v1.6.17) (2021-05-25)
+
+
+### Bug Fixes
+
+* use svg icon for light/dark switch ([28503d2](https://github.com/dds/bosabosa.org/commit/28503d2a8dde2a2da6154b14014b7244c9d51a3c))
+
+
+
 ## [1.6.16](https://github.com/dds/bosabosa.org/compare/v1.6.15...v1.6.16) (2021-05-25)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * make the colorMode button not show "submit" ([e655089](https://github.com/dds/bosabosa.org/commit/e655089112faddf52ea20138b1393f5d62c6a680))
-
-
-
-## [1.6.12](https://github.com/dds/bosabosa.org/compare/v1.6.11...v1.6.12) (2021-05-25)
-
-
-### Bug Fixes
-
-* make system colors the default colors ([496dfd8](https://github.com/dds/bosabosa.org/commit/496dfd8395f1f873ea567de3b21ef187e8021cb6))
 
 
 
