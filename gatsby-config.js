@@ -170,5 +170,9 @@ module.exports = {
       options: {},
     },
     `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {},
+    },
   ],
 }
