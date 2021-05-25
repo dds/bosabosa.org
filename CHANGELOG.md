@@ -1,3 +1,12 @@
+## [1.6.12](https://github.com/dds/bosabosa.org/compare/v1.6.11...v1.6.12) (2021-05-25)
+
+
+### Bug Fixes
+
+* make system colors the default colors ([496dfd8](https://github.com/dds/bosabosa.org/commit/496dfd8395f1f873ea567de3b21ef187e8021cb6))
+
+
+
 ## [1.6.11](https://github.com/dds/bosabosa.org/compare/v1.6.10...v1.6.11) (2021-05-25)
 
 
@@ -27,15 +36,6 @@
 
 * remove disabling theme-ui local storage ([1557b78](https://github.com/dds/bosabosa.org/commit/1557b7817aefd6a43f3baa3de0781d311905ad19))
 * remove unused Global import ([c3e8eda](https://github.com/dds/bosabosa.org/commit/c3e8eda66ec4c5e3a3ba8b5d6b1a5d310bc9bc2e))
-
-
-
-## [1.6.7](https://github.com/dds/bosabosa.org/compare/v1.6.6...v1.6.7) (2021-05-25)
-
-
-### Bug Fixes
-
-* use normalize.css ([90d6fe8](https://github.com/dds/bosabosa.org/commit/90d6fe87781f8a2cbd73484b558193f6e10ca797))
 
 
 
