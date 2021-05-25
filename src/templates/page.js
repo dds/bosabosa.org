@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
 const PageTemplate = ({ data, location }) => {
-  const post = data.mdx
+  const post = data.markdownRemark
 
   return (
     <Layout location={location} title={post.frontmatter.title}>
@@ -32,7 +32,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    mdx(id: { eq: $id }) {
+    markdownRemark(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
       html
