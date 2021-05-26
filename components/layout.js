@@ -1,11 +1,9 @@
-/** @jsx jsx */
 import { Helmet } from "react-helmet"
-import { Grid, Heading, Themed, jsx } from "theme-ui"
+import { Grid, Heading, Themed } from "theme-ui"
 import "normalize.css"
 
 import Footer from "./footer"
 import Header from "./header"
-import SeO from "./seo"
 import SkipNavLink from "./skip-nav"
 
 const layoutXS = `'header' 'aside' 'main' 'footer'`
@@ -21,7 +19,6 @@ const layoutL = `
 
 const Layout = ({ children, title = `` }) => (
   <Themed.root>
-    <SeO title={title} />
     <Helmet>
       <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />
       <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />

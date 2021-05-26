@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx, Container, Heading, Link, Text } from "theme-ui"
+import { Container, Heading, Link, Text } from "theme-ui"
 import { useStaticQuery, graphql } from "gatsby"
 
 const BlogRoll = ({ n }) => {

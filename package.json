@@ -6,25 +6,23 @@
   },
   "version": "1.6.18",
   "dependencies": {
-    "@theme-ui/color": "0.8.4",
-    "highlight.js": "10.7.2",
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^10.2.3",
     "next": "10.2.3",
     "normalize.css": "8.0.1",
-    "polished": "4.1.2",
-    "prismjs": "1.23.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-helmet": "6.1.0",
     "react-icons": "4.2.0",
-    "semver": "7.3.5",
-    "theme-ui": "0.8.4",
-    "yarn": "1.22.10"
+    "theme-ui": "0.8.4"
   },
   "devDependencies": {
     "prettier": "2.3.0"
   },
   "license": "UNLICENSED",
   "scripts": {
-    "build": "next build"
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
   }
 }
