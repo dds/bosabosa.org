@@ -1,7 +1,7 @@
 /** @jsxImportSource theme-ui */
 import { Container, Heading, Link, Text } from "theme-ui"
 
-export default function ({ n }) {
+export default function Blogroll({ n }) {
   return (
     <Container fluid>
       <Heading>posts</Heading>

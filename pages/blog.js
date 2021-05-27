@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import BlogRoll from "../components/blogroll"
 
-export default function () {
+export default function Blog() {
   return <BlogRoll />
 }
