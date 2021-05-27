@@ -1,3 +1,4 @@
+/** @jsxImportSource theme-ui */
 import { Helmet } from "react-helmet"
 import { Grid, Heading, Themed } from "theme-ui"
 import "normalize.css"

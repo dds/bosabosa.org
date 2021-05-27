@@ -1,3 +1,4 @@
+/** @jsxImportSource theme-ui */
 import { Flex } from "theme-ui"
 import { useState } from "react"
 import { Index } from "elasticlunr"

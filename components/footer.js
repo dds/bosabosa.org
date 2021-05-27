@@ -1,3 +1,4 @@
+/** @jsxImportSource theme-ui */
 import { NavLink, Flex } from "theme-ui"
 
 const Footer = () => {

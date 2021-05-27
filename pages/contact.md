@@ -1,6 +1,4 @@
----
-title: How to Contact Me
----
+# How to Contact Me
 
 Hi, my name is David. Welcome to my website! If you'd
 like to get in touch, please try one of the following ways.

@@ -1,3 +1,4 @@
+/** @jsxImportSource theme-ui */
 import { useColorMode, NavLink, Flex } from "theme-ui"
 import Button from "./button"
 

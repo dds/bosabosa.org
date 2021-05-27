@@ -1,3 +1,4 @@
+/** @jsxImportSource theme-ui */
 export default props => (
   <button
     {...props}
