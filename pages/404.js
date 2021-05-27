@@ -1,3 +1,4 @@
+/** @jsxImportSource theme-ui */
 import Layout from "../components/layout"
 
 export default function () {

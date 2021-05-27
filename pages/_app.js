@@ -1,3 +1,4 @@
+/** @jsxImportSource theme-ui */
 import * as React from "react"
 import { ThemeProvider } from "theme-ui"
 
