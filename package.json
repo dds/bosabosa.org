@@ -1,28 +1,38 @@
 {
   "private": true,
   "name": "@dds/bosabosa",
+  "description": "Personal website of David D. Smith.",
+  "license": "UNLICENSED",
+  "version": "1.6.18",
+  "scripts": {
+    "dev": "next dev -p 8000",
+    "build": "next build",
+    "start": "next start",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format-watch": "npm run format && onchange \"**/*.{js,jsx,json,md}\" -- prettier --write {{changed}}",
+    "deploy": "git push origin main"
+  },
   "bugs": {
     "url": "https://github.com/dds/bosabosa.org/issues"
-  },
-  "version": "1.6.18",
-  "dependencies": {
-    "@mdx-js/loader": "^1.6.22",
-    "@next/mdx": "^10.2.3",
-    "next": "10.2.3",
-    "normalize.css": "8.0.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-helmet": "6.1.0",
-    "react-icons": "4.2.0",
-    "theme-ui": "0.8.4"
   },
   "devDependencies": {
     "prettier": "2.3.0"
   },
-  "license": "UNLICENSED",
-  "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "start": "next start"
+  "dependencies": {
+    "@mdx-js/loader": "^1.6.22",
+    "@mdx-js/runtime": "^1.6.22",
+    "@next/mdx": "^10.2.3",
+    "babel-plugin-superjson-next": "^0.3.0",
+    "gray-matter": "^4.0.3",
+    "next": "10.2.3",
+    "next-mdx-remote": "^3.0.2",
+    "normalize.css": "8.0.1",
+    "prism-react-renderer": "^1.1.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-ga": "^3.3.0",
+    "react-icons": "4.2.0",
+    "superjson": "^1.7.4",
+    "theme-ui": "0.8.4"
   }
 }
