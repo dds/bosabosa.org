@@ -15,3 +15,6 @@ NODE_ENV = "production"
   status = 301
   force = false
   query = {slug = ":slug"}
+
+[functions]
+  included_files = ["feed.js", "content/blog/*.md"]
