@@ -24,8 +24,8 @@ export default function BlogPostPage({ post }) {
             m: 0,
           }}
         >
-          <li>← $previous</li>
-          <li>$next →</li>
+          <li>← {!!post.previousPost && post.previousPost.slug}</li>
+          <li>{!!post.nextPost && post.nextPost.slug} →</li>
         </ul>
       </nav>
     </div>

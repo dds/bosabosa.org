@@ -10,7 +10,29 @@ export function getPostSlugs() {
   return fs.readdirSync(join(root, `content`, `blog`))
 }
 
-export function getPostBySlug(slug, fields = []) {
+export function getAllPosts(fields = []) {
+  const slugs = getPostSlugs()
+  const posts = slugs
+    .map(slug => innerGetPostBySlug(slug, fields))
+    // sort posts by date in descending order
+    .sort((post1, post2) => post2.date - post1.date)
+  posts.forEach((post, index) => {
+    const previousPostId = index === 0 ? null : index - 1
+    const nextPostId = index === posts.length - 1 ? null : index + 1
+    post.index = index
+    post.nextPostIndex = nextPostId
+    if (!!posts[nextPostId]) {
+      post.nextPost = posts[nextPostId]
+    }
+    post.previousPostIndex = previousPostId
+    if (!!posts[previousPostId]) {
+      post.previousPost = posts[previousPostId]
+    }
+  })
+  return posts
+}
+
+export function innerGetPostBySlug(slug, fields = []) {
   const realSlug = slug.replace(/\.mdx?$/, ``)
   const fullPath = join(root, `content`, `blog`, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, `utf8`)
@@ -62,11 +84,12 @@ export function getPostBySlug(slug, fields = []) {
   return items
 }
 
-export function getAllPosts(fields = []) {
-  const slugs = getPostSlugs()
-  const posts = slugs
-    .map(slug => getPostBySlug(slug, fields))
-    // sort posts by date in descending order
-    .sort((post1, post2) => post2.date - post1.date)
-  return posts
+export function getPostBySlug(slug, fields = []) {
+  const posts = getAllPosts(fields)
+  for (let i = 0; i < posts.length; i++) {
+    if (posts[i].slug === slug) {
+      return posts[i]
+    }
+  }
+  return null
 }
