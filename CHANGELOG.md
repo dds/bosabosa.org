@@ -1,3 +1,12 @@
+## [1.6.20](https://github.com/dds/bosabosa.org/compare/v1.6.19...v1.6.20) (2021-07-01)
+
+
+### Bug Fixes
+
+* netlify for next.js ([4c04ac7](https://github.com/dds/bosabosa.org/commit/4c04ac73385eace36de47a717357a1c47e9a6380))
+
+
+
 ## [1.6.19](https://github.com/dds/bosabosa.org/compare/v1.6.18...v1.6.19) (2021-07-01)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * better looking color mode button ([6fdc2fa](https://github.com/dds/bosabosa.org/commit/6fdc2fad74eaf7e9db656ad95590cbe76f847975))
-
-
-
-## [1.6.15](https://github.com/dds/bosabosa.org/compare/v1.6.14...v1.6.15) (2021-05-25)
-
-
-### Bug Fixes
-
-* **deps:** pin dependency normalize.css to 8.0.1 ([#143](https://github.com/dds/bosabosa.org/issues/143)) ([88bc117](https://github.com/dds/bosabosa.org/commit/88bc1173b50029c5f3732c2799c94f32841fc853))
 
 
 
