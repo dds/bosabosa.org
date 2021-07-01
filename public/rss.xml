@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>bosabosa</title>
+        <link>https://dds.bosabosa.org</link>
+        <description>Writings on life, personal events, troubles, struggles, and work.</description>
+        <lastBuildDate>Thu, 01 Jul 2021 23:58:06 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Next.js using Feed for Node.js</generator>
+        <language>en</language>
+        <copyright>All rights reserved 2021, David D. Smith.</copyright>
+        <item>
+            <title><![CDATA[Explorations in Cloud Orchestration]]></title>
+            <link>https://dds.bosabosa.org/news/explorations-in-cloud-orchestration</link>
+            <guid>https://dds.bosabosa.org/news/explorations-in-cloud-orchestration</guid>
+            <pubDate>Mon, 04 Jan 2021 11:42:00 GMT</pubDate>
+            <description><![CDATA[The state of the art in cloud orchestration in January 2021 with Pulumi, k3s, gRPC, tailscale, and more.]]></description>
+            <content:encoded><![CDATA[<p>Last month, I was able to play with lots of tech that we don&#x27;t use at work. It
+started with setting up automation with <a href="https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions">github workflows</a> to replicate some of
+what I&#x27;ve gotten accustomed to at work: configuring GitHub actions for automated
+versioning and dependency updates, all controlled through the repo.</p><p>I launched this blog to share the experience so I began <a href="/b/learning-gatsby">learning
+gatsby</a>. That&#x27;s been extremely educational and rewarding.
+This site is written in a mix of markdown and orgmode files with embedded React
+components. I&#x27;ll never go back. The power in the <a href="https://mdxjs.com/">MDX</a> and <a href="https://orga.js.org/">Orga</a> libraries is
+bay far the best way I&#x27;ve found to author and manage content.</p><p>When I brought this up to a friend, who normally works on more front-end things,
+he gave me some advice and also had a question for me: what do I think of using
+<a href="https://grpc.io/">gRPC</a> with <a href="https://go.dev/">Go</a> on the back-end with <a href="https://reactjs.org/">React</a> apps on the front-end. That made
+me think, &quot;how can I show off a guestbook app powered by gRPC?&quot; Shouldn&#x27;t be
+hard, right? What I would have liked to do is to give him a git branch where he
+could just run the gRPC backend on a server-less (or <a href="https://en.wikipedia.org/wiki/Function_as_a_service">FaaS</a>) system like <a href="https://cloud.google.com/appengine">GCP
+AppEngine</a> or <a href="https://aws.amazon.com/lambda/">AWS Lambda</a>. It turns out you <em>still cannot</em> use gRPC in any of
+those environments. gRPC requires a long-running server process (meanwhile, you
+<em>can</em> use <a href="https://thrift.apache.org/">thrift</a>). And that actually makes a ton of sense.</p><p>Alright, let&#x27;s make a guestbook server. For some reason, I thought this would be
+a neat project to explore the state of the art of <a href="https://kubernetes.io/">kubernetes</a> (aka k8s). Maybe,
+somewhere in the back of my mind, I had once seen that the official <a href="https://kubernetes.io/docs/tutorials/">k8s
+tutorials</a> actually deploy a PHP Guestbook application however I would re-learn
+that fact a few days later. I wanted to set up a <a href="https://kubernetes.io/">k8s</a> cluster on a
+pair of <a href="https://www.raspberrypi.org/products/raspberry-pi-4-model-b/">raspberry pi
+4s</a> I use at home
+for various things like <a href="https://pi-hole.net/">Pi-Hole</a> for parental controls, network monitoring,
+DNS, DHCP, and network booting and OS installs. There are now at least three
+alternative distributions of [k8s] to run on your pi: <a href="https://microk8s.io/">micro-k8s</a>, <a href="https://k3s.io/">k3s</a>, and
+<a href="https://k0sproject.io/">k0s</a>. I did a little digging and <a href="https://www.alexellis.io/">Alex Ellis</a> has spent the last <a href="https://www.raspberrypi.org/blog/five-years-of-raspberry-pi-clusters/">five years
+doing raspberry pi clusters</a>. He&#x27;s started the <a href="https://www.openfaas.com/">openfaas</a> project which, I
+believe, will eventually be the model for almost all software. Alex&#x27;s work is
+extremely impressive. Reading about his experience and seeing how
+<a href="https://medium.com/coming-about/10-minutes-to-k3s-on-raspberry-pis-efe3daf2a33d">popular</a> and <a href="https://blog.alexellis.io/tls-the-easy-way-with-openfaas-and-k3sup/">tested</a> his work is, I chose to use his <a href="https://github.com/alexellis/k3sup">k3sup</a> program to bring up <a href="https://k3s.io/">k3s</a> on my
+pair of pis. It really was as easy as advertised. I was able to rebuild the
+cluster a few times in a day and it&#x27;s now in a shape I&#x27;m excited to play with
+next time. Great work, Alex!</p><p>And <a href="https://www.openfaas.com/">OpenFaaS</a> does not dictate that you must be server-less. It actually just
+runs containers and provides a bunch of attenuating services and some services
+over familiar APIs in the cluster. Basically, it&#x27;s k8s, so you&#x27;re just going to
+be running containers in pods, to which OpenFaaS provides integration points for
+things like identity, storage, and more. But the problem is that I still need to
+do a lot of setup to get this done and now that December is over and it&#x27;s back
+to the grind-stone, I still don&#x27;t have OpenFaaS running in the cluster and I&#x27;ve
+got other problems to overcome, too, such as:</p><ul><li>Ingress: The <a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.20/#ingressspec-v1-networking-k8s-io">ingress spec</a> reached stable 1.0 in November 2020. It&#x27;s still
+quite hard to configure and the docs for the <a href="https://doc.traefik.io/traefik/v1.7/configuration/backends/kubernetes/">traefik ingress controller</a> are
+dense and new to me.</li><li>Off-site resources: Since I&#x27;m running this at home, I expect to use <a href="https://tailscale.com/">tailscale</a> to
+integrate my pis with more resources off-site; see [raspberrypi kubernetes
+cluster over tailscale]).</li><li>SSL certificates: Once I have ingress, I need to get SSL/TLS certificates set up;
+see <a href="https://blog.alexellis.io/tls-the-easy-way-with-openfaas-and-k3sup/">openfaas, cert-manager, and k3sup</a> and <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nginx-ingress-with-cert-manager-on-digitalocean-kubernetes">digitalocean&#x27;s tutorial on cert-manager</a>.</li><li>Mail service: The cluster has a domain name and I want to be able to send and
+receive email there; see <a href="https://mailu.io/1.7/kubernetes/mailu/index.html">mailu k8s setup</a>.</li></ul><p>As you can see, there&#x27;s quite a lot of work left to do. Meanwhile, I discovered
+that managing all of this cluster configuration as a set of YAML files was not
+going to cut it. And we&#x27;re no closer to writing the guestbook app 😓. But
+there&#x27;s more to say here because we discovered <a href="https://pulumi.com/">pulumi</a>. Since I&#x27;m familiar with
+<a href="https://github.com/NerdWalletOSS/terraformpy">terraformpy</a>, I&#x27;m thrilled to see the concept made into a full-featured
+product. What is pulumi? It provides bindings for infrastructure APIs from Go,
+Python, JS, TS, and .NET. It can convert or co-exist with <a href="https://terraform.io/">terraform</a>, <a href="https://aws.amazon.com/cloudformation/">AWS
+cloud formation</a>, or other config files and let&#x27;s you write real code which you
+can test and factor into how you want the infrastructure and permissions to be
+structured. True infrastructure-as-code, not the mess of YAML files. Pulumi is
+actually a few years old and has a huge following. I&#x27;m surprised I&#x27;d not heard
+of it. I want to talk to some customers and see how much it costs before
+recommending it to my company but I&#x27;m very keen to do so if the numbers work
+out. Writing the infrastructure with real code, making it importable in other
+repos, keeping things factored where they make sense would be what allows us to
+refactor it well would ease my organization to break free from the <a href="https://acloudguru.com/blog/engineering/why-central-cloud-teams-fail-and-how-to-save-yours">platform
+team anti-pattern</a>. I found the <a href="https://github.com/pulumi/examples/tree/master/kubernetes-go-guestbook">pulumi guestbook</a> example project to be a very
+thoughtful and easy to understand factoring of a real infrastructure as code.</p><p>Along the way, I noticed the <a href="https://drone.io/">drone</a> project and it made me very happy to see a
+well contained replacement for <a href="https://jenkins.io/">jenkins</a>. I like that drone makes it so much
+easier to build whatever and do whatever with the build data and artifacts. Very
+slick, can&#x27;t wait to explore more.</p><p>What does it all mean? Well, it means 2021 is going to be another amazing year
+in the technology and internet business. We&#x27;re a long way from having a simple
+solution for managing the software life-cycle and the organizing the teams that
+do that work. Do you think the pieces are there in what we see today? <a href="https://blog.dave.tf/post/new-kubernetes/">Dave
+Anderson&#x27;s new kubernetes idea</a> about how a very different k8s, essentially an
+add-on to <a href="https://www.freedesktop.org/wiki/Software/systemd/">systemd</a> for clustering, resonated strongly with me (minus the parts
+about IPv6 and kubernetes networking). I think he&#x27;s right in that such a thing
+probably won&#x27;t be built (any time soon, at least). However, kubernetes will get
+much simpler and we will be deploying more with it. I can imagine a self-hosted
+pulumi in k8s auto-deployer that gets a team bootstrapped with a cluster that
+meets their needs and is easily managed. I can imagine all of the pieces there
+so that teams just write code, merge it into the main branch, the code describes
+the entire state of its required infrastructure, and away it goes building it.
+It&#x27;s self-healing and self-managed after initial deploy. That is, we&#x27;re almost
+at the state of <a href="https://www.gitops.tech/#:~:text=GitOps%20is%20a%20way%20of,Git%20and%20Continuous%20Deployment%20tools.">GitOps</a>.</p><p>As for that gRPC guestbook app, armed with the knowledge above, I&#x27;m going to
+write it and package it as a container. Adieu till next time 👋</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[So long, 2020]]></title>
+            <link>https://dds.bosabosa.org/news/so-long-2020</link>
+            <guid>https://dds.bosabosa.org/news/so-long-2020</guid>
+            <pubDate>Fri, 01 Jan 2021 05:34:00 GMT</pubDate>
+            <description><![CDATA[What do you say about the worst year in living memory? You say to the next year, ...]]></description>
+            <content:encoded><![CDATA[<p>This post is one in most in need of an editor.</p><p>What can we say about 2020 but, dear 2021, let&#x27;s not do this again. There have been so many important lessons.</p><p>We could have avoided lockdowns in so many places if we had paid attention.</p><p>The president launched these great vaccines and hasn&#x27;t taken one.</p><p>Of all the statistics of 2020, according to the news tonight, the police have
+killed about 930 people in the united states is the one that lingers in my mind.
+In a year when more than 300,000 people died of a virus that we could have
+stopped, 930 people killed by the their own protectors in the so-called leader
+of the democratic world. Christ, help us.</p><p>The pandemic is the story. The children out of school. The people lost. The end
+of the ability for a plurality of Americans to earn a living. Tomorrow, with
+2021, we will all begin to measure how much the dagger that was 2020 inflicted
+on the body of the united states of America. The ramifications of the damage are
+only beginning to be felt.</p><p>And the problems of the world have never been greater. Thank you to everyone who
+worked on developing the vaccines.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Systems Design]]></title>
+            <link>https://dds.bosabosa.org/news/systems-design</link>
+            <guid>https://dds.bosabosa.org/news/systems-design</guid>
+            <pubDate>Mon, 28 Dec 2020 18:10:00 GMT</pubDate>
+            <description><![CDATA[Systems design and going from Senior to Staff+ Engineer.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://apenwarr.ca/log/20201227">Apenwarr&#x27;s systems design post</a> is a great breakdown of what systems design is
+and how it fits in the typical career path for software engineers going from
+senior to staff levels. Specifically, Apenwarr explains that the difference
+between senior and staff engineers is that staff engineers design and implement
+previously <em>un-diagnosed business problems</em>. Their article goes into where this
+expectation may break-down.</p><p>More to come...</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Christmas Day 2020]]></title>
+            <link>https://dds.bosabosa.org/news/christmas-day-2020</link>
+            <guid>https://dds.bosabosa.org/news/christmas-day-2020</guid>
+            <pubDate>Sat, 26 Dec 2020 07:44:00 GMT</pubDate>
+            <description><![CDATA[Merry Christmas and happy holidays, 2020.]]></description>
+            <content:encoded><![CDATA[<p>Oh my God, what a terrible year 2020 has been for everyone. I&#x27;m incredibly
+thankful for the people in my life and all of the relative comfort and stability
+I&#x27;ve been able to have this year.</p><p>I want to say to everyone with an empty space in their family where a loved one
+should be, I&#x27;m sorry. Chances are, you feel lonely but are not alone. I hope you
+find healing. You&#x27;re due to enjoy simple pleasures, whatever you enjoy. Just
+please, don&#x27;t hurt yourself, drink lots of water, and try to go to bed early.</p><p>My dad passed away of cancer on Christmas morning last year, 2019. In April of
+that year, he suffered strokes which occurred following surgery for a broken leg
+due to the cancer&#x27;s metastasizes. My dad&#x27;s strokes happened while I was out of
+work and was between surgeries on both hands for carpal tunnel syndrome. I&#x27;d
+been fired from my job after claiming that the carpal tunnel syndrome was work
+related.</p><p>This year, I&#x27;m grateful to my team at work for all the big and small help
+they&#x27;ve given me and each other through the pandemic and my personal loss. And
+thank you to all who provide compassion to those grieving.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Why Review Code?]]></title>
+            <link>https://dds.bosabosa.org/news/why-review-code</link>
+            <guid>https://dds.bosabosa.org/news/why-review-code</guid>
+            <pubDate>Sat, 19 Dec 2020 17:35:00 GMT</pubDate>
+            <description><![CDATA[Why is it valuable to review code?]]></description>
+            <content:encoded><![CDATA[<p>Recently, I read <a href="https://sophiebits.com/2018/12/25/why-review-code.html">Sophie Alpert&#x27;s post</a> on code review. It resonated with me.
+Similar to her experience, I learned how to review code from working at Google
+and I agree with Sophie&#x27;s assessment: on changing her team&#x27;s process to review
+code, &quot;it was a great decision,&quot; she writes. I&#x27;m in 100% agreement of the nine points on her bullet list of the benefits of code review.</p><p>My friend <a href="https://www.nerdwallet.com/blog/engineering/mindful-pr-reviews/">Sharadh Krishnamurthy&#x27;s post</a> on mindfulness in code review also
+resonates with my personal style. However, I go back and forth on this, because
+communications and cultures vary wildly and I have seen groups with curt comms
+not suffer lack of trust or hurt feelings because of them.</p><p>I wanted to list some of the ways I have seen code-review go wrong:</p><ol><li><p><strong>Massive code dump review.</strong> I regularly see senior developers dump huge
+code reviews with several thousand lines of delta and pages of description on
+their juniors. The juniors spend days reviewing, maybe add a few comments
+here or there, approve, and then the code goes to production and all hell
+breaks lose. This makes me appreciate that <a href="https://www.phacility.com/phabricator/differential/">Differential</a> focuses on
+<a href="https://secure.phabricator.com/phame/post/view/766/write_review_merge_publish_phabricator_review_workflow/">reviewing earlier in the development of a change</a> with the expectation of
+frequent iteration. Yet, GitHub is fully adequate for this. It is easy to
+publish a branch and begin code review in a draft. But, if imposing the
+burden of making developers seek review earlier forces them to <strong>optimize for
+the reviewer</strong>, it could be worth it to switch tools.</p></li><li><p><strong>&quot;Don&#x27;t call us, we&#x27;ll call you,&quot; code review.</strong> Poor turnaround time can
+cause you to miss your deliverable deadline. Imagine you&#x27;re working with an
+open-source GitHub project (not to name names, but it&#x27;s HashiCorp Terraform)
+and you send a <a href="https://github.com/terraform-providers/terraform-provider-aws/pull/11459">PR to add a feature</a>. That PR has been waiting on code review
+for a year and there have been no comments from HashiCorp on why that PR has
+not been reviewed yet. It&#x27;s small. The author rebases his PR every few weeks
+and pings the PR for review to deafening silence. The problem here isn&#x27;t
+code-review per-se, but even on a smaller scale, without <em>measuring the
+amount of time code waits in review</em> and making that metric an SLI of your
+<em>software development life-cycle</em>, code-review purgatory can hamstring one&#x27;s
+ability to deliver (or put out a dumpster fire).</p></li><li><p><strong>Soap-box derby review.</strong> Human reviewers can use code-review as a
+soap-box for irrelevant pet concerns like premature optimization. Or in the
+reverse, without style guides, code authors refusing to make changes for
+readability or other legitimate concerns. To prevent these situations,
+engineering teams must have shared high standards for code review.
+Engineering leaders must prioritize documenting what matters in code review,
+code style guides, common code review feedback, and measuring code review
+performance throughout the organization. Golang makes a good example of doing
+this all-in on the GitHub platform:</p><ul><li><a href="https://github.com/golang/go/wiki/CodeReview">Go Code Review Basics</a></li><li><a href="https://github.com/golang/go/wiki/CodeReviewComments">Common Code Review Comments</a></li><li><a href="https://github.com/golang/go/wiki/CommitMessage">Go Project Commit Messages</a></li></ul></li><li><p><strong>Disallowing machine review.</strong> Encourage automation to elevate human time
+and consciousness. If the engineering team doesn&#x27;t value the time and
+creative output of its people, if instead the people are expected to
+repetitive tasks and toil, that&#x27;s a signal to those engineers that they could
+just as well sleep walk through this work. Snooze, who cares. If your team
+isn&#x27;t constantly harvesting the low-hanging fruit of automation, team members
+end up emulating the automatons leadership claims they don&#x27;t want to pay for.</p></li></ol>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Mark Shields' Courage, Grace, and Candor]]></title>
+            <link>https://dds.bosabosa.org/news/mark-shields-newshour</link>
+            <guid>https://dds.bosabosa.org/news/mark-shields-newshour</guid>
+            <pubDate>Fri, 18 Dec 2020 21:24:00 GMT</pubDate>
+            <description><![CDATA[How I learned my place in the world through Mark Shields' weekly interpretation of events.]]></description>
+            <content:encoded><![CDATA[<p>Today I read in <a href="https://www.nytimes.com/2020/12/17/opinion/mark-shields-liberalism.html">David Brooks&#x27; column</a> that Mark Shields, 83, is not going to be
+making his regular appearance on the PBS NewsHour&#x27;s Friday political commentary
+segment. David wrote that he and Mark have been doing that segment for 19 years
+and I have watched it all. In the wake of the Clinton presidency in the waning
+years of the 1990s, I started college and became politically minded by watching
+the 2000 presidential campaign unfold. At only 18 years old and with my limited
+background, growing up the son of a small business owner in northern Virginia,
+all I knew was my dad was on the side of the bosses, not the majority of people
+who work for them. When George Bush was made president in 2000, I thought it was
+a travesty that Al Gore, clearly the better informed, more capable candidate,
+lost by a court decision that amounted to an end-run around the democratic
+process. But Mark Shields, David Brooks, Judy Woodruff, Gwenn Ifill, Jim Lehrer,
+Miles O&#x27;Brien, Ray Suarez, Jeffery Brown, and many others who work and
+contribute to the PBS NewsHour helped me understand that people can have
+differences of opinion but still like each other. That real exchange of ideas,
+appreciation for opposing priorities, and rational processes can see us, one
+people, through our shared trials. These people taught and continue to teach me
+the values to live my life by.</p><p>Mark, you are irreplaceable. Your wit and charm are legendary. Mark, your
+appreciation for what David has had to say all these years, how you&#x27;ve been able
+to show him and all of us how at the core of liberalism is care: caring for how
+every individual is treated in our society. The NewsHour is a apolitical but in
+these times, one of our greatest understatements is that it&#x27;s challenging to
+speak with fairness to the Republican party&#x27;s positions. And yet, Mark, you&#x27;ve
+shown us all how to do it with grace.</p><p>Thank you, Mark, for sharing yourself with us. I wish to add to this tribute
+over time as I reflect more on the ways you&#x27;ve touched my life. It&#x27;s been my
+dear pleasure and to the profound benefit of my mind to have listened to you all
+these years.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Learning Gatsby]]></title>
+            <link>https://dds.bosabosa.org/news/learning-gatsby</link>
+            <guid>https://dds.bosabosa.org/news/learning-gatsby</guid>
+            <pubDate>Thu, 10 Dec 2020 04:42:23 GMT</pubDate>
+            <description><![CDATA[First impressions building this web site with React and Gatsby.]]></description>
+            <content:encoded><![CDATA[<p>I&#x27;m building this site in <a href="https://www.gatsbyjs.org/">Gatsby</a> because I want the advantages of a static
+website with great frontend integration and <code>git push</code> to deploy.</p><h2>Why?</h2><p>Why do this at all? Right now, we are surrounded by crises. There&#x27;s the climate
+crisis, the pandemic crisis, the poverty crisis, the economic crisis, the social
+crisis, and more. Well, this part of me <a href="https://climateaction.tech/">taking action</a> by
+moving my website to green software engineering and sustainable product design
+built on <a href="https://itsfoss.com/what-is-foss/">free and open-source software</a>.</p><h2>What&#x27;s <a href="https://www.gatsbyjs.org/">Gatsby</a>?</h2><p><a href="https://www.gatsbyjs.org/">Gatsby</a> is a framework and ecosystem of plugins that brings together the best
+of web development in a neat package. It&#x27;s the <a href="https://github.com/hlissner/doom-emacs">Doom Emacs</a> of JavaScript. The
+framework is built around combining <a href="https://reactjs.org/">React</a> with <a href="https://graphql.org/">GraphQL</a> for building a
+in-browser experiences.</p><h2>What Makes <a href="https://www.gatsbyjs.org/">Gatsby</a> So Great?</h2><p>Gatsby brings it all together:</p><ul><li>Free and open-source (MIT license).</li><li>Static website served from the edge, shared infrastructure and minimal resource consumption. So cheap, it&#x27;s free!</li><li>Built on React so building the user interface is a breeze.</li><li>GraphQL for integrating data, decoupling the data sources from the way they are used in the experience.</li><li>Plugins bring all the features from other frameworks.</li></ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Advent of Code 2020]]></title>
+            <link>https://dds.bosabosa.org/news/advent-of-code-2020</link>
+            <guid>https://dds.bosabosa.org/news/advent-of-code-2020</guid>
+            <pubDate>Sat, 05 Dec 2020 07:44:00 GMT</pubDate>
+            <description><![CDATA[Crafting with Code for the Holidays.]]></description>
+            <content:encoded><![CDATA[<p>The <a href="https://adventofcode.com/">Advent of Code</a> is an annual puzzle tradition created by <a href="http://was.tl/">Eric Wastl</a>. It&#x27;s great fun if you enjoy analytic thinking. For me, I enjoy the craft of writing code quite a bit and, since hearing of AoC in 2018, I&#x27;ve tried to participate. This year, I have more free time available to participate than prior years. So it&#x27;s been quite fun to prepare, participate, discuss, and just <em>craft</em> this year. That&#x27;s my favorite part: the feeling of <em>creating</em> for its own sake.</p><p>My puzzle solutions are <a href="https://github.com/dds/aoc2020">online</a>. This year, I&#x27;m trying to incorporate some of what I consider important and valuable features of modern development, particularly with project management and structure. I&#x27;m working in Golang this year because it is so much less of a fuss than Python and my goal is to have fun, explore a variety of solutions, and share.</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
