@@ -1,22 +1,22 @@
 import fs from "fs"
-import path from "path"
+import { join } from "path"
 import matter from "gray-matter"
 import superjson from "superjson"
 import { serialize } from "next-mdx-remote/serialize"
 
 const root = process.cwd()
 
-export async function getContent(type) {
-  return fs.readdirSync(path.join(root, `content`, type))
+export function getPostSlugs() {
+  return fs.readdirSync(join(root, `content`, `blog`))
 }
 
-export async function getContentBySlug(type, slug) {
-  const source = slug
-    ? fs.readFileSync(path.join(root, `content`, type, `${slug}.md`), `utf8`)
-    : fs.readFileSync(path.join(root, `content`, `${type}.md`), `utf8`)
+export function getPostBySlug(slug, fields = []) {
+  const realSlug = slug.replace(/\.mdx?$/, ``)
+  const fullPath = join(root, `content`, `blog`, `${realSlug}.md`)
+  const fileContents = fs.readFileSync(fullPath, `utf8`)
+  const { data, content } = matter(fileContents)
 
-  const { data, content } = matter(source)
-  const mdxSource = await serialize(content, {
+  const mdxSource = serialize(content, {
     mdxOptions: {
       // remarkPlugins: [
       //   require("remark-autolink-headings"),
@@ -29,37 +29,36 @@ export async function getContentBySlug(type, slug) {
   // const tweetMatches = content.match(/<StaticTweet\sid="[0-9]+"\s\/>/g)
   // const tweetIDs = tweetMatches?.map(tweet => tweet.match(/[0-9]+/g)[0])
 
-  return {
-    mdxSource,
-    // tweetIDs: tweetIDs || [],
-    frontMatter: {
-      // wordCount: content.split(/\s+/gu).length,
-      // readingTime: readingTime(content),
-      slug: slug || null,
-      ...data,
-    },
-  }
+  const items = {}
+
+  // Ensure only the minimal needed data is exposed
+  fields.forEach(field => {
+    if (field === `slug`) {
+      items[field] = realSlug
+    }
+    if (field === `content`) {
+      items[field] = content
+    }
+    if (field === `source`) {
+      items[field] = mdxSource
+    }
+    if (field === `wordCount`) {
+      items[field] = content.split(/\s+/gu).length
+    }
+
+    if (data[field]) {
+      items[field] = data[field]
+    }
+  })
+
+  return items
 }
 
-export async function getAllContentFrontMatter(type) {
-  const files = fs.readdirSync(path.join(root, `content`, type))
-
-  return files.reduce((allPosts, postSlug) => {
-    const source = fs.readFileSync(
-      path.join(root, `content`, type, postSlug),
-      `utf8`
-    )
-    const { data } = matter(source)
-    // Serialize date
-    const formattedDate = data.date.toString()
-
-    return [
-      {
-        ...data,
-        slug: postSlug.replace(`.md`, ``),
-        date: formattedDate,
-      },
-      ...allPosts,
-    ]
-  }, [])
+export function getAllPosts(fields = []) {
+  const slugs = getPostSlugs()
+  const posts = slugs
+    .map(slug => getPostBySlug(slug, fields))
+    // sort posts by date in descending order
+    .sort((post1, post2) => (post1.date > post2.date ? "-1" : "1"))
+  return posts
 }

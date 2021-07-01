@@ -13,7 +13,7 @@ export default function Blogroll({ posts }) {
             <li key={frontmatter.slug} sx={{ mb: 4 }}>
               <Heading as="h2">
                 <Link
-                  href={frontmatter.slug}
+                  href={"blog/" + frontmatter.slug}
                   sx={{
                     textDecoration: `none`,
                     ":hover,:focus": {
