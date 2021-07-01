@@ -9,6 +9,12 @@ export default function Blog({ posts }) {
 }
 
 export async function getStaticProps() {
-  const posts = getAllPosts([`title`, `slug`, `date`, `exerpt`, `description`])
+  const posts = await getAllPosts([
+    `title`,
+    `slug`,
+    `date`,
+    `exerpt`,
+    `description`,
+  ])
   return { props: { posts } }
 }

@@ -6,16 +6,15 @@ import { serialize } from "next-mdx-remote/serialize"
 
 const root = process.cwd()
 
-export function getPostSlugs() {
+function getPostSlugs() {
   return fs.readdirSync(join(root, `content`, `blog`))
 }
 
-export function getAllPosts(fields = []) {
+async function getAllPosts(fields = []) {
   const slugs = getPostSlugs()
-  const posts = slugs
-    .map(slug => innerGetPostBySlug(slug, fields))
-    // sort posts by date in descending order
-    .sort((post1, post2) => post2.date - post1.date)
+  const posts = (
+    await Promise.all(slugs.map(slug => innerGetPostBySlug(slug, fields)))
+  ).sort((a, b) => b.date - a.date)
   posts.forEach((post, index) => {
     const previousPostId = index === 0 ? null : index - 1
     const nextPostId = index === posts.length - 1 ? null : index + 1
@@ -32,13 +31,23 @@ export function getAllPosts(fields = []) {
   return posts
 }
 
-export function innerGetPostBySlug(slug, fields = []) {
+async function getPostBySlug(slug, fields = []) {
+  const posts = await getAllPosts(fields)
+  for (let i = 0; i < posts.length; i++) {
+    if (posts[i].slug === slug) {
+      return posts[i]
+    }
+  }
+  return null
+}
+
+async function innerGetPostBySlug(slug, fields = []) {
   const realSlug = slug.replace(/\.mdx?$/, ``)
   const fullPath = join(root, `content`, `blog`, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, `utf8`)
   const { data, content } = matter(fileContents)
 
-  const mdxSource = serialize(content, {
+  const mdxSource = await serialize(content, {
     mdxOptions: {
       // remarkPlugins: [
       //   require("remark-autolink-headings"),
@@ -84,12 +93,8 @@ export function innerGetPostBySlug(slug, fields = []) {
   return items
 }
 
-export function getPostBySlug(slug, fields = []) {
-  const posts = getAllPosts(fields)
-  for (let i = 0; i < posts.length; i++) {
-    if (posts[i].slug === slug) {
-      return posts[i]
-    }
-  }
-  return null
+module.exports = {
+  getPostSlugs,
+  getAllPosts,
+  getPostBySlug,
 }

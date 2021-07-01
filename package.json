@@ -6,7 +6,7 @@
   "version": "1.6.18",
   "scripts": {
     "dev": "next dev -p 8000",
-    "build": "next build",
+    "build": "next build && node ./.next/server/feed.js",
     "start": "next start",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "format-watch": "npm run format && onchange \"**/*.{js,jsx,json,md}\" -- prettier --write {{changed}}",
@@ -34,9 +34,7 @@
     "react-dom": "17.0.2",
     "react-ga": "^3.3.0",
     "react-icons": "4.2.0",
-    "remark": "^13.0.0",
     "remark-autolink-headings": "^6.0.1",
-    "remark-html": "^13.0.1",
     "remark-slug": "^6.0.0",
     "superjson": "^1.7.4",
     "theme-ui": "0.8.4"

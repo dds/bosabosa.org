@@ -1,5 +1,5 @@
 module.exports = {
-  url: "https://dds.bosabosa.org/",
+  url: "https://dds.bosabosa.org",
   title: "bosabosa",
   subtitle: "(dds) David D. Smith's Personal Website", // longDescription : appears in landing page meta description
   language: `en`,
