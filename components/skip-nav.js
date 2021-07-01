@@ -1,6 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
-
+/** @jsxImportSource theme-ui */
 const skipNavStyles = {
   border: 0,
   clip: `react(0 0 0 0)`,

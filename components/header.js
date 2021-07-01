@@ -1,5 +1,5 @@
-/** @jsx jsx */
-import { jsx, useColorMode, NavLink, Flex } from "theme-ui"
+/** @jsxImportSource theme-ui */
+import { useColorMode, NavLink, Flex } from "theme-ui"
 import Button from "./button"
 
 const getModeName = mode => {
@@ -58,7 +58,7 @@ const Header = ({ title }) => {
               r="14"
               fill="none"
               stroke="currentcolor"
-              stroke-width="4"
+              strokeWidth="4"
             ></circle>
             <path
               d="
