@@ -1,3 +1,7 @@
+## [1.6.22](https://github.com/dds/bosabosa.org/compare/v1.6.21...v1.6.22) (2021-07-01)
+
+
+
 ## [1.6.21](https://github.com/dds/bosabosa.org/compare/v1.6.20...v1.6.21) (2021-07-01)
 
 
@@ -27,15 +31,6 @@
 ### Bug Fixes
 
 * tighter packing of nav bar ([e0b06c2](https://github.com/dds/bosabosa.org/commit/e0b06c2668c2ff5c779b36fabbe8165428135723))
-
-
-
-## [1.6.17](https://github.com/dds/bosabosa.org/compare/v1.6.16...v1.6.17) (2021-05-25)
-
-
-### Bug Fixes
-
-* use svg icon for light/dark switch ([28503d2](https://github.com/dds/bosabosa.org/commit/28503d2a8dde2a2da6154b14014b7244c9d51a3c))
 
 
 
