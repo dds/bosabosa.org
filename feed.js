@@ -6,7 +6,7 @@ import { Feed } from "feed"
 import { getAllPosts } from "./content"
 import config from "./site.config"
 
-async function generate() {
+async function genRss() {
   const date = new Date()
   const feedConfig = Object.assign(
     {
@@ -17,11 +17,7 @@ async function generate() {
       copyright: `All rights reserved ${date.getFullYear()}, ${config.author}.`,
       updated: date,
       generator: "Next.js using Feed for Node.js",
-      feedLinks: {
-        rss2: `${config.url}/rss.xml`,
-        atom: `${config.url}/atom.xml`,
-        json: `${config.url}/feed.json`,
-      },
+      feedLinks: { rss2: `${config.url}/rss.xml` },
     },
     config
   )
@@ -60,4 +56,4 @@ async function generate() {
   fs.writeFileSync(`./public/rss.xml`, feed.rss2())
 }
 
-generate()
+genRss()
