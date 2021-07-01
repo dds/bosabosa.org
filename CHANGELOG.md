@@ -1,3 +1,7 @@
+## [1.6.23](https://github.com/dds/bosabosa.org/compare/v1.6.22...v1.6.23) (2021-07-01)
+
+
+
 ## [1.6.22](https://github.com/dds/bosabosa.org/compare/v1.6.21...v1.6.22) (2021-07-01)
 
 
@@ -22,15 +26,6 @@
 
 * import mdx ([1bcadd2](https://github.com/dds/bosabosa.org/commit/1bcadd236319147783e6083d040f8eaf55485f03))
 * improve colors and links ([80ecf10](https://github.com/dds/bosabosa.org/commit/80ecf10e0d2276d677aa1d1d48a77d80e75a6f6e))
-
-
-
-## [1.6.18](https://github.com/dds/bosabosa.org/compare/v1.6.17...v1.6.18) (2021-05-25)
-
-
-### Bug Fixes
-
-* tighter packing of nav bar ([e0b06c2](https://github.com/dds/bosabosa.org/commit/e0b06c2668c2ff5c779b36fabbe8165428135723))
 
 
 
