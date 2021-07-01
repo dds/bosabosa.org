@@ -1,3 +1,7 @@
+## [1.6.21](https://github.com/dds/bosabosa.org/compare/v1.6.20...v1.6.21) (2021-07-01)
+
+
+
 ## [1.6.20](https://github.com/dds/bosabosa.org/compare/v1.6.19...v1.6.20) (2021-07-01)
 
 
@@ -32,15 +36,6 @@
 ### Bug Fixes
 
 * use svg icon for light/dark switch ([28503d2](https://github.com/dds/bosabosa.org/commit/28503d2a8dde2a2da6154b14014b7244c9d51a3c))
-
-
-
-## [1.6.16](https://github.com/dds/bosabosa.org/compare/v1.6.15...v1.6.16) (2021-05-25)
-
-
-### Bug Fixes
-
-* better looking color mode button ([6fdc2fa](https://github.com/dds/bosabosa.org/commit/6fdc2fad74eaf7e9db656ad95590cbe76f847975))
 
 
 
