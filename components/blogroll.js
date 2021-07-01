@@ -6,14 +6,14 @@ export default function Blogroll({ posts }) {
     <Container fluid>
       <Heading>posts</Heading>
       <ol sx={{ listStyle: `none`, m: 0, px: 3, py: 4 }}>
-        {posts.map(frontmatter => {
-          const title = frontmatter.title || frontmatter.slug
+        {posts.map(post => {
+          const title = post.title || post.slug
 
           return (
-            <li key={frontmatter.slug} sx={{ mb: 4 }}>
+            <li key={post.slug} sx={{ mb: 4 }}>
               <Heading as="h2">
                 <Link
-                  href={"blog/" + frontmatter.slug}
+                  href={"news/" + post.slug}
                   sx={{
                     textDecoration: `none`,
                     ":hover,:focus": {
@@ -24,11 +24,11 @@ export default function Blogroll({ posts }) {
                   {title}
                 </Link>
               </Heading>
-              <Text>{frontmatter.date.toLocaleDateString()}</Text>
+              <Text>{!!post.date && post.date.toLocaleDateString()}</Text>
               <Text
                 sx={{ pt: 3 }}
                 dangerouslySetInnerHTML={{
-                  __html: frontmatter.description || frontmatter.excerpt,
+                  __html: post.description || post.excerpt,
                 }}
               />
             </li>

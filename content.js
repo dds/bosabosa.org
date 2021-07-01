@@ -22,11 +22,11 @@ export function getAllPosts(fields = []) {
     post.index = index
     post.nextPostIndex = nextPostId
     if (!!posts[nextPostId]) {
-      post.nextPost = posts[nextPostId]
+      post.next = posts[nextPostId]
     }
     post.previousPostIndex = previousPostId
     if (!!posts[previousPostId]) {
-      post.previousPost = posts[previousPostId]
+      post.prev = posts[previousPostId]
     }
   })
   return posts

@@ -9,7 +9,24 @@ module.exports = withMDX({
       config.node = {
         fs: "empty",
       }
+    } else {
+      const { genFeeds } = require(`./feed`)
+      genFeeds()
     }
     return config
+  },
+  async redirects() {
+    return [
+      {
+        source: `/b`,
+        destination: `/news`,
+        permanent: true,
+      },
+      {
+        source: `/b/:slug`,
+        destination: `/news/:slug`,
+        permanent: true,
+      },
+    ]
   },
 })

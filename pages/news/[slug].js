@@ -1,5 +1,5 @@
 import MDX from "@mdx-js/runtime"
-import { Flex, Text } from "theme-ui"
+import { Heading, Link, Flex, Text } from "theme-ui"
 import { getPostBySlug, getAllPosts } from "../../content"
 
 export default function BlogPostPage({ post }) {
@@ -7,10 +7,15 @@ export default function BlogPostPage({ post }) {
 
   return (
     <div>
+      <Heading as="h1">{post.title}</Heading>
       <article sx={{ borderBottom: `1px solid` }}>
-        <Flex as="header" sx={{ mr: 0, ml: `auto` }}>
-          <Text sx={{ variant: `text.heading` }}>{post.title}</Text>
-        </Flex>
+        {!!post.date && !!post.date.toLocaleDateString && (
+          <Flex as="header" sx={{ mr: 0, ml: `auto` }}>
+            <Text sx={{ variant: `text.heading` }}>
+              {post.date.toLocaleDateString()}
+            </Text>
+          </Flex>
+        )}
         <MDX>{post.content}</MDX>
       </article>
       <nav sx={{ pt: 2 }}>
@@ -24,8 +29,20 @@ export default function BlogPostPage({ post }) {
             m: 0,
           }}
         >
-          <li>← {!!post.previousPost && post.previousPost.slug}</li>
-          <li>{!!post.nextPost && post.nextPost.slug} →</li>
+          {!!post.prev && (
+            <li>
+              <Link href={post.prev.slug} rel="prev">
+                ← {post.prev.title}
+              </Link>
+            </li>
+          )}
+          {!!post.next && (
+            <li>
+              <Link href={post.next.slug} rel="next">
+                → {post.next.title}
+              </Link>
+            </li>
+          )}
         </ul>
       </nav>
     </div>

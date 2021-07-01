@@ -46,7 +46,6 @@ const Layout = ({ children, title = `` }) => (
           px: 3,
         }}
       >
-        <Heading as="h1">{title}</Heading>
         {children}
       </main>
       <aside sx={{ gridArea: `aside` }}></aside>

@@ -66,3 +66,7 @@ yarn-error.log
 
 # Next.js build files
 .next/
+
+
+# RSS is generated at build time
+public/rss.xml
