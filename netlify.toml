@@ -8,3 +8,10 @@
 [context.production.environment]
 NEXT_SERVERLESS = "true"
 NODE_ENV = "production"
+
+[[redirects]]
+  from = "/b"
+  to = "/news"
+  status = 301
+  force = false
+  query = {slug = ":slug"}
