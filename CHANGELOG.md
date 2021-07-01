@@ -1,3 +1,13 @@
+## [1.6.19](https://github.com/dds/bosabosa.org/compare/v1.6.18...v1.6.19) (2021-07-01)
+
+
+### Bug Fixes
+
+* import mdx ([1bcadd2](https://github.com/dds/bosabosa.org/commit/1bcadd236319147783e6083d040f8eaf55485f03))
+* improve colors and links ([80ecf10](https://github.com/dds/bosabosa.org/commit/80ecf10e0d2276d677aa1d1d48a77d80e75a6f6e))
+
+
+
 ## [1.6.18](https://github.com/dds/bosabosa.org/compare/v1.6.17...v1.6.18) (2021-05-25)
 
 
@@ -31,15 +41,6 @@
 ### Bug Fixes
 
 * **deps:** pin dependency normalize.css to 8.0.1 ([#143](https://github.com/dds/bosabosa.org/issues/143)) ([88bc117](https://github.com/dds/bosabosa.org/commit/88bc1173b50029c5f3732c2799c94f32841fc853))
-
-
-
-## [1.6.14](https://github.com/dds/bosabosa.org/compare/v1.6.13...v1.6.14) (2021-05-25)
-
-
-### Bug Fixes
-
-* remove theme-ui presets ([5fff1b5](https://github.com/dds/bosabosa.org/commit/5fff1b5c6a7a52d11e73a6706e9df880ce25af51))
 
 
 
