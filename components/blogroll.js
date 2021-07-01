@@ -24,7 +24,7 @@ export default function Blogroll({ posts }) {
                   {title}
                 </Link>
               </Heading>
-              <Text>{frontmatter.date}</Text>
+              <Text>{frontmatter.date.toLocaleDateString()}</Text>
               <Text
                 sx={{ pt: 3 }}
                 dangerouslySetInnerHTML={{

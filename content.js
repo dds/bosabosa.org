@@ -35,19 +35,27 @@ export function getPostBySlug(slug, fields = []) {
   fields.forEach(field => {
     if (field === `slug`) {
       items[field] = realSlug
+      return
     }
     if (field === `content`) {
       items[field] = content
+      return
     }
     if (field === `source`) {
       items[field] = mdxSource
+      return
     }
     if (field === `wordCount`) {
       items[field] = content.split(/\s+/gu).length
+      return
     }
-
+    if (field === `date`) {
+      items[field] = new Date(data[field])
+      return
+    }
     if (data[field]) {
       items[field] = data[field]
+      return
     }
   })
 
@@ -59,6 +67,6 @@ export function getAllPosts(fields = []) {
   const posts = slugs
     .map(slug => getPostBySlug(slug, fields))
     // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? "-1" : "1"))
+    .sort((post1, post2) => post2.date - post1.date)
   return posts
 }
