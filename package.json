@@ -6,7 +6,7 @@
   "version": "1.6.23",
   "scripts": {
     "dev": "next dev -p 8000",
-    "build": "next build && node ./.next/server/feed.js",
+    "build": "next build",
     "start": "next start",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "format-watch": "npm run format && onchange \"**/*.{js,jsx,json,md}\" -- prettier --write {{changed}}",
