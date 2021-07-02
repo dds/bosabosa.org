@@ -1,3 +1,7 @@
+## [1.6.28](https://github.com/dds/bosabosa.org/compare/v1.6.27...v1.6.28) (2021-07-02)
+
+
+
 ## [1.6.27](https://github.com/dds/bosabosa.org/compare/v1.6.26...v1.6.27) (2021-07-02)
 
 
@@ -21,10 +25,6 @@
 
 
 ## [1.6.24](https://github.com/dds/bosabosa.org/compare/v1.6.23...v1.6.24) (2021-07-02)
-
-
-
-## [1.6.23](https://github.com/dds/bosabosa.org/compare/v1.6.22...v1.6.23) (2021-07-01)
 
 
 
