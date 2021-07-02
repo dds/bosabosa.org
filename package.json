@@ -16,7 +16,7 @@
     "url": "https://github.com/dds/bosabosa.org/issues"
   },
   "devDependencies": {
-    "prettier": "2.3.0"
+    "prettier": "2.3.2"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
