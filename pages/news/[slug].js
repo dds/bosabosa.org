@@ -1,6 +1,8 @@
 /** @jsxImportSource theme-ui */
 import MDX from "@mdx-js/runtime"
-import { Heading, Link, Flex, Text } from "theme-ui"
+import Link from "next/link"
+import { Heading, Flex, Text } from "theme-ui"
+import { Link as A } from "theme-ui"
 import { getPostBySlug, getAllPosts } from "../../content"
 
 export default function BlogPostPage({ post }) {
@@ -32,15 +34,17 @@ export default function BlogPostPage({ post }) {
         >
           <li>
             {!!post.prev && (
-              <Link href={post.prev.slug} rel="prev">
-                ← {post.prev.title}
+              <Link href={post.prev.slug} passHref>
+                <A rel="prev">← {post.prev.title}</A>
               </Link>
             )}
           </li>
           <li>
             {!!post.next && (
-              <Link href={post.next.slug} rel="next">
-                → {post.next.title}
+              <Link href={post.next.slug} passHref>
+                <A ref="next" rel="next">
+                  → {post.next.title}
+                </A>
               </Link>
             )}
           </li>

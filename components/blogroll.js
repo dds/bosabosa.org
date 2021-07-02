@@ -1,5 +1,7 @@
 /** @jsxImportSource theme-ui */
-import { Container, Heading, Link, Text } from "theme-ui"
+import { Container, Heading, Text } from "theme-ui"
+import { Link as A } from "theme-ui"
+import Link from "next/link"
 
 export default function Blogroll({ posts }) {
   return (
@@ -12,16 +14,17 @@ export default function Blogroll({ posts }) {
           return (
             <li key={post.slug} sx={{ mb: 4 }}>
               <Heading as="h2">
-                <Link
-                  href={"news/" + post.slug}
-                  sx={{
-                    textDecoration: `none`,
-                    ":hover,:focus": {
-                      textDecoration: `underline`,
-                    },
-                  }}
-                >
-                  {title}
+                <Link href={`/news/${encodeURIComponent(post.slug)}`} passHref>
+                  <A
+                    sx={{
+                      textDecoration: `none`,
+                      ":hover,:focus": {
+                        textDecoration: `underline`,
+                      },
+                    }}
+                  >
+                    {title}
+                  </A>
                 </Link>
               </Heading>
               <Text>{!!post.date && post.date.toLocaleDateString()}</Text>

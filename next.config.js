@@ -4,6 +4,7 @@ const withMDX = require("@next/mdx")({
 module.exports = withMDX({
   target: "serverless",
   pageExtensions: ["js", "md"],
+  webpack5: false,
   webpack: (config, { dev, isServer }) => {
     // Fixes npm packages (mdx) that depend on `fs` module
     if (!isServer) {
