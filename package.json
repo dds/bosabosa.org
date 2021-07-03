@@ -3,7 +3,7 @@
   "name": "@dds/bosabosa",
   "description": "Personal website of David D. Smith.",
   "license": "UNLICENSED",
-  "version": "1.6.31",
+  "version": "1.6.32",
   "scripts": {
     "dev": "next dev -p 8000",
     "build": "next build",
