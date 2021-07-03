@@ -16,14 +16,17 @@
     "url": "https://github.com/dds/bosabosa.org/issues"
   },
   "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-next": "^11.0.1",
     "prettier": "2.3.2"
   },
   "dependencies": {
     "@mdx-js/loader": "1.6.22",
     "@mdx-js/runtime": "1.6.22",
     "@netlify/plugin-nextjs": "3.6.1",
+    "@next/bundle-analyzer": "^11.0.1",
     "@next/mdx": "11.0.1",
-    "babel-plugin-superjson-next": "0.3.0",
+    "babel-plugin-superjson-next": "^0.3.0",
     "date-fns": "2.22.1",
     "feed": "4.2.2",
     "gray-matter": "4.0.3",
@@ -37,7 +40,8 @@
     "react-icons": "4.2.0",
     "remark-autolink-headings": "6.0.1",
     "remark-slug": "6.0.0",
-    "superjson": "1.7.4",
+    "superjson": "^1.7.4",
+    "terser-webpack-plugin": "^5.1.4",
     "theme-ui": "0.10.0"
   }
 }

@@ -13,20 +13,28 @@ function getPostSlugs() {
 async function getAllPosts(fields = []) {
   const slugs = getPostSlugs()
   const posts = (
-    await Promise.all(slugs.map(slug => innerGetPostBySlug(slug, fields)))
-  ).sort((a, b) => b.date - a.date)
+    await Promise.all(
+      slugs.map(slug => innerGetPostBySlug(slug, [...fields, "date"]))
+    )
+  ).sort((a, b) => new Date(b.date) - new Date(a.date))
   posts.forEach((post, index) => {
     const previousPostId = index === 0 ? null : index - 1
+    const previousPostSlug = !!previousPostId
+      ? posts[previousPostId].slug
+      : null
+    const previousPostTitle = !!previousPostId
+      ? posts[previousPostId].title
+      : null
     const nextPostId = index === posts.length - 1 ? null : index + 1
+    const nextPostSlug = !!nextPostId ? posts[nextPostId].slug : null
+    const nextPostTitle = !!nextPostId ? posts[nextPostId].title : null
     post.index = index
-    post.nextPostIndex = nextPostId
-    if (!!posts[nextPostId]) {
-      post.next = posts[nextPostId]
-    }
     post.previousPostIndex = previousPostId
-    if (!!posts[previousPostId]) {
-      post.prev = posts[previousPostId]
-    }
+    post.previousPostSlug = previousPostSlug
+    post.previousPostTitle = previousPostTitle
+    post.nextPostIndex = nextPostId
+    post.nextPostSlug = nextPostSlug
+    post.nextPostTitle = nextPostTitle
   })
   return posts
 }
@@ -78,10 +86,6 @@ async function innerGetPostBySlug(slug, fields = []) {
     }
     if (field === `wordCount`) {
       items[field] = content.split(/\s+/gu).length
-      return
-    }
-    if (field === `date`) {
-      items[field] = new Date(data[field])
       return
     }
     if (data[field]) {

@@ -50,7 +50,7 @@ async function genRss() {
       description: post.description || post.excerpt,
       content: content,
       author: [config.author],
-      date: post.date,
+      date: new Date(post.date),
     })
   })
   fs.writeFileSync(`./public/rss.xml`, feed.rss2())

@@ -12,10 +12,10 @@ export default function BlogPostPage({ post }) {
     <div>
       <Heading as="h1">{post.title}</Heading>
       <article sx={{ borderBottom: `1px solid` }}>
-        {!!post.date && !!post.date.toLocaleDateString && (
+        {post.date && (
           <Flex as="header" sx={{ fontWeight: 4, mr: 0, ml: `auto` }}>
             <Text sx={{ variant: `text.heading` }}>
-              {post.date.toLocaleDateString()}
+              {new Date(post.date).toLocaleDateString()}
             </Text>
           </Flex>
         )}
@@ -33,18 +33,16 @@ export default function BlogPostPage({ post }) {
           }}
         >
           <li>
-            {!!post.prev && (
-              <Link href={post.prev.slug} passHref>
-                <A rel="prev">← {post.prev.title}</A>
+            {!!post.previousPostSlug && (
+              <Link href={post.previousPostSlug} passHref>
+                <A rel="prev">← {post.previousPostTitle}</A>
               </Link>
             )}
           </li>
           <li>
-            {!!post.next && (
-              <Link href={post.next.slug} passHref>
-                <A ref="next" rel="next">
-                  → {post.next.title}
-                </A>
+            {!!post.nextPostSlug && (
+              <Link href={post.nextPostSlug} passHref>
+                <A rel="next">→ {post.nextPostTitle}</A>
               </Link>
             )}
           </li>
@@ -73,7 +71,7 @@ export async function getStaticProps({ params }) {
   }
 }
 
-export async function getStaticPaths({ params }) {
+export async function getStaticPaths() {
   const posts = await getAllPosts(["slug"])
   return {
     paths: posts.map(post => {
