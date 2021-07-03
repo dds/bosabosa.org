@@ -1,3 +1,7 @@
+## [1.6.31](https://github.com/dds/bosabosa.org/compare/v1.6.30...v1.6.31) (2021-07-03)
+
+
+
 ## [1.6.30](https://github.com/dds/bosabosa.org/compare/v1.6.29...v1.6.30) (2021-07-02)
 
 
@@ -21,10 +25,6 @@
 ### Bug Fixes
 
 * **deps:** pin dependencies ([#144](https://github.com/dds/bosabosa.org/issues/144)) ([b5e5023](https://github.com/dds/bosabosa.org/commit/b5e5023bb0a61eefed0653cf464720696ee6dc4f))
-
-
-
-## [1.6.26](https://github.com/dds/bosabosa.org/compare/v1.6.25...v1.6.26) (2021-07-02)
 
 
 
