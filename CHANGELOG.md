@@ -1,3 +1,12 @@
+## [1.6.38](https://github.com/dds/bosabosa.org/compare/v1.6.37...v1.6.38) (2021-07-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @netlify/plugin-nextjs to v3.7.1 ([#163](https://github.com/dds/bosabosa.org/issues/163)) ([e9bade3](https://github.com/dds/bosabosa.org/commit/e9bade34d3805a73f7f96939f1b246ca6102bac6))
+
+
+
 ## [1.6.37](https://github.com/dds/bosabosa.org/compare/v1.6.36...v1.6.37) (2021-07-13)
 
 
@@ -31,10 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency @netlify/plugin-nextjs to v3.6.2 ([#159](https://github.com/dds/bosabosa.org/issues/159)) ([7fad0a1](https://github.com/dds/bosabosa.org/commit/7fad0a1765d195905e851c2d0841fe9bc8ba5250))
-
-
-
-## [1.6.33](https://github.com/dds/bosabosa.org/compare/v1.6.32...v1.6.33) (2021-07-03)
 
 
 
