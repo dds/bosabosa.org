@@ -1,3 +1,12 @@
+## [1.6.41](https://github.com/dds/bosabosa.org/compare/v1.6.40...v1.6.41) (2021-07-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency date-fns to v2.23.0 ([#166](https://github.com/dds/bosabosa.org/issues/166)) ([84b3405](https://github.com/dds/bosabosa.org/commit/84b3405b5f97c6f6b18496f1207ac0edab496a1c))
+
+
+
 ## [1.6.40](https://github.com/dds/bosabosa.org/compare/v1.6.39...v1.6.40) (2021-07-18)
 
 
@@ -26,15 +35,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency next-mdx-remote to v3.0.4 ([#162](https://github.com/dds/bosabosa.org/issues/162)) ([54c090b](https://github.com/dds/bosabosa.org/commit/54c090be8756a3619b5d0047f5b38d5e239c36cc))
-
-
-
-## [1.6.36](https://github.com/dds/bosabosa.org/compare/v1.6.35...v1.6.36) (2021-07-13)
-
-
-### Bug Fixes
-
-* **deps:** update dependency @netlify/plugin-nextjs to v3.7.0 ([#161](https://github.com/dds/bosabosa.org/issues/161)) ([3781ac2](https://github.com/dds/bosabosa.org/commit/3781ac25c813c4f146d522f63cffbcbfb1501b96))
 
 
 
