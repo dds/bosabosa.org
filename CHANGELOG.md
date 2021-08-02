@@ -1,3 +1,12 @@
+## [1.6.44](https://github.com/dds/bosabosa.org/compare/v1.6.43...v1.6.44) (2021-08-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @netlify/plugin-nextjs to v3.8.0 ([#169](https://github.com/dds/bosabosa.org/issues/169)) ([b07b4ac](https://github.com/dds/bosabosa.org/commit/b07b4ac0465887efc0c70766d7e3469ae85f362e))
+
+
+
 ## [1.6.43](https://github.com/dds/bosabosa.org/compare/v1.6.42...v1.6.43) (2021-07-31)
 
 
@@ -26,10 +35,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency remark-slug to v6.1.0 ([#165](https://github.com/dds/bosabosa.org/issues/165)) ([c58d2e1](https://github.com/dds/bosabosa.org/commit/c58d2e1d96c0f54e1bc4184c016a822dfeb4bd58))
-
-
-
-## [1.6.39](https://github.com/dds/bosabosa.org/compare/v1.6.38...v1.6.39) (2021-07-17)
 
 
 
