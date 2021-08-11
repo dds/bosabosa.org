@@ -1,3 +1,12 @@
+## [1.6.47](https://github.com/dds/bosabosa.org/compare/v1.6.46...v1.6.47) (2021-08-11)
+
+
+### Bug Fixes
+
+* **deps:** update nextjs monorepo to v11.1.0 ([#172](https://github.com/dds/bosabosa.org/issues/172)) ([c67eedc](https://github.com/dds/bosabosa.org/commit/c67eedce4859ee122fe0a4f00a20f49aacb97a92))
+
+
+
 ## [1.6.46](https://github.com/dds/bosabosa.org/compare/v1.6.45...v1.6.46) (2021-08-09)
 
 
@@ -26,15 +35,6 @@
 
 
 ## [1.6.43](https://github.com/dds/bosabosa.org/compare/v1.6.42...v1.6.43) (2021-07-31)
-
-
-
-## [1.6.42](https://github.com/dds/bosabosa.org/compare/v1.6.41...v1.6.42) (2021-07-30)
-
-
-### Bug Fixes
-
-* **deps:** update dependency remark-autolink-headings to v6.1.0 ([#167](https://github.com/dds/bosabosa.org/issues/167)) ([a00df82](https://github.com/dds/bosabosa.org/commit/a00df823c5e38d66da351c91e714051d28d836ec))
 
 
 
