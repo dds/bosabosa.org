@@ -1,3 +1,12 @@
+## [1.6.48](https://github.com/dds/bosabosa.org/compare/v1.6.47...v1.6.48) (2021-08-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency remark-autolink-headings to v7.0.1 ([#173](https://github.com/dds/bosabosa.org/issues/173)) ([91676db](https://github.com/dds/bosabosa.org/commit/91676dbb50f011d12a93f385e74d74884ee7422d))
+
+
+
 ## [1.6.47](https://github.com/dds/bosabosa.org/compare/v1.6.46...v1.6.47) (2021-08-11)
 
 
@@ -31,10 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency @netlify/plugin-nextjs to v3.8.0 ([#169](https://github.com/dds/bosabosa.org/issues/169)) ([b07b4ac](https://github.com/dds/bosabosa.org/commit/b07b4ac0465887efc0c70766d7e3469ae85f362e))
-
-
-
-## [1.6.43](https://github.com/dds/bosabosa.org/compare/v1.6.42...v1.6.43) (2021-07-31)
 
 
 
