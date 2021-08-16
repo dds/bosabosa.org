@@ -5299,10 +5299,10 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-remark-autolink-headings@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/remark-autolink-headings/-/remark-autolink-headings-7.0.0.tgz#d5288ac0a7fcc06f7255f74ee2b2fe5445e0bc57"
-  integrity sha512-8pC6GzOny0vOfBxwl1jnAcMG/r5+XR1mbSKiGBgQYnsmSyFBGvEuukEaSNplbxyOOdUAjNRRhfTkXeutYXNUUw==
+remark-autolink-headings@7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/remark-autolink-headings/-/remark-autolink-headings-7.0.1.tgz#1d8528ea8783b828200d13c055ec2d5f2cae5060"
+  integrity sha512-a1BIwoJ0cSnX+sPp5u3AFULBFWHGYBt57Fo4a+7IlGiJOQxs8b7uYAE5Iu26Ocl7Y5cvinZy3FaGVruLCKg6vA==
   dependencies:
     "@types/hast" "^2.0.0"
     "@types/mdast" "^3.0.0"
