@@ -1,3 +1,12 @@
+## [1.6.49](https://github.com/dds/bosabosa.org/compare/v1.6.48...v1.6.49) (2021-08-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency babel-plugin-superjson-next to v0.3.1 ([#174](https://github.com/dds/bosabosa.org/issues/174)) ([ee6b357](https://github.com/dds/bosabosa.org/commit/ee6b35737aa9aa8a9d0021610aa6e31c71436c65))
+
+
+
 ## [1.6.48](https://github.com/dds/bosabosa.org/compare/v1.6.47...v1.6.48) (2021-08-16)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency superjson to v1.7.5 ([#170](https://github.com/dds/bosabosa.org/issues/170)) ([1f7ec38](https://github.com/dds/bosabosa.org/commit/1f7ec38dbb0046fc600b471afa1308e9b515b6ff))
-
-
-
-## [1.6.44](https://github.com/dds/bosabosa.org/compare/v1.6.43...v1.6.44) (2021-08-02)
-
-
-### Bug Fixes
-
-* **deps:** update dependency @netlify/plugin-nextjs to v3.8.0 ([#169](https://github.com/dds/bosabosa.org/issues/169)) ([b07b4ac](https://github.com/dds/bosabosa.org/commit/b07b4ac0465887efc0c70766d7e3469ae85f362e))
 
 
 
