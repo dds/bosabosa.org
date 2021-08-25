@@ -1,3 +1,12 @@
+## [1.6.50](https://github.com/dds/bosabosa.org/compare/v1.6.49...v1.6.50) (2021-08-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency theme-ui to v0.11.1 ([#175](https://github.com/dds/bosabosa.org/issues/175)) ([c36f77a](https://github.com/dds/bosabosa.org/commit/c36f77aac3fe19a9c2f593708ff48d4ce54ef5d1))
+
+
+
 ## [1.6.49](https://github.com/dds/bosabosa.org/compare/v1.6.48...v1.6.49) (2021-08-17)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update remark monorepo to v7 ([#171](https://github.com/dds/bosabosa.org/issues/171)) ([355f835](https://github.com/dds/bosabosa.org/commit/355f835a7b75d029db5f96315bba83d34dde3174))
-
-
-
-## [1.6.45](https://github.com/dds/bosabosa.org/compare/v1.6.44...v1.6.45) (2021-08-03)
-
-
-### Bug Fixes
-
-* **deps:** update dependency superjson to v1.7.5 ([#170](https://github.com/dds/bosabosa.org/issues/170)) ([1f7ec38](https://github.com/dds/bosabosa.org/commit/1f7ec38dbb0046fc600b471afa1308e9b515b6ff))
 
 
 
