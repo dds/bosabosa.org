@@ -1,3 +1,12 @@
+## [1.6.51](https://github.com/dds/bosabosa.org/compare/v1.6.50...v1.6.51) (2021-08-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @netlify/plugin-nextjs to v3.9.0 ([#177](https://github.com/dds/bosabosa.org/issues/177)) ([9c762dc](https://github.com/dds/bosabosa.org/commit/9c762dc0b9e578122d13905993298d99a7bedab7))
+
+
+
 ## [1.6.50](https://github.com/dds/bosabosa.org/compare/v1.6.49...v1.6.50) (2021-08-25)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update nextjs monorepo to v11.1.0 ([#172](https://github.com/dds/bosabosa.org/issues/172)) ([c67eedc](https://github.com/dds/bosabosa.org/commit/c67eedce4859ee122fe0a4f00a20f49aacb97a92))
-
-
-
-## [1.6.46](https://github.com/dds/bosabosa.org/compare/v1.6.45...v1.6.46) (2021-08-09)
-
-
-### Bug Fixes
-
-* **deps:** update remark monorepo to v7 ([#171](https://github.com/dds/bosabosa.org/issues/171)) ([355f835](https://github.com/dds/bosabosa.org/commit/355f835a7b75d029db5f96315bba83d34dde3174))
 
 
 
