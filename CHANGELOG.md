@@ -1,3 +1,12 @@
+## [1.6.54](https://github.com/dds/bosabosa.org/compare/v1.6.53...v1.6.54) (2021-08-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency terser-webpack-plugin to v5.2.0 ([#180](https://github.com/dds/bosabosa.org/issues/180)) ([904e90a](https://github.com/dds/bosabosa.org/commit/904e90a3044969651f9873d91b340c038fe9c0dd))
+
+
+
 ## [1.6.53](https://github.com/dds/bosabosa.org/compare/v1.6.52...v1.6.53) (2021-08-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency theme-ui to v0.11.1 ([#175](https://github.com/dds/bosabosa.org/issues/175)) ([c36f77a](https://github.com/dds/bosabosa.org/commit/c36f77aac3fe19a9c2f593708ff48d4ce54ef5d1))
-
-
-
-## [1.6.49](https://github.com/dds/bosabosa.org/compare/v1.6.48...v1.6.49) (2021-08-17)
-
-
-### Bug Fixes
-
-* **deps:** update dependency babel-plugin-superjson-next to v0.3.1 ([#174](https://github.com/dds/bosabosa.org/issues/174)) ([ee6b357](https://github.com/dds/bosabosa.org/commit/ee6b35737aa9aa8a9d0021610aa6e31c71436c65))
 
 
 
