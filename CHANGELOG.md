@@ -1,3 +1,12 @@
+## [1.6.53](https://github.com/dds/bosabosa.org/compare/v1.6.52...v1.6.53) (2021-08-31)
+
+
+### Bug Fixes
+
+* **deps:** update nextjs monorepo to v11.1.2 ([#179](https://github.com/dds/bosabosa.org/issues/179)) ([0bb63b2](https://github.com/dds/bosabosa.org/commit/0bb63b21684bc26d7b0c3668b59cf428fb7e8057))
+
+
+
 ## [1.6.52](https://github.com/dds/bosabosa.org/compare/v1.6.51...v1.6.52) (2021-08-30)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency babel-plugin-superjson-next to v0.3.1 ([#174](https://github.com/dds/bosabosa.org/issues/174)) ([ee6b357](https://github.com/dds/bosabosa.org/commit/ee6b35737aa9aa8a9d0021610aa6e31c71436c65))
-
-
-
-## [1.6.48](https://github.com/dds/bosabosa.org/compare/v1.6.47...v1.6.48) (2021-08-16)
-
-
-### Bug Fixes
-
-* **deps:** update dependency remark-autolink-headings to v7.0.1 ([#173](https://github.com/dds/bosabosa.org/issues/173)) ([91676db](https://github.com/dds/bosabosa.org/commit/91676dbb50f011d12a93f385e74d74884ee7422d))
 
 
 
