@@ -1,3 +1,12 @@
+## [1.6.55](https://github.com/dds/bosabosa.org/compare/v1.6.54...v1.6.55) (2021-09-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency terser-webpack-plugin to v5.2.1 ([#181](https://github.com/dds/bosabosa.org/issues/181)) ([794c868](https://github.com/dds/bosabosa.org/commit/794c8689bea7c06af6d962438c269eab85dae536))
+
+
+
 ## [1.6.54](https://github.com/dds/bosabosa.org/compare/v1.6.53...v1.6.54) (2021-08-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency @netlify/plugin-nextjs to v3.9.0 ([#177](https://github.com/dds/bosabosa.org/issues/177)) ([9c762dc](https://github.com/dds/bosabosa.org/commit/9c762dc0b9e578122d13905993298d99a7bedab7))
-
-
-
-## [1.6.50](https://github.com/dds/bosabosa.org/compare/v1.6.49...v1.6.50) (2021-08-25)
-
-
-### Bug Fixes
-
-* **deps:** update dependency theme-ui to v0.11.1 ([#175](https://github.com/dds/bosabosa.org/issues/175)) ([c36f77a](https://github.com/dds/bosabosa.org/commit/c36f77aac3fe19a9c2f593708ff48d4ce54ef5d1))
 
 
 
