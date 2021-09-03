@@ -1,3 +1,12 @@
+## [1.6.57](https://github.com/dds/bosabosa.org/compare/v1.6.56...v1.6.57) (2021-09-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency terser-webpack-plugin to v5.2.3 ([#183](https://github.com/dds/bosabosa.org/issues/183)) ([c0fa574](https://github.com/dds/bosabosa.org/commit/c0fa574f5242bb18e692a4be988d9451fc3c8acc))
+
+
+
 ## [1.6.56](https://github.com/dds/bosabosa.org/compare/v1.6.55...v1.6.56) (2021-09-03)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update nextjs monorepo to v11.1.2 ([#179](https://github.com/dds/bosabosa.org/issues/179)) ([0bb63b2](https://github.com/dds/bosabosa.org/commit/0bb63b21684bc26d7b0c3668b59cf428fb7e8057))
-
-
-
-## [1.6.52](https://github.com/dds/bosabosa.org/compare/v1.6.51...v1.6.52) (2021-08-30)
-
-
-### Bug Fixes
-
-* **deps:** update nextjs monorepo to v11.1.1 ([#178](https://github.com/dds/bosabosa.org/issues/178)) ([1a245f6](https://github.com/dds/bosabosa.org/commit/1a245f621a46b07c42480949e868fdaba0ed9546))
 
 
 
