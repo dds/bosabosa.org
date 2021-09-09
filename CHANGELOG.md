@@ -1,3 +1,7 @@
+## [1.6.59](https://github.com/dds/bosabosa.org/compare/v1.6.58...v1.6.59) (2021-09-09)
+
+
+
 ## [1.6.58](https://github.com/dds/bosabosa.org/compare/v1.6.57...v1.6.58) (2021-09-08)
 
 
@@ -31,15 +35,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency terser-webpack-plugin to v5.2.1 ([#181](https://github.com/dds/bosabosa.org/issues/181)) ([794c868](https://github.com/dds/bosabosa.org/commit/794c8689bea7c06af6d962438c269eab85dae536))
-
-
-
-## [1.6.54](https://github.com/dds/bosabosa.org/compare/v1.6.53...v1.6.54) (2021-08-31)
-
-
-### Bug Fixes
-
-* **deps:** update dependency terser-webpack-plugin to v5.2.0 ([#180](https://github.com/dds/bosabosa.org/issues/180)) ([904e90a](https://github.com/dds/bosabosa.org/commit/904e90a3044969651f9873d91b340c038fe9c0dd))
 
 
 
