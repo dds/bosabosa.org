@@ -1,3 +1,12 @@
+## [1.6.63](https://github.com/dds/bosabosa.org/compare/v1.6.62...v1.6.63) (2021-09-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency babel-plugin-superjson-next to v0.4.0 ([#189](https://github.com/dds/bosabosa.org/issues/189)) ([5d4d387](https://github.com/dds/bosabosa.org/commit/5d4d387c76d9ef257a218e79bf696a61dfeb3911))
+
+
+
 ## [1.6.62](https://github.com/dds/bosabosa.org/compare/v1.6.61...v1.6.62) (2021-09-17)
 
 
@@ -21,15 +30,6 @@
 
 
 ## [1.6.59](https://github.com/dds/bosabosa.org/compare/v1.6.58...v1.6.59) (2021-09-09)
-
-
-
-## [1.6.58](https://github.com/dds/bosabosa.org/compare/v1.6.57...v1.6.58) (2021-09-08)
-
-
-### Bug Fixes
-
-* **deps:** update dependency theme-ui to v0.11.2 ([#184](https://github.com/dds/bosabosa.org/issues/184)) ([94d87e6](https://github.com/dds/bosabosa.org/commit/94d87e69906b6a23b8a2a3cf3632158f6b87025a))
 
 
 
