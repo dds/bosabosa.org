@@ -1,3 +1,12 @@
+## [1.6.65](https://github.com/dds/bosabosa.org/compare/v1.6.64...v1.6.65) (2021-09-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency theme-ui to v0.11.3 ([#191](https://github.com/dds/bosabosa.org/issues/191)) ([44b14cf](https://github.com/dds/bosabosa.org/commit/44b14cfd36a734446d10473f46a8fa3922012196))
+
+
+
 ## [1.6.64](https://github.com/dds/bosabosa.org/compare/v1.6.63...v1.6.64) (2021-09-20)
 
 
@@ -26,15 +35,6 @@
 
 
 ## [1.6.61](https://github.com/dds/bosabosa.org/compare/v1.6.60...v1.6.61) (2021-09-16)
-
-
-
-## [1.6.60](https://github.com/dds/bosabosa.org/compare/v1.6.59...v1.6.60) (2021-09-09)
-
-
-### Bug Fixes
-
-* **deps:** update dependency terser-webpack-plugin to v5.2.4 ([#186](https://github.com/dds/bosabosa.org/issues/186)) ([09bcd87](https://github.com/dds/bosabosa.org/commit/09bcd874a1a920dc044fd10d035a336860d79a0b))
 
 
 
