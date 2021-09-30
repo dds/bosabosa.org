@@ -1,3 +1,12 @@
+## [1.6.66](https://github.com/dds/bosabosa.org/compare/v1.6.65...v1.6.66) (2021-09-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-mdx-remote to v3.0.5 ([#192](https://github.com/dds/bosabosa.org/issues/192)) ([ecc992c](https://github.com/dds/bosabosa.org/commit/ecc992c08cb55af1815f8f252211bf3ff6da5405))
+
+
+
 ## [1.6.65](https://github.com/dds/bosabosa.org/compare/v1.6.64...v1.6.65) (2021-09-24)
 
 
@@ -31,10 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency date-fns to v2.24.0 ([#188](https://github.com/dds/bosabosa.org/issues/188)) ([55edb1e](https://github.com/dds/bosabosa.org/commit/55edb1e65d70372c850b9498bdf919d206ca9669))
-
-
-
-## [1.6.61](https://github.com/dds/bosabosa.org/compare/v1.6.60...v1.6.61) (2021-09-16)
 
 
 
