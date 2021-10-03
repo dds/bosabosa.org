@@ -1,3 +1,12 @@
+## [1.6.68](https://github.com/dds/bosabosa.org/compare/v1.6.67...v1.6.68) (2021-10-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-icons to v4.3.1 ([#194](https://github.com/dds/bosabosa.org/issues/194)) ([b370b46](https://github.com/dds/bosabosa.org/commit/b370b46a002f2976d1d6a92fcfb3fc7d5a9a2df5))
+
+
+
 ## [1.6.67](https://github.com/dds/bosabosa.org/compare/v1.6.66...v1.6.67) (2021-10-02)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency babel-plugin-superjson-next to v0.4.1 ([#190](https://github.com/dds/bosabosa.org/issues/190)) ([9d4b357](https://github.com/dds/bosabosa.org/commit/9d4b357e0ec9a38c4e8947bf7d370c0eea591a5f))
-
-
-
-## [1.6.63](https://github.com/dds/bosabosa.org/compare/v1.6.62...v1.6.63) (2021-09-17)
-
-
-### Bug Fixes
-
-* **deps:** update dependency babel-plugin-superjson-next to v0.4.0 ([#189](https://github.com/dds/bosabosa.org/issues/189)) ([5d4d387](https://github.com/dds/bosabosa.org/commit/5d4d387c76d9ef257a218e79bf696a61dfeb3911))
 
 
 
