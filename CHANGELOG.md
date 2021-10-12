@@ -1,3 +1,12 @@
+## [1.6.70](https://github.com/dds/bosabosa.org/compare/v1.6.69...v1.6.70) (2021-10-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @netlify/plugin-nextjs to v3.9.2 ([#198](https://github.com/dds/bosabosa.org/issues/198)) ([7c585a7](https://github.com/dds/bosabosa.org/commit/7c585a721643582e13b2c89d8d6379052e8b3133))
+
+
+
 ## [1.6.69](https://github.com/dds/bosabosa.org/compare/v1.6.68...v1.6.69) (2021-10-05)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency next-mdx-remote to v3.0.5 ([#192](https://github.com/dds/bosabosa.org/issues/192)) ([ecc992c](https://github.com/dds/bosabosa.org/commit/ecc992c08cb55af1815f8f252211bf3ff6da5405))
-
-
-
-## [1.6.65](https://github.com/dds/bosabosa.org/compare/v1.6.64...v1.6.65) (2021-09-24)
-
-
-### Bug Fixes
-
-* **deps:** update dependency theme-ui to v0.11.3 ([#191](https://github.com/dds/bosabosa.org/issues/191)) ([44b14cf](https://github.com/dds/bosabosa.org/commit/44b14cfd36a734446d10473f46a8fa3922012196))
 
 
 
