@@ -1,3 +1,12 @@
+## [1.6.73](https://github.com/dds/bosabosa.org/compare/v1.6.72...v1.6.73) (2021-10-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency remark-slug to v7.0.1 ([#201](https://github.com/dds/bosabosa.org/issues/201)) ([18814fe](https://github.com/dds/bosabosa.org/commit/18814fececbd76518322f48255e1e6383324c6ed))
+
+
+
 ## [1.6.72](https://github.com/dds/bosabosa.org/compare/v1.6.71...v1.6.72) (2021-10-20)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency date-fns to v2.25.0 ([#195](https://github.com/dds/bosabosa.org/issues/195)) ([c7564a6](https://github.com/dds/bosabosa.org/commit/c7564a658ecaa327918290c78429ff0ce2ec1342))
-
-
-
-## [1.6.68](https://github.com/dds/bosabosa.org/compare/v1.6.67...v1.6.68) (2021-10-03)
-
-
-### Bug Fixes
-
-* **deps:** update dependency react-icons to v4.3.1 ([#194](https://github.com/dds/bosabosa.org/issues/194)) ([b370b46](https://github.com/dds/bosabosa.org/commit/b370b46a002f2976d1d6a92fcfb3fc7d5a9a2df5))
 
 
 
