@@ -39,7 +39,7 @@
     "react-ga": "3.3.0",
     "react-icons": "4.3.1",
     "remark-autolink-headings": "7.0.1",
-    "remark-slug": "7.0.0",
+    "remark-slug": "7.0.1",
     "superjson": "1.8.0",
     "terser-webpack-plugin": "5.2.4",
     "theme-ui": "0.11.3"
