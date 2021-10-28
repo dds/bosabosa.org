@@ -1,3 +1,12 @@
+## [1.6.75](https://github.com/dds/bosabosa.org/compare/v1.6.74...v1.6.75) (2021-10-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency theme-ui to v0.12.0 ([#203](https://github.com/dds/bosabosa.org/issues/203)) ([ef969b9](https://github.com/dds/bosabosa.org/commit/ef969b9d4aad1f57f1d162ef969c7e4184ab80c5))
+
+
+
 ## [1.6.74](https://github.com/dds/bosabosa.org/compare/v1.6.73...v1.6.74) (2021-10-27)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency babel-plugin-superjson-next to v0.4.2 ([#199](https://github.com/dds/bosabosa.org/issues/199)) ([e7ab127](https://github.com/dds/bosabosa.org/commit/e7ab1278854547a286e4ed3c847d3238404a0557))
-
-
-
-## [1.6.70](https://github.com/dds/bosabosa.org/compare/v1.6.69...v1.6.70) (2021-10-12)
-
-
-### Bug Fixes
-
-* **deps:** update dependency @netlify/plugin-nextjs to v3.9.2 ([#198](https://github.com/dds/bosabosa.org/issues/198)) ([7c585a7](https://github.com/dds/bosabosa.org/commit/7c585a721643582e13b2c89d8d6379052e8b3133))
 
 
 
