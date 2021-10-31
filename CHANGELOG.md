@@ -1,3 +1,12 @@
+## [1.7.1](https://github.com/dds/bosabosa.org/compare/v1.7.0...v1.7.1) (2021-10-31)
+
+
+### Reverts
+
+* **deps:** update nextjs monorepo to v12 (major) ([#206](https://github.com/dds/bosabosa.org/issues/206)) ([c233e78](https://github.com/dds/bosabosa.org/commit/c233e7882d6ae79a42155ba447259ee0f386cccc))
+
+
+
 # [1.7.0](https://github.com/dds/bosabosa.org/compare/v1.6.76...v1.7.0) (2021-10-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency next-mdx-remote to v3.0.7 ([#197](https://github.com/dds/bosabosa.org/issues/197)) ([ccd6d75](https://github.com/dds/bosabosa.org/commit/ccd6d7532f569d6787ed11e65eca59768fcd09fc))
-
-
-
-## [1.6.73](https://github.com/dds/bosabosa.org/compare/v1.6.72...v1.6.73) (2021-10-24)
-
-
-### Bug Fixes
-
-* **deps:** update dependency remark-slug to v7.0.1 ([#201](https://github.com/dds/bosabosa.org/issues/201)) ([18814fe](https://github.com/dds/bosabosa.org/commit/18814fececbd76518322f48255e1e6383324c6ed))
 
 
 
