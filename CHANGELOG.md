@@ -1,3 +1,12 @@
+# [1.7.0](https://github.com/dds/bosabosa.org/compare/v1.6.76...v1.7.0) (2021-10-31)
+
+
+### Features
+
+* add facebook-pixel ([10d4be1](https://github.com/dds/bosabosa.org/commit/10d4be172c1e3f7738370f91df460f3a35b5a855))
+
+
+
 ## [1.6.76](https://github.com/dds/bosabosa.org/compare/v1.6.75...v1.6.76) (2021-10-28)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency remark-slug to v7.0.1 ([#201](https://github.com/dds/bosabosa.org/issues/201)) ([18814fe](https://github.com/dds/bosabosa.org/commit/18814fececbd76518322f48255e1e6383324c6ed))
-
-
-
-## [1.6.72](https://github.com/dds/bosabosa.org/compare/v1.6.71...v1.6.72) (2021-10-20)
-
-
-### Bug Fixes
-
-* **deps:** update dependency superjson to v1.8.0 ([#200](https://github.com/dds/bosabosa.org/issues/200)) ([d48e7cc](https://github.com/dds/bosabosa.org/commit/d48e7cc3934703fd70e9bc8fa9975840d056370f))
 
 
 
