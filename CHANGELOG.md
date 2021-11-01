@@ -1,3 +1,12 @@
+# [1.8.0](https://github.com/dds/bosabosa.org/compare/v1.7.2...v1.8.0) (2021-11-01)
+
+
+### Features
+
+* add googletag ([9e59058](https://github.com/dds/bosabosa.org/commit/9e59058dd643b3608b1da6fbc123cc1d4b4f98c8))
+
+
+
 ## [1.7.2](https://github.com/dds/bosabosa.org/compare/v1.7.1...v1.7.2) (2021-10-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update nextjs monorepo to v12 (major) ([#202](https://github.com/dds/bosabosa.org/issues/202)) ([c60128d](https://github.com/dds/bosabosa.org/commit/c60128d22e8db169e5f5a8958d1c883f537bcd01))
-
-
-
-## [1.6.75](https://github.com/dds/bosabosa.org/compare/v1.6.74...v1.6.75) (2021-10-28)
-
-
-### Bug Fixes
-
-* **deps:** update dependency theme-ui to v0.12.0 ([#203](https://github.com/dds/bosabosa.org/issues/203)) ([ef969b9](https://github.com/dds/bosabosa.org/commit/ef969b9d4aad1f57f1d162ef969c7e4184ab80c5))
 
 
 
