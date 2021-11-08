@@ -1,3 +1,12 @@
+## [1.8.2](https://github.com/dds/bosabosa.org/compare/v1.8.1...v1.8.2) (2021-11-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency terser-webpack-plugin to v5.2.5 ([#209](https://github.com/dds/bosabosa.org/issues/209)) ([60e82e3](https://github.com/dds/bosabosa.org/commit/60e82e378b701b4cb42946944dcb259c8870f60d))
+
+
+
 ## [1.8.1](https://github.com/dds/bosabosa.org/compare/v1.8.0...v1.8.1) (2021-11-08)
 
 
@@ -31,15 +40,6 @@
 ### Reverts
 
 * **deps:** update nextjs monorepo to v12 (major) ([#206](https://github.com/dds/bosabosa.org/issues/206)) ([c233e78](https://github.com/dds/bosabosa.org/commit/c233e7882d6ae79a42155ba447259ee0f386cccc))
-
-
-
-# [1.7.0](https://github.com/dds/bosabosa.org/compare/v1.6.76...v1.7.0) (2021-10-31)
-
-
-### Features
-
-* add facebook-pixel ([10d4be1](https://github.com/dds/bosabosa.org/commit/10d4be172c1e3f7738370f91df460f3a35b5a855))
 
 
 
