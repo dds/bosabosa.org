@@ -1,3 +1,12 @@
+## [1.8.1](https://github.com/dds/bosabosa.org/compare/v1.8.0...v1.8.1) (2021-11-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-mdx-remote to v3.0.8 ([#208](https://github.com/dds/bosabosa.org/issues/208)) ([f0a94b1](https://github.com/dds/bosabosa.org/commit/f0a94b1e4f029531b31ac0df4dda7f66c8038eb5))
+
+
+
 # [1.8.0](https://github.com/dds/bosabosa.org/compare/v1.7.2...v1.8.0) (2021-11-01)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add facebook-pixel ([10d4be1](https://github.com/dds/bosabosa.org/commit/10d4be172c1e3f7738370f91df460f3a35b5a855))
-
-
-
-## [1.6.76](https://github.com/dds/bosabosa.org/compare/v1.6.75...v1.6.76) (2021-10-28)
-
-
-### Bug Fixes
-
-* **deps:** update nextjs monorepo to v12 (major) ([#202](https://github.com/dds/bosabosa.org/issues/202)) ([c60128d](https://github.com/dds/bosabosa.org/commit/c60128d22e8db169e5f5a8958d1c883f537bcd01))
 
 
 
