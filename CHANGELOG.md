@@ -1,3 +1,12 @@
+## [1.8.3](https://github.com/dds/bosabosa.org/compare/v1.8.2...v1.8.3) (2021-11-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency date-fns to v2.26.0 ([#210](https://github.com/dds/bosabosa.org/issues/210)) ([24eaf41](https://github.com/dds/bosabosa.org/commit/24eaf41b6c9c85fd1fbfc67e695a7fc189af294b))
+
+
+
 ## [1.8.2](https://github.com/dds/bosabosa.org/compare/v1.8.1...v1.8.2) (2021-11-08)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** pin dependency react-facebook-pixel to 1.0.4 ([#205](https://github.com/dds/bosabosa.org/issues/205)) ([7f49887](https://github.com/dds/bosabosa.org/commit/7f498878797bd7fb97e77d1d6142d4c357d64cf5))
-
-
-
-## [1.7.1](https://github.com/dds/bosabosa.org/compare/v1.7.0...v1.7.1) (2021-10-31)
-
-
-### Reverts
-
-* **deps:** update nextjs monorepo to v12 (major) ([#206](https://github.com/dds/bosabosa.org/issues/206)) ([c233e78](https://github.com/dds/bosabosa.org/commit/c233e7882d6ae79a42155ba447259ee0f386cccc))
 
 
 
