@@ -1,3 +1,12 @@
+## [1.8.4](https://github.com/dds/bosabosa.org/compare/v1.8.3...v1.8.4) (2021-11-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency theme-ui to v0.12.1 ([#211](https://github.com/dds/bosabosa.org/issues/211)) ([6209088](https://github.com/dds/bosabosa.org/commit/62090888f721cc4541646393456fd618dda11c01))
+
+
+
 ## [1.8.3](https://github.com/dds/bosabosa.org/compare/v1.8.2...v1.8.3) (2021-11-19)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add googletag ([9e59058](https://github.com/dds/bosabosa.org/commit/9e59058dd643b3608b1da6fbc123cc1d4b4f98c8))
-
-
-
-## [1.7.2](https://github.com/dds/bosabosa.org/compare/v1.7.1...v1.7.2) (2021-10-31)
-
-
-### Bug Fixes
-
-* **deps:** pin dependency react-facebook-pixel to 1.0.4 ([#205](https://github.com/dds/bosabosa.org/issues/205)) ([7f49887](https://github.com/dds/bosabosa.org/commit/7f498878797bd7fb97e77d1d6142d4c357d64cf5))
 
 
 
