@@ -1,3 +1,7 @@
+## [1.8.5](https://github.com/dds/bosabosa.org/compare/v1.8.4...v1.8.5) (2021-11-25)
+
+
+
 ## [1.8.4](https://github.com/dds/bosabosa.org/compare/v1.8.3...v1.8.4) (2021-11-23)
 
 
@@ -31,15 +35,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency next-mdx-remote to v3.0.8 ([#208](https://github.com/dds/bosabosa.org/issues/208)) ([f0a94b1](https://github.com/dds/bosabosa.org/commit/f0a94b1e4f029531b31ac0df4dda7f66c8038eb5))
-
-
-
-# [1.8.0](https://github.com/dds/bosabosa.org/compare/v1.7.2...v1.8.0) (2021-11-01)
-
-
-### Features
-
-* add googletag ([9e59058](https://github.com/dds/bosabosa.org/commit/9e59058dd643b3608b1da6fbc123cc1d4b4f98c8))
 
 
 
