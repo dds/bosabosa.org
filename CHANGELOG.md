@@ -1,3 +1,7 @@
+## [1.8.7](https://github.com/dds/bosabosa.org/compare/v1.8.6...v1.8.7) (2021-12-04)
+
+
+
 ## [1.8.6](https://github.com/dds/bosabosa.org/compare/v1.8.5...v1.8.6) (2021-11-30)
 
 
@@ -26,15 +30,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency date-fns to v2.26.0 ([#210](https://github.com/dds/bosabosa.org/issues/210)) ([24eaf41](https://github.com/dds/bosabosa.org/commit/24eaf41b6c9c85fd1fbfc67e695a7fc189af294b))
-
-
-
-## [1.8.2](https://github.com/dds/bosabosa.org/compare/v1.8.1...v1.8.2) (2021-11-08)
-
-
-### Bug Fixes
-
-* **deps:** update dependency terser-webpack-plugin to v5.2.5 ([#209](https://github.com/dds/bosabosa.org/issues/209)) ([60e82e3](https://github.com/dds/bosabosa.org/commit/60e82e378b701b4cb42946944dcb259c8870f60d))
 
 
 
