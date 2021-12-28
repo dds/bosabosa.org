@@ -1,3 +1,12 @@
+## [1.8.10](https://github.com/dds/bosabosa.org/compare/v1.8.9...v1.8.10) (2021-12-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency date-fns to v2.28.0 ([#219](https://github.com/dds/bosabosa.org/issues/219)) ([a8f6e30](https://github.com/dds/bosabosa.org/commit/a8f6e3082fded6165f1520672b391e81e17ae826))
+
+
+
 ## [1.8.9](https://github.com/dds/bosabosa.org/compare/v1.8.8...v1.8.9) (2021-12-16)
 
 
@@ -26,10 +35,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency date-fns to v2.27.0 ([#213](https://github.com/dds/bosabosa.org/issues/213)) ([9e9cbe8](https://github.com/dds/bosabosa.org/commit/9e9cbe8577de324dc1d95e8e0cb615e193ebc4f6))
-
-
-
-## [1.8.5](https://github.com/dds/bosabosa.org/compare/v1.8.4...v1.8.5) (2021-11-25)
 
 
 
