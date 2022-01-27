@@ -1,3 +1,12 @@
+## [1.8.11](https://github.com/dds/bosabosa.org/compare/v1.8.10...v1.8.11) (2022-01-27)
+
+
+### Bug Fixes
+
+* **deps:** update nextjs monorepo to v11.1.4 ([#220](https://github.com/dds/bosabosa.org/issues/220)) ([1dbfbf6](https://github.com/dds/bosabosa.org/commit/1dbfbf60eab907cfe3a1c3296a681e1fefd2ce28))
+
+
+
 ## [1.8.10](https://github.com/dds/bosabosa.org/compare/v1.8.9...v1.8.10) (2021-12-28)
 
 
@@ -26,15 +35,6 @@
 
 
 ## [1.8.7](https://github.com/dds/bosabosa.org/compare/v1.8.6...v1.8.7) (2021-12-04)
-
-
-
-## [1.8.6](https://github.com/dds/bosabosa.org/compare/v1.8.5...v1.8.6) (2021-11-30)
-
-
-### Bug Fixes
-
-* **deps:** update dependency date-fns to v2.27.0 ([#213](https://github.com/dds/bosabosa.org/issues/213)) ([9e9cbe8](https://github.com/dds/bosabosa.org/commit/9e9cbe8577de324dc1d95e8e0cb615e193ebc4f6))
 
 
 
