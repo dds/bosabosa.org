@@ -1,3 +1,12 @@
+## [1.8.13](https://github.com/dds/bosabosa.org/compare/v1.8.12...v1.8.13) (2022-02-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency prism-react-renderer to v1.3.1 ([#223](https://github.com/dds/bosabosa.org/issues/223)) ([d848dd7](https://github.com/dds/bosabosa.org/commit/d848dd7c715c2991b5b32313073969856795f744))
+
+
+
 ## [1.8.12](https://github.com/dds/bosabosa.org/compare/v1.8.11...v1.8.12) (2022-02-01)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency terser-webpack-plugin to v5.3.0 ([#217](https://github.com/dds/bosabosa.org/issues/217)) ([6bd6804](https://github.com/dds/bosabosa.org/commit/6bd68046a11e4af56f2360db2112cebd86c4f9a3))
-
-
-
-## [1.8.8](https://github.com/dds/bosabosa.org/compare/v1.8.7...v1.8.8) (2021-12-05)
-
-
-### Bug Fixes
-
-* **deps:** update nextjs monorepo to v11.1.3 ([#215](https://github.com/dds/bosabosa.org/issues/215)) ([79c60ea](https://github.com/dds/bosabosa.org/commit/79c60ea09adb386dcf488aa7fa45e8183d621ee9))
 
 
 
