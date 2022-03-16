@@ -1,3 +1,7 @@
+## [1.8.16](https://github.com/dds/bosabosa.org/compare/v1.8.15...v1.8.16) (2022-03-16)
+
+
+
 ## [1.8.15](https://github.com/dds/bosabosa.org/compare/v1.8.14...v1.8.15) (2022-02-21)
 
 
@@ -31,15 +35,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency terser-webpack-plugin to v5.3.1 ([#221](https://github.com/dds/bosabosa.org/issues/221)) ([67a5ea9](https://github.com/dds/bosabosa.org/commit/67a5ea9b9a5b543b2800ac40460439ab6b354bb1))
-
-
-
-## [1.8.11](https://github.com/dds/bosabosa.org/compare/v1.8.10...v1.8.11) (2022-01-27)
-
-
-### Bug Fixes
-
-* **deps:** update nextjs monorepo to v11.1.4 ([#220](https://github.com/dds/bosabosa.org/issues/220)) ([1dbfbf6](https://github.com/dds/bosabosa.org/commit/1dbfbf60eab907cfe3a1c3296a681e1fefd2ce28))
 
 
 
