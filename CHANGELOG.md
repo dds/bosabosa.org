@@ -1,3 +1,7 @@
+## [1.8.18](https://github.com/dds/bosabosa.org/compare/v1.8.17...v1.8.18) (2022-04-02)
+
+
+
 ## [1.8.17](https://github.com/dds/bosabosa.org/compare/v1.8.16...v1.8.17) (2022-03-25)
 
 
@@ -21,15 +25,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency superjson to v1.8.1 ([#224](https://github.com/dds/bosabosa.org/issues/224)) ([7ee0a4f](https://github.com/dds/bosabosa.org/commit/7ee0a4f5e3dcabc0235f01280267e084538af2de))
-
-
-
-## [1.8.13](https://github.com/dds/bosabosa.org/compare/v1.8.12...v1.8.13) (2022-02-09)
-
-
-### Bug Fixes
-
-* **deps:** update dependency prism-react-renderer to v1.3.1 ([#223](https://github.com/dds/bosabosa.org/issues/223)) ([d848dd7](https://github.com/dds/bosabosa.org/commit/d848dd7c715c2991b5b32313073969856795f744))
 
 
 
