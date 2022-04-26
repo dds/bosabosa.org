@@ -1,3 +1,12 @@
+## [1.8.20](https://github.com/dds/bosabosa.org/compare/v1.8.19...v1.8.20) (2022-04-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency superjson to v1.9.0 ([#233](https://github.com/dds/bosabosa.org/issues/233)) ([b40a1ce](https://github.com/dds/bosabosa.org/commit/b40a1ce995f7d253690218247d094c3e63eecbb1))
+
+
+
 ## [1.8.19](https://github.com/dds/bosabosa.org/compare/v1.8.18...v1.8.19) (2022-04-21)
 
 
@@ -16,15 +25,6 @@
 
 
 ## [1.8.16](https://github.com/dds/bosabosa.org/compare/v1.8.15...v1.8.16) (2022-03-16)
-
-
-
-## [1.8.15](https://github.com/dds/bosabosa.org/compare/v1.8.14...v1.8.15) (2022-02-21)
-
-
-### Bug Fixes
-
-* **deps:** update dependency babel-plugin-superjson-next to v0.4.3 ([#226](https://github.com/dds/bosabosa.org/issues/226)) ([9f0a23c](https://github.com/dds/bosabosa.org/commit/9f0a23c65b8bea0c7582d1bce3e2dee592b3e9af))
 
 
 
