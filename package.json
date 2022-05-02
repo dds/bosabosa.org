@@ -41,7 +41,7 @@
     "react-icons": "4.3.1",
     "remark-autolink-headings": "7.0.1",
     "remark-slug": "7.0.1",
-    "superjson": "1.9.0",
+    "superjson": "1.9.1",
     "terser-webpack-plugin": "5.3.1",
     "theme-ui": "0.12.1"
   }
