@@ -1,3 +1,7 @@
+## [1.8.27](https://github.com/dds/bosabosa.org/compare/v1.8.26...v1.8.27) (2022-06-14)
+
+
+
 ## [1.8.26](https://github.com/dds/bosabosa.org/compare/v1.8.25...v1.8.26) (2022-06-02)
 
 
@@ -21,15 +25,6 @@
 
 
 ## [1.8.23](https://github.com/dds/bosabosa.org/compare/v1.8.22...v1.8.23) (2022-05-26)
-
-
-
-## [1.8.22](https://github.com/dds/bosabosa.org/compare/v1.8.21...v1.8.22) (2022-05-16)
-
-
-### Bug Fixes
-
-* **deps:** update dependency prism-react-renderer to v1.3.3 ([#235](https://github.com/dds/bosabosa.org/issues/235)) ([a0c5f8d](https://github.com/dds/bosabosa.org/commit/a0c5f8dbd931448543d56b9ad24dd790fe5cfe32))
 
 
 
