@@ -1,3 +1,12 @@
+## [1.8.29](https://github.com/dds/bosabosa.org/compare/v1.8.28...v1.8.29) (2022-06-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-ga to v3.3.1 ([#240](https://github.com/dds/bosabosa.org/issues/240)) ([1724237](https://github.com/dds/bosabosa.org/commit/1724237f3a331cdf1b1b825364e1e9e05149911e))
+
+
+
 ## [1.8.28](https://github.com/dds/bosabosa.org/compare/v1.8.27...v1.8.28) (2022-06-16)
 
 
@@ -21,10 +30,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency react-icons to v4.4.0 ([#236](https://github.com/dds/bosabosa.org/issues/236)) ([a42dbc1](https://github.com/dds/bosabosa.org/commit/a42dbc170d95ac295b23362f2da7371fe32caf5a))
-
-
-
-## [1.8.24](https://github.com/dds/bosabosa.org/compare/v1.8.23...v1.8.24) (2022-05-26)
 
 
 
