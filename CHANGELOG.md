@@ -1,3 +1,12 @@
+## [1.8.32](https://github.com/dds/bosabosa.org/compare/v1.8.31...v1.8.32) (2022-08-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency babel-plugin-superjson-next to v0.4.4 ([#243](https://github.com/dds/bosabosa.org/issues/243)) ([0ad86f6](https://github.com/dds/bosabosa.org/commit/0ad86f665b8dfd4cfe621f2ce176676686d5595e))
+
+
+
 ## [1.8.31](https://github.com/dds/bosabosa.org/compare/v1.8.30...v1.8.31) (2022-07-22)
 
 
@@ -26,10 +35,6 @@
 
 
 ## [1.8.28](https://github.com/dds/bosabosa.org/compare/v1.8.27...v1.8.28) (2022-06-16)
-
-
-
-## [1.8.27](https://github.com/dds/bosabosa.org/compare/v1.8.26...v1.8.27) (2022-06-14)
 
 
 
