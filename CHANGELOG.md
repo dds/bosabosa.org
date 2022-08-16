@@ -1,3 +1,12 @@
+## [1.8.34](https://github.com/dds/bosabosa.org/compare/v1.8.33...v1.8.34) (2022-08-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency terser-webpack-plugin to v5.3.5 ([#245](https://github.com/dds/bosabosa.org/issues/245)) ([4278c42](https://github.com/dds/bosabosa.org/commit/4278c42b66d83b1d66a9b60cedea83022fe0ad91))
+
+
+
 ## [1.8.33](https://github.com/dds/bosabosa.org/compare/v1.8.32...v1.8.33) (2022-08-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency prism-react-renderer to v1.3.5 ([#241](https://github.com/dds/bosabosa.org/issues/241)) ([5e27691](https://github.com/dds/bosabosa.org/commit/5e2769185e211b5e6baac4a00a24677d9e35922f))
-
-
-
-## [1.8.29](https://github.com/dds/bosabosa.org/compare/v1.8.28...v1.8.29) (2022-06-16)
-
-
-### Bug Fixes
-
-* **deps:** update dependency react-ga to v3.3.1 ([#240](https://github.com/dds/bosabosa.org/issues/240)) ([1724237](https://github.com/dds/bosabosa.org/commit/1724237f3a331cdf1b1b825364e1e9e05149911e))
 
 
 
