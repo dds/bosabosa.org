@@ -1,3 +1,12 @@
+## [1.8.38](https://github.com/dds/bosabosa.org/compare/v1.8.37...v1.8.38) (2022-09-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency superjson to v1.10.0 ([#249](https://github.com/dds/bosabosa.org/issues/249)) ([cf7be14](https://github.com/dds/bosabosa.org/commit/cf7be1407f2cb12e2d57c95664fa48e020f40934))
+
+
+
 ## [1.8.37](https://github.com/dds/bosabosa.org/compare/v1.8.36...v1.8.37) (2022-09-13)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency terser-webpack-plugin to v5.3.5 ([#245](https://github.com/dds/bosabosa.org/issues/245)) ([4278c42](https://github.com/dds/bosabosa.org/commit/4278c42b66d83b1d66a9b60cedea83022fe0ad91))
-
-
-
-## [1.8.33](https://github.com/dds/bosabosa.org/compare/v1.8.32...v1.8.33) (2022-08-12)
-
-
-### Bug Fixes
-
-* **deps:** update dependency terser-webpack-plugin to v5.3.4 ([#244](https://github.com/dds/bosabosa.org/issues/244)) ([c7fc381](https://github.com/dds/bosabosa.org/commit/c7fc38193265e051a76e072098544f88fefcb05e))
 
 
 
