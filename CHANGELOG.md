@@ -1,3 +1,12 @@
+## [1.8.40](https://github.com/dds/bosabosa.org/compare/v1.8.39...v1.8.40) (2022-10-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-icons to v4.6.0 ([#251](https://github.com/dds/bosabosa.org/issues/251)) ([068805f](https://github.com/dds/bosabosa.org/commit/068805f983ae95eeceef1f4b5f6394300edd5937))
+
+
+
 ## [1.8.39](https://github.com/dds/bosabosa.org/compare/v1.8.38...v1.8.39) (2022-10-10)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency date-fns to v2.29.2 ([#246](https://github.com/dds/bosabosa.org/issues/246)) ([ef4a6de](https://github.com/dds/bosabosa.org/commit/ef4a6de3c60209ab0335d26c8e8577a2a7cedf5d))
-
-
-
-## [1.8.35](https://github.com/dds/bosabosa.org/compare/v1.8.34...v1.8.35) (2022-08-29)
-
-
-### Bug Fixes
-
-* **deps:** update dependency terser-webpack-plugin to v5.3.6 ([#247](https://github.com/dds/bosabosa.org/issues/247)) ([ca7844e](https://github.com/dds/bosabosa.org/commit/ca7844e5185938523dd076edb2c4d3aa1a355c83))
 
 
 
