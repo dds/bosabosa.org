@@ -1,3 +1,7 @@
+## [1.8.48](https://github.com/dds/bosabosa.org/compare/v1.8.47...v1.8.48) (2023-01-07)
+
+
+
 ## [1.8.47](https://github.com/dds/bosabosa.org/compare/v1.8.46...v1.8.47) (2022-12-19)
 
 
@@ -26,10 +30,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency react-icons to v4.7.1 ([#255](https://github.com/dds/bosabosa.org/issues/255)) ([970b33c](https://github.com/dds/bosabosa.org/commit/970b33ce1d0ef8a15d2929c12e469c730a31bd9a))
-
-
-
-## [1.8.43](https://github.com/dds/bosabosa.org/compare/v1.8.42...v1.8.43) (2022-11-23)
 
 
 
