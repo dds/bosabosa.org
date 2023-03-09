@@ -1,3 +1,12 @@
+## [1.8.53](https://github.com/dds/bosabosa.org/compare/v1.8.52...v1.8.53) (2023-03-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency terser-webpack-plugin to v5.3.7 ([#264](https://github.com/dds/bosabosa.org/issues/264)) ([62efc0f](https://github.com/dds/bosabosa.org/commit/62efc0f59b389090cc2f0ef02dbc6dde62f4e571))
+
+
+
 ## [1.8.52](https://github.com/dds/bosabosa.org/compare/v1.8.51...v1.8.52) (2023-03-03)
 
 
@@ -21,10 +30,6 @@
 
 
 ## [1.8.49](https://github.com/dds/bosabosa.org/compare/v1.8.48...v1.8.49) (2023-01-14)
-
-
-
-## [1.8.48](https://github.com/dds/bosabosa.org/compare/v1.8.47...v1.8.48) (2023-01-07)
 
 
 
