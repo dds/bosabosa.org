@@ -1,3 +1,7 @@
+## [1.8.54](https://github.com/dds/bosabosa.org/compare/v1.8.53...v1.8.54) (2023-03-20)
+
+
+
 ## [1.8.53](https://github.com/dds/bosabosa.org/compare/v1.8.52...v1.8.53) (2023-03-09)
 
 
@@ -26,10 +30,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency superjson to v1.12.2 ([#261](https://github.com/dds/bosabosa.org/issues/261)) ([fb31964](https://github.com/dds/bosabosa.org/commit/fb31964010e758e548c1a519892358300d777356))
-
-
-
-## [1.8.49](https://github.com/dds/bosabosa.org/compare/v1.8.48...v1.8.49) (2023-01-14)
 
 
 
