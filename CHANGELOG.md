@@ -1,3 +1,12 @@
+## [1.8.57](https://github.com/dds/bosabosa.org/compare/v1.8.56...v1.8.57) (2023-04-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency superjson to v1.12.3 ([#268](https://github.com/dds/bosabosa.org/issues/268)) ([03ceefc](https://github.com/dds/bosabosa.org/commit/03ceefc9d7cec9f3d5b59b0e7573b7c04ed1d938))
+
+
+
 ## [1.8.56](https://github.com/dds/bosabosa.org/compare/v1.8.55...v1.8.56) (2023-03-24)
 
 
@@ -16,15 +25,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency terser-webpack-plugin to v5.3.7 ([#264](https://github.com/dds/bosabosa.org/issues/264)) ([62efc0f](https://github.com/dds/bosabosa.org/commit/62efc0f59b389090cc2f0ef02dbc6dde62f4e571))
-
-
-
-## [1.8.52](https://github.com/dds/bosabosa.org/compare/v1.8.51...v1.8.52) (2023-03-03)
-
-
-### Bug Fixes
-
-* **deps:** update dependency react-icons to v4.8.0 ([#263](https://github.com/dds/bosabosa.org/issues/263)) ([50bac21](https://github.com/dds/bosabosa.org/commit/50bac212604a1fc8fec2c27cf7f42a22cb3926a4))
 
 
 
