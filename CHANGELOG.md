@@ -1,3 +1,12 @@
+## [1.8.58](https://github.com/dds/bosabosa.org/compare/v1.8.57...v1.8.58) (2023-04-21)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo to v18 ([#230](https://github.com/dds/bosabosa.org/issues/230)) ([16703e3](https://github.com/dds/bosabosa.org/commit/16703e360c88a5047b179f895192390dc08f8bb8))
+
+
+
 ## [1.8.57](https://github.com/dds/bosabosa.org/compare/v1.8.56...v1.8.57) (2023-04-20)
 
 
@@ -16,15 +25,6 @@
 
 
 ## [1.8.54](https://github.com/dds/bosabosa.org/compare/v1.8.53...v1.8.54) (2023-03-20)
-
-
-
-## [1.8.53](https://github.com/dds/bosabosa.org/compare/v1.8.52...v1.8.53) (2023-03-09)
-
-
-### Bug Fixes
-
-* **deps:** update dependency terser-webpack-plugin to v5.3.7 ([#264](https://github.com/dds/bosabosa.org/issues/264)) ([62efc0f](https://github.com/dds/bosabosa.org/commit/62efc0f59b389090cc2f0ef02dbc6dde62f4e571))
 
 
 
