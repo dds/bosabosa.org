@@ -1,3 +1,7 @@
+## [1.8.59](https://github.com/dds/bosabosa.org/compare/v1.8.58...v1.8.59) (2023-04-23)
+
+
+
 ## [1.8.58](https://github.com/dds/bosabosa.org/compare/v1.8.57...v1.8.58) (2023-04-21)
 
 
@@ -21,10 +25,6 @@
 
 
 ## [1.8.55](https://github.com/dds/bosabosa.org/compare/v1.8.54...v1.8.55) (2023-03-21)
-
-
-
-## [1.8.54](https://github.com/dds/bosabosa.org/compare/v1.8.53...v1.8.54) (2023-03-20)
 
 
 
