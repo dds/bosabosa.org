@@ -42,7 +42,7 @@
     "remark-autolink-headings": "7.0.1",
     "remark-slug": "7.0.1",
     "superjson": "1.12.3",
-    "terser-webpack-plugin": "5.3.7",
+    "terser-webpack-plugin": "5.3.8",
     "theme-ui": "0.12.1"
   }
 }
