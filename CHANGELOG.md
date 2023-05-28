@@ -1,3 +1,12 @@
+## [1.8.63](https://github.com/dds/bosabosa.org/compare/v1.8.62...v1.8.63) (2023-05-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-icons to v4.9.0 ([#274](https://github.com/dds/bosabosa.org/issues/274)) ([8741f09](https://github.com/dds/bosabosa.org/commit/8741f0986b9dbf2af019ab12c33760e2076b01bb))
+
+
+
 ## [1.8.62](https://github.com/dds/bosabosa.org/compare/v1.8.61...v1.8.62) (2023-05-18)
 
 
@@ -26,15 +35,6 @@
 
 
 ## [1.8.59](https://github.com/dds/bosabosa.org/compare/v1.8.58...v1.8.59) (2023-04-23)
-
-
-
-## [1.8.58](https://github.com/dds/bosabosa.org/compare/v1.8.57...v1.8.58) (2023-04-21)
-
-
-### Bug Fixes
-
-* **deps:** update react monorepo to v18 ([#230](https://github.com/dds/bosabosa.org/issues/230)) ([16703e3](https://github.com/dds/bosabosa.org/commit/16703e360c88a5047b179f895192390dc08f8bb8))
 
 
 
