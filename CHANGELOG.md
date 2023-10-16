@@ -1,3 +1,12 @@
+## [1.8.69](https://github.com/dds/bosabosa.org/compare/v1.8.68...v1.8.69) (2023-10-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-icons to v4.11.0 ([#282](https://github.com/dds/bosabosa.org/issues/282)) ([6f171f3](https://github.com/dds/bosabosa.org/commit/6f171f31fe9d2f403bba8394e667a77003e628e9))
+
+
+
 ## [1.8.68](https://github.com/dds/bosabosa.org/compare/v1.8.67...v1.8.68) (2023-10-15)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency superjson to v1.12.4 ([#276](https://github.com/dds/bosabosa.org/issues/276)) ([6f9c560](https://github.com/dds/bosabosa.org/commit/6f9c560cc4dfb4936362754369a8f2f0088f247f))
-
-
-
-## [1.8.64](https://github.com/dds/bosabosa.org/compare/v1.8.63...v1.8.64) (2023-06-22)
-
-
-### Bug Fixes
-
-* **deps:** update dependency react-icons to v4.10.1 ([#275](https://github.com/dds/bosabosa.org/issues/275)) ([3847afa](https://github.com/dds/bosabosa.org/commit/3847afae358949d957d6c5f2d2fc68d270b59d06))
 
 
 
