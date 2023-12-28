@@ -33,7 +33,7 @@
     "next": "11.1.4",
     "next-mdx-remote": "3.0.8",
     "normalize.css": "8.0.1",
-    "prism-react-renderer": "2.1.0",
+    "prism-react-renderer": "2.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-facebook-pixel": "1.0.4",
