@@ -27,7 +27,7 @@
     "@next/bundle-analyzer": "11.1.4",
     "@next/mdx": "11.1.4",
     "babel-plugin-superjson-next": "0.4.5",
-    "date-fns": "2.30.0",
+    "date-fns": "3.6.0",
     "feed": "4.2.2",
     "gray-matter": "4.0.3",
     "next": "11.1.4",
