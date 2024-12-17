@@ -1,3 +1,12 @@
+## [1.8.77](https://github.com/dds/bosabosa.org/compare/v1.8.76...v1.8.77) (2024-12-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency date-fns to v4 ([#296](https://github.com/dds/bosabosa.org/issues/296)) ([932db8f](https://github.com/dds/bosabosa.org/commit/932db8fad21c7d7168f3cdc7452b9c02a409bc4c))
+
+
+
 ## [1.8.76](https://github.com/dds/bosabosa.org/compare/v1.8.75...v1.8.76) (2024-12-17)
 
 
@@ -21,15 +30,6 @@
 
 
 ## [1.8.73](https://github.com/dds/bosabosa.org/compare/v1.8.72...v1.8.73) (2024-04-13)
-
-
-
-## [1.8.72](https://github.com/dds/bosabosa.org/compare/v1.8.71...v1.8.72) (2023-12-28)
-
-
-### Bug Fixes
-
-* **deps:** update dependency react-icons to v4.12.0 ([#287](https://github.com/dds/bosabosa.org/issues/287)) ([84a4994](https://github.com/dds/bosabosa.org/commit/84a49940b3fbb28e16e2eacf074792f896720c09))
 
 
 
