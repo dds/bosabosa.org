@@ -1,3 +1,12 @@
+## [1.8.79](https://github.com/dds/bosabosa.org/compare/v1.8.78...v1.8.79) (2024-12-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency prism-react-renderer to v2.4.1 ([#298](https://github.com/dds/bosabosa.org/issues/298)) ([5d3a229](https://github.com/dds/bosabosa.org/commit/5d3a229ccd5b90bc5947e83afdecec0b1f9c6327))
+
+
+
 ## [1.8.78](https://github.com/dds/bosabosa.org/compare/v1.8.77...v1.8.78) (2024-12-17)
 
 
@@ -21,15 +30,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency prism-react-renderer to v2.4.0 ([#295](https://github.com/dds/bosabosa.org/issues/295)) ([860c786](https://github.com/dds/bosabosa.org/commit/860c7862427deec1d7e80fe03d78d51aa80bc577))
-
-
-
-## [1.8.74](https://github.com/dds/bosabosa.org/compare/v1.8.73...v1.8.74) (2024-05-09)
-
-
-### Bug Fixes
-
-* **deps:** update react monorepo to v18.3.1 ([#292](https://github.com/dds/bosabosa.org/issues/292)) ([914516c](https://github.com/dds/bosabosa.org/commit/914516ce98d538292dc8345a1b714baf98fa9262))
 
 
 
