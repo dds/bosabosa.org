@@ -1,3 +1,12 @@
+## [1.8.86](https://github.com/dds/bosabosa.org/compare/v1.8.85...v1.8.86) (2024-12-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-mdx-remote to v5 ([#294](https://github.com/dds/bosabosa.org/issues/294)) ([429e212](https://github.com/dds/bosabosa.org/commit/429e2122f1a99d4c875641ae52d3dc3f7a393433))
+
+
+
 ## [1.8.85](https://github.com/dds/bosabosa.org/compare/v1.8.84...v1.8.85) (2024-12-29)
 
 
@@ -21,15 +30,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency superjson to v2 ([#283](https://github.com/dds/bosabosa.org/issues/283)) ([f50a78e](https://github.com/dds/bosabosa.org/commit/f50a78e4e4e2b32763c7e75cf6e13911625b46a5))
-
-
-
-## [1.8.81](https://github.com/dds/bosabosa.org/compare/v1.8.80...v1.8.81) (2024-12-29)
-
-
-### Bug Fixes
-
-* **deps:** update dependency @netlify/plugin-nextjs to v5 ([#289](https://github.com/dds/bosabosa.org/issues/289)) ([99cd4ae](https://github.com/dds/bosabosa.org/commit/99cd4aee082fd113d5666640e9db48bba1285a37))
 
 
 
