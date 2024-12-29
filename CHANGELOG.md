@@ -1,3 +1,12 @@
+## [1.8.82](https://github.com/dds/bosabosa.org/compare/v1.8.81...v1.8.82) (2024-12-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency superjson to v2 ([#283](https://github.com/dds/bosabosa.org/issues/283)) ([f50a78e](https://github.com/dds/bosabosa.org/commit/f50a78e4e4e2b32763c7e75cf6e13911625b46a5))
+
+
+
 ## [1.8.81](https://github.com/dds/bosabosa.org/compare/v1.8.80...v1.8.81) (2024-12-29)
 
 
@@ -26,15 +35,6 @@
 
 
 ## [1.8.78](https://github.com/dds/bosabosa.org/compare/v1.8.77...v1.8.78) (2024-12-17)
-
-
-
-## [1.8.77](https://github.com/dds/bosabosa.org/compare/v1.8.76...v1.8.77) (2024-12-17)
-
-
-### Bug Fixes
-
-* **deps:** update dependency date-fns to v4 ([#296](https://github.com/dds/bosabosa.org/issues/296)) ([932db8f](https://github.com/dds/bosabosa.org/commit/932db8fad21c7d7168f3cdc7452b9c02a409bc4c))
 
 
 
