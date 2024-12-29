@@ -1,3 +1,12 @@
+## [1.8.89](https://github.com/dds/bosabosa.org/compare/v1.8.88...v1.8.89) (2024-12-29)
+
+
+### Bug Fixes
+
+* **deps:** update remark to v8 (major) ([#302](https://github.com/dds/bosabosa.org/issues/302)) ([af3922b](https://github.com/dds/bosabosa.org/commit/af3922bde4feaffcdb6390f19cfadf3431aee89b))
+
+
+
 ## [1.8.88](https://github.com/dds/bosabosa.org/compare/v1.8.87...v1.8.88) (2024-12-29)
 
 
@@ -21,10 +30,6 @@
 
 
 ## [1.8.85](https://github.com/dds/bosabosa.org/compare/v1.8.84...v1.8.85) (2024-12-29)
-
-
-
-## [1.8.84](https://github.com/dds/bosabosa.org/compare/v1.8.83...v1.8.84) (2024-12-29)
 
 
 
