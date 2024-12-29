@@ -16,7 +16,7 @@
     "url": "https://github.com/dds/bosabosa.org/issues"
   },
   "devDependencies": {
-    "eslint": "7.32.0",
+    "eslint": "9.17.0",
     "eslint-config-next": "11.1.4",
     "prettier": "3.4.2"
   },
