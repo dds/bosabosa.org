@@ -1,7 +1,6 @@
 import fs from "fs"
 import { join } from "path"
 import matter from "gray-matter"
-import superjson from "superjson"
 import { serialize } from "next-mdx-remote/serialize"
 
 const root = process.cwd()
