@@ -1,3 +1,12 @@
+## [1.8.83](https://github.com/dds/bosabosa.org/compare/v1.8.82...v1.8.83) (2024-12-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-icons to v5 ([#300](https://github.com/dds/bosabosa.org/issues/300)) ([afa6ae3](https://github.com/dds/bosabosa.org/commit/afa6ae3c6877a98c15c175d8d2fad32e4c6b15fd))
+
+
+
 ## [1.8.82](https://github.com/dds/bosabosa.org/compare/v1.8.81...v1.8.82) (2024-12-29)
 
 
@@ -31,10 +40,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency prism-react-renderer to v2.4.1 ([#298](https://github.com/dds/bosabosa.org/issues/298)) ([5d3a229](https://github.com/dds/bosabosa.org/commit/5d3a229ccd5b90bc5947e83afdecec0b1f9c6327))
-
-
-
-## [1.8.78](https://github.com/dds/bosabosa.org/compare/v1.8.77...v1.8.78) (2024-12-17)
 
 
 
