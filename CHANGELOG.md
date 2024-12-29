@@ -1,3 +1,12 @@
+## [1.8.81](https://github.com/dds/bosabosa.org/compare/v1.8.80...v1.8.81) (2024-12-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @netlify/plugin-nextjs to v5 ([#289](https://github.com/dds/bosabosa.org/issues/289)) ([99cd4ae](https://github.com/dds/bosabosa.org/commit/99cd4aee082fd113d5666640e9db48bba1285a37))
+
+
+
 ## [1.8.80](https://github.com/dds/bosabosa.org/compare/v1.8.79...v1.8.80) (2024-12-18)
 
 
@@ -26,10 +35,6 @@
 ### Bug Fixes
 
 * **deps:** update dependency date-fns to v4 ([#296](https://github.com/dds/bosabosa.org/issues/296)) ([932db8f](https://github.com/dds/bosabosa.org/commit/932db8fad21c7d7168f3cdc7452b9c02a409bc4c))
-
-
-
-## [1.8.76](https://github.com/dds/bosabosa.org/compare/v1.8.75...v1.8.76) (2024-12-17)
 
 
 
