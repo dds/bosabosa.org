@@ -43,6 +43,6 @@
     "remark-slug": "8.0.0",
     "superjson": "2.2.2",
     "terser-webpack-plugin": "5.3.11",
-    "theme-ui": "0.12.1"
+    "theme-ui": "0.17.1"
   }
 }
