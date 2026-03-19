@@ -1,41 +1,30 @@
 import Head from "next/head"
-import theme from "../lib/theme"
+import config from "../site.config"
 
 const makeTitle = (title, name) =>
-  title === name ? title : `${title} – ${name}`
+  title === name ? title : `${title} — ${name}`
 
-export default function Meta(
-  {
-    title = "Theme Starter", // page title
-    name = "Theme Starter", // site name
-    description = "This website was bootstrapped with @lachlanjc’s Next.js Theme Starter.", // page description
-    image = "", // social card image URL
-    url = "https://next-theme-starter.vercel.app",
-    children,
-  }
-) {}
-//   <Helmet
-//     htmlAttributes={{
-//       lang,
-//     }}
-//     title={title}
-//     titleTemplate={siteTitle ? `%s | ${siteTitle}` : null}
-//     meta={[
-//       {
-//         name: `description`,
-//         content: metaDescription,
-//       },
-//       {
-//         property: `og:title`,
-//         content: title,
-//       },
-//       {
-//         property: `og:description`,
-//         content: metaDescription,
-//       },
-//       {
-//         property: `og:type`,
-//         content: `website`,
-//       },
-//     ].concat(meta)}
-//   />
+export default function Meta({
+  title = config.title,
+  description = config.description,
+  image = "",
+  url = config.url,
+  children,
+}) {
+  const fullTitle = makeTitle(title, config.title)
+  return (
+    <Head>
+      <title>{fullTitle}</title>
+      <meta name="description" content={description} />
+      <meta property="og:title" content={fullTitle} />
+      <meta property="og:description" content={description} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={url} />
+      {image && <meta property="og:image" content={image} />}
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content={fullTitle} />
+      <meta name="twitter:description" content={description} />
+      {children}
+    </Head>
+  )
+}

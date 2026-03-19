@@ -41,7 +41,6 @@ const Header = ({ title }) => {
             Contact
           </NavLink>
         </Link>
-        {/* <Search sx={{ p: 2 }} /> */}
         <Link href="https://github.com/dds/bosabosa.org" passHref>
           <NavLink sx={{ p: 2, ml: [`auto`] }} title="Source">
             Source

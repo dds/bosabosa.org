@@ -81,15 +81,6 @@ const theme = {
         textDecoration: `underline`,
       },
     },
-    // navlink: {
-    //   display: "inline-block",
-    //   fontWeight: "bold",
-    //   color: "inherit",
-    //   textDecoration: "none",
-    //   ":hover,:focus": {
-    //     color: "primary",
-    //   },
-    // },
   },
 }
 

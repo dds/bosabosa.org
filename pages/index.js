@@ -1,11 +1,14 @@
-/** @jsxImportSource theme-ui */
-import config from "../site.config"
-
 import BlogRoll from "../components/blogroll"
+import Meta from "../components/meta"
 import { getAllPosts } from "../content"
 
 export default function Blog({ posts }) {
-  return <BlogRoll posts={posts} />
+  return (
+    <>
+      <Meta />
+      <BlogRoll posts={posts} />
+    </>
+  )
 }
 
 export async function getStaticProps() {
@@ -14,7 +17,7 @@ export async function getStaticProps() {
     `title`,
     `slug`,
     `date`,
-    `exerpt`,
+    `excerpt`,
     `description`,
   ])
   return { props: { posts } }

@@ -7,7 +7,7 @@ const Footer = () => {
     <footer sx={{ gridArea: `footer`, borderTop: `1px solid` }}>
       <Flex sx={{ p: `0 2rem` }}>
         <Link href="/contact" passHref>
-          <NavLink sx={{ p: 2 }} to="/contact" title="Contact">
+          <NavLink sx={{ p: 2 }} title="Contact">
             Contact
           </NavLink>
         </Link>

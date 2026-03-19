@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { Grid, Heading, Themed } from "theme-ui"
+import { Grid, Themed } from "theme-ui"
 import "normalize.css"
 
 import Footer from "./footer"
@@ -19,10 +19,6 @@ const layoutL = `
 
 const Layout = ({ children, title = `` }) => (
   <Themed.root>
-    {/* <Helmet> */}
-    {/*   <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" /> */}
-    {/*   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> */}
-    {/* </Helmet> */}
     <SkipNavLink>Skip to content</SkipNavLink>
     <Grid
       sx={{

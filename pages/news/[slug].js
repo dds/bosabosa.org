@@ -4,12 +4,17 @@ import Link from "next/link"
 import { Heading, Flex, Text } from "theme-ui"
 import { Link as A } from "theme-ui"
 import { getPostBySlug, getAllPosts } from "../../content"
+import Meta from "../../components/meta"
+import config from "../../site.config"
 
 export default function BlogPostPage({ post }) {
-  const isLocal = process.env.NODE_ENV === "development"
-
   return (
     <div>
+      <Meta
+        title={post.title}
+        description={post.description || post.excerpt}
+        url={`${config.url}/news/${post.slug}`}
+      />
       <Heading as="h1">{post.title}</Heading>
       <article sx={{ borderBottom: `1px solid` }}>
         {post.date && (
@@ -34,14 +39,14 @@ export default function BlogPostPage({ post }) {
         >
           <li>
             {!!post.previousPostSlug && (
-              <Link href={post.previousPostSlug} passHref>
+              <Link href={`/news/${post.previousPostSlug}`} passHref>
                 <A rel="prev">← {post.previousPostTitle}</A>
               </Link>
             )}
           </li>
           <li>
             {!!post.nextPostSlug && (
-              <Link href={post.nextPostSlug} passHref>
+              <Link href={`/news/${post.nextPostSlug}`} passHref>
                 <A rel="next">→ {post.nextPostTitle}</A>
               </Link>
             )}
@@ -56,14 +61,11 @@ export async function getStaticProps({ params }) {
   const post = await getPostBySlug(params.slug, [
     "title",
     "excerpt",
+    "description",
     "date",
     "slug",
     "author",
     "content",
-    "coverImage",
-    "coverImageAlt",
-    "coverImageHeight",
-    "coverImageWidth",
     "draft",
   ])
   return {

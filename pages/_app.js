@@ -15,19 +15,21 @@ const App = ({ Component, pageProps }) => {
     const onRouteChange = url => {
       gtag.pageview(url)
     }
+    let onPixelRouteChange
     router.events.on("routeChangeComplete", onRouteChange)
     import("react-facebook-pixel")
       .then(x => x.default)
       .then(ReactPixel => {
         ReactPixel.init("374965067696759")
         ReactPixel.pageView()
-
-        router.events.on("routeChangeComplete", () => {
-          ReactPixel.pageView()
-        })
+        onPixelRouteChange = () => ReactPixel.pageView()
+        router.events.on("routeChangeComplete", onPixelRouteChange)
       })
     return () => {
       router.events.off("routeChangeComplete", onRouteChange)
+      if (onPixelRouteChange) {
+        router.events.off("routeChangeComplete", onPixelRouteChange)
+      }
     }
   }, [router.events])
 
