@@ -30,8 +30,8 @@
     "gray-matter": "4.0.3",
     "next": "11.1.4",
     "normalize.css": "8.0.1",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
     "react-facebook-pixel": "1.0.4",
     "terser-webpack-plugin": "5.3.11",
     "theme-ui": "0.12.1"
