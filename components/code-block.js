@@ -1,5 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { useState, useCallback, useRef, Children } from "react"
+import { marked } from "marked"
 
 function getLanguage(children) {
   const child = Children.toArray(children)[0]
@@ -18,6 +19,7 @@ const CODEPEN_CSS = new Set(["css"])
 const CODEPEN_HTML = new Set(["html"])
 const GO_LANGS = new Set(["go", "golang"])
 const GODBOLT_MAP = { c: "c", cpp: "c++", rust: "rust" }
+const MARKDOWN_LANGS = new Set(["md", "markdown"])
 
 function openCodePen(code, lang) {
   const data = {}
@@ -45,18 +47,10 @@ function openCodePen(code, lang) {
   document.body.removeChild(form)
 }
 
-async function openGoPlayground(code) {
-  try {
-    const res = await fetch("https://go.dev/_/share", {
-      method: "POST",
-      body: code,
-    })
-    const id = await res.text()
-    window.open(`https://go.dev/play/p/${id}`, "_blank")
-  } catch {
-    await navigator.clipboard.writeText(code)
-    window.open("https://go.dev/play/", "_blank")
-  }
+function openGoPlayground(code) {
+  navigator.clipboard.writeText(code)
+  window.open("https://go.dev/play/", "_blank")
+  return "copied"
 }
 
 async function openGodbolt(code, lang) {
@@ -78,8 +72,9 @@ async function openGodbolt(code, lang) {
     const { url } = await res.json()
     window.open(url, "_blank")
   } catch {
-    await navigator.clipboard.writeText(code)
+    navigator.clipboard.writeText(code)
     window.open("https://godbolt.org/", "_blank")
+    return "copied"
   }
 }
 
@@ -117,10 +112,13 @@ const btnSx = {
 
 export default function CodeBlock({ children, style: _shikiStyle, ...rest }) {
   const [copied, setCopied] = useState(false)
+  const [pgCopied, setPgCopied] = useState(false)
+  const [showPreview, setShowPreview] = useState(false)
   const preRef = useRef(null)
 
   const lang = getLanguage(children)
   const playground = getPlayground(lang)
+  const isMarkdown = MARKDOWN_LANGS.has(lang)
 
   const getCode = useCallback(() => preRef.current?.textContent || "", [])
 
@@ -131,8 +129,12 @@ export default function CodeBlock({ children, style: _shikiStyle, ...rest }) {
     })
   }, [getCode])
 
-  const handlePlayground = useCallback(() => {
-    playground?.open(getCode())
+  const handlePlayground = useCallback(async () => {
+    const result = await playground?.open(getCode())
+    if (result === "copied") {
+      setPgCopied(true)
+      setTimeout(() => setPgCopied(false), 2000)
+    }
   }, [getCode, playground])
 
   return (
@@ -150,15 +152,45 @@ export default function CodeBlock({ children, style: _shikiStyle, ...rest }) {
         <button type="button" sx={btnSx} onClick={handleCopy}>
           {copied ? "Copied!" : "Copy"}
         </button>
+        {isMarkdown && (
+          <button
+            type="button"
+            sx={btnSx}
+            onClick={() => setShowPreview(p => !p)}
+          >
+            {showPreview ? "Source" : "Preview"}
+          </button>
+        )}
         {playground && (
           <button type="button" sx={btnSx} onClick={handlePlayground}>
-            {playground.label}
+            {pgCopied ? "Copied!" : playground.label}
           </button>
         )}
       </div>
-      <pre {...rest} ref={preRef} sx={{ variant: "styles.pre" }}>
+      <pre
+        {...rest}
+        ref={preRef}
+        sx={{
+          variant: "styles.pre",
+          display: showPreview ? "none" : undefined,
+        }}
+      >
         {children}
       </pre>
+      {showPreview && (
+        <div
+          sx={{
+            variant: "styles.root",
+            p: 3,
+            bg: "background",
+            border: "1px solid",
+            borderColor: "border",
+            borderRadius: 6,
+            mb: 3,
+          }}
+          dangerouslySetInnerHTML={{ __html: marked.parse(getCode()) }}
+        />
+      )}
     </div>
   )
 }

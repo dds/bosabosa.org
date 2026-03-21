@@ -6,6 +6,7 @@ import { ThemeUIProvider } from "theme-ui"
 import { useThemedStylesWithMdx } from "@theme-ui/mdx"
 import { MDXProvider, useMDXComponents } from "@mdx-js/react"
 
+import "katex/dist/katex.min.css"
 import "../styles/syntax.css"
 import theme from "../theme"
 import Layout from "../components/layout"

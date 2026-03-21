@@ -74,6 +74,17 @@ fn main() {
 }
 ```
 
+```md
+# A Heading
+
+This is **bold** and _italic_ text.
+
+- List item one
+- List item two
+
+> A blockquote with [a link](https://example.com).
+```
+
 ```
 Plain code block with no language tag.
 Just monospace text.
@@ -138,6 +149,20 @@ Nested:
 | Links | Done | primary color |
 | Code | Done | mono + muted bg |
 | Tables | Done | borders + padding |
+
+## Math
+
+Inline math: the quadratic formula is $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ and Euler's identity is $e^{i\pi} + 1 = 0$.
+
+Display math:
+
+$$
+\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}
+$$
+
+$$
+\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}
+$$
 
 ## Horizontal Rule
 

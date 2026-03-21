@@ -19,18 +19,21 @@ export async function getStaticProps() {
   )
   const { serialize } = await import("next-mdx-remote/serialize")
   const remarkGfm = (await import("remark-gfm")).default
+  const remarkMath = (await import("remark-math")).default
   const rehypePrettyCode = (await import("rehype-pretty-code")).default
+  const rehypeKatex = (await import("rehype-katex")).default
   const mdxSource = await serialize(source, {
     mdxOptions: {
-      remarkPlugins: [remarkGfm],
+      remarkPlugins: [remarkGfm, remarkMath],
       rehypePlugins: [
         [
           rehypePrettyCode,
           {
-            theme: { dark: "github-dark-dimmed", light: "github-light" },
+            theme: { dark: "gruvbox-dark-medium", light: "gruvbox-light-medium" },
             keepBackground: false,
           },
         ],
+        rehypeKatex,
       ],
     },
   })
