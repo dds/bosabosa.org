@@ -38,16 +38,16 @@ export default function BlogPostPage({ post }) {
           }}
         >
           <li>
-            {!!post.previousPostSlug && (
-              <Link href={`/news/${post.previousPostSlug}`} passHref>
-                <A rel="prev">← {post.previousPostTitle}</A>
+            {!!post.nextPostSlug && (
+              <Link href={`/news/${post.nextPostSlug}`} passHref>
+                <A rel="prev">← {post.nextPostTitle}</A>
               </Link>
             )}
           </li>
           <li>
-            {!!post.nextPostSlug && (
-              <Link href={`/news/${post.nextPostSlug}`} passHref>
-                <A rel="next">→ {post.nextPostTitle}</A>
+            {!!post.previousPostSlug && (
+              <Link href={`/news/${post.previousPostSlug}`} passHref>
+                <A rel="next">{post.previousPostTitle} →</A>
               </Link>
             )}
           </li>

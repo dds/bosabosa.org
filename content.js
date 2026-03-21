@@ -15,24 +15,17 @@ async function getAllPosts(fields = []) {
       slugs.map(slug => innerGetPostBySlug(slug, [...fields, "date"]))
     )
   ).sort((a, b) => new Date(b.date) - new Date(a.date))
-  posts.forEach((post, index) => {
-    const previousPostId = index === 0 ? null : index - 1
-    const previousPostSlug =
-      previousPostId !== null ? posts[previousPostId].slug : null
-    const previousPostTitle =
-      previousPostId !== null ? posts[previousPostId].title : null
-    const nextPostId = index === posts.length - 1 ? null : index + 1
-    const nextPostSlug = nextPostId !== null ? posts[nextPostId].slug : null
-    const nextPostTitle = nextPostId !== null ? posts[nextPostId].title : null
-    post.index = index
-    post.previousPostIndex = previousPostId
-    post.previousPostSlug = previousPostSlug
-    post.previousPostTitle = previousPostTitle
-    post.nextPostIndex = nextPostId
-    post.nextPostSlug = nextPostSlug
-    post.nextPostTitle = nextPostTitle
+  return posts.map((post, index) => {
+    const prev = index > 0 ? posts[index - 1] : null
+    const next = index < posts.length - 1 ? posts[index + 1] : null
+    return {
+      ...post,
+      previousPostSlug: prev ? prev.slug : null,
+      previousPostTitle: prev ? prev.title : null,
+      nextPostSlug: next ? next.slug : null,
+      nextPostTitle: next ? next.title : null,
+    }
   })
-  return posts
 }
 
 async function getPostBySlug(slug, fields = []) {

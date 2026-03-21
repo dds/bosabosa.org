@@ -6,9 +6,7 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 })
 module.exports = withBundleAnalyzer(
   withMDX({
-    output: "standalone",
     pageExtensions: ["js", "md"],
-    experimental: { esmExternals: "loose" },
     webpack: (config, { dev, isServer }) => {
       // Fixes npm packages (mdx) that depend on `fs` module
       if (!isServer) {
