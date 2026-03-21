@@ -18,6 +18,9 @@ export async function getStaticProps() {
     "utf8"
   )
   const { serialize } = await import("next-mdx-remote/serialize")
-  const mdxSource = await serialize(source)
+  const remarkGfm = (await import("remark-gfm")).default
+  const mdxSource = await serialize(source, {
+    mdxOptions: { remarkPlugins: [remarkGfm] },
+  })
   return { props: { mdxSource } }
 }

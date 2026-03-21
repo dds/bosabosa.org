@@ -78,7 +78,10 @@ export async function getStaticProps({ params }) {
     "draft",
   ])
   const { serialize } = await import("next-mdx-remote/serialize")
-  const mdxSource = await serialize(post.content)
+  const remarkGfm = (await import("remark-gfm")).default
+  const mdxSource = await serialize(post.content, {
+    mdxOptions: { remarkPlugins: [remarkGfm] },
+  })
   const { content, ...postMeta } = post
   return {
     props: { post: postMeta, mdxSource },

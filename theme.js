@@ -102,6 +102,31 @@ const theme = {
       mt: 4,
       mb: 2,
     },
+    h4: {
+      fontFamily: "sans",
+      fontWeight: "heading",
+      lineHeight: "heading",
+      fontSize: 3,
+      mt: 3,
+      mb: 2,
+    },
+    h5: {
+      fontFamily: "sans",
+      fontWeight: "heading",
+      lineHeight: "heading",
+      fontSize: 2,
+      mt: 3,
+      mb: 2,
+    },
+    h6: {
+      fontFamily: "sans",
+      fontWeight: "heading",
+      lineHeight: "heading",
+      fontSize: 1,
+      mt: 3,
+      mb: 2,
+      color: "gray",
+    },
     p: { lineHeight: "body", mb: 3 },
     a: {
       color: `primary`,
@@ -165,6 +190,8 @@ const theme = {
       p: 2,
     },
     img: { maxWidth: "100%" },
+    del: { color: "gray" },
+    "input[type='checkbox']": { mr: 2 },
   },
 }
 
