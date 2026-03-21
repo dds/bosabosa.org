@@ -5,9 +5,16 @@ import { Heading, Flex, Text } from "theme-ui"
 import { Link as A } from "theme-ui"
 import { getPostBySlug, getAllPosts } from "../../content"
 import Meta from "../../components/meta"
+import useKeyboardNav from "../../components/use-keyboard-nav"
 import config from "../../site.config"
 
 export default function BlogPostPage({ post, mdxSource }) {
+  useKeyboardNav({
+    left: post.nextPostSlug ? `/news/${post.nextPostSlug}` : null,
+    right: post.previousPostSlug ? `/news/${post.previousPostSlug}` : null,
+    escape: `/news`,
+  })
+
   return (
     <div>
       <Meta
