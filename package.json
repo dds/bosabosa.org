@@ -29,7 +29,7 @@
     "@netlify/plugin-nextjs": "4.41.6",
     "@next/bundle-analyzer": "12.3.4",
     "@theme-ui/mdx": "^0.17.4",
-    "feed": "4.2.2",
+    "feed": "5.2.0",
     "gray-matter": "4.0.3",
     "next": "12.3.4",
     "next-mdx-remote": "^5.0.0",
