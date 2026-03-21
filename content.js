@@ -8,13 +8,16 @@ function getPostSlugs() {
   return fs.readdirSync(join(root, `content`, `blog`))
 }
 
+const isDev = process.env.NODE_ENV !== "production"
+
 async function getAllPosts(fields = []) {
   const slugs = getPostSlugs()
-  const posts = (
-    await Promise.all(
-      slugs.map(slug => innerGetPostBySlug(slug, [...fields, "date"]))
-    )
-  ).sort((a, b) => new Date(b.date) - new Date(a.date))
+  const allPosts = await Promise.all(
+    slugs.map(slug => innerGetPostBySlug(slug, [...fields, "date", "draft"]))
+  )
+  const posts = allPosts
+    .filter(post => isDev || !post.draft)
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
   return posts.map((post, index) => {
     const prev = index > 0 ? posts[index - 1] : null
     const next = index < posts.length - 1 ? posts[index + 1] : null

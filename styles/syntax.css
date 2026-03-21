@@ -1,0 +1,65 @@
+/* rehype-pretty-code: syntax highlighting styles */
+
+/* --- Dual theme toggle --- */
+
+/* Dark mode via Theme UI toggle */
+[data-theme-ui-color-mode="dark"] [data-rehype-pretty-code-figure] code span {
+  color: var(--shiki-dark) !important;
+}
+
+/* Dark mode via system preference (before JS hydrates) */
+@media (prefers-color-scheme: dark) {
+  [data-rehype-pretty-code-figure] code span {
+    color: var(--shiki-dark) !important;
+  }
+}
+
+/* Explicit light overrides system dark preference */
+[data-theme-ui-color-mode="light"] [data-rehype-pretty-code-figure] code span {
+  color: var(--shiki-light) !important;
+}
+
+/* --- Code block chrome --- */
+
+[data-rehype-pretty-code-figure] {
+  position: relative;
+  margin: 0 0 16px;
+}
+
+/* Language label (bottom-right to avoid toolbar collision) */
+[data-rehype-pretty-code-figure] [data-language]::before {
+  content: attr(data-language);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-family: ui-monospace, "Cascadia Mono", "Ubuntu Mono", "Roboto Mono", Menlo, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+  border-radius: 4px 0 4px 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Line numbers via counter */
+[data-rehype-pretty-code-figure] code {
+  counter-reset: line;
+}
+
+[data-rehype-pretty-code-figure] code > [data-line]::before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  width: 1.5em;
+  margin-right: 1em;
+  text-align: right;
+  opacity: 0.35;
+  font-size: inherit;
+}
+
+/* Hide line numbers for blocks with 3 or fewer lines (plain/short) */
+[data-rehype-pretty-code-figure] code[data-line-numbers-max-digits="1"] > [data-line]::before {
+  width: 1em;
+}

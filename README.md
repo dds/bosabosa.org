@@ -26,6 +26,8 @@ Your markdown content here.
 
 The `date` field is flexible — `2024-01-15`, `Jan 15 2024`, `2024-01-15T10:30:00-0800` all work. Any value parseable by `new Date()` is accepted.
 
+Add `draft: true` to hide a post from production. Drafts are visible locally with `npm run dev` but excluded from `npm run build`.
+
 Posts are sorted by date (newest first) and automatically get prev/next navigation links.
 
 ## Markdown Support

@@ -149,9 +149,12 @@ const theme = {
     pre: {
       fontFamily: "mono",
       fontSize: 1,
+      lineHeight: 1.6,
       p: 3,
       bg: "muted",
-      borderRadius: 4,
+      border: "1px solid",
+      borderColor: "border",
+      borderRadius: 6,
       overflowX: "auto",
       mb: 3,
     },

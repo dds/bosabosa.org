@@ -6,13 +6,19 @@ import { ThemeUIProvider } from "theme-ui"
 import { useThemedStylesWithMdx } from "@theme-ui/mdx"
 import { MDXProvider, useMDXComponents } from "@mdx-js/react"
 
+import "../styles/syntax.css"
 import theme from "../theme"
 import Layout from "../components/layout"
+import CodeBlock from "../components/code-block"
 import * as gtag from "../gtag"
 
 function MdxThemeProvider({ children }) {
   const components = useThemedStylesWithMdx(useMDXComponents())
-  return <MDXProvider components={components}>{children}</MDXProvider>
+  return (
+    <MDXProvider components={{ ...components, pre: CodeBlock }}>
+      {children}
+    </MDXProvider>
+  )
 }
 
 const App = ({ Component, pageProps }) => {

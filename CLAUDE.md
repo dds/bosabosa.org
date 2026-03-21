@@ -25,7 +25,7 @@ Personal blog/website for David D. Smith at bosabosa.org, built with Next.js 12,
 
 Blog posts live as Markdown files in `content/blog/` with YAML frontmatter (title, date, description, tags, draft). At build time:
 
-1. `content.js` reads markdown files, parses frontmatter with gray-matter (Date values are converted to ISO strings for JSON serialization)
+1. `content.js` reads markdown files, parses frontmatter with gray-matter (dates are coerced to ISO strings; drafts are filtered out in production)
 2. `next-mdx-remote` serializes markdown to MDX at build time in `getStaticProps`, with `remark-gfm` for GitHub Flavored Markdown support
 3. `<MDXRemote>` renders the serialized MDX on the client, inheriting themed prose styles from the MDXProvider in `_app.js`
 4. Posts are sorted by date (newest first) and enriched with prev/next navigation links
@@ -124,6 +124,8 @@ The `date` field is flexible — all of these work:
 - `date: "January 15, 2024"` (quoted string)
 
 Any value parseable by JavaScript's `new Date()` is accepted. Unquoted YAML dates (like `2024-01-15`) are parsed natively by gray-matter; quoted strings are coerced via `new Date()` in `content.js`.
+
+Add `draft: true` to keep a post visible locally but excluded from production builds.
 
 Write standard markdown. All GitHub Flavored Markdown features work (tables, strikethrough, task lists). Code blocks render in monospace with a muted background but have no syntax highlighting.
 
