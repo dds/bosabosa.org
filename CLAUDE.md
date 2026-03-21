@@ -126,6 +126,14 @@ To add a new static page rendered from markdown (like `/contact`):
 1. Create `content/pagename.md` with the markdown content
 2. Create `pages/pagename.js` with the pattern from `pages/contact.js`: read the file, serialize with `next-mdx-remote/serialize` + `remark-gfm`, render with `<MDXRemote>`
 
+## Git Workflow
+
+- `git push` to main triggers both **GitHub Actions CI** (build check) and **Netlify deploy**
+- Always run `npm run build` locally before pushing to catch errors early
+- Always `git pull --rebase origin main` before pushing — Renovate bot auto-commits version bumps to main, which causes push rejections if you're behind
+- CI runs `npm install` then `npm run build`; the build generates RSS feed and sitemap as side effects
+- There is no test runner — the build succeeding is the verification gate
+
 ## Environment Variables
 
 - `NEXT_PUBLIC_GA_ID` — Google Analytics tracking ID
