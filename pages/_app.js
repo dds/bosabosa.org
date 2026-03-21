@@ -2,11 +2,18 @@
 import { useEffect } from "react"
 import { useRouter } from "next/router"
 import Script from "next/script"
-import { ThemeProvider } from "theme-ui"
+import { ThemeUIProvider } from "theme-ui"
+import { useThemedStylesWithMdx } from "@theme-ui/mdx"
+import { MDXProvider, useMDXComponents } from "@mdx-js/react"
 
 import theme from "../theme"
 import Layout from "../components/layout"
 import * as gtag from "../gtag"
+
+function MdxThemeProvider({ children }) {
+  const components = useThemedStylesWithMdx(useMDXComponents())
+  return <MDXProvider components={components}>{children}</MDXProvider>
+}
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
@@ -34,16 +41,17 @@ const App = ({ Component, pageProps }) => {
   }, [router.events])
 
   return (
-    <ThemeProvider theme={theme}>
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
-      />
-      <Script
-        id="gtag-init"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+    <ThemeUIProvider theme={theme}>
+      <MdxThemeProvider>
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -51,12 +59,13 @@ const App = ({ Component, pageProps }) => {
               page_path: window.location.pathname,
             });
           `,
-        }}
-      />
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </ThemeProvider>
+          }}
+        />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </MdxThemeProvider>
+    </ThemeUIProvider>
   )
 }
 

@@ -2,7 +2,6 @@ const theme = {
   useCustomProperties: true,
   config: {
     useColorSchemeMediaQuery: true,
-    printColorModeName: `light`,
   },
   initialColorModeName: `light`,
   colors: {

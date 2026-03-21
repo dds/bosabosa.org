@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import MDX from "@mdx-js/runtime"
+import { MDXRemote } from "next-mdx-remote"
 import Link from "next/link"
 import { Heading, Flex, Text } from "theme-ui"
 import { Link as A } from "theme-ui"
@@ -7,7 +7,7 @@ import { getPostBySlug, getAllPosts } from "../../content"
 import Meta from "../../components/meta"
 import config from "../../site.config"
 
-export default function BlogPostPage({ post }) {
+export default function BlogPostPage({ post, mdxSource }) {
   return (
     <div>
       <Meta
@@ -25,7 +25,7 @@ export default function BlogPostPage({ post }) {
             {new Date(post.date).toLocaleDateString()}
           </Text>
         )}
-        <MDX>{post.content}</MDX>
+        <MDXRemote {...mdxSource} />
       </article>
       <nav sx={{ mt: 3 }}>
         <ul
@@ -69,8 +69,11 @@ export async function getStaticProps({ params }) {
     "content",
     "draft",
   ])
+  const { serialize } = await import("next-mdx-remote/serialize")
+  const mdxSource = await serialize(post.content)
+  const { content, ...postMeta } = post
   return {
-    props: { post },
+    props: { post: postMeta, mdxSource },
   }
 }
 

@@ -26,7 +26,7 @@ Personal blog/website for David D. Smith at bosabosa.org, built with Next.js 12 
 Blog posts live as Markdown files in `content/blog/` with YAML frontmatter (title, date, description, tags, draft). At build time:
 
 1. `content.js` reads markdown files, parses frontmatter with gray-matter (Date values are converted to ISO strings for JSON serialization)
-2. `@mdx-js/runtime` renders markdown as React components on the client
+2. `next-mdx-remote` serializes markdown to MDX at build time in `getStaticProps`, rendered via `<MDXRemote>` on the client
 3. Posts are sorted by date (newest first) and enriched with prev/next navigation links
 4. `getPostBySlug()` fetches all posts then filters — it's not a direct lookup
 
@@ -37,7 +37,7 @@ RSS feed is generated at build time via `feed.js`.
 - `/` → redirects to `/news`
 - `/news` → blog listing (pages/news.js)
 - `/news/[slug]` → individual post (pages/news/[slug].js), statically generated
-- `/contact` → markdown page (pages/contact.md, rendered directly by Next.js MDX)
+- `/contact` → markdown page (content/contact.md, serialized via next-mdx-remote in pages/contact.js)
 - Permanent redirects: `/b` → `/news`, `/b/:slug` → `/news/:slug` (configured in next.config.js)
 
 ### Styling
@@ -51,7 +51,7 @@ Uses Theme UI with a centralized theme in `theme.js`. Components use the `sx` pr
 - `content.js` — content loading utilities (getPostSlugs, getAllPosts, getPostBySlug)
 - `feed.js` — RSS feed generator
 - `gtag.js` — Google Analytics wrapper
-- `pages/_app.js` — app wrapper with analytics initialization and theme provider
+- `pages/_app.js` — app wrapper with analytics, ThemeUIProvider, and MDXProvider for themed styles
 
 ### Adding a Blog Post
 

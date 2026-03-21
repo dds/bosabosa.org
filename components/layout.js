@@ -1,5 +1,6 @@
 /** @jsxImportSource theme-ui */
-import { Grid, Themed } from "theme-ui"
+import { Grid } from "theme-ui"
+import { Themed } from "@theme-ui/mdx"
 import "normalize.css"
 
 import Footer from "./footer"
