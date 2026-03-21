@@ -12,8 +12,9 @@ const theme = {
     secondary: "#119",
     muted: "#f6f6f6",
     highlight: "#efeffe",
-    gray: "#777",
+    gray: "#595959",
     accent: "#609",
+    border: "#e0e0e0",
     modes: {
       dark: {
         text: "#fff",
@@ -24,6 +25,7 @@ const theme = {
         highlight: "#29112c",
         gray: "#999",
         accent: "#c0f",
+        border: "#333",
       },
     },
   },
@@ -32,6 +34,7 @@ const theme = {
     serif: `Georgia, Cambria, "Times New Roman", Times, serif`,
     mono: `ui-monospace, "Cascadia Mono", "Ubuntu Mono", "Roboto Mono", Menlo, monospace`,
   },
+  fontSizes: [12, 14, 16, 18, 20, 24, 32, 48],
   fontWeights: {
     body: 400,
     heading: 700,
@@ -41,6 +44,7 @@ const theme = {
     body: 1.5,
     heading: 1.125,
   },
+  space: [0, 4, 8, 16, 32, 64, 128],
   text: {
     default: {
       fontFamily: `sans`,
@@ -72,6 +76,34 @@ const theme = {
     },
   },
   styles: {
+    root: {
+      fontFamily: "sans",
+      lineHeight: "body",
+      fontWeight: "body",
+    },
+    h1: {
+      fontFamily: "sans",
+      fontWeight: "heading",
+      lineHeight: "heading",
+      fontSize: 6,
+    },
+    h2: {
+      fontFamily: "sans",
+      fontWeight: "heading",
+      lineHeight: "heading",
+      fontSize: 5,
+      mt: 4,
+      mb: 3,
+    },
+    h3: {
+      fontFamily: "sans",
+      fontWeight: "heading",
+      lineHeight: "heading",
+      fontSize: 4,
+      mt: 4,
+      mb: 2,
+    },
+    p: { lineHeight: "body", mb: 3 },
     a: {
       color: `primary`,
       ":visited": {
@@ -81,6 +113,59 @@ const theme = {
         textDecoration: `underline`,
       },
     },
+    blockquote: {
+      borderLeft: "4px solid",
+      borderColor: "muted",
+      pl: 3,
+      ml: 0,
+      mr: 0,
+      fontStyle: "italic",
+      color: "gray",
+    },
+    pre: {
+      fontFamily: "mono",
+      fontSize: 1,
+      p: 3,
+      bg: "muted",
+      borderRadius: 4,
+      overflowX: "auto",
+      mb: 3,
+    },
+    code: {
+      fontFamily: "mono",
+      fontSize: "inherit",
+    },
+    inlineCode: {
+      fontFamily: "mono",
+      fontSize: "85%",
+      bg: "muted",
+      px: 1,
+      py: "2px",
+      borderRadius: 3,
+    },
+    hr: {
+      border: 0,
+      borderBottom: "1px solid",
+      borderColor: "border",
+      my: 4,
+    },
+    ol: { pl: 4, mb: 3 },
+    ul: { pl: 4, mb: 3 },
+    li: { mb: 2 },
+    table: { width: "100%", borderCollapse: "collapse", mb: 3 },
+    th: {
+      textAlign: "left",
+      borderBottom: "2px solid",
+      borderColor: "border",
+      p: 2,
+    },
+    td: {
+      textAlign: "left",
+      borderBottom: "1px solid",
+      borderColor: "border",
+      p: 2,
+    },
+    img: { maxWidth: "100%" },
   },
 }
 

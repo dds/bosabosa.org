@@ -16,17 +16,18 @@ export default function BlogPostPage({ post }) {
         url={`${config.url}/news/${post.slug}`}
       />
       <Heading as="h1">{post.title}</Heading>
-      <article sx={{ borderBottom: `1px solid` }}>
+      <article sx={{ borderBottom: `1px solid`, borderColor: `border` }}>
         {post.date && (
-          <Flex as="header" sx={{ fontWeight: 4, mr: 0, ml: `auto` }}>
-            <Text sx={{ variant: `text.heading` }}>
-              {new Date(post.date).toLocaleDateString()}
-            </Text>
-          </Flex>
+          <Text
+            as="time"
+            sx={{ display: `block`, fontSize: 1, color: `gray`, mb: 3 }}
+          >
+            {new Date(post.date).toLocaleDateString()}
+          </Text>
         )}
         <MDX>{post.content}</MDX>
       </article>
-      <nav sx={{ pt: 2 }}>
+      <nav sx={{ mt: 3 }}>
         <ul
           sx={{
             display: `flex`,

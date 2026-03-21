@@ -4,7 +4,9 @@ import { NavLink, Flex } from "theme-ui"
 
 const Footer = () => {
   return (
-    <footer sx={{ gridArea: `footer`, borderTop: `1px solid` }}>
+    <footer
+      sx={{ gridArea: `footer`, borderTop: `1px solid`, borderColor: `border` }}
+    >
       <Flex sx={{ p: `0 2rem` }}>
         <Link href="/contact" passHref>
           <NavLink sx={{ p: 2 }} title="Contact">

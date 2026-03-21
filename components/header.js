@@ -24,7 +24,13 @@ const getModeName = mode => {
 const Header = ({ title }) => {
   const [mode, setMode] = useColorMode()
   return (
-    <nav sx={{ gridArea: `header`, borderBottom: `1px solid` }}>
+    <nav
+      sx={{
+        gridArea: `header`,
+        borderBottom: `1px solid`,
+        borderColor: `border`,
+      }}
+    >
       <Flex sx={{ p: `0 2rem`, flexFlow: `row wrap`, alignItems: `center` }}>
         <Link href="/" passHref>
           <NavLink sx={{ p: 2 }} title="Home">

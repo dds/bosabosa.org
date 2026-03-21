@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal blog/website for David D. Smith at bosabosa.org, built with Next.js 11 and deployed on Netlify.
+Personal blog/website for David D. Smith at bosabosa.org, built with Next.js 12 and deployed on Netlify.
 
 ## Commands
 
@@ -69,4 +69,4 @@ tags: ["tag1", "tag2"]
 ## Environment Variables
 
 - `NEXT_PUBLIC_GA_ID` — Google Analytics tracking ID
-- `NODE_OPTIONS=--openssl-legacy-provider` — required for build (legacy Node compatibility)
+- `NODE_VERSION=22` — pinned in `netlify.toml` for Netlify builds
