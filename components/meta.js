@@ -9,6 +9,7 @@ export default function Meta({
   description = config.description,
   image = "",
   url = config.url,
+  type = "website",
   children,
 }) {
   const fullTitle = makeTitle(title, config.title)
@@ -16,9 +17,10 @@ export default function Meta({
     <Head>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      <link rel="canonical" href={url} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={type} />
       <meta property="og:url" content={url} />
       {image && <meta property="og:image" content={image} />}
       <meta name="twitter:card" content="summary" />

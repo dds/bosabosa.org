@@ -24,14 +24,16 @@ const App = ({ Component, pageProps }) => {
     }
     let onPixelRouteChange
     router.events.on("routeChangeComplete", onRouteChange)
-    import("react-facebook-pixel")
-      .then(x => x.default)
-      .then(ReactPixel => {
-        ReactPixel.init("374965067696759")
-        ReactPixel.pageView()
-        onPixelRouteChange = () => ReactPixel.pageView()
-        router.events.on("routeChangeComplete", onPixelRouteChange)
-      })
+    if (process.env.NEXT_PUBLIC_FB_PIXEL_ID) {
+      import("react-facebook-pixel")
+        .then(x => x.default)
+        .then(ReactPixel => {
+          ReactPixel.init(process.env.NEXT_PUBLIC_FB_PIXEL_ID)
+          ReactPixel.pageView()
+          onPixelRouteChange = () => ReactPixel.pageView()
+          router.events.on("routeChangeComplete", onPixelRouteChange)
+        })
+    }
     return () => {
       router.events.off("routeChangeComplete", onRouteChange)
       if (onPixelRouteChange) {

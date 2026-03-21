@@ -18,7 +18,7 @@ const layoutL = `
       '.        main     main    aside'
       'footer   footer   footer  footer'`
 
-const Layout = ({ children, title = `` }) => (
+const Layout = ({ children }) => (
   <Themed.root>
     <SkipNavLink>Skip to content</SkipNavLink>
     <Grid

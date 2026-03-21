@@ -3,25 +3,7 @@ import Link from "next/link"
 import { useColorMode, NavLink, Flex } from "theme-ui"
 import Button from "./button"
 
-const getModeName = mode => {
-  switch (mode) {
-    case "dark":
-      return "Dark"
-    case "deep":
-      return "Deep"
-    case "swiss":
-      return "Swiss"
-    case "light":
-    case "default":
-      return "Light"
-    case undefined:
-      return "         "
-    default:
-      return mode
-  }
-}
-
-const Header = ({ title }) => {
+const Header = () => {
   const [mode, setMode] = useColorMode()
   return (
     <nav
@@ -56,12 +38,15 @@ const Header = ({ title }) => {
           sx={{ p: [1, 2], whiteSpace: `pre` }}
           name="colorMode"
           type="button"
+          aria-label={
+            mode === "dark" ? "Switch to light mode" : "Switch to dark mode"
+          }
           onClick={e => {
             const next = mode === "dark" ? "light" : "dark"
             setMode(next)
           }}
         >
-          <svg viewBox="0 0 32 32" width="24" height="24" fill="currentcolor">
+          <svg viewBox="0 0 32 32" width="24" height="24" fill="currentcolor" aria-hidden="true">
             <circle
               cx="16"
               cy="16"

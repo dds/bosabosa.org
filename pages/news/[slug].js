@@ -21,6 +21,7 @@ export default function BlogPostPage({ post, mdxSource }) {
         title={post.title}
         description={post.description || post.excerpt}
         url={`${config.url}/news/${post.slug}`}
+        type="article"
       />
       <Heading as="h1">{post.title}</Heading>
       <article sx={{ borderBottom: `1px solid`, borderColor: `border` }}>

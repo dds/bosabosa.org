@@ -13,6 +13,7 @@ export default function Blog({ posts }) {
 
 export async function getStaticProps() {
   require("../feed")
+  require("../sitemap")
   const posts = await getAllPosts([
     `title`,
     `slug`,

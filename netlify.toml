@@ -20,4 +20,12 @@ NODE_ENV = "production"
   query = {slug = ":slug"}
 
 [functions]
-  included_files = ["feed.js", "content/blog/*.md"]
+  included_files = ["feed.js", "sitemap.js", "content/blog/*.md"]
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
