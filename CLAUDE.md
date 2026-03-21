@@ -111,11 +111,19 @@ Create a new `.md` file in `content/blog/` with frontmatter:
 ```yaml
 ---
 title: "Post Title"
-date: "YYYY-MM-DDTHH:MM:SS.000Z"
+date: 2024-01-15
 description: "Short description"
 tags: ["tag1", "tag2"]
 ---
 ```
+
+The `date` field is flexible — all of these work:
+- `date: 2024-01-15` (recommended, simple)
+- `date: 2024-01-15T10:30:00-0800` (with time and timezone)
+- `date: Jan 15 2024` (natural language)
+- `date: "January 15, 2024"` (quoted string)
+
+Any value parseable by JavaScript's `new Date()` is accepted. Unquoted YAML dates (like `2024-01-15`) are parsed natively by gray-matter; quoted strings are coerced via `new Date()` in `content.js`.
 
 Write standard markdown. All GitHub Flavored Markdown features work (tables, strikethrough, task lists). Code blocks render in monospace with a muted background but have no syntax highlighting.
 

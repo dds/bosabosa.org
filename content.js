@@ -61,8 +61,13 @@ async function innerGetPostBySlug(slug, fields = []) {
       return
     }
     if (data[field]) {
-      items[field] =
-        data[field] instanceof Date ? data[field].toISOString() : data[field]
+      if (field === "date") {
+        const d =
+          data[field] instanceof Date ? data[field] : new Date(data[field])
+        items[field] = d.toISOString()
+      } else {
+        items[field] = data[field]
+      }
       return
     }
   })

@@ -16,13 +16,15 @@ Create a markdown file in `content/blog/` with frontmatter:
 ```yaml
 ---
 title: "Post Title"
-date: "2024-01-15T00:00:00.000Z"
+date: 2024-01-15
 description: "A short summary for the listing page and RSS feed"
 tags: ["tag1", "tag2"]
 ---
 
 Your markdown content here.
 ```
+
+The `date` field is flexible — `2024-01-15`, `Jan 15 2024`, `2024-01-15T10:30:00-0800` all work. Any value parseable by `new Date()` is accepted.
 
 Posts are sorted by date (newest first) and automatically get prev/next navigation links.
 
