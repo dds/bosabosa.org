@@ -34,8 +34,8 @@
     "next": "^12.3.7",
     "next-mdx-remote": "^5.0.0",
     "normalize.css": "8.0.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-facebook-pixel": "1.0.4",
     "terser-webpack-plugin": "5.4.0",
     "theme-ui": "^0.17.4"
