@@ -21,7 +21,7 @@
     "prettier": "3.8.1"
   },
   "overrides": {
-    "yaml": "1.10.2"
+    "yaml": "2.8.3"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
