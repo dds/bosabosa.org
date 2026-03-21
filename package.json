@@ -23,7 +23,7 @@
   "dependencies": {
     "@mdx-js/loader": "1.6.22",
     "@mdx-js/runtime": "1.6.22",
-    "@netlify/plugin-nextjs": "4.41.6",
+    "@netlify/plugin-nextjs": "5.15.9",
     "@next/bundle-analyzer": "12.3.4",
     "@next/mdx": "12.3.4",
     "feed": "4.2.2",
