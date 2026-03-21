@@ -1,3 +1,7 @@
+## [1.8.92](https://github.com/dds/bosabosa.org/compare/v1.8.91...v1.8.92) (2026-03-21)
+
+
+
 ## [1.8.91](https://github.com/dds/bosabosa.org/compare/v1.8.90...v1.8.91) (2026-03-20)
 
 
@@ -16,15 +20,6 @@
 
 
 ## [1.8.88](https://github.com/dds/bosabosa.org/compare/v1.8.87...v1.8.88) (2024-12-29)
-
-
-
-## [1.8.87](https://github.com/dds/bosabosa.org/compare/v1.8.86...v1.8.87) (2024-12-29)
-
-
-### Bug Fixes
-
-* **deps:** update react monorepo to v19 (major) ([#301](https://github.com/dds/bosabosa.org/issues/301)) ([b9bfeaf](https://github.com/dds/bosabosa.org/commit/b9bfeaf2179ef534e9830fc61208bd13c2653fea))
 
 
 
