@@ -4,7 +4,7 @@
         <title>bosabosa</title>
         <link>https://dds.bosabosa.org</link>
         <description>Writings on life, personal events, troubles, struggles, and work.</description>
-        <lastBuildDate>Sat, 21 Mar 2026 16:16:11 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Mar 2026 16:27:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Next.js using Feed for Node.js</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
         <item>
             <title><![CDATA[Violence in America]]></title>
             <link>https://dds.bosabosa.org/news/20220525-violence</link>
-            <guid>https://dds.bosabosa.org/news/20220525-violence</guid>
+            <guid isPermaLink="false">https://dds.bosabosa.org/news/20220525-violence</guid>
             <pubDate>Thu, 26 May 2022 06:07:00 GMT</pubDate>
             <description><![CDATA[The shift in late 20th century America and the prophet George Carlin]]></description>
             <content:encoded><![CDATA[
@@ -24,11 +24,12 @@ Tonight, daughter and I spoke about it, over a video call. We are scared. Califo
 
 I'm watching the George Carlin documentary. The drug culture part of it shows the root psychological challenge -- the stress, the ledger in the black. Seven dirty words.
 ]]></content:encoded>
+            <author>David D. Smith</author>
         </item>
         <item>
             <title><![CDATA[Explorations in Cloud Orchestration]]></title>
             <link>https://dds.bosabosa.org/news/explorations-in-cloud-orchestration</link>
-            <guid>https://dds.bosabosa.org/news/explorations-in-cloud-orchestration</guid>
+            <guid isPermaLink="false">https://dds.bosabosa.org/news/explorations-in-cloud-orchestration</guid>
             <pubDate>Mon, 04 Jan 2021 11:42:00 GMT</pubDate>
             <description><![CDATA[The state of the art in cloud orchestration in January 2021 with Pulumi, k3s, gRPC, tailscale, and more.]]></description>
             <content:encoded><![CDATA[
@@ -190,11 +191,12 @@ at the state of [GitOps].
 As for that gRPC guestbook app, armed with the knowledge above, I'm going to
 write it and package it as a container. Adieu till next time 👋
 ]]></content:encoded>
+            <author>David D. Smith</author>
         </item>
         <item>
             <title><![CDATA[So long, 2020]]></title>
             <link>https://dds.bosabosa.org/news/so-long-2020</link>
-            <guid>https://dds.bosabosa.org/news/so-long-2020</guid>
+            <guid isPermaLink="false">https://dds.bosabosa.org/news/so-long-2020</guid>
             <pubDate>Fri, 01 Jan 2021 05:34:00 GMT</pubDate>
             <description><![CDATA[What do you say about the worst year in living memory? You say to the next year, ...]]></description>
             <content:encoded><![CDATA[
@@ -221,11 +223,12 @@ only beginning to be felt.
 And the problems of the world have never been greater. Thank you to everyone who
 worked on developing the vaccines.
 ]]></content:encoded>
+            <author>David D. Smith</author>
         </item>
         <item>
             <title><![CDATA[Systems Design]]></title>
             <link>https://dds.bosabosa.org/news/systems-design</link>
-            <guid>https://dds.bosabosa.org/news/systems-design</guid>
+            <guid isPermaLink="false">https://dds.bosabosa.org/news/systems-design</guid>
             <pubDate>Mon, 28 Dec 2020 18:10:00 GMT</pubDate>
             <description><![CDATA[Systems design and going from Senior to Staff+ Engineer.]]></description>
             <content:encoded><![CDATA[
@@ -240,11 +243,12 @@ expectation may break-down.
 
 More to come...
 ]]></content:encoded>
+            <author>David D. Smith</author>
         </item>
         <item>
             <title><![CDATA[Christmas Day 2020]]></title>
             <link>https://dds.bosabosa.org/news/christmas-day-2020</link>
-            <guid>https://dds.bosabosa.org/news/christmas-day-2020</guid>
+            <guid isPermaLink="false">https://dds.bosabosa.org/news/christmas-day-2020</guid>
             <pubDate>Sat, 26 Dec 2020 07:44:00 GMT</pubDate>
             <description><![CDATA[Merry Christmas and happy holidays, 2020.]]></description>
             <content:encoded><![CDATA[
@@ -268,11 +272,12 @@ This year, I'm grateful to my team at work for all the big and small help
 they've given me and each other through the pandemic and my personal loss. And
 thank you to all who provide compassion to those grieving.
 ]]></content:encoded>
+            <author>David D. Smith</author>
         </item>
         <item>
             <title><![CDATA[Why Review Code?]]></title>
             <link>https://dds.bosabosa.org/news/why-review-code</link>
-            <guid>https://dds.bosabosa.org/news/why-review-code</guid>
+            <guid isPermaLink="false">https://dds.bosabosa.org/news/why-review-code</guid>
             <pubDate>Sat, 19 Dec 2020 17:35:00 GMT</pubDate>
             <description><![CDATA[Why is it valuable to review code?]]></description>
             <content:encoded><![CDATA[
@@ -339,11 +344,12 @@ I wanted to list some of the ways I have seen code-review go wrong:
    isn't constantly harvesting the low-hanging fruit of automation, team members
    end up emulating the automatons leadership claims they don't want to pay for.
 ]]></content:encoded>
+            <author>David D. Smith</author>
         </item>
         <item>
             <title><![CDATA[Mark Shields' Courage, Grace, and Candor]]></title>
             <link>https://dds.bosabosa.org/news/mark-shields-newshour</link>
-            <guid>https://dds.bosabosa.org/news/mark-shields-newshour</guid>
+            <guid isPermaLink="false">https://dds.bosabosa.org/news/mark-shields-newshour</guid>
             <pubDate>Fri, 18 Dec 2020 21:24:00 GMT</pubDate>
             <description><![CDATA[How I learned my place in the world through Mark Shields' weekly interpretation of events.]]></description>
             <content:encoded><![CDATA[
@@ -381,11 +387,12 @@ over time as I reflect more on the ways you've touched my life. It's been my
 dear pleasure and to the profound benefit of my mind to have listened to you all
 these years.
 ]]></content:encoded>
+            <author>David D. Smith</author>
         </item>
         <item>
             <title><![CDATA[Learning Gatsby]]></title>
             <link>https://dds.bosabosa.org/news/learning-gatsby</link>
-            <guid>https://dds.bosabosa.org/news/learning-gatsby</guid>
+            <guid isPermaLink="false">https://dds.bosabosa.org/news/learning-gatsby</guid>
             <pubDate>Thu, 10 Dec 2020 04:42:23 GMT</pubDate>
             <description><![CDATA[First impressions building this web site with React and Gatsby.]]></description>
             <content:encoded><![CDATA[
@@ -424,11 +431,12 @@ Gatsby brings it all together:
 - GraphQL for integrating data, decoupling the data sources from the way they are used in the experience.
 - Plugins bring all the features from other frameworks.
 ]]></content:encoded>
+            <author>David D. Smith</author>
         </item>
         <item>
             <title><![CDATA[Advent of Code 2020]]></title>
             <link>https://dds.bosabosa.org/news/advent-of-code-2020</link>
-            <guid>https://dds.bosabosa.org/news/advent-of-code-2020</guid>
+            <guid isPermaLink="false">https://dds.bosabosa.org/news/advent-of-code-2020</guid>
             <pubDate>Sat, 05 Dec 2020 07:44:00 GMT</pubDate>
             <description><![CDATA[Crafting with Code for the Holidays.]]></description>
             <content:encoded><![CDATA[
@@ -436,6 +444,7 @@ The [Advent of Code](https://adventofcode.com/) is an annual puzzle tradition cr
 
 My puzzle solutions are [online](https://github.com/dds/aoc2020). This year, I'm trying to incorporate some of what I consider important and valuable features of modern development, particularly with project management and structure. I'm working in Golang this year because it is so much less of a fuss than Python and my goal is to have fun, explore a variety of solutions, and share.
 ]]></content:encoded>
+            <author>David D. Smith</author>
         </item>
     </channel>
 </rss>

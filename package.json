@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "eslint": "7.32.0",
-    "eslint-config-next": "12.3.4",
+    "eslint-config-next": "^12.3.7",
     "prettier": "3.8.1"
   },
   "overrides": {
@@ -27,11 +27,11 @@
     "@emotion/react": "^11.14.0",
     "@mdx-js/react": "^3.1.1",
     "@netlify/plugin-nextjs": "4.41.6",
-    "@next/bundle-analyzer": "12.3.4",
+    "@next/bundle-analyzer": "^12.3.7",
     "@theme-ui/mdx": "^0.17.4",
-    "feed": "4.2.2",
+    "feed": "^5.2.0",
     "gray-matter": "4.0.3",
-    "next": "12.3.4",
+    "next": "^12.3.7",
     "next-mdx-remote": "^5.0.0",
     "normalize.css": "8.0.1",
     "react": "^18.3.1",
