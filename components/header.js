@@ -3,10 +3,12 @@ import Link from "next/link"
 import { useColorMode, NavLink, Flex } from "theme-ui"
 import Button from "./button"
 import { useAuth } from "./auth-context"
+import { useFontMode } from "./font-mode-context"
 
 const Header = () => {
   const [mode, setMode] = useColorMode()
   const { isAuthenticated, login, logout, ready } = useAuth()
+  const { fontMode, toggleFontMode } = useFontMode()
   return (
     <nav
       sx={{
@@ -45,6 +47,14 @@ const Header = () => {
             {isAuthenticated ? "Sign Out" : "Sign In"}
           </Button>
         )}
+        <Button
+          sx={{ p: [1, 2], whiteSpace: `pre`, fontFamily: fontMode === "sans" ? "serif" : "sans" }}
+          type="button"
+          aria-label={fontMode === "sans" ? "Switch to serif font" : "Switch to sans-serif font"}
+          onClick={toggleFontMode}
+        >
+          {fontMode === "sans" ? "Serif" : "Sans"}
+        </Button>
         <Button
           sx={{ p: [1, 2], whiteSpace: `pre` }}
           name="colorMode"
