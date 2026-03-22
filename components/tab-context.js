@@ -1,7 +1,6 @@
 import { createContext, useContext, useState, useCallback } from "react"
 
 const tabs = [
-  { id: "home", label: "Home" },
   { id: "blog", label: "Blog" },
   { id: "dashboard", label: "Dashboard", url: "https://dash.bosabosa.org" },
 ]
@@ -9,7 +8,7 @@ const tabs = [
 const TabContext = createContext(null)
 
 export function TabProvider({ children }) {
-  const [activeTab, setActiveTab] = useState("home")
+  const [activeTab, setActiveTab] = useState("blog")
 
   const switchTab = useCallback(id => setActiveTab(id), [])
 
