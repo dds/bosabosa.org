@@ -1,7 +1,14 @@
 /** @jsxImportSource theme-ui */
 import Link from "next/link"
-import { NavLink, Flex } from "theme-ui"
+import { Flex } from "theme-ui"
 import { useAuth } from "./auth-context"
+
+const linkStyle = {
+  p: 2,
+  color: "text",
+  textDecoration: "none",
+  "&:hover": { textDecoration: "underline" },
+}
 
 const Footer = () => {
   const { isAuthenticated, login, logout } = useAuth()
@@ -9,31 +16,25 @@ const Footer = () => {
     <footer
       sx={{ gridArea: `footer`, borderTop: `1px solid`, borderColor: `border` }}
     >
-      <Flex sx={{ p: `0 2rem` }}>
-        <NavLink
-          sx={{ p: 2, cursor: "pointer" }}
-          title={isAuthenticated ? "Sign Out" : "Sign In"}
+      <Flex sx={{ p: `0 2rem`, alignItems: "center" }}>
+        <a
+          href="#"
+          sx={{ ...linkStyle, cursor: "pointer" }}
           onClick={e => {
             e.preventDefault()
             isAuthenticated ? logout() : login()
           }}
-          href="#"
         >
           {isAuthenticated ? "Sign Out" : "Sign In"}
-        </NavLink>
+        </a>
         <Link href="/rss.xml" passHref>
-          <NavLink sx={{ p: 2 }} title="Subscribe via RSS">
-            Subscribe
-          </NavLink>
+          <a sx={linkStyle}>Subscribe</a>
         </Link>
         <a
           href="https://github.com/dds/bosabosa.org"
           target="_blank"
           rel="noopener noreferrer"
-          sx={{
-            variant: "links.nav",
-            p: 2,
-          }}
+          sx={linkStyle}
         >
           Source
         </a>
