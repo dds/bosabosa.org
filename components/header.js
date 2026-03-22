@@ -64,12 +64,12 @@ const Header = () => {
         )}
         <div sx={{ ml: `auto` }} />
         <Button
-          sx={{ p: [1, 2], whiteSpace: `pre`, fontFamily: fontMode === "sans" ? "serif" : "sans" }}
+          sx={{ p: [1, 2], fontSize: 3, lineHeight: 1, fontFamily: fontMode === "sans" ? "serif" : "sans" }}
           type="button"
           aria-label={fontMode === "sans" ? "Switch to serif font" : "Switch to sans-serif font"}
           onClick={toggleFontMode}
         >
-          {fontMode === "sans" ? "Serif" : "Sans"}
+          F
         </Button>
         <Button
           sx={{ p: [1, 2], whiteSpace: `pre` }}
