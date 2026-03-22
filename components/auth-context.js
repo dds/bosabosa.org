@@ -9,19 +9,23 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     if (typeof window === "undefined") return
-    import("netlify-identity-widget").then(mod => {
-      const netlifyIdentity = mod.default || mod
-      identityRef.current = netlifyIdentity
-      netlifyIdentity.init()
-      setUser(netlifyIdentity.currentUser())
-      setReady(true)
+    import("netlify-identity-widget")
+      .then(mod => {
+        const netlifyIdentity = mod.default || mod
+        identityRef.current = netlifyIdentity
+        netlifyIdentity.init()
+        setUser(netlifyIdentity.currentUser())
+        setReady(true)
 
-      netlifyIdentity.on("login", u => {
-        setUser(u)
-        netlifyIdentity.close()
+        netlifyIdentity.on("login", u => {
+          setUser(u)
+          netlifyIdentity.close()
+        })
+        netlifyIdentity.on("logout", () => setUser(null))
       })
-      netlifyIdentity.on("logout", () => setUser(null))
-    })
+      .catch(() => {
+        setReady(true)
+      })
 
     return () => {
       if (identityRef.current) {

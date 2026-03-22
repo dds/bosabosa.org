@@ -4,25 +4,23 @@ import { NavLink, Flex } from "theme-ui"
 import { useAuth } from "./auth-context"
 
 const Footer = () => {
-  const { isAuthenticated, login, logout, ready } = useAuth()
+  const { isAuthenticated, login, logout } = useAuth()
   return (
     <footer
       sx={{ gridArea: `footer`, borderTop: `1px solid`, borderColor: `border` }}
     >
       <Flex sx={{ p: `0 2rem` }}>
-        {ready && (
-          <NavLink
-            sx={{ p: 2, cursor: "pointer" }}
-            title={isAuthenticated ? "Sign Out" : "Sign In"}
-            onClick={e => {
-              e.preventDefault()
-              isAuthenticated ? logout() : login()
-            }}
-            href="#"
-          >
-            {isAuthenticated ? "Sign Out" : "Sign In"}
-          </NavLink>
-        )}
+        <NavLink
+          sx={{ p: 2, cursor: "pointer" }}
+          title={isAuthenticated ? "Sign Out" : "Sign In"}
+          onClick={e => {
+            e.preventDefault()
+            isAuthenticated ? logout() : login()
+          }}
+          href="#"
+        >
+          {isAuthenticated ? "Sign Out" : "Sign In"}
+        </NavLink>
         <Link href="/rss.xml" passHref>
           <NavLink sx={{ p: 2 }} title="Subscribe via RSS">
             Subscribe
