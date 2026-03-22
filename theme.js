@@ -46,12 +46,12 @@ const theme = {
   space: [0, 4, 8, 16, 32, 64, 128],
   text: {
     default: {
-      fontFamily: `sans`,
+      fontFamily: `inherit`,
       fontWeight: `body`,
       lineHeight: `body`,
     },
     heading: {
-      fontFamily: `sans`,
+      fontFamily: `inherit`,
       fontWeight: `heading`,
       lineHeight: `heading`,
     },
@@ -76,18 +76,16 @@ const theme = {
   },
   styles: {
     root: {
-      fontFamily: "sans",
+      fontFamily: "inherit",
       lineHeight: "body",
       fontWeight: "body",
     },
     h1: {
-      fontFamily: "sans",
       fontWeight: "heading",
       lineHeight: "heading",
       fontSize: 6,
     },
     h2: {
-      fontFamily: "sans",
       fontWeight: "heading",
       lineHeight: "heading",
       fontSize: 5,
@@ -95,7 +93,6 @@ const theme = {
       mb: 3,
     },
     h3: {
-      fontFamily: "sans",
       fontWeight: "heading",
       lineHeight: "heading",
       fontSize: 4,
@@ -103,7 +100,6 @@ const theme = {
       mb: 2,
     },
     h4: {
-      fontFamily: "sans",
       fontWeight: "heading",
       lineHeight: "heading",
       fontSize: 3,
@@ -111,7 +107,6 @@ const theme = {
       mb: 2,
     },
     h5: {
-      fontFamily: "sans",
       fontWeight: "heading",
       lineHeight: "heading",
       fontSize: 2,
@@ -119,7 +114,6 @@ const theme = {
       mb: 2,
     },
     h6: {
-      fontFamily: "sans",
       fontWeight: "heading",
       lineHeight: "heading",
       fontSize: 1,
