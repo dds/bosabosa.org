@@ -4,7 +4,6 @@ const tabs = [
   { id: "home", label: "Home" },
   { id: "blog", label: "Blog" },
   { id: "dashboard", label: "Dashboard", url: "https://dash.bosabosa.org" },
-  { id: "source", label: "Source", url: "https://github.com/dds/bosabosa.org" },
 ]
 
 const TabContext = createContext(null)

@@ -2,7 +2,6 @@
 import { useRouter } from "next/router"
 import { useColorMode, NavLink, Flex } from "theme-ui"
 import Button from "./button"
-import { useAuth } from "./auth-context"
 import { useFontMode } from "./font-mode-context"
 import { useTab } from "./tab-context"
 
@@ -18,7 +17,6 @@ const tabStyle = active => ({
 const Header = () => {
   const router = useRouter()
   const [mode, setMode] = useColorMode()
-  const { isAuthenticated, login, logout, ready } = useAuth()
   const { fontMode, toggleFontMode } = useFontMode()
   const { activeTab, switchTab, tabs } = useTab()
   const isHome = router.pathname === "/"
@@ -48,19 +46,6 @@ const Header = () => {
             {tab.label}
           </NavLink>
         ))}
-        {ready && (
-          <NavLink
-            sx={tabStyle(false)}
-            title={isAuthenticated ? "Sign Out" : "Sign In"}
-            onClick={e => {
-              e.preventDefault()
-              isAuthenticated ? logout() : login()
-            }}
-            href="#"
-          >
-            {isAuthenticated ? "Sign Out" : "Sign In"}
-          </NavLink>
-        )}
         {isHome && currentTab?.url && (
           <a
             href={currentTab.url}

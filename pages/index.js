@@ -36,19 +36,6 @@ export default function Home({ posts }) {
           }}
         />
       )}
-      {activeTab === "source" && (
-        <iframe
-          src="https://github.com/dds/bosabosa.org"
-          title="Source"
-          sx={{
-            width: "100%",
-            height: "80vh",
-            border: "1px solid",
-            borderColor: "border",
-            borderRadius: 4,
-          }}
-        />
-      )}
     </>
   )
 }
