@@ -54,38 +54,38 @@ export default function Home({ posts }) {
             {tab.label}
           </button>
         ))}
+        {activeTab === "dashboard" && (
+          <a
+            href="https://dash.bosabosa.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{
+              ml: "auto",
+              fontSize: 1,
+              color: "primary",
+              textDecoration: "none",
+              alignSelf: "center",
+              "&:hover": { textDecoration: "underline" },
+            }}
+          >
+            Open in new tab
+          </a>
+        )}
       </div>
       <div role="tabpanel">
         {activeTab === "blog" && <BlogRoll posts={posts} />}
         {activeTab === "dashboard" && (
-          <div>
-            <div sx={{ display: "flex", justifyContent: "flex-end", mb: 2 }}>
-              <a
-                href="https://dash.bosabosa.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                  fontSize: 1,
-                  color: "primary",
-                  textDecoration: "none",
-                  "&:hover": { textDecoration: "underline" },
-                }}
-              >
-                Open in new tab
-              </a>
-            </div>
-            <iframe
-              src="https://dash.bosabosa.org"
-              title="Dashboard"
-              sx={{
-                width: "100%",
-                height: "80vh",
-                border: "1px solid",
-                borderColor: "border",
-                borderRadius: 4,
-              }}
-            />
-          </div>
+          <iframe
+            src="https://dash.bosabosa.org"
+            title="Dashboard"
+            sx={{
+              width: "100%",
+              height: "80vh",
+              border: "1px solid",
+              borderColor: "border",
+              borderRadius: 4,
+            }}
+          />
         )}
       </div>
     </>

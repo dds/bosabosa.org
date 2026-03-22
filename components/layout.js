@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
           height: `100vh`,
           fontFamily: fontMode,
           gridTemplateAreas: [layoutXS, layoutS, layoutM, layoutL],
-          gridTemplateColumns: ["1fr", "1fr", "40ch 1fr", "40ch 1fr"],
+          gridTemplateColumns: ["1fr", "1fr", "28ch 1fr", "28ch 1fr"],
           gridTemplateRows: [
             "min-content 1fr min-content min-content",
             "min-content 1fr min-content min-content",
@@ -54,6 +54,10 @@ const Layout = ({ children }) => {
             py: 4,
             borderRight: ["none", "none", "1px solid", "1px solid"],
             borderColor: "border",
+            overflow: "auto",
+            resize: ["none", "none", "horizontal", "horizontal"],
+            minWidth: "16ch",
+            maxWidth: "60ch",
           }}
         >
           <Text
