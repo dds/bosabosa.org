@@ -1,4 +1,5 @@
 import BlogRoll from "../components/blogroll"
+import BlogLayout from "../components/blog-layout"
 import Meta from "../components/meta"
 import { getAllPosts } from "../content"
 
@@ -6,7 +7,9 @@ export default function Blog({ posts }) {
   return (
     <>
       <Meta title="Posts" />
-      <BlogRoll posts={posts} />
+      <BlogLayout>
+        <BlogRoll posts={posts} />
+      </BlogLayout>
     </>
   )
 }

@@ -1,5 +1,6 @@
 /** @jsxImportSource theme-ui */
 import BlogRoll from "../components/blogroll"
+import BlogLayout from "../components/blog-layout"
 import Meta from "../components/meta"
 import { useTab } from "../components/tab-context"
 import { getAllPosts } from "../content"
@@ -10,7 +11,11 @@ export default function Home({ posts }) {
   return (
     <>
       <Meta />
-      {activeTab === "blog" && <BlogRoll posts={posts} />}
+      {activeTab === "blog" && (
+        <BlogLayout>
+          <BlogRoll posts={posts} />
+        </BlogLayout>
+      )}
       {activeTab === "dashboard" && (
         <iframe
           src="https://dash.bosabosa.org"

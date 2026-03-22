@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Heading, Flex, Text } from "theme-ui"
 import { Link as A } from "theme-ui"
 import { getPostBySlug, getAllPosts } from "../../content"
+import BlogLayout from "../../components/blog-layout"
 import Meta from "../../components/meta"
 import useKeyboardNav from "../../components/use-keyboard-nav"
 import config from "../../site.config"
@@ -16,7 +17,7 @@ export default function BlogPostPage({ post, mdxSource }) {
   })
 
   return (
-    <div>
+    <BlogLayout>
       <Meta
         title={post.title}
         description={post.description || post.excerpt}
@@ -62,7 +63,7 @@ export default function BlogPostPage({ post, mdxSource }) {
           </li>
         </ul>
       </nav>
-    </div>
+    </BlogLayout>
   )
 }
 
