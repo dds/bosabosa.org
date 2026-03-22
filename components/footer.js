@@ -8,9 +8,9 @@ const Footer = () => {
       sx={{ gridArea: `footer`, borderTop: `1px solid`, borderColor: `border` }}
     >
       <Flex sx={{ p: `0 2rem` }}>
-        <Link href="/contact" passHref>
-          <NavLink sx={{ p: 2 }} title="Contact">
-            Contact
+        <Link href="/rss.xml" passHref>
+          <NavLink sx={{ p: 2 }} title="Subscribe via RSS">
+            Subscribe
           </NavLink>
         </Link>
         <span sx={{ p: 2, ml: `auto` }}>

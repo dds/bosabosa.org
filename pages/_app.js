@@ -13,6 +13,7 @@ import Layout from "../components/layout"
 import CodeBlock from "../components/code-block"
 import { AuthProvider } from "../components/auth-context"
 import { FontModeProvider } from "../components/font-mode-context"
+import { TabProvider } from "../components/tab-context"
 import * as gtag from "../gtag"
 
 function MdxThemeProvider({ children }) {
@@ -55,7 +56,8 @@ const App = ({ Component, pageProps }) => {
     <ThemeUIProvider theme={theme}>
       <AuthProvider>
         <FontModeProvider>
-          <MdxThemeProvider>
+          <TabProvider>
+            <MdxThemeProvider>
             <Script
               strategy="afterInteractive"
               src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
@@ -77,7 +79,8 @@ const App = ({ Component, pageProps }) => {
             <Layout>
               <Component {...pageProps} />
             </Layout>
-          </MdxThemeProvider>
+            </MdxThemeProvider>
+          </TabProvider>
         </FontModeProvider>
       </AuthProvider>
     </ThemeUIProvider>

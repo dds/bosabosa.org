@@ -74,9 +74,58 @@ const Layout = ({ children }) => {
           <Text sx={{ fontSize: 1, color: "gray", mb: 3, display: "block" }}>
             {config.author}
           </Text>
-          <Text sx={{ fontSize: 1, color: "gray", lineHeight: "body" }}>
+          <Text
+            sx={{ fontSize: 1, color: "gray", lineHeight: "body", mb: 4, display: "block" }}
+          >
             {config.description}
           </Text>
+          <Text
+            sx={{
+              fontWeight: "bold",
+              fontSize: 1,
+              mb: 2,
+              display: "block",
+            }}
+          >
+            Contact
+          </Text>
+          <ul sx={{ listStyle: "none", p: 0, m: 0, fontSize: 1 }}>
+            <li sx={{ mb: 1 }}>
+              <a href="mailto:feedback@bosabosa.org" sx={{ color: "primary" }}>
+                Email
+              </a>
+            </li>
+            <li sx={{ mb: 1 }}>
+              <a
+                href="https://www.linkedin.com/in/bosabosa/"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{ color: "primary" }}
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li sx={{ mb: 1 }}>
+              <a
+                href="https://keybase.io/omgthedds"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{ color: "primary" }}
+              >
+                Keybase
+              </a>
+            </li>
+            <li sx={{ mb: 1 }}>
+              <a
+                href="https://github.com/dds"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{ color: "primary" }}
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
         </aside>
         <Footer />
       </Grid>

@@ -1,14 +1,29 @@
 /** @jsxImportSource theme-ui */
-import Link from "next/link"
+import { useRouter } from "next/router"
 import { useColorMode, NavLink, Flex } from "theme-ui"
 import Button from "./button"
 import { useAuth } from "./auth-context"
 import { useFontMode } from "./font-mode-context"
+import { useTab } from "./tab-context"
+
+const tabStyle = active => ({
+  p: 2,
+  cursor: "pointer",
+  fontWeight: active ? "bold" : "normal",
+  borderBottom: active ? "2px solid" : "2px solid transparent",
+  borderColor: active ? "primary" : "transparent",
+  mb: "-1px",
+})
 
 const Header = () => {
+  const router = useRouter()
   const [mode, setMode] = useColorMode()
   const { isAuthenticated, login, logout, ready } = useAuth()
   const { fontMode, toggleFontMode } = useFontMode()
+  const { activeTab, switchTab, tabs } = useTab()
+  const isHome = router.pathname === "/"
+  const currentTab = tabs.find(t => t.id === activeTab)
+
   return (
     <nav
       sx={{
@@ -18,35 +33,51 @@ const Header = () => {
       }}
     >
       <Flex sx={{ p: `0 2rem`, flexFlow: `row wrap`, alignItems: `center` }}>
-        <Link href="/" passHref>
-          <NavLink sx={{ p: 2 }} title="Home">
-            Home
+        {tabs.map(tab => (
+          <NavLink
+            key={tab.id}
+            sx={tabStyle(isHome && activeTab === tab.id)}
+            title={tab.label}
+            onClick={e => {
+              e.preventDefault()
+              if (!isHome) router.push("/")
+              switchTab(tab.id)
+            }}
+            href="/"
+          >
+            {tab.label}
           </NavLink>
-        </Link>
-        <Link href="/rss.xml" passHref>
-          <NavLink sx={{ p: 2 }} title="Subscribe">
-            Subscribe
-          </NavLink>
-        </Link>
-        <Link href="/contact" passHref>
-          <NavLink sx={{ p: 2 }} title="Contact">
-            Contact
-          </NavLink>
-        </Link>
-        <Link href="https://github.com/dds/bosabosa.org" passHref>
-          <NavLink sx={{ p: 2, ml: [`auto`] }} title="Source">
-            Source
-          </NavLink>
-        </Link>
+        ))}
         {ready && (
-          <Button
-            sx={{ p: [1, 2], whiteSpace: `pre` }}
-            type="button"
-            onClick={isAuthenticated ? logout : login}
+          <NavLink
+            sx={tabStyle(false)}
+            title={isAuthenticated ? "Sign Out" : "Sign In"}
+            onClick={e => {
+              e.preventDefault()
+              isAuthenticated ? logout() : login()
+            }}
+            href="#"
           >
             {isAuthenticated ? "Sign Out" : "Sign In"}
-          </Button>
+          </NavLink>
         )}
+        {isHome && currentTab?.url && (
+          <a
+            href={currentTab.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{
+              fontSize: 1,
+              color: "primary",
+              textDecoration: "none",
+              p: 2,
+              "&:hover": { textDecoration: "underline" },
+            }}
+          >
+            Open in new tab
+          </a>
+        )}
+        <div sx={{ ml: `auto` }} />
         <Button
           sx={{ p: [1, 2], whiteSpace: `pre`, fontFamily: fontMode === "sans" ? "serif" : "sans" }}
           type="button"

@@ -1,93 +1,54 @@
 /** @jsxImportSource theme-ui */
-import { useState } from "react"
+import { Heading, Text } from "theme-ui"
 import BlogRoll from "../components/blogroll"
 import Meta from "../components/meta"
+import { useTab } from "../components/tab-context"
+import config from "../site.config"
 import { getAllPosts } from "../content"
 
-const tabs = [
-  { id: "blog", label: "Blog" },
-  { id: "dashboard", label: "Dashboard" },
-]
-
 export default function Home({ posts }) {
-  const [activeTab, setActiveTab] = useState("blog")
+  const { activeTab } = useTab()
 
   return (
     <>
       <Meta />
-      <div
-        role="tablist"
-        sx={{
-          display: "flex",
-          borderBottom: "2px solid",
-          borderColor: "border",
-          mb: 3,
-          gap: 1,
-        }}
-      >
-        {tabs.map(tab => (
-          <button
-            key={tab.id}
-            role="tab"
-            aria-selected={activeTab === tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            sx={{
-              appearance: "none",
-              bg: activeTab === tab.id ? "muted" : "transparent",
-              color: "text",
-              border: "none",
-              borderBottom:
-                activeTab === tab.id ? "2px solid" : "2px solid transparent",
-              borderColor: activeTab === tab.id ? "primary" : "transparent",
-              px: 3,
-              py: 2,
-              mb: "-2px",
-              fontFamily: "inherit",
-              fontSize: 2,
-              fontWeight: activeTab === tab.id ? "bold" : "normal",
-              cursor: "pointer",
-              "&:hover": {
-                bg: "muted",
-              },
-            }}
-          >
-            {tab.label}
-          </button>
-        ))}
-        {activeTab === "dashboard" && (
-          <a
-            href="https://dash.bosabosa.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={{
-              ml: "auto",
-              fontSize: 1,
-              color: "primary",
-              textDecoration: "none",
-              alignSelf: "center",
-              "&:hover": { textDecoration: "underline" },
-            }}
-          >
-            Open in new tab
-          </a>
-        )}
-      </div>
-      <div role="tabpanel">
-        {activeTab === "blog" && <BlogRoll posts={posts} />}
-        {activeTab === "dashboard" && (
-          <iframe
-            src="https://dash.bosabosa.org"
-            title="Dashboard"
-            sx={{
-              width: "100%",
-              height: "80vh",
-              border: "1px solid",
-              borderColor: "border",
-              borderRadius: 4,
-            }}
-          />
-        )}
-      </div>
+      {activeTab === "home" && (
+        <div sx={{ py: 4 }}>
+          <Heading as="h1" sx={{ mb: 3 }}>
+            {config.title}
+          </Heading>
+          <Text sx={{ fontSize: 3, color: "gray", lineHeight: "body" }}>
+            {config.subtitle}
+          </Text>
+        </div>
+      )}
+      {activeTab === "blog" && <BlogRoll posts={posts} />}
+      {activeTab === "dashboard" && (
+        <iframe
+          src="https://dash.bosabosa.org"
+          title="Dashboard"
+          sx={{
+            width: "100%",
+            height: "80vh",
+            border: "1px solid",
+            borderColor: "border",
+            borderRadius: 4,
+          }}
+        />
+      )}
+      {activeTab === "source" && (
+        <iframe
+          src="https://github.com/dds/bosabosa.org"
+          title="Source"
+          sx={{
+            width: "100%",
+            height: "80vh",
+            border: "1px solid",
+            borderColor: "border",
+            borderRadius: 4,
+          }}
+        />
+      )}
     </>
   )
 }
