@@ -11,6 +11,7 @@ import "../styles/syntax.css"
 import theme from "../theme"
 import Layout from "../components/layout"
 import CodeBlock from "../components/code-block"
+import { AuthProvider } from "../components/auth-context"
 import * as gtag from "../gtag"
 
 function MdxThemeProvider({ children }) {
@@ -51,16 +52,17 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <ThemeUIProvider theme={theme}>
-      <MdxThemeProvider>
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
-        />
-        <Script
-          id="gtag-init"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+      <AuthProvider>
+        <MdxThemeProvider>
+          <Script
+            strategy="afterInteractive"
+            src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+          />
+          <Script
+            id="gtag-init"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -68,12 +70,13 @@ const App = ({ Component, pageProps }) => {
               page_path: window.location.pathname,
             });
           `,
-          }}
-        />
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </MdxThemeProvider>
+            }}
+          />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </MdxThemeProvider>
+      </AuthProvider>
     </ThemeUIProvider>
   )
 }

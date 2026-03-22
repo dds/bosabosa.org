@@ -1,8 +1,9 @@
 /** @jsxImportSource theme-ui */
-import { Grid } from "theme-ui"
+import { Grid, Text } from "theme-ui"
 import { Themed } from "@theme-ui/mdx"
 import "normalize.css"
 
+import config from "../site.config"
 import Footer from "./footer"
 import Header from "./header"
 import SkipNavLink from "./skip-nav"
@@ -45,7 +46,17 @@ const Layout = ({ children }) => (
       >
         {children}
       </main>
-      <aside sx={{ gridArea: `aside` }}></aside>
+      <aside sx={{ gridArea: `aside`, px: 3, py: 4 }}>
+        <Text sx={{ fontWeight: "bold", fontSize: 3, mb: 2, display: "block" }}>
+          {config.title}
+        </Text>
+        <Text sx={{ fontSize: 1, color: "gray", mb: 3, display: "block" }}>
+          {config.author}
+        </Text>
+        <Text sx={{ fontSize: 1, color: "gray", lineHeight: "body" }}>
+          {config.description}
+        </Text>
+      </aside>
       <Footer />
     </Grid>
   </Themed.root>

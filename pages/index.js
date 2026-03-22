@@ -1,12 +1,76 @@
+/** @jsxImportSource theme-ui */
+import { useState } from "react"
 import BlogRoll from "../components/blogroll"
 import Meta from "../components/meta"
 import { getAllPosts } from "../content"
 
-export default function Blog({ posts }) {
+const tabs = [
+  { id: "blog", label: "Blog" },
+  { id: "dashboard", label: "Dashboard" },
+]
+
+export default function Home({ posts }) {
+  const [activeTab, setActiveTab] = useState("blog")
+
   return (
     <>
       <Meta />
-      <BlogRoll posts={posts} />
+      <div
+        role="tablist"
+        sx={{
+          display: "flex",
+          borderBottom: "2px solid",
+          borderColor: "border",
+          mb: 3,
+          gap: 1,
+        }}
+      >
+        {tabs.map(tab => (
+          <button
+            key={tab.id}
+            role="tab"
+            aria-selected={activeTab === tab.id}
+            onClick={() => setActiveTab(tab.id)}
+            sx={{
+              appearance: "none",
+              bg: activeTab === tab.id ? "muted" : "transparent",
+              color: "text",
+              border: "none",
+              borderBottom:
+                activeTab === tab.id ? "2px solid" : "2px solid transparent",
+              borderColor: activeTab === tab.id ? "primary" : "transparent",
+              px: 3,
+              py: 2,
+              mb: "-2px",
+              fontFamily: "inherit",
+              fontSize: 2,
+              fontWeight: activeTab === tab.id ? "bold" : "normal",
+              cursor: "pointer",
+              "&:hover": {
+                bg: "muted",
+              },
+            }}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+      <div role="tabpanel">
+        {activeTab === "blog" && <BlogRoll posts={posts} />}
+        {activeTab === "dashboard" && (
+          <iframe
+            src="https://dash.bosabosa.org"
+            title="Dashboard"
+            sx={{
+              width: "100%",
+              height: "80vh",
+              border: "1px solid",
+              borderColor: "border",
+              borderRadius: 4,
+            }}
+          />
+        )}
+      </div>
     </>
   )
 }

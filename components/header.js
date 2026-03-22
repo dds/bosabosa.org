@@ -2,9 +2,11 @@
 import Link from "next/link"
 import { useColorMode, NavLink, Flex } from "theme-ui"
 import Button from "./button"
+import { useAuth } from "./auth-context"
 
 const Header = () => {
   const [mode, setMode] = useColorMode()
+  const { isAuthenticated, login, logout, ready } = useAuth()
   return (
     <nav
       sx={{
@@ -34,6 +36,15 @@ const Header = () => {
             Source
           </NavLink>
         </Link>
+        {ready && (
+          <Button
+            sx={{ p: [1, 2], whiteSpace: `pre` }}
+            type="button"
+            onClick={isAuthenticated ? logout : login}
+          >
+            {isAuthenticated ? "Sign Out" : "Sign In"}
+          </Button>
+        )}
         <Button
           sx={{ p: [1, 2], whiteSpace: `pre` }}
           name="colorMode"
