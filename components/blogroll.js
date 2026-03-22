@@ -6,7 +6,6 @@ import Link from "next/link"
 export default function Blogroll({ posts }) {
   return (
     <Container fluid>
-      <Heading>posts</Heading>
       <ol sx={{ listStyle: `none`, m: 0, px: 3, py: 4 }}>
         {posts.map((post, i) => {
           const title = post.title || post.slug
