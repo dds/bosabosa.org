@@ -1,5 +1,4 @@
 /** @jsxImportSource theme-ui */
-import Link from "next/link"
 import { Flex } from "theme-ui"
 import { useAuth } from "./auth-context"
 
@@ -7,6 +6,7 @@ const linkStyle = {
   p: 2,
   color: "text",
   textDecoration: "none",
+  fontWeight: "normal",
   "&:hover": { textDecoration: "underline" },
 }
 
@@ -27,9 +27,9 @@ const Footer = () => {
         >
           {isAuthenticated ? "Sign Out" : "Sign In"}
         </a>
-        <Link href="/rss.xml" passHref>
-          <a sx={linkStyle}>Subscribe</a>
-        </Link>
+        <a href="/rss.xml" sx={linkStyle}>
+          Subscribe
+        </a>
         <a
           href="https://github.com/dds/bosabosa.org"
           target="_blank"

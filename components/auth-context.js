@@ -11,22 +11,25 @@ export function AuthProvider({ children }) {
     const handleIdentity = () => {
       const identity = window.netlifyIdentity
       if (!identity) return
+      identity.on("init", u => setUser(u))
       identity.on("login", u => {
         setUser(u)
         identity.close()
       })
       identity.on("logout", () => setUser(null))
       identity.init()
-      setUser(identity.currentUser())
+      // Also check synchronously in case init event already fired
+      const current = identity.currentUser()
+      if (current) setUser(current)
     }
 
     if (window.netlifyIdentity) {
       handleIdentity()
-    } else {
-      document.addEventListener("netlifyIdentityReady", handleIdentity)
-      return () =>
-        document.removeEventListener("netlifyIdentityReady", handleIdentity)
     }
+    // Always listen — the script may load after this effect runs
+    document.addEventListener("netlifyIdentityReady", handleIdentity)
+    return () =>
+      document.removeEventListener("netlifyIdentityReady", handleIdentity)
   }, [])
 
   const login = useCallback(() => {
