@@ -1,6 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { useState, useCallback, useRef, Children } from "react"
-import { marked } from "marked"
+import { useState, useCallback, useRef, useEffect, Children } from "react"
 
 function getLanguage(children) {
   const child = Children.toArray(children)[0]
@@ -110,6 +109,27 @@ const btnSx = {
   lineHeight: 1,
 }
 
+function MarkdownPreview({ getCode }) {
+  const [html, setHtml] = useState("")
+  useEffect(() => {
+    import("marked").then(({ marked }) => setHtml(marked.parse(getCode())))
+  }, [getCode])
+  return (
+    <div
+      sx={{
+        variant: "styles.root",
+        p: 3,
+        bg: "background",
+        border: "1px solid",
+        borderColor: "border",
+        borderRadius: 6,
+        mb: 3,
+      }}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
+  )
+}
+
 export default function CodeBlock({ children, style: _shikiStyle, ...rest }) {
   const [copied, setCopied] = useState(false)
   const [pgCopied, setPgCopied] = useState(false)
@@ -178,18 +198,7 @@ export default function CodeBlock({ children, style: _shikiStyle, ...rest }) {
         {children}
       </pre>
       {showPreview && (
-        <div
-          sx={{
-            variant: "styles.root",
-            p: 3,
-            bg: "background",
-            border: "1px solid",
-            borderColor: "border",
-            borderRadius: 6,
-            mb: 3,
-          }}
-          dangerouslySetInnerHTML={{ __html: marked.parse(getCode()) }}
-        />
+        <MarkdownPreview getCode={getCode} />
       )}
     </div>
   )
