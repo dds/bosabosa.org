@@ -18,7 +18,7 @@ export default function Home({ posts }) {
       )}
       {activeTab === "dashboard" && (
         <iframe
-          src="https://dash.bosabosa.org"
+          src="https://dash.typo.army"
           title="Dashboard"
           sx={{
             width: "100%",
