@@ -1,4 +1,4 @@
-# bosabosa.org
+# typo.army
 
 Personal website and blog of David D. Smith, built with Next.js and deployed on Netlify.
 

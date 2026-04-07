@@ -106,7 +106,7 @@ This is **bold text** and this is _italic text_ and this is **_bold italic_**. H
 
 ## Links
 
-An [inline link](https://example.com) and a [visited-style link](https://bosabosa.org). Links should be primary colored and underline on hover.
+An [inline link](https://example.com) and a [visited-style link](https://typo.army). Links should be primary colored and underline on hover.
 
 ## Blockquotes
 

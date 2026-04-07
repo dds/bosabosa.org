@@ -91,7 +91,7 @@ const Layout = ({ children }) => {
           </Text>
           <ul sx={{ listStyle: "none", p: 0, m: 0, fontSize: 1 }}>
             <li sx={{ mb: 1 }}>
-              <a href="mailto:feedback@bosabosa.org" sx={{ color: "primary" }}>
+              <a href="mailto:feedback@typo.army" sx={{ color: "primary" }}>
                 Email
               </a>
             </li>
@@ -103,16 +103,6 @@ const Layout = ({ children }) => {
                 sx={{ color: "primary" }}
               >
                 LinkedIn
-              </a>
-            </li>
-            <li sx={{ mb: 1 }}>
-              <a
-                href="https://keybase.io/omgthedds"
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{ color: "primary" }}
-              >
-                Keybase
               </a>
             </li>
             <li sx={{ mb: 1 }}>

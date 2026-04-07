@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>bosabosa</title>
-        <link>https://dds.bosabosa.org</link>
+        <title>typo.army</title>
+        <link>https://dds.typo.army</link>
         <description>Writings on life, personal events, troubles, struggles, and work.</description>
-        <lastBuildDate>Mon, 06 Apr 2026 03:31:53 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Apr 2026 00:51:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Next.js using Feed for Node.js</generator>
         <language>en</language>
         <copyright>All rights reserved 2026, David D. Smith.</copyright>
         <item>
             <title><![CDATA[Violence in America]]></title>
-            <link>https://dds.bosabosa.org/news/20220525-violence</link>
-            <guid isPermaLink="false">https://dds.bosabosa.org/news/20220525-violence</guid>
+            <link>https://dds.typo.army/news/20220525-violence</link>
+            <guid isPermaLink="false">https://dds.typo.army/news/20220525-violence</guid>
             <pubDate>Thu, 26 May 2022 06:07:00 GMT</pubDate>
             <description><![CDATA[The shift in late 20th century America and the prophet George Carlin]]></description>
             <content:encoded><![CDATA[
@@ -28,8 +28,8 @@ I'm watching the George Carlin documentary. The drug culture part of it shows th
         </item>
         <item>
             <title><![CDATA[Explorations in Cloud Orchestration]]></title>
-            <link>https://dds.bosabosa.org/news/explorations-in-cloud-orchestration</link>
-            <guid isPermaLink="false">https://dds.bosabosa.org/news/explorations-in-cloud-orchestration</guid>
+            <link>https://dds.typo.army/news/explorations-in-cloud-orchestration</link>
+            <guid isPermaLink="false">https://dds.typo.army/news/explorations-in-cloud-orchestration</guid>
             <pubDate>Mon, 04 Jan 2021 11:42:00 GMT</pubDate>
             <description><![CDATA[The state of the art in cloud orchestration in January 2021 with Pulumi, k3s, gRPC, tailscale, and more.]]></description>
             <content:encoded><![CDATA[
@@ -195,8 +195,8 @@ write it and package it as a container. Adieu till next time 👋
         </item>
         <item>
             <title><![CDATA[So long, 2020]]></title>
-            <link>https://dds.bosabosa.org/news/so-long-2020</link>
-            <guid isPermaLink="false">https://dds.bosabosa.org/news/so-long-2020</guid>
+            <link>https://dds.typo.army/news/so-long-2020</link>
+            <guid isPermaLink="false">https://dds.typo.army/news/so-long-2020</guid>
             <pubDate>Fri, 01 Jan 2021 05:34:00 GMT</pubDate>
             <description><![CDATA[What do you say about the worst year in living memory? You say to the next year, ...]]></description>
             <content:encoded><![CDATA[
@@ -227,8 +227,8 @@ worked on developing the vaccines.
         </item>
         <item>
             <title><![CDATA[Systems Design]]></title>
-            <link>https://dds.bosabosa.org/news/systems-design</link>
-            <guid isPermaLink="false">https://dds.bosabosa.org/news/systems-design</guid>
+            <link>https://dds.typo.army/news/systems-design</link>
+            <guid isPermaLink="false">https://dds.typo.army/news/systems-design</guid>
             <pubDate>Mon, 28 Dec 2020 18:10:00 GMT</pubDate>
             <description><![CDATA[Systems design and going from Senior to Staff+ Engineer.]]></description>
             <content:encoded><![CDATA[
@@ -247,8 +247,8 @@ More to come...
         </item>
         <item>
             <title><![CDATA[Christmas Day 2020]]></title>
-            <link>https://dds.bosabosa.org/news/christmas-day-2020</link>
-            <guid isPermaLink="false">https://dds.bosabosa.org/news/christmas-day-2020</guid>
+            <link>https://dds.typo.army/news/christmas-day-2020</link>
+            <guid isPermaLink="false">https://dds.typo.army/news/christmas-day-2020</guid>
             <pubDate>Sat, 26 Dec 2020 07:44:00 GMT</pubDate>
             <description><![CDATA[Merry Christmas and happy holidays, 2020.]]></description>
             <content:encoded><![CDATA[
@@ -276,8 +276,8 @@ thank you to all who provide compassion to those grieving.
         </item>
         <item>
             <title><![CDATA[Why Review Code?]]></title>
-            <link>https://dds.bosabosa.org/news/why-review-code</link>
-            <guid isPermaLink="false">https://dds.bosabosa.org/news/why-review-code</guid>
+            <link>https://dds.typo.army/news/why-review-code</link>
+            <guid isPermaLink="false">https://dds.typo.army/news/why-review-code</guid>
             <pubDate>Sat, 19 Dec 2020 17:35:00 GMT</pubDate>
             <description><![CDATA[Why is it valuable to review code?]]></description>
             <content:encoded><![CDATA[
@@ -348,8 +348,8 @@ I wanted to list some of the ways I have seen code-review go wrong:
         </item>
         <item>
             <title><![CDATA[Mark Shields' Courage, Grace, and Candor]]></title>
-            <link>https://dds.bosabosa.org/news/mark-shields-newshour</link>
-            <guid isPermaLink="false">https://dds.bosabosa.org/news/mark-shields-newshour</guid>
+            <link>https://dds.typo.army/news/mark-shields-newshour</link>
+            <guid isPermaLink="false">https://dds.typo.army/news/mark-shields-newshour</guid>
             <pubDate>Fri, 18 Dec 2020 21:24:00 GMT</pubDate>
             <description><![CDATA[How I learned my place in the world through Mark Shields' weekly interpretation of events.]]></description>
             <content:encoded><![CDATA[
@@ -391,8 +391,8 @@ these years.
         </item>
         <item>
             <title><![CDATA[Learning Gatsby]]></title>
-            <link>https://dds.bosabosa.org/news/learning-gatsby</link>
-            <guid isPermaLink="false">https://dds.bosabosa.org/news/learning-gatsby</guid>
+            <link>https://dds.typo.army/news/learning-gatsby</link>
+            <guid isPermaLink="false">https://dds.typo.army/news/learning-gatsby</guid>
             <pubDate>Thu, 10 Dec 2020 04:42:23 GMT</pubDate>
             <description><![CDATA[First impressions building this web site with React and Gatsby.]]></description>
             <content:encoded><![CDATA[
@@ -435,8 +435,8 @@ Gatsby brings it all together:
         </item>
         <item>
             <title><![CDATA[Advent of Code 2020]]></title>
-            <link>https://dds.bosabosa.org/news/advent-of-code-2020</link>
-            <guid isPermaLink="false">https://dds.bosabosa.org/news/advent-of-code-2020</guid>
+            <link>https://dds.typo.army/news/advent-of-code-2020</link>
+            <guid isPermaLink="false">https://dds.typo.army/news/advent-of-code-2020</guid>
             <pubDate>Sat, 05 Dec 2020 07:44:00 GMT</pubDate>
             <description><![CDATA[Crafting with Code for the Holidays.]]></description>
             <content:encoded><![CDATA[

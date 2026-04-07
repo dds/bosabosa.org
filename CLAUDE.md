@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal blog/website for David D. Smith at bosabosa.org, built with Next.js 12, React 18, Theme UI 0.17, and deployed on Netlify.
+Personal blog/website for David D. Smith at typo.army, built with Next.js 12, React 18, Theme UI 0.17, and deployed on Netlify.
 
 ## Commands
 

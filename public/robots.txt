@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://dds.bosabosa.org/sitemap.xml
+Sitemap: https://dds.typo.army/sitemap.xml

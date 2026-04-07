@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useEffect, useCallback } from "rea
 
 const tabs = [
   { id: "blog", label: "Blog" },
-  { id: "dashboard", label: "Dashboard", url: "https://dash.bosabosa.org" },
+  { id: "dashboard", label: "Dashboard", url: "https://dash.typo.army" },
 ]
 
 const tabIds = new Set(tabs.map(t => t.id))
