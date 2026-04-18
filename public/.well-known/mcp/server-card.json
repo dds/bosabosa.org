@@ -1,0 +1,26 @@
+{
+  "serverInfo": {
+    "name": "typo.army",
+    "version": "1.0.0",
+    "description": "David D. Smith's personal blog at typo.army"
+  },
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://dds.typo.army/mcp"
+  },
+  "capabilities": ["resources"],
+  "resources": [
+    {
+      "uri": "https://dds.typo.army/rss.xml",
+      "name": "RSS Feed",
+      "description": "Blog posts feed in RSS/XML format",
+      "mimeType": "application/rss+xml"
+    },
+    {
+      "uri": "https://dds.typo.army/sitemap.xml",
+      "name": "Sitemap",
+      "description": "Site structure in XML sitemap format",
+      "mimeType": "application/xml"
+    }
+  ]
+}

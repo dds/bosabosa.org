@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "skills": [
+    {
+      "name": "markdown-negotiation",
+      "type": "content-negotiation",
+      "description": "Request pages as markdown via Accept: text/markdown header",
+      "url": "https://dds.typo.army/"
+    },
+    {
+      "name": "rss-feed",
+      "type": "data-feed",
+      "description": "Subscribe to blog posts via RSS feed",
+      "url": "https://dds.typo.army/rss.xml"
+    }
+  ]
+}

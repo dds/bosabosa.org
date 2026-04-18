@@ -15,6 +15,7 @@ import { AuthProvider } from "../components/auth-context"
 import { FontModeProvider } from "../components/font-mode-context"
 import { TabProvider } from "../components/tab-context"
 import * as gtag from "../gtag"
+import WebMCP from "../components/webmcp"
 
 function MdxThemeProvider({ children }) {
   const components = useThemedStylesWithMdx(useMDXComponents())
@@ -80,6 +81,7 @@ const App = ({ Component, pageProps }) => {
           `,
               }}
             />
+            <WebMCP />
             <Layout>
               <Component {...pageProps} />
             </Layout>

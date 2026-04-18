@@ -29,3 +29,20 @@ NODE_ENV = "production"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Link = '''</.well-known/api-catalog>; rel="api-catalog", </rss.xml>; rel="alternate"; type="application/rss+xml", </.well-known/mcp/server-card.json>; rel="describedby"'''
+
+[[headers]]
+  for = "/.well-known/api-catalog"
+  [headers.values]
+    Content-Type = "application/linkset+json"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/.well-known/mcp/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/.well-known/agent-skills/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
