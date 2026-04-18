@@ -78,8 +78,4 @@ async function innerGetPostBySlug(slug, fields = []) {
   return items
 }
 
-module.exports = {
-  getPostSlugs,
-  getAllPosts,
-  getPostBySlug,
-}
+export { getPostSlugs, getAllPosts, getPostBySlug }

@@ -34,8 +34,8 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-  require("../feed")
-  require("../sitemap")
+  await import("../feed")
+  await import("../sitemap")
   const posts = await getAllPosts([
     `title`,
     `slug`,
