@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 
-export function middleware(request) {
+export function proxy(request) {
   const accept = request.headers.get("accept") || ""
   if (!accept.includes("text/markdown")) {
     return NextResponse.next()
