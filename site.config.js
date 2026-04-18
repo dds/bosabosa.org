@@ -1,5 +1,5 @@
 export default {
-  url: "https://dds.typo.army",
+  url: "https://www.typo.army",
   title: "typo.army",
   subtitle: "(dds) David D. Smith's Personal Website", // longDescription : appears in landing page meta description
   language: `en`,

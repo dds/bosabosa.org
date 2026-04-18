@@ -6,18 +6,18 @@
   },
   "transport": {
     "type": "streamable-http",
-    "endpoint": "https://dds.typo.army/mcp"
+    "endpoint": "https://www.typo.army/mcp"
   },
   "capabilities": ["resources"],
   "resources": [
     {
-      "uri": "https://dds.typo.army/rss.xml",
+      "uri": "https://www.typo.army/rss.xml",
       "name": "RSS Feed",
       "description": "Blog posts feed in RSS/XML format",
       "mimeType": "application/rss+xml"
     },
     {
-      "uri": "https://dds.typo.army/sitemap.xml",
+      "uri": "https://www.typo.army/sitemap.xml",
       "name": "Sitemap",
       "description": "Site structure in XML sitemap format",
       "mimeType": "application/xml"

@@ -1,16 +1,16 @@
 {
   "linkset": [
     {
-      "anchor": "https://dds.typo.army/",
+      "anchor": "https://www.typo.army/",
       "service-desc": [
         {
-          "href": "https://dds.typo.army/rss.xml",
+          "href": "https://www.typo.army/rss.xml",
           "type": "application/rss+xml"
         }
       ],
       "service-doc": [
         {
-          "href": "https://dds.typo.army/",
+          "href": "https://www.typo.army/",
           "type": "text/html"
         }
       ]
