@@ -115,6 +115,16 @@ const Layout = ({ children }) => {
                 GitHub
               </a>
             </li>
+            <li sx={{ mb: 1 }}>
+              <a
+                href="/DavidDSmith.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{ color: "primary" }}
+              >
+                Résumé
+              </a>
+            </li>
           </ul>
         </aside>
         <Footer />
